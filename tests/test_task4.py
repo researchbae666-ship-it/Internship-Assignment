@@ -49,6 +49,7 @@ class Task4CoreTests(unittest.TestCase):
         self.assertIn("--benchmark", reply.text)
         self.assertEqual(session.current_tree, "tasks")
         self.assertEqual(session.pending_choice, "task2_followup")
+        self.assertEqual(session.last_intent, "task2_benchmark")
 
     def test_python_tree_covers_all_topics(self) -> None:
         session = task4.SessionState()
@@ -70,6 +71,39 @@ class Task4CoreTests(unittest.TestCase):
         task_one = task4.handle_turn("Task 1 LinkedIn", session)
         self.assertIn("optional", task_one.text)
 
+    def test_contextual_help_trees_update_last_intent(self) -> None:
+        session = task4.SessionState()
+        task4.handle_turn("task 2", session)
+        self.assertEqual(session.last_intent, "task2")
+        task4.handle_turn("benchmark", session)
+        self.assertEqual(session.last_intent, "task2_benchmark")
+        task4.handle_turn("output", session)
+        self.assertEqual(session.last_intent, "task2_output")
+
+        task4.handle_turn("task 3", session)
+        task4.handle_turn("preview", session)
+        self.assertEqual(session.last_intent, "task3_safety")
+        task4.handle_turn("csv", session)
+        self.assertEqual(session.last_intent, "task3_csv")
+
+        task4.handle_turn("task 4", session)
+        task4.handle_turn("normalization", session)
+        self.assertEqual(session.last_intent, "task4_normalization")
+        task4.handle_turn("session history", session)
+        self.assertEqual(session.last_intent, "task4_session")
+
+        task4.handle_turn("submission", session)
+        task4.handle_turn("rule", session)
+        self.assertEqual(session.last_intent, "submission_rule")
+        task4.handle_turn("deadline", session)
+        self.assertEqual(session.last_intent, "submission_deadline")
+        task4.handle_turn("pdf", session)
+        self.assertEqual(session.last_intent, "submission_pdf")
+
+        task4.handle_turn("python", session)
+        task4.handle_turn("lists", session)
+        self.assertEqual(session.last_intent, "python_lists")
+
     def test_explicit_topic_change_overrides_pending_followup(self) -> None:
         session = task4.SessionState()
         task4.handle_turn("task 2", session)
@@ -85,6 +119,42 @@ class Task4CoreTests(unittest.TestCase):
         self.assertEqual(reply.intent, "ambiguous")
         self.assertIn("ambiguous", reply.text)
         self.assertEqual(session.pending_choice, "python_topic")
+
+    def test_repeated_task_selection_ambiguity_escalates_and_recovers(self) -> None:
+        session = task4.SessionState()
+        task4.handle_turn("tasks", session)
+        first = task4.handle_turn("something", session)
+        second = task4.handle_turn("still something", session)
+        self.assertEqual(first.intent, "ambiguous")
+        self.assertEqual(second.intent, "ambiguous")
+        self.assertIn("still need a clear choice", second.text)
+        self.assertIn("help", second.text)
+        self.assertEqual(session.last_intent, "ambiguous")
+        self.assertEqual(session.clarification_count, 2)
+        task4.handle_turn("task 3", session)
+        self.assertEqual(session.last_intent, "task3")
+        self.assertEqual(session.clarification_count, 0)
+
+    def test_repeated_python_topic_ambiguity_escalates_and_recovers(self) -> None:
+        session = task4.SessionState()
+        task4.handle_turn("python", session)
+        task4.handle_turn("explain it", session)
+        second = task4.handle_turn("more", session)
+        self.assertIn("still need a clear choice", second.text)
+        task4.handle_turn("regex", session)
+        self.assertEqual(session.last_intent, "python_regex")
+        self.assertEqual(session.clarification_count, 0)
+
+    def test_repeated_contextual_followup_ambiguity_escalates_and_recovers(self) -> None:
+        session = task4.SessionState()
+        task4.handle_turn("task 2", session)
+        task4.handle_turn("explain", session)
+        second = task4.handle_turn("another unclear question", session)
+        self.assertIn("still need a clear choice", second.text)
+        self.assertIn("output", second.text)
+        task4.handle_turn("validation", session)
+        self.assertEqual(session.last_intent, "task2_validation")
+        self.assertEqual(session.clarification_count, 0)
 
     def test_session_independence_and_history_bound(self) -> None:
         first = task4.SessionState()
@@ -120,10 +190,25 @@ class Task4CoreTests(unittest.TestCase):
         self.assertEqual(session.pending_choice, "root_choice")
         self.assertEqual(task4.handle_turn("tasks", session).intent, "task_tree")
         self.assertEqual(task4.handle_turn("4", session).intent, "task4")
-        self.assertEqual(task4.handle_turn("tell me more", session).intent, "task4_followup")
+        self.assertEqual(task4.handle_turn("tell me more", session).intent, "task4_overview")
         cancelled = task4.handle_turn("cancel", session)
         self.assertEqual(cancelled.intent, "reset")
         self.assertEqual(session.current_tree, None)
+
+    def test_task4_followup_recognizes_supported_questions_and_rejects_unrelated_text(self) -> None:
+        session = task4.SessionState()
+        task4.handle_turn("task 4", session)
+        operation = task4.handle_turn("how does it work", session)
+        self.assertEqual(operation.intent, "task4_operation")
+        self.assertEqual(session.last_intent, "task4_operation")
+        routing = task4.handle_turn("what intents are routed", session)
+        self.assertEqual(routing.intent, "task4_intents")
+        unknown = task4.handle_turn("what is the weather", session)
+        self.assertEqual(unknown.intent, "ambiguous")
+        self.assertIn("do not recognize", unknown.text)
+        self.assertEqual(session.last_intent, "ambiguous")
+        repeated = task4.handle_turn("still weather", session)
+        self.assertIn("still need a clear choice", repeated.text)
 
 
 class Task4CliTests(unittest.TestCase):

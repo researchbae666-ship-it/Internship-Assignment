@@ -34,6 +34,8 @@ Final-safety regression coverage additionally proves that writable validation re
 
 Executed Task 4 tests cover NFKC/casefold/punctuation/whitespace normalization; exact-token non-matches; every task/Python/submission tree; all functional intent handlers; nested pending-state transitions; contextual Task 2 follow-up; cross-tree switches; ambiguity; independent sessions; 20-turn history bound; reset/cancel; blank/repeated unknown/exit; EOF/KeyboardInterrupt; unexpected errors returning exit 1; and genuine scripted subprocess/EOF terminal runs.
 
+The final Task 4 correction suite additionally verifies that contextual Task 2, Task 3, Task 4, submission, and Python responses update `last_intent` to their actual reported intent. It exercises first and repeated ambiguity in task selection, Python topics, and Task 2 follow-up, including recovery after a valid choice. It also distinguishes supported Task 4 operation/routing/normalization/session questions from unrelated text. The complete corrected Tasks 2–4 suite executed 53 tests and passed.
+
 ## Planned future validation
 
 `python -m unittest discover -s tests -v` followed by each README CLI example in isolated temporary workspaces. Record actual exit codes, test counts and output into ignored artifacts. Re-run affected tests after fixes; complete full relevant suite before phase review. Commands are proposed and have not executed.

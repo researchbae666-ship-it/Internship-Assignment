@@ -24,6 +24,7 @@ class SessionState:
     turn_count: int = 0
     history: list[str] = field(default_factory=list)
     fallback_count: int = 0
+    clarification_count: int = 0
     active: bool = True
 
 
@@ -58,6 +59,18 @@ def _set_context(session: SessionState, tree: str | None, pending: str | None, i
     session.pending_choice = pending
     session.last_intent = intent
     session.fallback_count = 0
+    session.clarification_count = 0
+
+
+def _clarification(session: SessionState, first_message: str, choices: str) -> TurnResult:
+    """Return a contextual clarification that escalates after a repeated miss."""
+    session.clarification_count += 1
+    if session.clarification_count >= 2:
+        return TurnResult(
+            f"I still need a clear choice. {choices} Type help for the main menu or reset to clear this context.",
+            "ambiguous",
+        )
+    return TurnResult(first_message, "ambiguous")
 
 
 def _opening() -> str:
@@ -166,16 +179,66 @@ def _submission_tree(session: SessionState, _: str) -> TurnResult:
 
 def _submission_followup(session: SessionState, text: str) -> TurnResult:
     tokens = _tokens(text)
-    if "deadline" in tokens or "october" in tokens:
+    if tokens & {"rule", "rules", "requirement", "requirements", "certificate"}:
+        message = "The supplied notice says to complete and submit at least 3 of the 4 assigned tasks for the Internship Completion Certificate. The chatbot cannot determine an individual certificate decision."
+        intent = "submission_rule"
+    elif "deadline" in tokens or "october" in tokens:
         message = "The supplied notice names 18 October 2026. Its exact cutoff time and timezone are not confirmed."
+        intent = "submission_deadline"
     elif "pdf" in tokens or "report" in tokens:
         message = "The notice requires one combined PDF for the selected task reports. Final PDF generation and form submission are not performed by this chatbot."
+        intent = "submission_pdf"
     elif ("task" in tokens and "1" in tokens) or "linkedin" in tokens:
         message = "Task 1 and LinkedIn are optional under the available project instructions and remain outside the mandatory Tasks 2–4 workflow."
+        intent = "submission_task1"
     else:
-        message = "I can clarify the three-of-four rule, one-PDF requirement, deadline date, or optional Task 1. Which one?"
-    _set_context(session, "submission", "submission_followup", "submission_followup")
-    return TurnResult(message, "submission_followup")
+        return _clarification(
+            session,
+            "I can clarify the three-of-four rule, one-PDF requirement, deadline date, or optional Task 1. Which one?",
+            "Choose the three-of-four rule, PDF, deadline, or Task 1.",
+        )
+    _set_context(session, "submission", "submission_followup", intent)
+    return TurnResult(message, intent)
+
+
+def _task_four_followup(session: SessionState, text: str) -> TurnResult:
+    """Answer only supported Task 4 follow-ups; clarify unrelated requests."""
+    tokens = _tokens(text)
+    if tokens & {"operate", "operation", "work", "works", "working"}:
+        _set_context(session, "tasks", "task4_followup", "task4_operation")
+        return TurnResult(
+            "The terminal loop reads one line at a time, normalizes it, routes it, and prints a reply. EOF, Ctrl+C, reset, and exit have explicit safe paths.",
+            "task4_operation",
+        )
+    if tokens & {"intent", "intents", "route", "routes", "routing"}:
+        _set_context(session, "tasks", "task4_followup", "task4_intents")
+        return TurnResult(
+            "Task 4 uses a dictionary of intent handlers. Global controls and explicit topic switches are checked before the current pending help choice.",
+            "task4_intents",
+        )
+    if tokens & {"normalize", "normalization", "unicode", "punctuation", "casefold"}:
+        _set_context(session, "tasks", "task4_followup", "task4_normalization")
+        return TurnResult(
+            "Task 4 applies Unicode NFKC normalization, casefolding, punctuation handling, and whitespace normalization before token-based routing.",
+            "task4_normalization",
+        )
+    if tokens & {"state", "session", "history", "memory"}:
+        _set_context(session, "tasks", "task4_followup", "task4_session")
+        return TurnResult(
+            "The session keeps the current tree, pending choice, last intent, turn count, and only the most recent 20 normalized turns in memory. It is not persisted.",
+            "task4_session",
+        )
+    if {"tell", "more"} <= tokens or tokens & {"overview", "explain"}:
+        _set_context(session, "tasks", "task4_followup", "task4_overview")
+        return TurnResult(
+            "This Task 4 bot uses normalized text, a functional intent map, nested contextual choices, and bounded in-memory session history. Ask about operation, intents, normalization, or session state.",
+            "task4_overview",
+        )
+    return _clarification(
+        session,
+        "I do not recognize that as a Task 4 question. Ask about operation, intents, normalization, or session state; or type help/reset.",
+        "Choose operation, intents, normalization, or session state.",
+    )
 
 
 INTENT_HANDLERS: dict[str, Callable[[SessionState, str], TurnResult]] = {
@@ -233,7 +296,7 @@ def _pending_response(session: SessionState, normalized: str) -> TurnResult:
             return _python_tree(session, normalized)
         elif tokens & {"submission", "submit"}:
             return _submission_tree(session, normalized)
-        return TurnResult("Please choose tasks, python, or submission.", "ambiguous")
+        return _clarification(session, "Please choose tasks, python, or submission.", "Choose tasks, python, or submission.")
     if session.pending_choice == "task_selection":
         if normalized in {"2", "task 2", "task2"}:
             return _task_two(session, normalized)
@@ -241,7 +304,7 @@ def _pending_response(session: SessionState, normalized: str) -> TurnResult:
             return _task_three(session, normalized)
         elif normalized in {"4", "task 4", "task4", "chatbot"}:
             return _task_four(session, normalized)
-        return TurnResult("Please select Task 2, Task 3, or Task 4.", "ambiguous")
+        return _clarification(session, "Please select Task 2, Task 3, or Task 4.", "Select Task 2, Task 3, or Task 4.")
     if session.pending_choice == "python_topic":
         if tokens & {"list", "lists", "loop", "loops"}:
             return _python_lists(session, normalized)
@@ -251,7 +314,11 @@ def _pending_response(session: SessionState, normalized: str) -> TurnResult:
             return _python_regex(session, normalized)
         elif tokens & {"fundamental", "fundamentals", "basic", "basics"}:
             return _python_fundamentals(session, normalized)
-        return TurnResult("That is ambiguous here. Choose fundamentals, lists and loops, functions and validation, or regex and file handling.", "ambiguous")
+        return _clarification(
+            session,
+            "That is ambiguous here. Choose fundamentals, lists and loops, functions and validation, or regex and file handling.",
+            "Choose fundamentals, lists and loops, functions and validation, or regex and file handling.",
+        )
     if session.pending_choice == "task2_followup":
         if tokens & {"benchmark", "timeit", "timing"}:
             return TurnResult("Benchmark Task 2 with: python -m internship.task2 --benchmark --benchmark-counts 10 100 1000 --repeats 5 --number 100.", "task2_benchmark")
@@ -259,15 +326,23 @@ def _pending_response(session: SessionState, normalized: str) -> TurnResult:
             return TurnResult("Task 2 prints a JSON array, for example count 10 gives [0,1,1,2,3,5,8,13,21,34].", "task2_output")
         elif tokens & {"validation", "negative", "invalid"}:
             return TurnResult("Negative counts raise ValueError; bool, float, string, and None are rejected rather than coerced.", "task2_validation")
-        return TurnResult("For Task 2, ask about output, validation, or benchmarking; or switch topics with python, tasks, or submission.", "ambiguous")
+        return _clarification(
+            session,
+            "For Task 2, ask about output, validation, or benchmarking; or switch topics with python, tasks, or submission.",
+            "Choose output, validation, benchmarking, or an explicit topic switch.",
+        )
     if session.pending_choice == "task3_followup":
         if tokens & {"preview", "apply", "safety"}:
             return TurnResult("Task 3 previews first. Apply only inside an isolated artifacts/task3 child workspace, after strict path and UTF-8 checks.", "task3_safety")
         elif tokens & {"csv", "record", "log"}:
             return TurnResult("Task 3 writes and reads back a UTF-8 master CSV with source path, line number, kind, and value.", "task3_csv")
-        return TurnResult("For Task 3, ask about preview/safety or CSV/log records.", "ambiguous")
+        return _clarification(
+            session,
+            "For Task 3, ask about preview/safety or CSV/log records.",
+            "Choose preview/safety or CSV/log records.",
+        )
     if session.pending_choice == "task4_followup":
-        return TurnResult("This Task 4 bot uses normalized text, a functional intent map, nested contextual choices, and bounded in-memory session history.", "task4_followup")
+        return _task_four_followup(session, normalized)
     if session.pending_choice == "submission_followup":
         return _submission_followup(session, normalized)
     return TurnResult("I lost the earlier context. Type help to choose a topic.", "unknown")
@@ -296,8 +371,10 @@ def handle_turn(text: str, session: SessionState) -> TurnResult:
         return INTENT_HANDLERS[intent](session, normalized)
     if intent == "pending":
         result = _pending_response(session, normalized)
-        if result.intent == "ambiguous":
-            session.last_intent = "ambiguous"
+        session.last_intent = result.intent
+        if result.intent != "ambiguous":
+            session.clarification_count = 0
+            session.fallback_count = 0
         return result
     session.fallback_count += 1
     session.last_intent = "unknown"
