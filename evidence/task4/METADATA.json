@@ -1,0 +1,21 @@
+{
+  "task": "Task 4 - Production-Ready Multi-Intent Rule-Based Chatbot",
+  "source_commit": "7c23159507b94caccebcbffc32eccf0705c22408",
+  "python_version": "Python 3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "test_command": "python -m unittest discover -s tests -v",
+  "test_result": "48 tests passed in 0.927s",
+  "raw_artifact_sha256": {
+    "main-transcript.raw.txt": "358c679e60f69bd379021b51b742eb0a26c52d8c7a0cd5d2f6f42f013298682f",
+    "fallback-transcript.raw.txt": "2dd81a4f20ec467ed037d67f9926675dc40d3fdeb750cd440469064360e93202",
+    "eof-transcript.raw.txt": "4d914ff73277bc13bb350341eeff9f07e6ac9fe095965b828aa3af357ab5b274",
+    "interrupt-transcript.raw.txt": "c0dd8d2ca97af2fef2b6f6412db76bc789fbd6ea44ca49ab86bdc6a8e3e640e7",
+    "test-suite.raw.txt": "429f00cc75066717e4479d82d4dce3dbae3988defbc4d465f09748e53c7ff660"
+  },
+  "limitations": [
+    "Routing is intentionally rule based and recognizes the documented vocabulary; unexpected phrasing receives a clarification or fallback rather than semantic inference.",
+    "The assistant provides guidance only. It does not access forms, LinkedIn, personal files, credentials, or any remote service.",
+    "The supplied materials verify the submission date but do not verify a deadline hour, timezone, certificate decision, identity, or eligibility."
+  ]
+}

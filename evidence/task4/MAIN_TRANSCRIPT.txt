@@ -1,0 +1,17 @@
+Source revision: 7c23159507b94caccebcbffc32eccf0705c22408
+Command:
+printf 'help\ntask 2\nhow do i benchmark it\npython concepts\nexplain it\nlists\nsubmission\ndeadline\nunrecognized wording\nreset\nexit\n' | python -m internship.task4
+Exit code: 0
+
+Welcome to the Progree Python assignment helper. Choose: tasks, python, or submission. Type help at any time; reset/cancel clears context; exit ends this local session.
+you> I can help with internship tasks (2, 3, 4), Python learning, or submission guidance. Which area would you like?
+you> Task 2 generates exactly count Fibonacci terms, validates invalid input, emits JSON, and benchmarks with timeit. Reproduce it with: python -m internship.task2 --count 10. Ask about output, validation, or benchmarking.
+you> Benchmark Task 2 with: python -m internship.task2 --benchmark --benchmark-counts 10 100 1000 --repeats 5 --number 100.
+you> Python learning: choose fundamentals, lists and loops, functions and validation, or regex and file handling.
+you> That is ambiguous here. Choose fundamentals, lists and loops, functions and validation, or regex and file handling.
+you> Lists keep ordered values. A for loop visits each item: for value in values: ... . For Task 2, the list stores Fibonacci terms in generation order. Ask about functions, regex, or another Python topic.
+you> Submission guidance: the notice says complete at least 3 of 4 tasks and combine work into one PDF. It names 18 October 2026, but no exact deadline hour is verified. Ask about the PDF, deadline, or Task 1.
+you> The supplied notice names 18 October 2026. Its exact cutoff time and timezone are not confirmed.
+you> I can clarify the three-of-four rule, one-PDF requirement, deadline date, or optional Task 1. Which one?
+you> Context reset. Choose tasks, python, or submission.
+you> Goodbye. This session was local and no information was saved or submitted.

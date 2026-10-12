@@ -1,0 +1,10 @@
+Source revision: 7c23159507b94caccebcbffc32eccf0705c22408
+Command:
+printf 'mystery request\nanother mystery\nreset\nexit\n' | python -m internship.task4
+Exit code: 0
+
+Welcome to the Progree Python assignment helper. Choose: tasks, python, or submission. Type help at any time; reset/cancel clears context; exit ends this local session.
+you> I do not recognize that request. Try tasks, python, submission, help, reset, or exit.
+you> I still do not recognize that request. Type help, or reset to clear the current context.
+you> Context reset. Choose tasks, python, or submission.
+you> Goodbye. This session was local and no information was saved or submitted.
