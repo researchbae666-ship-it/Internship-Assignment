@@ -1,6 +1,6 @@
 # Reproduce Task 3 evidence
 
-Run from the repository root. Use an empty directory created below `artifacts/task3`; the utility rejects arbitrary locations by design.
+Run from the repository root. Use an empty directory created below `artifacts/task3`; the utility rejects arbitrary locations and allows writes only below that directory by design. See [REVIEW_FIX_REPRODUCE.md](REVIEW_FIX_REPRODUCE.md) for the current output-safety controls.
 
 ```bash
 demo_root=$(mktemp -d -p artifacts/task3 task3-demo-XXXXXX)

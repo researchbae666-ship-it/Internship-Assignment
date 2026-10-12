@@ -1,0 +1,27 @@
+{
+  "evidence_version": 2,
+  "source_commit": "534e39d86d57189c76f35bdec77d0c360124ca0c",
+  "workspace_label": "artifacts/task3/<synthetic-demo>",
+  "commands": [
+    {"command": "python -m internship.task3 --root <workspace>", "exit_code": 0, "outcome": "preview: 7 moves planned; no write"},
+    {"command": "python -m internship.task3 --root <workspace> --apply --csv master.csv", "exit_code": 0, "outcome": "7 moves; 9 records; verified CSV and marker"},
+    {"command": "python -m internship.task3 --root <workspace> --apply --csv master.csv", "exit_code": 0, "outcome": "verified master regenerated; 0 moves"},
+    {"command": "python -m internship.task3 --root <separate-workspace> --apply --csv notes.txt", "exit_code": 2, "outcome": "rejected before moves"},
+    {"command": "python -m unittest discover -s tests -v", "exit_code": 0, "outcome": "30 tests passed"}
+  ],
+  "raw_artifact_sha256": {
+    "fix-preview.json": "c479c9d7e310b150dd66058ef7f29fb44ff5f0fb9366fbf08d94651f7ab5ae86",
+    "fix-apply.json": "0022e89240a668de323bd7694be90b6ae09f47b787217deda2cfcce64cff77ca",
+    "fix-repeat.json": "c4605148a25e771f7baf1665ec263f38717fa1d0ea9649cb10528bd4866a87d0",
+    "fix-master.csv": "631c3408b5634f2e0a55ecf6fb7b3f2f0e1380807b057d3ca0966338cf68d43a",
+    "fix-marker.json": "48c5d2edd02ff02bbd0a5793edab60ec3922db4531d863f0d80d6933c280e636",
+    "fix-test-output.txt": "652964047d423a5459fa999c47fcd44ea0155c6b5d8fa8caa5ec7f9c0fa53fce",
+    "fix-canonical-before.txt": "eb3241b1fe885183b91e72ee375486417c8ba27be84374d2ef87b55ebb2ca7b5",
+    "fix-canonical-after.txt": "eb3241b1fe885183b91e72ee375486417c8ba27be84374d2ef87b55ebb2ca7b5"
+  },
+  "provenance_limitations": [
+    "Random mktemp directory suffixes were replaced with <synthetic-demo> in committed manifests; all other fields were copied from raw outputs.",
+    "Raw captures are ignored under artifacts/task3 and are linked by the listed SHA-256 digests.",
+    "The source commit is the safety-fix implementation commit; this evidence itself is committed afterward."
+  ]
+}
