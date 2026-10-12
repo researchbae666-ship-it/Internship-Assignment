@@ -1,0 +1,32 @@
+Source revision: 4c6a6c9795d41b3835fe85a53ed9bafe11d6ad22
+Command: `python -c` state-observation harness calling the real `internship.task4.handle_turn` function for each displayed turn.
+Exit code: 0
+
+State-observed Task 4 conversation
+you> task 2
+bot> Task 2 generates exactly count Fibonacci terms, validates invalid input, emits JSON, and benchmarks with timeit. Reproduce it with: python -m internship.task2 --count 10. Ask about output, validation, or benchmarking.
+state> last_intent=task2; current_tree=tasks; pending_choice=task2_followup
+
+you> benchmark
+bot> Benchmark Task 2 with: python -m internship.task2 --benchmark --benchmark-counts 10 100 1000 --repeats 5 --number 100.
+state> last_intent=task2_benchmark; current_tree=tasks; pending_choice=task2_followup
+
+you> output
+bot> Task 2 prints a JSON array, for example count 10 gives [0,1,1,2,3,5,8,13,21,34].
+state> last_intent=task2_output; current_tree=tasks; pending_choice=task2_followup
+
+you> task 3
+bot> Task 3 previews then safely organizes synthetic-workspace files, extracts log records, and verifies a master CSV. Use an artifact child workspace and --apply only after preview. Ask about preview, CSV, or safety.
+state> last_intent=task3; current_tree=tasks; pending_choice=task3_followup
+
+you> preview
+bot> Task 3 previews first. Apply only inside an isolated artifacts/task3 child workspace, after strict path and UTF-8 checks.
+state> last_intent=task3_safety; current_tree=tasks; pending_choice=task3_followup
+
+you> submission
+bot> Submission guidance: the notice says complete at least 3 of 4 tasks and combine work into one PDF. It names 18 October 2026, but no exact deadline hour is verified. Ask about the PDF, deadline, or Task 1.
+state> last_intent=submission; current_tree=submission; pending_choice=submission_followup
+
+you> deadline
+bot> The supplied notice names 18 October 2026. Its exact cutoff time and timezone are not confirmed.
+state> last_intent=submission_deadline; current_tree=submission; pending_choice=submission_followup

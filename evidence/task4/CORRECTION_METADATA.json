@@ -1,0 +1,21 @@
+{
+  "reviewed_commit": "9ea63399ca7c77f2e5af26b538b052c9d079075a",
+  "corrected_source_commit": "4c6a6c9795d41b3835fe85a53ed9bafe11d6ad22",
+  "historical_evidence_source_commit": "7c23159507b94caccebcbffc32eccf0705c22408",
+  "python_version": "Python 3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "test_command": "python -m unittest discover -s tests -v",
+  "test_result": "53 tests passed in 1.340s",
+  "raw_artifact_sha256": {
+    "correction-last-intent.raw.txt": "7e78f8f7c973e59e1d3e0d0a9975fbd13e62643bbab7790989a83ccc9626c044",
+    "correction-ambiguity.raw.txt": "2b11d9818da32ddb912e19a76289af471637b5256b7af0974cab902318fa7449",
+    "correction-task4-fallback.raw.txt": "186d4e1527725a23cdfdde2fcc5de2a9192a87187affbd133f0f62fc3a08a424",
+    "correction-test-suite.raw.txt": "7001e614c88af21f0935d910131f269aa1791d98b75381cf7c8a5d82729a2763"
+  },
+  "limitations": [
+    "The chatbot remains intentionally rule based and does not infer unsupported phrasing beyond its documented vocabulary.",
+    "Session state is local to the running process and is never persisted.",
+    "The application neither accesses external services nor submits any form."
+  ]
+}

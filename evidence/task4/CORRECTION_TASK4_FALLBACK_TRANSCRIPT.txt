@@ -1,0 +1,15 @@
+Source revision: 4c6a6c9795d41b3835fe85a53ed9bafe11d6ad22
+Command:
+```bash
+printf 'task 4\nwhat is the weather\nstill weather\ntell me more\nexit\n' | python -m internship.task4
+```
+Exit code: 0
+
+```text
+Welcome to the Progree Python assignment helper. Choose: tasks, python, or submission. Type help at any time; reset/cancel clears context; exit ends this local session.
+you> Task 4 is this local rule-based terminal chatbot. It normalizes text, routes intents with a dictionary, tracks session state, and handles fallbacks. It is being used now; final PDF work is not part of this session.
+you> I do not recognize that as a Task 4 question. Ask about operation, intents, normalization, or session state; or type help/reset.
+you> I still need a clear choice. Choose operation, intents, normalization, or session state. Type help for the main menu or reset to clear this context.
+you> This Task 4 bot uses normalized text, a functional intent map, nested contextual choices, and bounded in-memory session history. Ask about operation, intents, normalization, or session state.
+you> Goodbye. This session was local and no information was saved or submitted.
+```
