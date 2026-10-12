@@ -2,7 +2,7 @@
 
 ## Executed tests
 
-Tasks 2–3 have standard-library unittest coverage. The Phase 3 initial implementation run executed 25 tests and passed: 13 Task 2 tests and 12 Task 3 tests; its summary remains in `evidence/task3/TEST_OUTPUT.txt`. Following the output-safety review corrections, 30 tests passed: 13 Task 2 tests and 17 Task 3 tests. The final safety review adds three tests: the writable artifacts parent is rejected through public functions and CLI, and malformed UTF-8 logs are rejected by direct apply and CLI before moves/CSV output. The final `python -m unittest discover -s tests -v` run executed **33 tests and passed**. Final evidence records the full output and source revision. Tests use temporary directories below ignored `artifacts/task3/` and version-controlled synthetic fixtures; no testing dependency is required.
+Tasks 2–4 have standard-library unittest coverage. The final Task 3 suite executed 33 tests and passed. Task 4 adds 15 tests for routing, state, graceful termination, and subprocess interaction. The Task 4 implementation run executed **48 tests and passed**. Evidence records the exact post-implementation source revision; final Task 4 execution evidence is captured after that commit. Tests use temporary directories below ignored `artifacts/task3/` and version-controlled synthetic fixtures; no testing dependency is required.
 
 ## Task 2
 
@@ -25,12 +25,14 @@ Review-fix regression coverage additionally proves that `.txt`, `.LOG`, and non-
 
 Final-safety regression coverage additionally proves that writable validation rejects `artifacts/task3` itself but accepts isolated children, and preflight UTF-8 decoding makes malformed `.log` input fail before directory creation, file moves, marker creation, or CSV output. Successful extraction still records post-move paths.
 
-## Task 4 planned coverage
+## Task 4 executed coverage
 
 - Case/punctuation/whitespace/Unicode normalization and token-boundary false-positive checks.
 - Every mapped intent and every help-tree state; follow-up, ambiguity, cross-tree switch, cancel, reset, bounded history and session independence.
 - Unknown/empty input and repeated fallback; exit, EOF and KeyboardInterrupt; unexpected error does not produce a false success exit.
 - Scripted CLI integration transcript: help -> task choice -> follow-up -> Python switch -> unknown -> reset -> exit. Assert responses and state transitions, not merely process survival.
+
+Executed Task 4 tests cover NFKC/casefold/punctuation/whitespace normalization; exact-token non-matches; every task/Python/submission tree; all functional intent handlers; nested pending-state transitions; contextual Task 2 follow-up; cross-tree switches; ambiguity; independent sessions; 20-turn history bound; reset/cancel; blank/repeated unknown/exit; EOF/KeyboardInterrupt; unexpected errors returning exit 1; and genuine scripted subprocess/EOF terminal runs.
 
 ## Planned future validation
 

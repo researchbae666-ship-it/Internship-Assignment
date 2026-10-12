@@ -1,6 +1,6 @@
 # Requirements matrix
 
-Source inspection: 12 October 2026. Python PDF: one page, extracted using `pdftotext -layout`. All original files read. Tasks 2–3 are implemented and tested; Task 4 remains planned.
+Source inspection: 12 October 2026. Python PDF: one page, extracted using `pdftotext -layout`. All original files read. Tasks 2–4 are implemented and tested.
 
 | ID | Source requirement | Planned acceptance evidence |
 | --- | --- | --- |
@@ -12,10 +12,10 @@ Source inspection: 12 October 2026. Python PDF: one page, extracted using `pdfto
 | T3.2 | Sort files into extension subdirectories | Implemented: preview, `--apply`, extension case/multi-suffix/dotfile handling, deterministic collision names, byte checks, repeat-run test |
 | T3.3 | Regex extraction from flat logs | Implemented: synthetic email/transaction fixtures, multiple matches, stable deduplication and source/line traceability |
 | T3.4 | Clean master CSV | Implemented: stable UTF-8 schema, header-only zero-record output, read-back verification, formula protection and atomic replace |
-| T4.1 | Complex terminal loop, modular flows | Real scripted terminal sessions covering multiple intents |
-| T4.2 | Case conversion and character stripping | Normalization tests covering mixed case, punctuation, whitespace, Unicode |
-| T4.3 | Nested if/elif/else and functional dictionary maps | Explicit state handlers plus callable intent map, transition tests |
-| T4.4 | Session variations and graceful fallback | Context changes, reset, unknown input, EOF and interrupt tests |
+| T4.1 | Complex terminal loop, modular flows | Implemented: interactive local terminal loop, three help trees, real scripted subprocess conversations |
+| T4.2 | Case conversion and character stripping | Implemented: NFKC/casefold/punctuation/whitespace normalization with Unicode tests |
+| T4.3 | Nested if/elif/else and functional dictionary maps | Implemented: callable intent map plus nested pending-choice state handlers |
+| T4.4 | Session variations and graceful fallback | Implemented: context switches, bounded in-memory history, reset/cancel, ambiguity, unknown, EOF, interrupt, and internal-error tests |
 | S.1 | At least 3 of 4 tasks for certificate (messages) | Tasks 2–4 mapped to actual report evidence; eligibility remains organizer decision |
 | S.2 | Combine tasks into ONE PDF (message 2) | One readable PDF, all three task sections, traceable evidence and page inspection |
 | S.3 | Google Form only; no late submissions; 18 October 2026 | Checklist and explicit later submission authorization; no confirmation fabricated |

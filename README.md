@@ -1,14 +1,14 @@
 # Progree Python internship assignment
 
-Tasks 2 and 3 are implemented and ready for independent review. Task 4 remains unimplemented and requires separate approval. The deadline is **18 October 2026**; its exact time and timezone are unconfirmed. Task 1 is optional and deferred.
+Tasks 2, 3, and 4 are implemented and ready for independent review. The deadline is **18 October 2026**; its exact time and timezone are unconfirmed. Task 1 is optional and deferred.
 
 ## Current status
 
-Phase 3 Task 3 is implemented, tested, and demonstrated with genuine local evidence in `evidence/task3/`. The Python PDF is authoritative; the Digital Marketing document is context only. Original documents remain unchanged. Task 4 and the final report/PDF are not started.
+Phase 4 Task 4 is implemented, tested, and demonstrated with genuine local evidence in `evidence/task4/`. The Python PDF is authoritative; the Digital Marketing document is context only. Original documents remain unchanged. The final report/PDF is not started.
 
 ## Planned programs and usage
 
-Use Python 3.12 or newer from the existing cloud checkout. Task 2 and Task 3 commands are implemented:
+Use Python 3.12 or newer from the existing cloud checkout. Tasks 2–4 commands are implemented:
 
 ```bash
 python -m internship.task2 --count 10
@@ -16,6 +16,7 @@ python -m internship.task2 --count 0
 python -m internship.task2 --benchmark --benchmark-counts 10 100 1000 --repeats 5 --number 100
 python -m internship.task3 --root fixtures/task3
 python -m internship.task3 --root artifacts/task3/your-synthetic-workspace --apply --csv master.csv
+python -m internship.task4
 python -m unittest discover -s tests -v
 ```
 
@@ -27,11 +28,11 @@ Task 3 requires an explicit existing workspace below `fixtures/task3` or `artifa
 
 Apply preflights every relevant `.log`/`.txt` file with strict UTF-8 decoding before it performs moves, then uses collision-safe same-filesystem hard-link/unlink moves and truthfully reports partial failures if later filesystem state changes. It scans only immediate files plus one organization-directory level, extracts synthetic records, and atomically writes/verifies a UTF-8 CSV. Its fixed columns are `source_path,line_number,kind,value`. CSV cells beginning `=`, `+`, `-`, or `@` are prefixed with an apostrophe to prevent spreadsheet formula interpretation. The regexes target conventional ASCII emails and `TXN-` plus 6–12 uppercase alphanumeric characters; they are deliberately not general email/transaction validators.
 
-Task 4 will provide a terminal chatbot with multiple help trees and session memory. It is not implemented.
+Task 4 is a local rule-based terminal chatbot. It has task, Python-learning, and submission help trees; Unicode-aware normalization; callable dictionary routing; explicit nested contextual decisions; and bounded in-memory session history. The routing order is exit, reset/cancel, global help, explicit topic switches, pending contextual choices, then fallback. State records the current tree, pending choice, last intent, turn count, and the most recent 20 normalized turns. Nothing is saved, submitted, or sent externally. EOF and Ctrl+C end cleanly; unexpected internal errors return exit code 1 with a concise diagnostic.
 
 ## Planned deliverables
 
-Task 2 and Task 3 source, real automated tests, reproducible CLI demonstrations, raw ignored output in `artifacts/`, and sanitized reviewable evidence in `evidence/task2/` and `evidence/task3/` are present. Task 3’s version-controlled `.log` fixtures are explicitly synthetic and are the only `.log` exception in `.gitignore`. Future deliverables are Task 4 source/tests and one professional PDF covering Tasks 2–4. All report results must be traceable to genuine executions. No personal information or credentials belong in this repository.
+Tasks 2–4 source, real automated tests, reproducible CLI demonstrations, raw ignored output in `artifacts/`, and sanitized reviewable evidence in `evidence/task2/`, `evidence/task3/`, and `evidence/task4/` are present. Task 3’s version-controlled `.log` fixtures are explicitly synthetic and are the only `.log` exception in `.gitignore`. The remaining deliverable is one professional PDF covering Tasks 2–4. All report results must be traceable to genuine executions. No personal information or credentials belong in this repository.
 
 Read [master plan](planning/MASTER_PLAN.md), [requirements](planning/REQUIREMENTS_MATRIX.md), [architecture](planning/ARCHITECTURE.md), [tests](planning/TEST_STRATEGY.md), [submission checklist](planning/SUBMISSION_CHECKLIST.md), [cloud environment](planning/CLOUD_ENVIRONMENT.md), and [status](planning/STATUS.md). Project rules are in [AGENTS.md](AGENTS.md).
 

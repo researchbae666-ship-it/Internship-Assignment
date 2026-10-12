@@ -1,6 +1,6 @@
 # Status
 
-As of 12 October 2026: **Phase 3 Task 3 implementation and validation complete; awaiting independent review.**
+As of 12 October 2026: **Phase 4 Task 4 implementation and validation complete; awaiting independent review.**
 
 ## Completed
 
@@ -22,14 +22,16 @@ As of 12 October 2026: **Phase 3 Task 3 implementation and validation complete; 
 - Executed the complete post-fix suite: 30 tests passed (13 Task 2, 17 Task 3), including direct-function and CLI regression tests. Fresh post-fix demonstration/evidence identifies the corrected source revision.
 - Final safety review tightened two boundaries: writable operations now require a proper child of `artifacts/task3`, never its parent; and apply preflights all relevant UTF-8 text inputs before it can move files. The preflight is intentionally not described as a transactional guarantee against later filesystem changes.
 - Executed the complete final-safety suite: 33 tests passed (13 Task 2, 20 Task 3), including direct-function and CLI parent-directory rejection plus malformed-log no-mutation regressions. Fresh final-safety evidence identifies the new source revision and preserves previous evidence as historical.
+- Implemented `internship.task4`, a local rule-based terminal assistant with task guidance, Python learning, and submission guidance trees. It uses NFKC/casefold/punctuation normalization, a functional intent-handler dictionary, nested pending-choice state logic, and bounded in-memory state only.
+- Executed the complete Task 2–4 suite: 48 tests passed (13 Task 2, 20 Task 3, 15 Task 4). Task 4 coverage includes real scripted subprocess dialogue, exit/EOF/Ctrl+C, state transitions, fallbacks, and unexpected-error exit behavior. Fresh transcripts and evidence are captured after the Task 4 source commit.
 
 ## Not started
 
-Task 4 implementation/tests, cross-task integration, final evidence verification, and final PDF generation. Task 1 remains deferred. No external publication or submission has occurred, apart from requested GitHub review commits/PRs.
+Cross-task integration, final evidence verification, and final PDF generation. Task 1 remains deferred. No external publication or submission has occurred, apart from requested GitHub review commits/PRs.
 
 ## Blockers and next step
 
-Phase 4 requires explicit approval before Task 4 begins. Track eligibility, submission identity, Form access/constraints, deadline time/timezone and optional LinkedIn access remain unverified; see SUBMISSION_CHECKLIST.md. These do not block independent technical work when the relevant phase is approved.
+Phase 5 requires explicit approval before integration, final evidence verification, or PDF generation begins. Track eligibility, submission identity, Form access/constraints, deadline time/timezone and optional LinkedIn access remain unverified; see SUBMISSION_CHECKLIST.md. These do not block independent technical work when the relevant phase is approved.
 
 ## Phase 1 verification record
 
