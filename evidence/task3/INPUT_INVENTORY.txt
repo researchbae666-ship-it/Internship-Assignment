@@ -1,0 +1,8 @@
+.metadata	27 bytes
+archive.tar.GZ	77 bytes
+empty.txt	0 bytes
+inbound.LOG	201 bytes
+notes.txt	204 bytes
+readme	36 bytes
+report.TXT	26 bytes
+txt/notes.txt	74 bytes

@@ -1,0 +1,30 @@
+test_benchmark_configuration_validation (test_task2.BenchmarkFunctionTests.test_benchmark_configuration_validation) ... ok
+test_real_benchmark_metadata_and_format (test_task2.BenchmarkFunctionTests.test_real_benchmark_metadata_and_format) ... ok
+test_benchmark_is_valid_json_with_real_samples (test_task2.CommandLineTests.test_benchmark_is_valid_json_with_real_samples) ... ok
+test_benchmark_rejects_invalid_configuration (test_task2.CommandLineTests.test_benchmark_rejects_invalid_configuration) ... ok
+test_negative_count_has_usage_error_exit_code (test_task2.CommandLineTests.test_negative_count_has_usage_error_exit_code) ... ok
+test_non_integer_count_has_usage_error_exit_code (test_task2.CommandLineTests.test_non_integer_count_has_usage_error_exit_code) ... ok
+test_resource_limit_has_usage_error_exit_code (test_task2.CommandLineTests.test_resource_limit_has_usage_error_exit_code) ... ok
+test_sequence_is_a_valid_json_array (test_task2.CommandLineTests.test_sequence_is_a_valid_json_array) ... ok
+test_exact_small_sequences (test_task2.FibonacciFunctionTests.test_exact_small_sequences) ... ok
+test_invalid_types_are_rejected (test_task2.FibonacciFunctionTests.test_invalid_types_are_rejected) ... ok
+test_large_sequence_has_known_final_term (test_task2.FibonacciFunctionTests.test_large_sequence_has_known_final_term) ... ok
+test_negative_count_is_rejected (test_task2.FibonacciFunctionTests.test_negative_count_is_rejected) ... ok
+test_recurrence_holds_for_a_larger_sequence (test_task2.FibonacciFunctionTests.test_recurrence_holds_for_a_larger_sequence) ... ok
+test_apply_moves_files_preserves_bytes_and_is_idempotent (test_task3.Task3WorkspaceTest.test_apply_moves_files_preserves_bytes_and_is_idempotent) ... ok
+test_cli_invalid_argument_and_failure_exit_codes (test_task3.Task3WorkspaceTest.test_cli_invalid_argument_and_failure_exit_codes) ... ok
+test_cli_preview_success_and_apply_success (test_task3.Task3WorkspaceTest.test_cli_preview_success_and_apply_success) ... ok
+test_collision_name_is_deterministic (test_task3.Task3WorkspaceTest.test_collision_name_is_deterministic) ... ok
+test_csv_has_header_deterministic_rows_and_formula_protection (test_task3.Task3WorkspaceTest.test_csv_has_header_deterministic_rows_and_formula_protection) ... ok
+test_csv_output_path_and_atomic_failure_protect_existing_file (test_task3.Task3WorkspaceTest.test_csv_output_path_and_atomic_failure_protect_existing_file) ... ok
+test_empty_records_still_produce_a_header (test_task3.Task3WorkspaceTest.test_empty_records_still_produce_a_header) ... ok
+test_extracts_multiple_matches_line_numbers_and_stable_deduplication (test_task3.Task3WorkspaceTest.test_extracts_multiple_matches_line_numbers_and_stable_deduplication) ... ok
+test_invalid_utf8_is_reported_without_writing_csv (test_task3.Task3WorkspaceTest.test_invalid_utf8_is_reported_without_writing_csv) ... ok
+test_occupied_destination_after_plan_is_truthful_partial_failure (test_task3.Task3WorkspaceTest.test_occupied_destination_after_plan_is_truthful_partial_failure) ... ok
+test_preview_plans_without_any_filesystem_change (test_task3.Task3WorkspaceTest.test_preview_plans_without_any_filesystem_change) ... ok
+test_unsafe_roots_traversal_and_symlinks_are_rejected (test_task3.Task3WorkspaceTest.test_unsafe_roots_traversal_and_symlinks_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.575s
+
+OK

@@ -1,0 +1,27 @@
+{
+  "evidence_version": 1,
+  "source_commit": "091f990be18cdc8d2a30c9b4a1031bf8d732e396",
+  "working_directory": ".",
+  "workspace_label": "artifacts/task3/<synthetic-demo>",
+  "commands": [
+    {"command": "python -m internship.task3 --root <workspace>", "exit_code": 0, "outcome": "preview: 7 moves planned; CSV not written"},
+    {"command": "python -m internship.task3 --root <workspace> --apply --csv master.csv", "exit_code": 0, "outcome": "7 moves completed; 9 records written and read back"},
+    {"command": "python -m internship.task3 --root <workspace> --apply --csv master.csv", "exit_code": 0, "outcome": "repeat: 0 moves planned"},
+    {"command": "python -m unittest discover -s tests -v", "exit_code": 0, "outcome": "25 tests passed"},
+    {"command": "python -m internship.task3 --root <workspace> --csv ../outside.csv", "exit_code": 2, "outcome": "unsafe CSV path rejected"}
+  ],
+  "raw_artifact_sha256": {
+    "demo-preview.json": "19cbfe7bc4b573274e45f51a976da05472556c8823d34c27cf49de6962880aae",
+    "demo-apply.json": "b3981e2f57e13a2a5c0a7669c944610991ded4799b8e8a3a337622f5ac1c712c",
+    "demo-repeat.json": "0b68885f64d5c30c293dc4f05be85e5127d6c0155e40f6703af42f6bdb363304",
+    "demo-master.csv": "631c3408b5634f2e0a55ecf6fb7b3f2f0e1380807b057d3ca0966338cf68d43a",
+    "demo-test-output.txt": "264441d70d284b263ed030a5ade70609fabe934bf3338ee736099357cf22d8d0",
+    "demo-content-hashes-before.txt": "f241836df67b2879c94418a8f037c19b63174457f8841751d64afb022b4f3a3b",
+    "demo-content-hashes-after.txt": "f241836df67b2879c94418a8f037c19b63174457f8841751d64afb022b4f3a3b"
+  },
+  "provenance_limitations": [
+    "The random mktemp workspace suffix was replaced with <synthetic-demo> in committed JSON; all other recorded fields were copied from raw CLI output.",
+    "Raw captures are ignored under artifacts/task3 and can be verified in the generating cloud session through the listed hashes.",
+    "All fixture names, emails, transaction identifiers, and text are synthetic."
+  ]
+}

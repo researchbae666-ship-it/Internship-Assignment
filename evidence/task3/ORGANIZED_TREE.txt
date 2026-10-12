@@ -1,0 +1,9 @@
+gz/archive.tar.GZ
+log/inbound.LOG
+master.csv
+no_extension/.metadata
+no_extension/readme
+txt/empty.txt
+txt/notes.txt
+txt/notes__1.txt
+txt/report.TXT
