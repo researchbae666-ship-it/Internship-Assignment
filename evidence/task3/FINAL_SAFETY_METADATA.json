@@ -1,0 +1,30 @@
+{
+  "evidence_version": 3,
+  "source_commit": "3f578389706f258eb634f360aba4eed518ae83f8",
+  "workspace_label": "artifacts/task3/<synthetic-demo>",
+  "commands": [
+    {"command": "python -m internship.task3 --root <artifact-child>", "exit_code": 0, "outcome": "preview: 7 moves planned; no write"},
+    {"command": "python -m internship.task3 --root <artifact-child> --apply --csv master.csv", "exit_code": 0, "outcome": "7 moves; 9 verified CSV records; marker created"},
+    {"command": "python -m internship.task3 --root <artifact-child> --apply --csv master.csv", "exit_code": 0, "outcome": "0 moves; generated CSV regenerated"},
+    {"command": "python -m internship.task3 --root <malformed-artifact-child> --apply --csv master.csv", "exit_code": 2, "outcome": "UTF-8 preflight rejection before writes"},
+    {"command": "python -m internship.task3 --root artifacts/task3 --apply", "exit_code": 2, "outcome": "writable parent rejection"},
+    {"command": "python -m unittest discover -s tests -v", "exit_code": 0, "outcome": "33 tests passed"}
+  ],
+  "raw_artifact_sha256": {
+    "final-preview.json": "b9201d9cb7f7e174bac458180272ca2be82991502ec2b81552fbc1309066455e",
+    "final-apply.json": "dbc8e946cefb5bfa1169aebb074800d2ad5b80520944abcd6203e922004ed094",
+    "final-repeat.json": "75bb954484e20100014dec80f6f7c642a449649225ba5e30206abcb01492786a",
+    "final-master.csv": "631c3408b5634f2e0a55ecf6fb7b3f2f0e1380807b057d3ca0966338cf68d43a",
+    "final-marker.json": "48c5d2edd02ff02bbd0a5793edab60ec3922db4531d863f0d80d6933c280e636",
+    "final-malformed-before.txt": "5d219ef6c1bcc8e04715945e1baef4a5de9d03f7e52c9b7218b3ff1861ed4f3b",
+    "final-malformed-after.txt": "5d219ef6c1bcc8e04715945e1baef4a5de9d03f7e52c9b7218b3ff1861ed4f3b",
+    "final-canonical-before.txt": "eb3241b1fe885183b91e72ee375486417c8ba27be84374d2ef87b55ebb2ca7b5",
+    "final-canonical-after.txt": "eb3241b1fe885183b91e72ee375486417c8ba27be84374d2ef87b55ebb2ca7b5",
+    "final-test-output.txt": "86eea91d6027a90ba3cd8f1333a445724bcb6862395b8394f58c41935a47d240"
+  },
+  "provenance_limitations": [
+    "Random mktemp directory suffixes were replaced with <synthetic-demo> in committed manifests; all remaining fields were copied from raw output.",
+    "Raw captures are ignored below artifacts/task3 and are linked by SHA-256.",
+    "Preflight validates current readable text inputs before moves but cannot prevent later external filesystem changes."
+  ]
+}
