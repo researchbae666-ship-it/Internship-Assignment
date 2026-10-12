@@ -1,19 +1,21 @@
 # Progree Python internship assignment
 
-Task 2 (Fibonacci) is implemented and ready for independent review. Tasks 3 and 4 remain unimplemented and require separate approval. The deadline is **18 October 2026**; its exact time and timezone are unconfirmed. Task 1 is optional and deferred.
+Tasks 2 and 3 are implemented and ready for independent review. Task 4 remains unimplemented and requires separate approval. The deadline is **18 October 2026**; its exact time and timezone are unconfirmed. Task 1 is optional and deferred.
 
 ## Current status
 
-Phase 2 Task 2 is implemented, tested, demonstrated, and benchmarked with genuine local evidence in `evidence/task2/`. The Python PDF is authoritative; the Digital Marketing document is context only. Original documents remain unchanged. Task 3, Task 4, and the final report/PDF are not started.
+Phase 3 Task 3 is implemented, tested, and demonstrated with genuine local evidence in `evidence/task3/`. The Python PDF is authoritative; the Digital Marketing document is context only. Original documents remain unchanged. Task 4 and the final report/PDF are not started.
 
 ## Planned programs and usage
 
-Use Python 3.12 or newer from the existing cloud checkout. Task 2 commands are implemented:
+Use Python 3.12 or newer from the existing cloud checkout. Task 2 and Task 3 commands are implemented:
 
 ```bash
 python -m internship.task2 --count 10
 python -m internship.task2 --count 0
 python -m internship.task2 --benchmark --benchmark-counts 10 100 1000 --repeats 5 --number 100
+python -m internship.task3 --root fixtures/task3
+python -m internship.task3 --root artifacts/task3/your-synthetic-workspace --apply --csv master.csv
 python -m unittest discover -s tests -v
 ```
 
@@ -21,11 +23,13 @@ python -m unittest discover -s tests -v
 
 The iterative algorithm performs O(count) loop steps and stores O(count) terms. Because Python integers have arbitrary precision, additions grow more expensive as Fibonacci values grow; the simplified constant-cost arithmetic assumption does not hold for large counts.
 
-Task 3 will preview/apply safe extension organization and extract log patterns into CSV. Task 4 will provide a terminal chatbot with multiple help trees and session memory. Neither command is implemented yet.
+Task 3 requires an explicit existing workspace below `fixtures/task3` or `artifacts/task3`; it rejects other roots, `..` traversal, roots/path components that are symlinks, and symlinked children. Preview is the default and changes nothing. `--apply` uses collision-safe same-filesystem hard-link/unlink moves, reports partial failures, scans only immediate files plus one organization-directory level, extracts synthetic `.log`/`.txt` records with strict UTF-8, and atomically writes/verifies a UTF-8 CSV. Its fixed columns are `source_path,line_number,kind,value`. CSV cells beginning `=`, `+`, `-`, or `@` are prefixed with an apostrophe to prevent spreadsheet formula interpretation. The regexes target conventional ASCII emails and `TXN-` plus 6–12 uppercase alphanumeric characters; they are deliberately not general email/transaction validators.
+
+Task 4 will provide a terminal chatbot with multiple help trees and session memory. It is not implemented.
 
 ## Planned deliverables
 
-Task 2 source, real automated tests, reproducible CLI demonstrations, raw ignored output in `artifacts/`, and sanitized reviewable evidence in `evidence/task2/` are present. Future deliverables are synthetic fixtures, Task 3/4 source and tests, and one professional PDF covering Tasks 2–4. All report results must be traceable to genuine executions. No personal information or credentials belong in this repository.
+Task 2 and Task 3 source, real automated tests, reproducible CLI demonstrations, raw ignored output in `artifacts/`, and sanitized reviewable evidence in `evidence/task2/` and `evidence/task3/` are present. Task 3’s version-controlled `.log` fixtures are explicitly synthetic and are the only `.log` exception in `.gitignore`. Future deliverables are Task 4 source/tests and one professional PDF covering Tasks 2–4. All report results must be traceable to genuine executions. No personal information or credentials belong in this repository.
 
 Read [master plan](planning/MASTER_PLAN.md), [requirements](planning/REQUIREMENTS_MATRIX.md), [architecture](planning/ARCHITECTURE.md), [tests](planning/TEST_STRATEGY.md), [submission checklist](planning/SUBMISSION_CHECKLIST.md), [cloud environment](planning/CLOUD_ENVIRONMENT.md), and [status](planning/STATUS.md). Project rules are in [AGENTS.md](AGENTS.md).
 

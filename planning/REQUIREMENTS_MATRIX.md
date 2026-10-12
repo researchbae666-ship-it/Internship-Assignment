@@ -1,6 +1,6 @@
 # Requirements matrix
 
-Source inspection: 12 October 2026. Python PDF: one page, extracted using `pdftotext -layout`. All original files read. Task 2 is implemented and tested in Phase 2; Tasks 3–4 remain planned.
+Source inspection: 12 October 2026. Python PDF: one page, extracted using `pdftotext -layout`. All original files read. Tasks 2–3 are implemented and tested; Task 4 remains planned.
 
 | ID | Source requirement | Planned acceptance evidence |
 | --- | --- | --- |
@@ -8,10 +8,10 @@ Source inspection: 12 October 2026. Python PDF: one page, extracted using `pdfto
 | T2.2 | Sanitize negative bounds | Implemented: negative integers raise ValueError; bool/float/string/None raise TypeError; CLI errors use exit 2 |
 | T2.3 | Structured list arrays | Implemented: Python list return and compact JSON array CLI output |
 | T2.4 | Runtime benchmarks using timeit | Implemented: raw repeat samples, counts and runtime metadata originate from `timeit` |
-| T3.1 | Standard system libraries for folder automation | pathlib/shutil/re/csv implementation and isolated integration tests |
-| T3.2 | Sort files into extension subdirectories | Preview and apply evidence, binary content checks, repeat-run test |
-| T3.3 | Regex extraction from flat logs | Synthetic email/transaction fixtures, extracted values and source line traceability |
-| T3.4 | Clean master CSV | Stable schema, UTF-8 CSV round trip, deduplicated run output and failure handling |
+| T3.1 | Standard system libraries for folder automation | Implemented with pathlib/os/re/csv/json/argparse and isolated synthetic-workspace integration tests |
+| T3.2 | Sort files into extension subdirectories | Implemented: preview, `--apply`, extension case/multi-suffix/dotfile handling, deterministic collision names, byte checks, repeat-run test |
+| T3.3 | Regex extraction from flat logs | Implemented: synthetic email/transaction fixtures, multiple matches, stable deduplication and source/line traceability |
+| T3.4 | Clean master CSV | Implemented: stable UTF-8 schema, header-only zero-record output, read-back verification, formula protection and atomic replace |
 | T4.1 | Complex terminal loop, modular flows | Real scripted terminal sessions covering multiple intents |
 | T4.2 | Case conversion and character stripping | Normalization tests covering mixed case, punctuation, whitespace, Unicode |
 | T4.3 | Nested if/elif/else and functional dictionary maps | Explicit state handlers plus callable intent map, transition tests |

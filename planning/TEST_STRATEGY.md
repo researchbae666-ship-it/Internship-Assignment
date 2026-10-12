@@ -1,6 +1,6 @@
 # Planned test and evidence strategy
 
-Task 2 has a standard-library unittest suite. On 12 October 2026, `python -m unittest discover -s tests -v` executed 13 tests and passed. The exact captured summary is committed in `evidence/task2/`; Tasks 3–4 tests remain planned. Use Python unittest with temporary directories and synthetic data; no testing dependency required. All tests must assert behavior and execute nonzero test counts.
+Tasks 2–3 have standard-library unittest coverage. On 12 October 2026, `python -m unittest discover -s tests -v` executed 25 tests and passed: 13 Task 2 tests and 12 Task 3 tests. Captured summaries are committed in `evidence/task2/` and `evidence/task3/`; Task 4 tests remain planned. Tests use temporary directories below ignored `artifacts/task3/` and version-controlled synthetic fixtures; no testing dependency is required.
 
 ## Task 2
 
@@ -16,6 +16,8 @@ Task 2 has a standard-library unittest suite. On 12 October 2026, `python -m uni
 - Test occupied folders, collisions, unsafe roots, symlinks, traversal attempts, destination changes, permissions/I/O failures and partial-outcome reporting. Skip permission scenarios only with explicit reason where host capabilities prevent reproduction.
 - Synthetic valid/invalid email and TXN patterns, repeated matches, punctuation, Unicode text, empty/no-match logs, non-UTF-8 input; source line references and deterministic ordering.
 - CSV parsed using csv reader: stable schema/header, values, formula protection, newline correctness and atomic-output failure behavior. No real emails or transaction records.
+
+Executed Task 3 coverage adds: preview inventory equality, applied content-hash equality, idempotent repeat apply, multi-suffix/case/dotfile/extensionless paths, deterministic occupied-destination naming, changed-state partial failure reporting, unsafe root/traversal/symlink rejection, strict UTF-8 failure, multiple match line tracing/stable duplicate removal, CSV formula protection/header/readback/atomic-replace failure, and CLI success/error exits.
 
 ## Task 4
 

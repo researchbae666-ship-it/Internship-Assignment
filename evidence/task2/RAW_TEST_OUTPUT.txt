@@ -1,0 +1,18 @@
+test_benchmark_configuration_validation (test_task2.BenchmarkFunctionTests.test_benchmark_configuration_validation) ... ok
+test_real_benchmark_metadata_and_format (test_task2.BenchmarkFunctionTests.test_real_benchmark_metadata_and_format) ... ok
+test_benchmark_is_valid_json_with_real_samples (test_task2.CommandLineTests.test_benchmark_is_valid_json_with_real_samples) ... ok
+test_benchmark_rejects_invalid_configuration (test_task2.CommandLineTests.test_benchmark_rejects_invalid_configuration) ... ok
+test_negative_count_has_usage_error_exit_code (test_task2.CommandLineTests.test_negative_count_has_usage_error_exit_code) ... ok
+test_non_integer_count_has_usage_error_exit_code (test_task2.CommandLineTests.test_non_integer_count_has_usage_error_exit_code) ... ok
+test_resource_limit_has_usage_error_exit_code (test_task2.CommandLineTests.test_resource_limit_has_usage_error_exit_code) ... ok
+test_sequence_is_a_valid_json_array (test_task2.CommandLineTests.test_sequence_is_a_valid_json_array) ... ok
+test_exact_small_sequences (test_task2.FibonacciFunctionTests.test_exact_small_sequences) ... ok
+test_invalid_types_are_rejected (test_task2.FibonacciFunctionTests.test_invalid_types_are_rejected) ... ok
+test_large_sequence_has_known_final_term (test_task2.FibonacciFunctionTests.test_large_sequence_has_known_final_term) ... ok
+test_negative_count_is_rejected (test_task2.FibonacciFunctionTests.test_negative_count_is_rejected) ... ok
+test_recurrence_holds_for_a_larger_sequence (test_task2.FibonacciFunctionTests.test_recurrence_holds_for_a_larger_sequence) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.009s
+
+OK

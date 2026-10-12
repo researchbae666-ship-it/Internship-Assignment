@@ -24,6 +24,9 @@ htmlcov/
 *.tmp
 *.bak
 *.log
+!fixtures/
+!fixtures/task3/
+!fixtures/task3/**/*.log
 scratch/
 tmp/
 # Raw generated evidence: curate and sanitize before explicit inclusion
