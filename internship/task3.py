@@ -68,6 +68,10 @@ def _is_below(path: Path, parent: Path) -> bool:
     return True
 
 
+def _is_proper_descendant(path: Path, parent: Path) -> bool:
+    return path != parent and _is_below(path, parent)
+
+
 def _has_symlink_component(path: Path) -> bool:
     """Return True when an existing component from the repo down is a symlink."""
     try:
@@ -94,8 +98,9 @@ def validate_workspace(root: str | Path, *, writable: bool = False) -> Path:
     resolved = requested.resolve(strict=True)
     if not any(_is_below(resolved, workspace.resolve()) for workspace in APPROVED_WORKSPACES):
         raise SafetyError("root must be inside fixtures/task3 or artifacts/task3")
-    if writable and not _is_below(resolved, (REPOSITORY_ROOT / "artifacts" / "task3").resolve()):
-        raise SafetyError("apply and CSV writes require an isolated workspace below artifacts/task3")
+    writable_parent = (REPOSITORY_ROOT / "artifacts" / "task3").resolve()
+    if writable and not _is_proper_descendant(resolved, writable_parent):
+        raise SafetyError("apply and CSV writes require an isolated child workspace below artifacts/task3")
     return resolved
 
 
@@ -151,6 +156,7 @@ def plan_organization(root: str | Path, *, exclude_names: set[str] | None = None
 def apply_plan(root: str | Path, moves: Iterable[PlannedMove]) -> dict[str, Any]:
     """Apply planned moves without overwriting; report every completed or failed move."""
     workspace = validate_workspace(root, writable=True)
+    preflight_text_decoding(workspace)
     outcomes: list[dict[str, str]] = []
     for move in moves:
         source = workspace / move.source_path
@@ -197,6 +203,19 @@ def _safe_text_files(root: Path) -> list[Path]:
                 if nested.is_file() and nested.suffix.casefold() in TEXT_EXTENSIONS:
                     files.append(nested)
     return files
+
+
+def preflight_text_decoding(root: str | Path) -> None:
+    """Decode current text inputs before apply; later filesystem races remain possible."""
+    workspace = validate_workspace(root)
+    for text_file in _safe_text_files(workspace):
+        relative = text_file.relative_to(workspace).as_posix()
+        try:
+            text_file.read_text(encoding="utf-8")
+        except UnicodeDecodeError as error:
+            raise ExtractionError(f"UTF-8 decoding failed for {relative}: {error.reason}") from error
+        except OSError as error:
+            raise ExtractionError(f"could not read {relative}: {error}") from error
 
 
 def extract_records(root: str | Path) -> list[Record]:
@@ -353,6 +372,9 @@ def run(root: str | Path, *, csv_name: str, apply: bool) -> tuple[dict[str, Any]
             "csv": {"status": "not_written_in_preview"},
         }, 0
 
+    # Preflight occurs after all path/output checks and before any directory or file
+    # mutation. It cannot make later filesystem operations transactional.
+    preflight_text_decoding(workspace)
     apply_manifest = apply_plan(workspace, plan)
     if not apply_manifest["complete"]:
         return {

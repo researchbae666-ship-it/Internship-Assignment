@@ -20,6 +20,8 @@ As of 12 October 2026: **Phase 3 Task 3 implementation and validation complete; 
 - Independent review found an output-safety defect: any direct filename, including an input `.txt`, could be selected as the CSV and replaced. The corrected implementation requires a `.csv` filename, rejects existing unrelated CSVs, permits regeneration only for an unchanged marker-authenticated generated master, and validates output safety before planning moves.
 - Canonical `fixtures/task3` is now read-only source material. Preview may inspect it; direct/public apply and CSV-write functions, and CLI `--apply`, require an isolated subdirectory of `artifacts/task3`.
 - Executed the complete post-fix suite: 30 tests passed (13 Task 2, 17 Task 3), including direct-function and CLI regression tests. Fresh post-fix demonstration/evidence identifies the corrected source revision.
+- Final safety review tightened two boundaries: writable operations now require a proper child of `artifacts/task3`, never its parent; and apply preflights all relevant UTF-8 text inputs before it can move files. The preflight is intentionally not described as a transactional guarantee against later filesystem changes.
+- Executed the complete final-safety suite: 33 tests passed (13 Task 2, 20 Task 3), including direct-function and CLI parent-directory rejection plus malformed-log no-mutation regressions. Fresh final-safety evidence identifies the new source revision and preserves previous evidence as historical.
 
 ## Not started
 

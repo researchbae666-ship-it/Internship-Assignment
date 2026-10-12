@@ -2,7 +2,7 @@
 
 ## Executed tests
 
-Tasks 2–3 have standard-library unittest coverage. The Phase 3 initial implementation run executed 25 tests and passed: 13 Task 2 tests and 12 Task 3 tests; its summary remains in `evidence/task3/TEST_OUTPUT.txt`. Following the output-safety review corrections, `python -m unittest discover -s tests -v` executed 30 tests and passed: 13 Task 2 tests and 17 Task 3 tests. The review-fix evidence records the full output and source revision. Tests use temporary directories below ignored `artifacts/task3/` and version-controlled synthetic fixtures; no testing dependency is required.
+Tasks 2–3 have standard-library unittest coverage. The Phase 3 initial implementation run executed 25 tests and passed: 13 Task 2 tests and 12 Task 3 tests; its summary remains in `evidence/task3/TEST_OUTPUT.txt`. Following the output-safety review corrections, 30 tests passed: 13 Task 2 tests and 17 Task 3 tests. The final safety review adds three tests: the writable artifacts parent is rejected through public functions and CLI, and malformed UTF-8 logs are rejected by direct apply and CLI before moves/CSV output. The final `python -m unittest discover -s tests -v` run executed **33 tests and passed**. Final evidence records the full output and source revision. Tests use temporary directories below ignored `artifacts/task3/` and version-controlled synthetic fixtures; no testing dependency is required.
 
 ## Task 2
 
@@ -22,6 +22,8 @@ Tasks 2–3 have standard-library unittest coverage. The Phase 3 initial impleme
 Executed Task 3 coverage adds: preview inventory equality, applied content-hash equality, idempotent repeat apply, multi-suffix/case/dotfile/extensionless paths, deterministic occupied-destination naming, changed-state partial failure reporting, unsafe root/traversal/symlink rejection, strict UTF-8 failure, multiple match line tracing/stable duplicate removal, CSV formula protection/header/readback/atomic-replace failure, and CLI success/error exits.
 
 Review-fix regression coverage additionally proves that `.txt`, `.LOG`, and non-CSV output names fail before planning/moves; the input inventory stays unchanged after rejection; an unrelated existing CSV cannot be overwritten; only a verified generated master with a matching marker/hash can be regenerated; canonical fixture apply/write public functions and CLI apply fail; and isolated artifact copies still apply successfully.
+
+Final-safety regression coverage additionally proves that writable validation rejects `artifacts/task3` itself but accepts isolated children, and preflight UTF-8 decoding makes malformed `.log` input fail before directory creation, file moves, marker creation, or CSV output. Successful extraction still records post-move paths.
 
 ## Task 4 planned coverage
 

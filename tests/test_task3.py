@@ -198,6 +198,28 @@ class Task3WorkspaceTest(unittest.TestCase):
         with self.assertRaises(task3.SafetyError):
             task3.run(FIXTURE, csv_name="master.csv", apply=True)
 
+    def test_artifacts_parent_is_not_a_writable_workspace(self) -> None:
+        before = sorted(path.name for path in ARTIFACT_PARENT.iterdir())
+        with self.assertRaises(task3.SafetyError):
+            task3.validate_workspace(ARTIFACT_PARENT, writable=True)
+        with self.assertRaises(task3.SafetyError):
+            task3.apply_plan(ARTIFACT_PARENT, [])
+        with self.assertRaises(task3.SafetyError):
+            task3.write_master_csv(ARTIFACT_PARENT, "master.csv", [])
+        with self.assertRaises(task3.SafetyError):
+            task3.run(ARTIFACT_PARENT, csv_name="master.csv", apply=True)
+        self.assertEqual(sorted(path.name for path in ARTIFACT_PARENT.iterdir()), before)
+
+    def test_malformed_log_preflight_rejects_before_moves_or_csv_write(self) -> None:
+        (self.workspace / "malformed.log").write_bytes(b"\xff\xfe")
+        before = inventory(self.workspace)
+        with self.assertRaises(task3.ExtractionError):
+            task3.run(self.workspace, csv_name="master.csv", apply=True)
+        self.assertEqual(inventory(self.workspace), before)
+        self.assertFalse((self.workspace / "master.csv").exists())
+        self.assertFalse((self.workspace / task3.GENERATED_CSV_MARKER).exists())
+        self.assertFalse((self.workspace / "log").exists())
+
     def run_cli(self, *arguments: str) -> subprocess.CompletedProcess[str]:
         return subprocess.run(
             [sys.executable, "-m", "internship.task3", *arguments],
@@ -239,7 +261,22 @@ class Task3WorkspaceTest(unittest.TestCase):
                 self.assertFalse((self.workspace / "log").exists())
         canonical = self.run_cli("--root", str(FIXTURE), "--apply")
         self.assertEqual(canonical.returncode, 2)
-        self.assertIn("isolated workspace", canonical.stderr)
+        self.assertIn("isolated child workspace", canonical.stderr)
+
+    def test_cli_rejects_artifacts_parent_and_malformed_log_before_moves(self) -> None:
+        parent_before = sorted(path.name for path in ARTIFACT_PARENT.iterdir())
+        parent = self.run_cli("--root", str(ARTIFACT_PARENT), "--apply")
+        self.assertEqual(parent.returncode, 2)
+        self.assertIn("isolated child workspace", parent.stderr)
+        self.assertEqual(sorted(path.name for path in ARTIFACT_PARENT.iterdir()), parent_before)
+
+        (self.workspace / "malformed.log").write_bytes(b"\xff\xfe")
+        before = inventory(self.workspace)
+        malformed = self.run_cli("--root", str(self.workspace), "--apply")
+        self.assertEqual(malformed.returncode, 2)
+        self.assertIn("UTF-8 decoding failed", malformed.stderr)
+        self.assertEqual(inventory(self.workspace), before)
+        self.assertFalse((self.workspace / "master.csv").exists())
 
 
 if __name__ == "__main__":
