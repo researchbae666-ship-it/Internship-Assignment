@@ -1,0 +1,33 @@
+{
+  "measurement": "timeit: fibonacci(count) only; excludes printing, JSON encoding, and metadata",
+  "units": "seconds",
+  "repeat_count": 5,
+  "executions_per_repeat": 100,
+  "python_version": "3.12.14",
+  "python_implementation": "CPython",
+  "platform": {
+    "system": "Linux",
+    "release": "6.18.44",
+    "machine": "x86_64"
+  },
+  "results": [
+    {
+      "count": 10,
+      "sample_totals_seconds": [3.554899967639358e-05, 3.180600015184609e-05, 3.1412000225827796e-05, 3.1336999654740794e-05, 3.139499995086226e-05],
+      "minimum_per_call_seconds": 3.1336999654740795e-07,
+      "median_per_call_seconds": 3.1412000225827794e-07
+    },
+    {
+      "count": 100,
+      "sample_totals_seconds": [0.0003210780000699742, 0.00028527199992822716, 0.0004011589999208809, 0.0002967529999295948, 0.00029721200007770676],
+      "minimum_per_call_seconds": 2.8527199992822717e-06,
+      "median_per_call_seconds": 2.9721200007770676e-06
+    },
+    {
+      "count": 1000,
+      "sample_totals_seconds": [0.0035450319996925828, 0.0041533149997121654, 0.0035062179999840737, 0.003582726000331604, 0.003700095000112924],
+      "minimum_per_call_seconds": 3.5062179999840734e-05,
+      "median_per_call_seconds": 3.5827260003316045e-05
+    }
+  ]
+}

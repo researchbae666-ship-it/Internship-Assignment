@@ -1,0 +1,48 @@
+{
+  "evidence_version": 1,
+  "created_utc": "2026-10-12T16:53:57Z",
+  "source_commit": "b238e2af575a22f621a52ef6c6cd846352b6ec9b",
+  "working_directory": ".",
+  "python_version": "3.12.14",
+  "python_implementation": "CPython",
+  "platform": {
+    "system": "Linux",
+    "release": "6.18.44",
+    "machine": "x86_64"
+  },
+  "commands": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "outcome": "13 tests passed"
+    },
+    {
+      "command": "python -m internship.task2 --count 10",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m internship.task2 --count 0",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m internship.task2 --count -1",
+      "exit_code": 2
+    },
+    {
+      "command": "python -m internship.task2 --benchmark --benchmark-counts 10 100 1000 --repeats 5 --number 100",
+      "exit_code": 0
+    }
+  ],
+  "raw_artifact_sha256": {
+    "task2-test-output.txt": "028024413581125c65a080684f1bc5ce9c9cc81141c356d7f90050f73f685164",
+    "task2-cli-count-10.json": "431130567c2d4542244b7ed47fc0eea73c727bbbea19a275adc789b73ac24090",
+    "task2-cli-count-0.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "task2-cli-invalid.stderr": "1b4a6965445adf1062f21fdfd37395c5da9bbf48b7c705b23d25e0f7fdec5f05",
+    "task2-benchmark.json": "e4cca59bd3e7077bb531ce87e445810b88903363a9f2c6bfe6e41d6c71d487d6"
+  },
+  "limitations": [
+    "Timing samples are environment-dependent and are not performance guarantees.",
+    "The CLI limits each requested count to 10000 terms to bound output and resource use; the Python function itself has no arbitrary count cap.",
+    "The metadata contains operating-system and CPU architecture context only; it contains no credentials or personal identity."
+  ]
+}
