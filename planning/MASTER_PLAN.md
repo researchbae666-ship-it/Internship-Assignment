@@ -3,9 +3,12 @@
 ## Phase gates
 
 1. **Phase 1 — authorized now:** inspect sources/environment, define specifications and tests, create project governance and planning documents, verify document integrity, commit for review. Stop for approval.
-2. **Phase 2 — requires approval:** implement Task 2, then Task 3, then Task 4 using ARCHITECTURE.md; add real unittest coverage and synthetic fixtures, run tests, fix failures, demonstrate commands, collect raw evidence. Stop for review.
-3. **Phase 3 — requires approval:** reproduce full workflow in clean temporary directories, capture actual results and timeit output, generate the combined PDF with Python, inspect rendered pages and extracted text, verify every claim against evidence. Stop for review.
-4. **Phase 4 — requires separate authorization and identity/access resolution:** prepare submission package and obtain review. Google Form submission and any LinkedIn post remain prohibited until explicitly authorized. Record confirmation only if actually observed.
+2. **Phase 2 — Task 2 Fibonacci — authorized 12 October 2026:** implement only Task 2 using ARCHITECTURE.md; add and run real unittest coverage; demonstrate the CLI; collect real Task 2 evidence. Stop for independent review.
+3. **Phase 3 — Task 3 file automation — requires approval:** implement and validate only Task 3 with synthetic fixtures and safe filesystem boundaries. Stop for independent review.
+4. **Phase 4 — Task 4 chatbot — requires approval:** implement and validate only Task 4 with scripted terminal sessions. Stop for independent review.
+5. **Phase 5 — integration, evidence verification, and final PDF — requires approval:** reproduce the approved tasks in clean temporary directories, verify every evidence claim, and generate/inspect the combined PDF. Stop for independent review.
+6. **Phase 6 — authorized final submission — requires separate authorization and identity/access resolution:** prepare and, only when explicitly authorized, submit the package through the organizer's Google Form. Record confirmation only if actually observed.
+7. **Optional Task 1 — only after mandatory tasks are complete and separately authorized:** personal offer-letter and LinkedIn work remains out of scope until then.
 
 ## Working schedule
 
@@ -17,4 +20,4 @@ Use Python standard library for programs/testing, ReportLab for PDF creation. No
 
 ## Completion gates
 
-Phase 2: all required tests actually execute; failures fixed; exact task outputs and failure exits verified; originals unchanged; safe file handling validated. Phase 3: one PDF covering all three tasks with genuine evidence, no sensitive data, reproducible source commands and matching evidence manifest. External blockers do not justify fake results or silent omissions.
+Phase 2: Task 2 tests actually execute; failures fixed; exact task outputs, error exits, benchmark samples, and evidence verified; originals unchanged. Phase 3: Task 3 tests actually execute; safe file handling validated. Phase 4: Task 4 tests and scripted terminal flows execute. Phase 5: one PDF covers all three tasks with genuine evidence, no sensitive data, reproducible source commands and matching evidence manifest. External blockers do not justify fake results or silent omissions.

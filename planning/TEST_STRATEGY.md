@@ -1,6 +1,6 @@
 # Planned test and evidence strategy
 
-No task tests have run: no implementation exists. Phase 1 verification checks documents only. Use Python unittest with temporary directories and synthetic data; no testing dependency required. All tests must assert behavior and execute nonzero test counts.
+Task 2 has a standard-library unittest suite. On 12 October 2026, `python -m unittest discover -s tests -v` executed 13 tests and passed. The exact captured summary is committed in `evidence/task2/`; Tasks 3–4 tests remain planned. Use Python unittest with temporary directories and synthetic data; no testing dependency required. All tests must assert behavior and execute nonzero test counts.
 
 ## Task 2
 

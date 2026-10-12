@@ -1,13 +1,13 @@
 # Requirements matrix
 
-Source inspection: 12 October 2026. Python PDF: one page, extracted using `pdftotext -layout`. All original files read. All technical rows below are planned, not implemented or tested.
+Source inspection: 12 October 2026. Python PDF: one page, extracted using `pdftotext -layout`. All original files read. Task 2 is implemented and tested in Phase 2; Tasks 3–4 remain planned.
 
 | ID | Source requirement | Planned acceptance evidence |
 | --- | --- | --- |
-| T2.1 | Clean Python function processing integer sequence bounds | `fibonacci(count)` exact integer list; unit tests for 0, 1, 2, 10 and larger inputs |
-| T2.2 | Sanitize negative bounds | Negative integers raise ValueError; invalid types raise TypeError; CLI has useful errors and nonzero exit |
-| T2.3 | Structured list arrays | Python list return and JSON array CLI output |
-| T2.4 | Runtime benchmarks using timeit | Raw repeat samples, actual counts and runtime metadata from timeit; no invented claims |
+| T2.1 | Clean Python function processing integer sequence bounds | Implemented: `fibonacci(count)` exact integer list; tests cover 0, 1, 2, 10, 100, and recurrence |
+| T2.2 | Sanitize negative bounds | Implemented: negative integers raise ValueError; bool/float/string/None raise TypeError; CLI errors use exit 2 |
+| T2.3 | Structured list arrays | Implemented: Python list return and compact JSON array CLI output |
+| T2.4 | Runtime benchmarks using timeit | Implemented: raw repeat samples, counts and runtime metadata originate from `timeit` |
 | T3.1 | Standard system libraries for folder automation | pathlib/shutil/re/csv implementation and isolated integration tests |
 | T3.2 | Sort files into extension subdirectories | Preview and apply evidence, binary content checks, repeat-run test |
 | T3.3 | Regex extraction from flat logs | Synthetic email/transaction fixtures, extracted values and source line traceability |
