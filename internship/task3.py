@@ -13,6 +13,7 @@ import csv
 import json
 import os
 import re
+import hashlib
 import sys
 import tempfile
 from dataclasses import asdict, dataclass
@@ -24,6 +25,7 @@ REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 APPROVED_WORKSPACES = (REPOSITORY_ROOT / "fixtures" / "task3", REPOSITORY_ROOT / "artifacts" / "task3")
 TEXT_EXTENSIONS = {".log", ".txt"}
 CSV_FIELDS = ("source_path", "line_number", "kind", "value")
+GENERATED_CSV_MARKER = ".task3-generated-csv.json"
 EMAIL_PATTERN = re.compile(
     r"[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@"
     r"[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?"
@@ -80,8 +82,8 @@ def _has_symlink_component(path: Path) -> bool:
     return False
 
 
-def validate_workspace(root: str | Path) -> Path:
-    """Resolve and validate a dedicated synthetic workspace directory."""
+def validate_workspace(root: str | Path, *, writable: bool = False) -> Path:
+    """Resolve a synthetic workspace; writes are permitted only below artifacts/task3."""
     requested = Path(root)
     if ".." in requested.parts:
         raise SafetyError("path traversal ('..') is not allowed")
@@ -92,6 +94,8 @@ def validate_workspace(root: str | Path) -> Path:
     resolved = requested.resolve(strict=True)
     if not any(_is_below(resolved, workspace.resolve()) for workspace in APPROVED_WORKSPACES):
         raise SafetyError("root must be inside fixtures/task3 or artifacts/task3")
+    if writable and not _is_below(resolved, (REPOSITORY_ROOT / "artifacts" / "task3").resolve()):
+        raise SafetyError("apply and CSV writes require an isolated workspace below artifacts/task3")
     return resolved
 
 
@@ -146,7 +150,7 @@ def plan_organization(root: str | Path, *, exclude_names: set[str] | None = None
 
 def apply_plan(root: str | Path, moves: Iterable[PlannedMove]) -> dict[str, Any]:
     """Apply planned moves without overwriting; report every completed or failed move."""
-    workspace = validate_workspace(root)
+    workspace = validate_workspace(root, writable=True)
     outcomes: list[dict[str, str]] = []
     for move in moves:
         source = workspace / move.source_path
@@ -232,20 +236,78 @@ def _export_record(record: Record) -> dict[str, str | int]:
     }
 
 
+def _file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as source:
+        for chunk in iter(lambda: source.read(64 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _generated_csv_is_regenerable(workspace: Path, target: Path) -> bool:
+    """Return whether the marker safely identifies this exact existing master CSV."""
+    marker = workspace / GENERATED_CSV_MARKER
+    if marker.is_symlink() or not marker.is_file():
+        return False
+    try:
+        payload = json.loads(marker.read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+        return False
+    return (
+        payload == {
+            "format": 1,
+            "output_filename": target.name,
+            "sha256": _file_sha256(target),
+        }
+    )
+
+
 def _validate_csv_target(workspace: Path, output: str | Path) -> Path:
-    """Validate a direct, non-symlinked filename below an approved workspace."""
+    """Validate a safe master CSV target before any organization can begin."""
     requested = Path(output)
     if requested.is_absolute() or ".." in requested.parts or len(requested.parts) != 1:
         raise SafetyError("CSV output must be a filename directly inside the workspace")
+    if requested.suffix.casefold() != ".csv":
+        raise SafetyError("CSV output filename must end in .csv")
     target = workspace / requested
     if target.is_symlink():
         raise SafetyError("CSV output must not be a symlink")
+    marker = workspace / GENERATED_CSV_MARKER
+    if marker.is_symlink():
+        raise SafetyError("generated-CSV marker must not be a symlink")
+    if target.exists() and not _generated_csv_is_regenerable(workspace, target):
+        raise SafetyError("existing CSV is not a verified Task 3 generated master CSV")
+    if marker.exists() and not target.exists():
+        raise SafetyError("generated-CSV marker exists without its master CSV")
     return target
+
+
+def _write_generated_csv_marker(workspace: Path, target: Path) -> None:
+    """Atomically record the exact generated master CSV that may be regenerated."""
+    marker = workspace / GENERATED_CSV_MARKER
+    payload = {
+        "format": 1,
+        "output_filename": target.name,
+        "sha256": _file_sha256(target),
+    }
+    temporary_name: str | None = None
+    try:
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8", newline="", dir=workspace, prefix=".task3-marker-", suffix=".tmp", delete=False) as temporary:
+            temporary_name = temporary.name
+            json.dump(payload, temporary, sort_keys=True, separators=(",", ":"))
+            temporary.write("\n")
+        os.replace(temporary_name, marker)
+        temporary_name = None
+    except OSError as error:
+        raise ExtractionError(f"could not safely write generated-CSV marker: {error}") from error
+    finally:
+        if temporary_name:
+            Path(temporary_name).unlink(missing_ok=True)
 
 
 def write_master_csv(root: str | Path, output: str | Path, records: Iterable[Record]) -> list[dict[str, str | int]]:
     """Atomically write and read back a sanitized master CSV inside a workspace."""
-    workspace = validate_workspace(root)
+    workspace = validate_workspace(root, writable=True)
     target = _validate_csv_target(workspace, output)
     exported = [_export_record(record) for record in records]
     temporary_name: str | None = None
@@ -263,19 +325,23 @@ def write_master_csv(root: str | Path, output: str | Path, records: Iterable[Rec
     finally:
         if temporary_name:
             Path(temporary_name).unlink(missing_ok=True)
-    with target.open("r", encoding="utf-8", newline="") as csv_file:
-        read_back = list(csv.DictReader(csv_file))
+    try:
+        with target.open("r", encoding="utf-8", newline="") as csv_file:
+            read_back = list(csv.DictReader(csv_file))
+    except OSError as error:
+        raise ExtractionError(f"could not read back {target.name}: {error}") from error
     expected = [{key: str(row[key]) for key in CSV_FIELDS} for row in exported]
     if read_back != expected:
         raise ExtractionError("CSV read-back verification did not match exported records")
+    _write_generated_csv_marker(workspace, target)
     return exported
 
 
 def run(root: str | Path, *, csv_name: str, apply: bool) -> tuple[dict[str, Any], int]:
     """Run a preview or apply workflow and return its manifest and exit status."""
-    workspace = validate_workspace(root)
+    workspace = validate_workspace(root, writable=apply)
     _validate_csv_target(workspace, csv_name)
-    plan = plan_organization(workspace, exclude_names={csv_name})
+    plan = plan_organization(workspace, exclude_names={csv_name, GENERATED_CSV_MARKER})
     plan_manifest = [asdict(move) for move in plan]
     if not apply:
         records = extract_records(workspace)

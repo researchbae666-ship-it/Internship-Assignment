@@ -66,8 +66,13 @@ class Task3WorkspaceTest(unittest.TestCase):
         after = inventory(self.workspace)
         self.assertEqual(
             sorted(before.values()),
-            sorted(value for key, value in after.items() if key != "master.csv"),
+            sorted(
+                value
+                for key, value in after.items()
+                if key not in {"master.csv", task3.GENERATED_CSV_MARKER}
+            ),
         )
+        self.assertTrue((self.workspace / task3.GENERATED_CSV_MARKER).is_file())
         repeat, repeat_code = task3.run(self.workspace, csv_name="master.csv", apply=True)
         self.assertEqual(repeat_code, 0)
         self.assertEqual(repeat["planned_moves"], [])
@@ -139,14 +144,59 @@ class Task3WorkspaceTest(unittest.TestCase):
         self.assertEqual((self.workspace / "master.csv").read_text(encoding="utf-8"), "source_path,line_number,kind,value\n")
 
     def test_csv_output_path_and_atomic_failure_protect_existing_file(self) -> None:
-        old = self.workspace / "master.csv"
-        old.write_text("preserved\n", encoding="utf-8")
         with self.assertRaises(task3.SafetyError):
             task3.write_master_csv(self.workspace, "../outside.csv", [])
+        task3.write_master_csv(self.workspace, "master.csv", [])
+        old = self.workspace / "master.csv"
+        before = old.read_bytes()
         with mock.patch("internship.task3.os.replace", side_effect=OSError("simulated replace failure")):
             with self.assertRaises(task3.ExtractionError):
                 task3.write_master_csv(self.workspace, "master.csv", [])
-        self.assertEqual(old.read_text(encoding="utf-8"), "preserved\n")
+        self.assertEqual(old.read_bytes(), before)
+
+    def test_csv_extension_and_input_file_rejections_happen_before_moves(self) -> None:
+        before = inventory(self.workspace)
+        for output in ("notes.txt", "inbound.LOG", "readme", "report.TXT"):
+            with self.subTest(output=output):
+                with self.assertRaises(task3.SafetyError):
+                    task3.run(self.workspace, csv_name=output, apply=True)
+                self.assertEqual(inventory(self.workspace), before)
+                self.assertFalse((self.workspace / "log").exists())
+                self.assertFalse((self.workspace / "no_extension").exists())
+
+    def test_unrelated_existing_csv_is_never_overwritten(self) -> None:
+        unrelated = self.workspace / "results.csv"
+        unrelated.write_text("original,unrelated\n1,2\n", encoding="utf-8")
+        before = inventory(self.workspace)
+        with self.assertRaises(task3.SafetyError):
+            task3.run(self.workspace, csv_name="results.csv", apply=True)
+        self.assertEqual(unrelated.read_text(encoding="utf-8"), "original,unrelated\n1,2\n")
+        self.assertEqual(inventory(self.workspace), before)
+        self.assertFalse((self.workspace / "log").exists())
+
+    def test_verified_generated_master_csv_can_be_regenerated(self) -> None:
+        first, first_code = task3.run(self.workspace, csv_name="master.csv", apply=True)
+        self.assertEqual(first_code, 0)
+        master = self.workspace / "master.csv"
+        marker = self.workspace / task3.GENERATED_CSV_MARKER
+        self.assertTrue(marker.is_file())
+        first_csv = master.read_bytes()
+        repeated, repeated_code = task3.run(self.workspace, csv_name="master.csv", apply=True)
+        self.assertEqual(repeated_code, 0)
+        self.assertEqual(repeated["planned_moves"], [])
+        self.assertEqual(master.read_bytes(), first_csv)
+
+    def test_canonical_fixtures_are_read_only_for_public_apply_and_csv_functions(self) -> None:
+        preview, code = task3.run(FIXTURE, csv_name="master.csv", apply=False)
+        self.assertEqual(code, 0)
+        self.assertEqual(preview["mode"], "preview")
+        plan = task3.plan_organization(FIXTURE)
+        with self.assertRaises(task3.SafetyError):
+            task3.apply_plan(FIXTURE, plan)
+        with self.assertRaises(task3.SafetyError):
+            task3.write_master_csv(FIXTURE, "master.csv", [])
+        with self.assertRaises(task3.SafetyError):
+            task3.run(FIXTURE, csv_name="master.csv", apply=True)
 
     def run_cli(self, *arguments: str) -> subprocess.CompletedProcess[str]:
         return subprocess.run(
@@ -177,6 +227,19 @@ class Task3WorkspaceTest(unittest.TestCase):
         preview_invalid_output = self.run_cli("--root", str(self.workspace), "--csv", "../outside.csv")
         self.assertEqual(preview_invalid_output.returncode, 2)
         self.assertIn("CSV output", preview_invalid_output.stderr)
+
+    def test_cli_rejects_input_names_and_canonical_apply_before_moves(self) -> None:
+        before = inventory(self.workspace)
+        for output in ("notes.txt", "inbound.LOG"):
+            with self.subTest(output=output):
+                result = self.run_cli("--root", str(self.workspace), "--apply", "--csv", output)
+                self.assertEqual(result.returncode, 2)
+                self.assertIn("must end in .csv", result.stderr)
+                self.assertEqual(inventory(self.workspace), before)
+                self.assertFalse((self.workspace / "log").exists())
+        canonical = self.run_cli("--root", str(FIXTURE), "--apply")
+        self.assertEqual(canonical.returncode, 2)
+        self.assertIn("isolated workspace", canonical.stderr)
 
 
 if __name__ == "__main__":

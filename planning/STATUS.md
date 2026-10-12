@@ -17,6 +17,9 @@ As of 12 October 2026: **Phase 3 Task 3 implementation and validation complete; 
 - Implemented collision-safe no-overwrite moves, strict UTF-8 error handling, one-level bounded text scanning, deterministic source/line record order, duplicate removal by `(source_path,line_number,kind,value)`, and CSV formula-cell protection.
 - Executed the complete suite: 25 tests passed (13 Task 2, 12 Task 3). Task 3 tests include real temporary filesystem and subprocess CLI runs.
 - Executed an isolated Task 3 CLI preview/apply/repeat demonstration. Captured synthetic inventory, manifests, tree, records, CSV, content-hash verification, test summary, raw-output hashes, and reproduction commands are committed in `evidence/task3/` after the implementation commit.
+- Independent review found an output-safety defect: any direct filename, including an input `.txt`, could be selected as the CSV and replaced. The corrected implementation requires a `.csv` filename, rejects existing unrelated CSVs, permits regeneration only for an unchanged marker-authenticated generated master, and validates output safety before planning moves.
+- Canonical `fixtures/task3` is now read-only source material. Preview may inspect it; direct/public apply and CSV-write functions, and CLI `--apply`, require an isolated subdirectory of `artifacts/task3`.
+- Executed the complete post-fix suite: 30 tests passed (13 Task 2, 17 Task 3), including direct-function and CLI regression tests. Fresh post-fix demonstration/evidence identifies the corrected source revision.
 
 ## Not started
 
