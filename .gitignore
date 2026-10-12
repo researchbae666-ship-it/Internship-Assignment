@@ -1,0 +1,31 @@
+# Credentials and local identity
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets/
+private/
+identity/
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+# Local tools and temporary output
+.idea/
+.vscode/
+.DS_Store
+*.tmp
+*.bak
+*.log
+scratch/
+tmp/
+# Raw generated evidence: curate and sanitize before explicit inclusion
+artifacts/
+# Final reviewed deliverables are intentionally not ignored
