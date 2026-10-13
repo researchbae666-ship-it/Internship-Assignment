@@ -1,11 +1,17 @@
 {
-  "budget_allocation_sum": 3000,
-  "budget_total": 3000,
   "calendar_validation": "passed",
   "days_covered": 30,
-  "platform_action_counts": {
-    "Instagram": 30,
-    "LinkedIn": 12,
-    "YouTube": 11
-  }
+  "actions": 53,
+  "platform_action_counts": {"Instagram": 30, "LinkedIn": 12, "YouTube": 11},
+  "required_fields_per_action": 18,
+  "keyword_strategy_coverage": "53 of 53 actions",
+  "targeting_reference_coverage": "53 of 53 actions",
+  "paid_action_pacing_coverage": "15 of 15 paid actions",
+  "budget_allocation_sum": 3000,
+  "budget_total": 3000,
+  "budget_platform_amounts_usd": {"Instagram": 1350, "LinkedIn": 1050, "YouTube": 600},
+  "funnel_modeled_interest_completions": {"low": 6.75, "base": 30, "high": 100.8, "stretch": 300},
+  "ab_tests": ["AB-01", "AB-02", "AB-03", "AB-04"],
+  "campaign_tests": {"run": 10, "failed": 0},
+  "repository_tests": {"run": 54, "failed": 0}
 }

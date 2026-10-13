@@ -1,79 +1,55 @@
 {
-  "budget": {
-    "allocation": {
-      "Instagram": 1350,
-      "LinkedIn": 1050,
-      "YouTube": 600
-    },
-    "assumption": "Illustrative media-only planning budget; no spend is authorized or incurred.",
-    "currency": "USD",
-    "total": 3000
-  },
+  "kind": "digital_marketing_task3_campaign_evidence",
+  "evidence_revision": "targeted-improvements",
+  "generated_utc": "2026-10-13T10:38:59Z",
+  "execution_source_revision": "b43101b077c0755512d396ef856ef5fb3c6ac27d",
   "calendar": {
     "actions": 53,
     "days_covered": 30,
-    "platform_action_counts": {
-      "Instagram": 30,
-      "LinkedIn": 12,
-      "YouTube": 11
-    },
-    "required_fields_per_action": 14
+    "platform_action_counts": {"Instagram": 30, "LinkedIn": 12, "YouTube": 11},
+    "required_fields_per_action": 18,
+    "keyword_strategy_coverage": 53,
+    "targeting_reference_coverage": 53,
+    "distinct_action_copy": 53
   },
-  "calendar_sha256": "89bc99e190908c10a1451edad157cf1f358bf19ce4805cef6e1cd4f78e99525b",
-  "commands": [
-    {
-      "command": "python digital_marketing/research/task3/build_campaign.py",
-      "exit_code": 0
-    },
-    {
-      "command": "python digital_marketing/research/task3/test_campaign.py",
-      "exit_code": 0,
-      "tests_failed": 0,
-      "tests_run": 5
-    },
-    {
-      "command": "python digital_marketing/tools/generate_task3_report.py",
-      "exit_code": 0
-    },
-    {
-      "command": "pdfinfo digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf",
-      "exit_code": 0
-    },
-    {
-      "command": "pdftotext digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf artifacts/digital_marketing/task3/report_text.txt",
-      "exit_code": 0
-    },
-    {
-      "command": "pdftoppm -png -r 144 digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf artifacts/digital_marketing/task3_render_final/page",
-      "exit_code": 0
-    }
-  ],
-  "generated_utc": "2026-10-13T08:42:17Z",
-  "kind": "digital_marketing_task3_campaign_evidence",
-  "limitations": [
-    "Fictional proposed product and campaign; no publication, spend, customer, performance, environmental, scientific, or competitor claim.",
-    "Task 2 remains evidence-blocked and was not used as a completed finding."
-  ],
+  "budget": {
+    "currency": "USD",
+    "allocation": {"Instagram": 1350, "LinkedIn": 1050, "YouTube": 600},
+    "total": 3000,
+    "paid_actions_mapped": 15,
+    "assumption": "Illustrative media-only planning budget; no spend is authorized or incurred."
+  },
+  "funnel": {
+    "formula": "interest completions = impressions × click-through rate × landing-form completion rate",
+    "scenarios": {"low": 6.75, "base": 30, "high": 100.8, "stretch": 300},
+    "interpretation": "All scenario results are modeled planning arithmetic. The 300 result appears only in the stretch case."
+  },
+  "calendar_sha256": "8507cdc40dc30479f2f47e402f459cccf45440ad8fef4872efe3aaee9cf91538",
   "pdf": {
-    "bytes": 37925,
-    "page_size": "A4 landscape",
-    "pages": 15,
     "path": "digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf",
-    "sha256": "8f46dc586c5f2b6db919f3f0178785af49e21678d544a8f06fd63979abc82f81"
+    "bytes": 54104,
+    "pages": 20,
+    "page_size": "A4 landscape",
+    "sha256": "77bf031557ad833ea83e4acb2a8f7c14d90de144c46cb339022a0426d9e1b8a1"
   },
+  "commands": [
+    {"command": "python digital_marketing/research/task3/build_campaign.py", "exit_code": 0},
+    {"command": "python digital_marketing/research/task3/test_campaign.py", "exit_code": 0, "tests_run": 10, "tests_failed": 0},
+    {"command": "python -m unittest discover -s tests -v", "exit_code": 0, "tests_run": 54, "tests_failed": 0},
+    {"command": "python digital_marketing/tools/generate_task3_report.py", "exit_code": 0},
+    {"command": "pdfinfo digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf", "exit_code": 0},
+    {"command": "pdftotext digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf artifacts/digital_marketing/task3_final_review/report_text.txt", "exit_code": 0},
+    {"command": "pdftoppm -png -r 144 digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf artifacts/digital_marketing/task3_final_render/page", "exit_code": 0}
+  ],
+  "text_qa": {"required_sections_present": ["Targeting and keyword strategy", "Budget pacing", "Funnel mathematics and measurement", "AB-04", "Days 28–30", "Limitations"]},
   "render_qa": {
-    "pages_rendered": 15,
-    "visual_inspection": "All rendered pages inspected; no clipping, unexpected blank pages, or corrupted text observed."
+    "pages_rendered": 20,
+    "resolution_dpi": 144,
+    "visual_inspection": "All 20 rendered pages were inspected in four contact sheets. No clipping, corrupted glyphs, or unexpected blank pages were observed."
   },
-  "source_revision": "159bbca88f6e0eb2389188147a6577049cda373c",
-  "text_qa": {
-    "required_sections_present": [
-      "Campaign premise and positioning",
-      "Audience, objectives, and channel roles",
-      "Paid media, measurement, testing, and safeguards",
-      "Editorial calendar",
-      "Days 28\u201330",
-      "Limitations"
-    ]
-  }
+  "limitations": [
+    "RefillLoop is a fictional proposed product and campaign; no publication, spend, customer, performance, environmental, scientific, or competitor claim is made.",
+    "Targeting availability, delivery, and platform controls must be checked in an authorized account before any launch.",
+    "Task 2 remains evidence-blocked and is not represented as a completed competitor audit."
+  ]
 }
