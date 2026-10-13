@@ -1,0 +1,51 @@
+{
+  "attempts": [
+    {
+      "attempted_utc": "2026-10-13T08:03:16Z",
+      "curl_error": "curl: (56) CONNECT tunnel failed, response 403",
+      "effective_url": "https://www.stanley1913.com/",
+      "http_status": "000",
+      "url": "https://www.stanley1913.com/"
+    },
+    {
+      "attempted_utc": "2026-10-13T08:03:16Z",
+      "curl_error": "curl: (56) CONNECT tunnel failed, response 403",
+      "effective_url": "https://www.hydroflask.com/",
+      "http_status": "000",
+      "url": "https://www.hydroflask.com/"
+    },
+    {
+      "attempted_utc": "2026-10-13T08:03:16Z",
+      "curl_error": "curl: (56) CONNECT tunnel failed, response 403",
+      "effective_url": "https://owalalife.com/",
+      "http_status": "000",
+      "url": "https://owalalife.com/"
+    },
+    {
+      "attempted_utc": "2026-10-13T08:03:16Z",
+      "curl_error": "curl: (56) CONNECT tunnel failed, response 403",
+      "effective_url": "https://www.instagram.com/",
+      "http_status": "000",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "attempted_utc": "2026-10-13T08:03:16Z",
+      "curl_error": "curl: (56) CONNECT tunnel failed, response 403",
+      "effective_url": "https://www.linkedin.com/",
+      "http_status": "000",
+      "url": "https://www.linkedin.com/"
+    },
+    {
+      "attempted_utc": "2026-10-13T08:03:17Z",
+      "curl_error": "curl: (56) CONNECT tunnel failed, response 403",
+      "effective_url": "https://www.youtube.com/",
+      "http_status": "000",
+      "url": "https://www.youtube.com/"
+    }
+  ],
+  "conclusion": "No source content was collected because every requested public host was rejected by the cloud proxy before a server response.",
+  "evidence_kind": "public_source_access_attempts",
+  "raw_capture_path": "artifacts/digital_marketing/task2/public_access_attempts.txt",
+  "raw_capture_sha256": "5e51b7bc803e84741483c679e85cf5b1596e1c4af46f82ac60f6de2b35ea8def",
+  "source_revision": "193128334919ec73acc46a7ab5aa955628398bfa"
+}

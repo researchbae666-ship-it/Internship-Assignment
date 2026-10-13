@@ -1,0 +1,32 @@
+{
+  "commands": [
+    "curl -L --max-time 20 -sS -o /dev/null -w ... <official public host>",
+    "python digital_marketing/research/task2/calculate_metrics.py digital_marketing/research/task2/observations.json --output digital_marketing/evidence/task2/metrics_summary.json",
+    "python -m json.tool digital_marketing/research/task2/observations.json",
+    "python -m json.tool digital_marketing/evidence/task2/metrics_summary.json",
+    "python -m py_compile digital_marketing/research/task2/calculate_metrics.py"
+  ],
+  "kind": "digital_marketing_task2_collection_manifest",
+  "observation_window_utc": {
+    "days": 28,
+    "end": "2026-10-12T23:59:59Z",
+    "start": "2026-09-15T00:00:00Z"
+  },
+  "outcomes": {
+    "calculated_cadence_values": 0,
+    "calculated_visible_interaction_proxies": 0,
+    "final_audit_pdf_generated": false,
+    "public_host_attempts": 6,
+    "reason": "Cloud proxy CONNECT 403 denial before any requested public host returned content.",
+    "successful_public_content_responses": 0,
+    "verified_brand_accounts": 0,
+    "verified_posts_in_window": 0
+  },
+  "raw_capture_sha256": "5e51b7bc803e84741483c679e85cf5b1596e1c4af46f82ac60f6de2b35ea8def",
+  "research_date_utc": "2026-10-13T08:07:46Z",
+  "retained_evidence_sha256": {
+    "access_validation.json": "398b9bbbc07cf93c79a5a54f35079be7d750a2d531ffc4896196c2d7e6eb28fc",
+    "metrics_summary.json": "7f0a7f63b349f5eda78e6ede9b15f0e9df4aceecb3f40e15244bc1aa4e8cc4fd"
+  },
+  "source_revision": "193128334919ec73acc46a7ab5aa955628398bfa"
+}

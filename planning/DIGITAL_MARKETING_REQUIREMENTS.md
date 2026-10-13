@@ -25,6 +25,16 @@ constraints, not gaps to fill with invented claims.
 - Preserve research notes, QA checks, and calculation inputs beside each task.
 - Do not publish, spend, modify, or send anything externally.
 
+## Task 2 collection status — 13 October 2026
+
+The approved 28-day observation window is documented, but the collection
+environment denied the three candidate brand websites and the Instagram,
+LinkedIn, and YouTube hosts before any public response could be received.
+Accordingly, Task 2 has no verified source content or numerical conclusion yet.
+The access evidence and calculation output are retained under
+`digital_marketing/evidence/task2/`; a final audit PDF is deferred rather than
+fabricated.
+
 ## Task 1
 
 The LinkedIn announcement is optional/deferred. A private caption may be drafted

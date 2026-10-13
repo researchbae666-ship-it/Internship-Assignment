@@ -12,7 +12,7 @@
 | --- | --- | --- | --- |
 | Python Programming | Tasks 2–4 | Approved historical baseline retained | Existing Phase 5 evidence, tests, and PDF retained; no behavior changed in DT-0 |
 | Python Programming | Enhancements | Planned | Roadmap only; no code changes authorized or made |
-| Digital Marketing & Branding | Task 2 | Planned | No metrics or audit findings collected |
+| Digital Marketing & Branding | Task 2 | Collection blocked | The 13 October 2026 cloud proxy denied all requested brand and platform hosts; no account, post, metric, or audit finding was invented |
 | Digital Marketing & Branding | Task 3 | Planned | Campaign concept and methodology only; no campaign launched |
 | Digital Marketing & Branding | Task 4 | Planned | Proposed website subject to public-access review; no audit performed |
 | Digital Marketing & Branding | Task 1 | Deferred | No draft published and no offer-letter material stored |

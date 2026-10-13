@@ -1,0 +1,10 @@
+{
+  "cadence": [],
+  "observation_window": {
+    "days": 28,
+    "end_utc": "2026-10-12T23:59:59Z",
+    "start_utc": "2026-09-15T00:00:00Z"
+  },
+  "unavailable_reason": "No verified post observations were available in the retained dataset.",
+  "visible_interaction_proxy": []
+}
