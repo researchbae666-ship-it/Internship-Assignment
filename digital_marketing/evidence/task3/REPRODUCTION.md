@@ -5,6 +5,7 @@ Run these commands from the repository root:
 ```bash
 python digital_marketing/research/task3/build_campaign.py
 python digital_marketing/research/task3/test_campaign.py
+python digital_marketing/tools/test_generate_task3_report.py
 python -m unittest discover -s tests -v
 python digital_marketing/tools/generate_task3_report.py
 pdfinfo digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf
@@ -18,5 +19,7 @@ pacing mismatches, funnel arithmetic errors, incomplete A/B-test definitions,
 and a budget mismatch before it writes the calendar. The dedicated tests cover
 30-day and platform coverage, 18 required action fields, discovery strategy,
 distinct copy, targeting, format mix, budget and pacing reconciliation, funnel
-scenarios, actionable A/B tests, and claim control. The PDF generator reruns
-the calendar validation before writing the deliverable.
+scenarios, actionable A/B tests, and claim control. The PDF-style regression
+test verifies that the table helper gives header Paragraphs an explicit white,
+bold style rather than relying on `TableStyle` text color. The PDF generator
+reruns the calendar validation before writing the deliverable.

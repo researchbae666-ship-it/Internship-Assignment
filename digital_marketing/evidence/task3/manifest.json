@@ -1,8 +1,10 @@
 {
   "kind": "digital_marketing_task3_campaign_evidence",
-  "evidence_revision": "targeted-improvements",
-  "generated_utc": "2026-10-13T10:38:59Z",
+  "evidence_revision": "targeted-improvements-and-header-signoff",
+  "generated_utc": "2026-10-13T11:18:38Z",
   "execution_source_revision": "b43101b077c0755512d396ef856ef5fb3c6ac27d",
+  "pdf_presentation_source_revision": "f12a3c197493d3823e1693710340a0e9a4be9157",
+  "pdf_presentation_generated_utc": "2026-10-13T11:16:41Z",
   "calendar": {
     "actions": 53,
     "days_covered": 30,
@@ -27,25 +29,26 @@
   "calendar_sha256": "8507cdc40dc30479f2f47e402f459cccf45440ad8fef4872efe3aaee9cf91538",
   "pdf": {
     "path": "digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf",
-    "bytes": 54104,
+    "bytes": 54265,
     "pages": 20,
     "page_size": "A4 landscape",
-    "sha256": "77bf031557ad833ea83e4acb2a8f7c14d90de144c46cb339022a0426d9e1b8a1"
+    "sha256": "ecf3eef10ad417b71c31e5ab2bd986d933f4470195afb11f7283131a515159b8"
   },
   "commands": [
     {"command": "python digital_marketing/research/task3/build_campaign.py", "exit_code": 0},
     {"command": "python digital_marketing/research/task3/test_campaign.py", "exit_code": 0, "tests_run": 10, "tests_failed": 0},
+    {"command": "python digital_marketing/tools/test_generate_task3_report.py", "exit_code": 0, "tests_run": 1, "tests_failed": 0},
     {"command": "python -m unittest discover -s tests -v", "exit_code": 0, "tests_run": 54, "tests_failed": 0},
     {"command": "python digital_marketing/tools/generate_task3_report.py", "exit_code": 0},
     {"command": "pdfinfo digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf", "exit_code": 0},
-    {"command": "pdftotext digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf artifacts/digital_marketing/task3_final_review/report_text.txt", "exit_code": 0},
-    {"command": "pdftoppm -png -r 144 digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf artifacts/digital_marketing/task3_final_render/page", "exit_code": 0}
+    {"command": "pdftotext digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf artifacts/digital_marketing/task3_pdf_signoff/report_text.txt", "exit_code": 0},
+    {"command": "pdftoppm -png -r 144 digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf artifacts/digital_marketing/task3_pdf_signoff_render/page", "exit_code": 0}
   ],
   "text_qa": {"required_sections_present": ["Targeting and keyword strategy", "Budget pacing", "Funnel mathematics and measurement", "AB-04", "Days 28–30", "Limitations"]},
   "render_qa": {
     "pages_rendered": 20,
     "resolution_dpi": 144,
-    "visual_inspection": "All 20 rendered pages were inspected in four contact sheets. No clipping, corrupted glyphs, or unexpected blank pages were observed."
+    "visual_inspection": "All 20 rendered pages were inspected in four contact sheets. Navy table headers displayed explicit white bold text; no clipping, corrupted glyphs, or unexpected blank pages were observed."
   },
   "limitations": [
     "RefillLoop is a fictional proposed product and campaign; no publication, spend, customer, performance, environmental, scientific, or competitor claim is made.",
