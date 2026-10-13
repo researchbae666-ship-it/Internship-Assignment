@@ -1,18 +1,168 @@
 {
-  "kind": "digital_marketing_task4_seo_acquisition_evidence",
-  "generated_utc": "2026-10-13T11:46:46Z",
-  "execution_source_revision": "5c3fc7f4f1df120aa6f95fc0c0a3b886b6c6b954",
-  "website_sources": [
-    {"id": "OB-01", "url": "https://oceanbottle.co/", "http_status": 200, "sha256": "a0324e31472db1e4c25ebaf51ad613ecc663e7dbc4b842916ebc604afe839aa0"},
-    {"id": "OB-02", "url": "https://oceanbottle.co/products/original-bottle", "http_status": 200, "sha256": "5eed2a769e4331ddf00d820f0f36851debfa175dfa369084cc393b9ae41240cd"},
-    {"id": "OB-03", "url": "https://oceanbottle.co/pages/faqs", "http_status": 200, "sha256": "9cde244793bc0463cd7e1911b7106c197516d73cd5d394e11f3bedf8b9caee9c"},
-    {"id": "OB-04", "url": "https://oceanbottle.co/pages/ocean-impact", "http_status": 200, "sha256": "d7eb830b3135282e07f4079f0b64aa3d6dad7506b8f632c5ee21bc80346ff59d"},
-    {"id": "OB-05", "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/", "http_status": 403, "use": "Unavailable; not used to validate certification."}
+  "kind": "task4-targeted-review-evidence",
+  "execution_source_revision": "6bdc2d33e55c7e026e9a3e5024175f3781430045",
+  "reviewed_baseline": "f11bb3deabb53e4aa9be2e9dded2a4b4b04d941c",
+  "generated_utc": "2026-10-13T20:30:20.275095+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "historical_source_manifest": "digital_marketing/evidence/task4/historical/reviewed-manifest.json",
+  "reviewer_sources": [
+    {
+      "id": "REV-BLAB",
+      "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/",
+      "founding_year_statement": 2019,
+      "statement": "Reviewer reports B Corp certification and a description of founding in 2019.",
+      "provenance": "Independent reviewer observation supplied by the user; not directly retrieved by Codex.",
+      "received_date": "2026-10-13",
+      "collection_date": null,
+      "limitation": "Reviewer collection date and original snapshot were not supplied; preserve discrepancy without inventing a date."
+    },
+    {
+      "id": "REV-LINKEDIN",
+      "url": "https://www.linkedin.com/company/the-ocean-bottle/",
+      "founding_year_statement": 2018,
+      "statement": "Reviewer reports company profile lists founding year 2018.",
+      "provenance": "Independent reviewer observation supplied by the user; not directly retrieved by Codex.",
+      "received_date": "2026-10-13",
+      "collection_date": null,
+      "limitation": "Reviewer collection date and original snapshot were not supplied; no unqualified founding-year claim."
+    }
   ],
-  "strategy": {"keywords": 12, "seo_map_rows": 4, "funnel_stages": 4, "email_flows": 4, "scenarios": ["Low", "Base", "High"], "budget_gbp": 12000, "media_budget_gbp": 10000},
-  "strategy_data_sha256": "564f4f4dd73c949473a39e672c786119b23afa1ebb96e8915ea1aa625a1cdd48",
-  "pdf": {"path": "digital_marketing/deliverables/DM_Task4_SEO_Acquisition_Strategy.pdf", "pages": 6, "page_size": "A4 landscape", "bytes": 17893, "sha256": "63cc5525f151ba36aef0b92defde15382adf7ef17cdc2c3eec21c1c7182a2f5c"},
-  "tests": {"task4_strategy": {"run": 10, "failed": 0}, "task4_pdf_style": {"run": 1, "failed": 0}, "approved_python_regression": {"run": 54, "failed": 0}},
-  "render_qa": {"pages_rendered": 6, "dpi": 144, "result": "All pages inspected in two contact sheets; no clipping, low-contrast dark-header text, corrupted glyphs, or unexpected blank pages observed."},
-  "limitations": ["No founding-year, B Corp directory, keyword volume, ranking, analytics, search-console, conversion, revenue, or ad-account data was verified.", "Ocean Bottle product, impact, and certification statements are attributed company statements.", "All acquisition and financial figures are proposed modeled assumptions; no email, advertising, spend, website change, or form submission occurred."]
+  "commands": [
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python digital_marketing/research/task4/build_strategy.py",
+      "executed_utc": "2026-10-13T20:30:14.955901+00:00",
+      "exit_code": 0,
+      "output": "digital_marketing/evidence/task4/review_outputs/build.txt",
+      "sha256": "469bd5820bb0b3f2e86e4b8ba29d2c14d2dbecf3a58fb2f8dbbfc96aa0a92a5a"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m unittest discover -s digital_marketing/research/task4 -v",
+      "executed_utc": "2026-10-13T20:30:15.070814+00:00",
+      "exit_code": 0,
+      "output": "digital_marketing/evidence/task4/review_outputs/task4-tests.txt",
+      "sha256": "c160db5438ff0ba4b7dd36b71c1f548735b3a12c75f9444a08f43e38fff4bdc1",
+      "tests_run": 28,
+      "outcome": "passed"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python digital_marketing/tools/test_generate_task4_report.py",
+      "executed_utc": "2026-10-13T20:30:15.360853+00:00",
+      "exit_code": 0,
+      "output": "digital_marketing/evidence/task4/review_outputs/pdf-tests.txt",
+      "sha256": "81d93765aea7eb0cf0c767a2634c5f97adfa1c10fa56bc4724e9169bfab9df7d",
+      "tests_run": 2,
+      "outcome": "passed"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m unittest discover -s tests -v",
+      "executed_utc": "2026-10-13T20:30:16.403206+00:00",
+      "exit_code": 0,
+      "output": "digital_marketing/evidence/task4/review_outputs/python-tests.txt",
+      "sha256": "d77c3ffc18cc2aa6e5b6abfd7e9c5ba64d63eeb6fe1fbf31e7cfa96bcf391065",
+      "tests_run": 54,
+      "outcome": "passed"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python digital_marketing/tools/generate_task4_report.py",
+      "executed_utc": "2026-10-13T20:30:16.595772+00:00",
+      "exit_code": 0,
+      "output": "digital_marketing/evidence/task4/review_outputs/generate.txt",
+      "sha256": "96a6da6cae2eaba63b906447867ccf5bccef8c7a73895be35b9c7db567aefe46"
+    },
+    {
+      "command": "git diff --exit-code f11bb3deabb53e4aa9be2e9dded2a4b4b04d941c -- internship tests evidence deliverables tools fixtures digital_marketing/research/task3 digital_marketing/evidence/task3 digital_marketing/research/task2 digital_marketing/evidence/task2 digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf",
+      "executed_utc": "2026-10-13T20:30:16.600844+00:00",
+      "exit_code": 0,
+      "output": "digital_marketing/evidence/task4/review_outputs/preservation.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "pdfs": [
+    {
+      "path": "digital_marketing/deliverables/DM_Task4_SEO_Acquisition_Strategy.pdf",
+      "pages": 6,
+      "bytes": 19192,
+      "sha256": "c61cc2d5268f8b7691e433a427bda44dcda83171fd399e414e8d04b2129d1ce9",
+      "pages_rendered": 6,
+      "renderer_exit_code": 0
+    },
+    {
+      "path": "digital_marketing/deliverables/DM_Task4_Email_Workflow_Appendix.pdf",
+      "pages": 6,
+      "bytes": 13180,
+      "sha256": "56be92ee96117ccc4dac08dcc512efd0eca2ebbc36ca8ad2092e4099f47becf5",
+      "pages_rendered": 6,
+      "renderer_exit_code": 0
+    }
+  ],
+  "strategy_data_sha256": "c9b2648abbf960f1530988a35bba7452a8c404f7594d41d79181c629efef1153",
+  "email_workflows": 4,
+  "email_messages": 10,
+  "financial_scenarios": [
+    {
+      "name": "Low",
+      "media_budget_gbp": 10000.0,
+      "blended_cpm_gbp": 12.8,
+      "ctr": 0.008,
+      "impressions": 781250.0,
+      "sessions": 6250.0,
+      "purchase_conversion_rate": 0.012,
+      "customers": 75.0,
+      "aov_gbp": 45.0,
+      "attributed_revenue_gbp": 3375.0,
+      "cac_gbp": 133.33333333333334,
+      "all_in_budget_gbp": 12000.0,
+      "all_in_acquisition_cost_gbp": 160.0,
+      "roas": 0.3375
+    },
+    {
+      "name": "Base",
+      "media_budget_gbp": 10000.0,
+      "blended_cpm_gbp": 10.0,
+      "ctr": 0.008,
+      "impressions": 1000000.0,
+      "sessions": 8000.0,
+      "purchase_conversion_rate": 0.02,
+      "customers": 160.0,
+      "aov_gbp": 55.0,
+      "attributed_revenue_gbp": 8800.0,
+      "cac_gbp": 62.5,
+      "all_in_budget_gbp": 12000.0,
+      "all_in_acquisition_cost_gbp": 75.0,
+      "roas": 0.88
+    },
+    {
+      "name": "High",
+      "media_budget_gbp": 10000.0,
+      "blended_cpm_gbp": 8.0,
+      "ctr": 0.008,
+      "impressions": 1250000.0,
+      "sessions": 10000.0,
+      "purchase_conversion_rate": 0.032,
+      "customers": 320.0,
+      "aov_gbp": 65.0,
+      "attributed_revenue_gbp": 20800.0,
+      "cac_gbp": 31.25,
+      "all_in_budget_gbp": 12000.0,
+      "all_in_acquisition_cost_gbp": 37.5,
+      "roas": 2.08
+    }
+  ],
+  "accepted_data_preservation": "passed",
+  "visual_inspection": "Passed: all six main-report and all six appendix pages inspected at 144 DPI using six contact sheets; dense SEO page also inspected at full resolution. No clipping, unreadable headers, overlapping elements, corrupted symbols or unexpected blank pages observed. Main table text is 8pt; appendix body is 9pt.",
+  "retained_output_digests": {
+    "digital_marketing/evidence/task4/review_outputs/DM_Task4_Email_Workflow_Appendix-pdfinfo.txt": "527a75171496c2155b537417356a7eb7ef8489014a25bec39c94d9e2e0291975",
+    "digital_marketing/evidence/task4/review_outputs/DM_Task4_Email_Workflow_Appendix-text.txt": "ef6406e7cb94d573d70ae6a821c2f6fcb96ae882d2c582cae454438cbd397f5a",
+    "digital_marketing/evidence/task4/review_outputs/DM_Task4_SEO_Acquisition_Strategy-pdfinfo.txt": "a285325794a1e8c4bd8b8606ac4d71f5be7310ff41c5f0903016db1df8916bc0",
+    "digital_marketing/evidence/task4/review_outputs/DM_Task4_SEO_Acquisition_Strategy-text.txt": "73259452280d6a4c71de2957a617a31d64e644a36c42157e845c30db496e1a9e",
+    "digital_marketing/evidence/task4/review_outputs/build.txt": "469bd5820bb0b3f2e86e4b8ba29d2c14d2dbecf3a58fb2f8dbbfc96aa0a92a5a",
+    "digital_marketing/evidence/task4/review_outputs/generate.txt": "96a6da6cae2eaba63b906447867ccf5bccef8c7a73895be35b9c7db567aefe46",
+    "digital_marketing/evidence/task4/review_outputs/pdf-tests.txt": "81d93765aea7eb0cf0c767a2634c5f97adfa1c10fa56bc4724e9169bfab9df7d",
+    "digital_marketing/evidence/task4/review_outputs/preservation.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "digital_marketing/evidence/task4/review_outputs/python-tests.txt": "d77c3ffc18cc2aa6e5b6abfd7e9c5ba64d63eeb6fe1fbf31e7cfa96bcf391065",
+    "digital_marketing/evidence/task4/review_outputs/task4-tests.txt": "c160db5438ff0ba4b7dd36b71c1f548735b3a12c75f9444a08f43e38fff4bdc1"
+  }
 }

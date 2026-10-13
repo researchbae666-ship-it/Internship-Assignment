@@ -1,0 +1,7 @@
+test_dark_header_uses_explicit_white_bold_paragraph_style (__main__.ReportTableTests.test_dark_header_uses_explicit_white_bold_paragraph_style) ... ok
+test_report_and_appendix_match_machine_readable_content (__main__.ReportTableTests.test_report_and_appendix_match_machine_readable_content) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.116s
+
+OK

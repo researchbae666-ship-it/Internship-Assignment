@@ -2,7 +2,7 @@
   "subject": {
     "name": "Ocean Bottle",
     "website": "https://oceanbottle.co/",
-    "selection": "Retained as the task\u2019s startup website subject because an active direct-to-consumer website is publicly accessible. The 2019 founding-year statement supplied in the task authorization was not independently verified in this collection, so the report does not state it as a fact."
+    "selection": "Ocean Bottle remains a suitable startup-origin case study: the independent reviewer reports a B Lab listing describing a 2019 founding and a LinkedIn company profile listing 2018. These differing published statements describe a relatively recent venture; neither is resolved into an unqualified founding date. The accessible commercial website supports the SEO case study; current legal startup classification was not independently established."
   },
   "collection_utc": "2026-10-13T11:20:00Z",
   "observations": [
@@ -269,36 +269,227 @@
   ],
   "emails": [
     {
-      "id": "E1",
-      "entry": "Consented subscriber; no purchase",
-      "delay": "Immediately",
-      "subject": "A reusable routine starts with one choice",
-      "body": "Welcome message; link to product, FAQs, and attributed impact explanation.",
-      "exit_rule": "Product-view event; exit on purchase"
+      "id": "welcome",
+      "name": "Welcome / nurture",
+      "entry_event": "subscription_confirmed",
+      "entry": "Confirmed marketing opt-in; no prior purchase, active cart or browse workflow.",
+      "expires_after_hours": 168,
+      "messages": [
+        {
+          "id": "welcome-1",
+          "trigger": "subscription_confirmed",
+          "entry_criteria": "Confirmed marketing opt-in; no prior purchase, active cart or browse workflow. Recheck eligibility immediately before sending.",
+          "delay_hours_from_entry": 0,
+          "subject": "Welcome to your next refill routine",
+          "preview_text": "Start with product details, practical questions and a clear choice.",
+          "body": "Hello,\n\nThank you for choosing to hear from Ocean Bottle. If you are exploring a reusable bottle, start with the Original Bottle page to review the available features and options. Our FAQs cover delivery, returns and warranty questions so you can decide at your own pace.\n\nYou can also read how Ocean Bottle describes its collection model on the impact page. We do not ask you to take an environmental statement on trust: review the explanation before deciding.\n\nExplore the Original Bottle when you are ready.\n\nOcean Bottle team\n\n[Email preferences] | [Unsubscribe]\nProposed draft: links and factual product instructions need approval before activation.",
+          "cta": "Explore Original Bottle",
+          "cta_path": "/products/original-bottle",
+          "conversion_event": "qualified_product_view",
+          "exit_condition": "Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or final-message completion.",
+          "consent_handling": "Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before every message.",
+          "suppression_handling": "Defer capped messages without advancing the step; expire at workflow deadline. Never burst-send overdue messages."
+        },
+        {
+          "id": "welcome-2",
+          "trigger": "subscription_confirmed",
+          "entry_criteria": "Confirmed marketing opt-in; no prior purchase, active cart or browse workflow. Recheck eligibility immediately before sending.",
+          "delay_hours_from_entry": 48,
+          "subject": "What would make refilling easier for you?",
+          "preview_text": "A simple planning prompt for commuting, work or everyday use.",
+          "body": "Hello,\n\nThink about where a reusable bottle would fit into your day: the commute, your desk or a bag you already carry. Choose a practical routine first, then compare the Original Bottle details with what you need.\n\nIf you have questions about care, delivery or warranty, our FAQ page is a useful next stop. There is no need to make a choice before those questions are answered.\n\nRead the FAQs and return to the product page when it suits you.\n\nOcean Bottle team\n\n[Email preferences] | [Unsubscribe]\nProposed draft: links and factual product instructions need approval before activation.",
+          "cta": "Read bottle FAQs",
+          "cta_path": "/pages/faqs",
+          "conversion_event": "faq_visit",
+          "exit_condition": "Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or final-message completion.",
+          "consent_handling": "Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before every message.",
+          "suppression_handling": "Defer capped messages without advancing the step; expire at workflow deadline. Never burst-send overdue messages."
+        },
+        {
+          "id": "welcome-3",
+          "trigger": "subscription_confirmed",
+          "entry_criteria": "Confirmed marketing opt-in; no prior purchase, active cart or browse workflow. Recheck eligibility immediately before sending.",
+          "delay_hours_from_entry": 120,
+          "subject": "Your reusable bottle questions, answered",
+          "preview_text": "Review the details once more, or update what you want to hear about.",
+          "body": "Hello,\n\nThis is the last message in this welcome series. If you are still comparing options, the Original Bottle page brings the product information together, and the FAQs explain delivery and support topics.\n\nTake a look only if the bottle fits your needs. You can change your email preferences or unsubscribe at any time using the links below.\n\nThank you for considering Ocean Bottle.\n\nOcean Bottle team\n\n[Email preferences] | [Unsubscribe]\nProposed draft: links and factual product instructions need approval before activation.",
+          "cta": "Review Original Bottle",
+          "cta_path": "/products/original-bottle",
+          "conversion_event": "add_to_cart",
+          "exit_condition": "Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or final-message completion.",
+          "consent_handling": "Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before every message.",
+          "suppression_handling": "Defer capped messages without advancing the step; expire at workflow deadline. Never burst-send overdue messages."
+        }
+      ]
     },
     {
-      "id": "E2",
-      "entry": "Viewed product twice; no cart; marketing consent",
-      "delay": "2 days",
-      "subject": "Questions before choosing a reusable bottle?",
-      "body": "Decision-support email with product, delivery, warranty and care links.",
-      "exit_rule": "Product-view or add-to-cart event; exit on purchase/unsubscribe"
+      "id": "browse",
+      "name": "Browsing without purchase",
+      "entry_event": "product_view_twice",
+      "entry": "Two consented product views within seven days; no cart or purchase.",
+      "expires_after_hours": 168,
+      "messages": [
+        {
+          "id": "browse-1",
+          "trigger": "product_view_twice",
+          "entry_criteria": "Two consented product views within seven days; no cart or purchase. Recheck eligibility immediately before sending.",
+          "delay_hours_from_entry": 24,
+          "subject": "Still comparing reusable bottle options?",
+          "preview_text": "Review the Original Bottle details without rushing your decision.",
+          "body": "Hello,\n\nYou recently explored the Original Bottle. If you are still comparing options, return to the product page to review the current features, choices and availability.\n\nBefore ordering, check the delivery, warranty and returns information in our FAQs. This message is an invitation to review the details, not a promise that an item is reserved.\n\nFind the information you need before deciding.\n\nOcean Bottle team\n\n[Email preferences] | [Unsubscribe]\nProposed draft: links and factual product instructions need approval before activation.",
+          "cta": "Review product details",
+          "cta_path": "/products/original-bottle",
+          "conversion_event": "qualified_product_view",
+          "exit_condition": "Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or final-message completion.",
+          "consent_handling": "Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before every message.",
+          "suppression_handling": "Defer capped messages without advancing the step; expire at workflow deadline. Never burst-send overdue messages."
+        },
+        {
+          "id": "browse-2",
+          "trigger": "product_view_twice",
+          "entry_criteria": "Two consented product views within seven days; no cart or purchase. Recheck eligibility immediately before sending.",
+          "delay_hours_from_entry": 72,
+          "subject": "What do you need to know before choosing?",
+          "preview_text": "Delivery, warranty and care information in one place.",
+          "body": "Hello,\n\nChoosing a reusable bottle should include the practical details. Our FAQ sections cover delivery, returns, warranty and product questions. Use those answers to check whether the Original Bottle is right for you.\n\nIf a question remains, use the contact link on the website rather than guessing from an advertisement. We will stop this browsing series here unless you take another qualifying action under an approved future policy.\n\nOcean Bottle team\n\n[Email preferences] | [Unsubscribe]\nProposed draft: links and factual product instructions need approval before activation.",
+          "cta": "Check delivery and warranty FAQs",
+          "cta_path": "/pages/faqs",
+          "conversion_event": "faq_visit",
+          "exit_condition": "Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or final-message completion.",
+          "consent_handling": "Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before every message.",
+          "suppression_handling": "Defer capped messages without advancing the step; expire at workflow deadline. Never burst-send overdue messages."
+        }
+      ]
     },
     {
-      "id": "E3",
-      "entry": "Cart started; no purchase; marketing consent",
-      "delay": "4 hours",
-      "subject": "Your Ocean Bottle selection is waiting",
-      "body": "Single reminder with product link and delivery/returns path; no urgency claim unless verified.",
-      "exit_rule": "Purchase, unsubscribe, or 7-day timeout"
+      "id": "cart",
+      "name": "Cart abandonment",
+      "entry_event": "cart_abandoned",
+      "entry": "Clock starts at last cart activity; only enroll when no purchase and separate marketing consent exists; first message requires four inactive hours.",
+      "expires_after_hours": 96,
+      "messages": [
+        {
+          "id": "cart-1",
+          "trigger": "cart_abandoned",
+          "entry_criteria": "Clock starts at last cart activity; only enroll when no purchase and separate marketing consent exists; first message requires four inactive hours. Recheck eligibility immediately before sending.",
+          "delay_hours_from_entry": 4,
+          "subject": "Would you like to review your bottle choice?",
+          "preview_text": "Return to the product information before placing an order.",
+          "body": "Hello,\n\nYou started considering an Ocean Bottle order. If you want to continue, review the Original Bottle page and select your preferred option again. Check the current price and availability on the website before ordering.\n\nIf delivery or returns were a concern, the FAQ page may help. We have not reserved stock or applied a discount in this message.\n\nContinue only when the choice works for you.\n\nOcean Bottle team\n\n[Email preferences] | [Unsubscribe]\nProposed draft: links and factual product instructions need approval before activation.",
+          "cta": "Review Original Bottle",
+          "cta_path": "/products/original-bottle",
+          "conversion_event": "checkout_started",
+          "exit_condition": "Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or final-message completion.",
+          "consent_handling": "Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before every message.",
+          "suppression_handling": "Defer capped messages without advancing the step; expire at workflow deadline. Never burst-send overdue messages."
+        },
+        {
+          "id": "cart-2",
+          "trigger": "cart_abandoned",
+          "entry_criteria": "Clock starts at last cart activity; only enroll when no purchase and separate marketing consent exists; first message requires four inactive hours. Recheck eligibility immediately before sending.",
+          "delay_hours_from_entry": 52,
+          "subject": "One last reminder, with the practical details",
+          "preview_text": "Check delivery and support information if you are still deciding.",
+          "body": "Hello,\n\nThis is our final reminder about your earlier bottle selection. You can revisit the product page and check delivery, returns and warranty details before completing an order.\n\nIf you have already decided against it, no action is needed. This cart series will end, and you can update your email preferences or unsubscribe using the links below.\n\nThank you for considering Ocean Bottle.\n\nOcean Bottle team\n\n[Email preferences] | [Unsubscribe]\nProposed draft: links and factual product instructions need approval before activation.",
+          "cta": "Check order FAQs",
+          "cta_path": "/pages/faqs",
+          "conversion_event": "purchase",
+          "exit_condition": "Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or final-message completion.",
+          "consent_handling": "Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before every message.",
+          "suppression_handling": "Defer capped messages without advancing the step; expire at workflow deadline. Never burst-send overdue messages."
+        }
+      ]
     },
     {
-      "id": "E4",
-      "entry": "Purchaser; marketing consent",
-      "delay": "14 days after delivery-status event if available",
-      "subject": "Care guidance for your reusable bottle",
-      "body": "Useful care and FAQ links; invite feedback without assuming product satisfaction.",
-      "exit_rule": "Repeat purchase, unsubscribe, or preference update"
+      "id": "post_purchase",
+      "name": "Post-purchase re-engagement",
+      "entry_event": "delivery_confirmed",
+      "entry": "First purchase and confirmed delivery event; separate marketing consent; unresolved support issues pause entry.",
+      "expires_after_hours": 840,
+      "messages": [
+        {
+          "id": "post_purchase-1",
+          "trigger": "delivery_confirmed",
+          "entry_criteria": "First purchase and confirmed delivery event; separate marketing consent; unresolved support issues pause entry. Recheck eligibility immediately before sending.",
+          "delay_hours_from_entry": 336,
+          "subject": "Make the most of your reusable bottle",
+          "preview_text": "Start with the current care and support information.",
+          "body": "Hello,\n\nWe hope the bottle is fitting into your routine. Please review the current care instructions and product FAQs before cleaning or using it in a new way.\n\nIf anything is unclear or there is a problem with the order, contact the support team through the website. We will pause promotional follow-ups while an unresolved support issue is being handled.\n\nOcean Bottle team\n\n[Email preferences] | [Unsubscribe]\nProposed draft: links and factual product instructions need approval before activation.",
+          "cta": "Read care and support FAQs",
+          "cta_path": "/pages/faqs",
+          "conversion_event": "care_guide_visit",
+          "exit_condition": "Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or final-message completion.",
+          "consent_handling": "Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before every message.",
+          "suppression_handling": "Defer capped messages without advancing the step; expire at workflow deadline. Never burst-send overdue messages."
+        },
+        {
+          "id": "post_purchase-2",
+          "trigger": "delivery_confirmed",
+          "entry_criteria": "First purchase and confirmed delivery event; separate marketing consent; unresolved support issues pause entry. Recheck eligibility immediately before sending.",
+          "delay_hours_from_entry": 504,
+          "subject": "How is your refill routine working?",
+          "preview_text": "Share a question or request help if something is not right.",
+          "body": "Hello,\n\nNow that you have had time to try the bottle, we would welcome a question or feedback about your experience. We do not assume that every purchase works perfectly for every person.\n\nIf you need help, use the website contact page and explain the issue. No public review is required, and support takes priority over further promotional messages.\n\nOcean Bottle team\n\n[Email preferences] | [Unsubscribe]\nProposed draft: links and factual product instructions need approval before activation.",
+          "cta": "Contact support or share feedback",
+          "cta_path": "/pages/contact",
+          "conversion_event": "feedback_or_support_contact",
+          "exit_condition": "Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or final-message completion.",
+          "consent_handling": "Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before every message.",
+          "suppression_handling": "Defer capped messages without advancing the step; expire at workflow deadline. Never burst-send overdue messages."
+        },
+        {
+          "id": "post_purchase-3",
+          "trigger": "delivery_confirmed",
+          "entry_criteria": "First purchase and confirmed delivery event; separate marketing consent; unresolved support issues pause entry. Recheck eligibility immediately before sending.",
+          "delay_hours_from_entry": 720,
+          "subject": "Would another bottle fit a real need?",
+          "preview_text": "Review current options only if you have a use for them.",
+          "body": "Hello,\n\nIf you are considering a gift or a second bottle for a different routine, you can review the current range on the website. Check product details and delivery information before ordering.\n\nThere is no need to buy again to take part in this email programme. This is the final message in our post-purchase series; use the preference links below to choose what you hear from us next.\n\nOcean Bottle team\n\n[Email preferences] | [Unsubscribe]\nProposed draft: links and factual product instructions need approval before activation.",
+          "cta": "Explore the current bottle range",
+          "cta_path": "/collections/water-bottles",
+          "conversion_event": "repeat_purchase",
+          "exit_condition": "Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or final-message completion.",
+          "consent_handling": "Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before every message.",
+          "suppression_handling": "Defer capped messages without advancing the step; expire at workflow deadline. Never burst-send overdue messages."
+        }
+      ]
+    }
+  ],
+  "email_policy": {
+    "minimum_gap_hours": 24,
+    "maximum_messages_rolling_7_days": 3,
+    "priority": [
+      "post_purchase",
+      "cart",
+      "browse",
+      "welcome"
+    ],
+    "entry_rule": "One active workflow per contact. Higher priority replaces lower; duplicate entry never restarts a clock.",
+    "suppression": "Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before every message.",
+    "cap_rule": "Defer capped messages without advancing the step; expire at workflow deadline. Never burst-send overdue messages.",
+    "inactivity_rule": "No tracked click or qualifying event by expiry ends the workflow. Opens are not required or treated as reliable intent.",
+    "reentry_rule": "Completion or inactivity suppresses replay of that workflow in this proposed pilot; later reentry needs a new approved policy."
+  },
+  "reviewer_sources": [
+    {
+      "id": "REV-BLAB",
+      "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/",
+      "founding_year_statement": 2019,
+      "statement": "Reviewer reports B Corp certification and a description of founding in 2019.",
+      "provenance": "Independent reviewer observation supplied by the user; not directly retrieved by Codex.",
+      "received_date": "2026-10-13",
+      "collection_date": null,
+      "limitation": "Reviewer collection date and original snapshot were not supplied; preserve discrepancy without inventing a date."
+    },
+    {
+      "id": "REV-LINKEDIN",
+      "url": "https://www.linkedin.com/company/the-ocean-bottle/",
+      "founding_year_statement": 2018,
+      "statement": "Reviewer reports company profile lists founding year 2018.",
+      "provenance": "Independent reviewer observation supplied by the user; not directly retrieved by Codex.",
+      "received_date": "2026-10-13",
+      "collection_date": null,
+      "limitation": "Reviewer collection date and original snapshot were not supplied; no unqualified founding-year claim."
     }
   ],
   "budget": {
@@ -327,6 +518,8 @@
       "aov_gbp": 45.0,
       "attributed_revenue_gbp": 3375.0,
       "cac_gbp": 133.33333333333334,
+      "all_in_budget_gbp": 12000.0,
+      "all_in_acquisition_cost_gbp": 160.0,
       "roas": 0.3375
     },
     {
@@ -341,6 +534,8 @@
       "aov_gbp": 55.0,
       "attributed_revenue_gbp": 8800.0,
       "cac_gbp": 62.5,
+      "all_in_budget_gbp": 12000.0,
+      "all_in_acquisition_cost_gbp": 75.0,
       "roas": 0.88
     },
     {
@@ -355,6 +550,8 @@
       "aov_gbp": 65.0,
       "attributed_revenue_gbp": 20800.0,
       "cac_gbp": 31.25,
+      "all_in_budget_gbp": 12000.0,
+      "all_in_acquisition_cost_gbp": 37.5,
       "roas": 2.08
     }
   ],
@@ -363,5 +560,5 @@
     "Keep paid-platform reporting separate from analytics attribution; reconcile purchase events only after consent and implementation review.",
     "Define CAC as media spend divided by attributed new customers; define ROAS as attributed revenue divided by media spend. Zero denominators produce an explicit unavailable result."
   ],
-  "source_revision": "5c3fc7f4f1df120aa6f95fc0c0a3b886b6c6b954"
+  "source_revision": "6bdc2d33e55c7e026e9a3e5024175f3781430045"
 }

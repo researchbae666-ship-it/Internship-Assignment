@@ -1,0 +1,595 @@
+OCEAN BOTTLE
+Enterprise Search Authority & Growth Acquisition Strategy
+Task 4 | SEO map, acquisition funnel, email re-engagement, and modeled CAC/ROAS
+A research-backed planning report. Company claims are attributed to accessible public pages; keywords, targeting, budgets, and financial results are proposed assumptions, not performance claims.
+
+1. Website context and research boundary
+Ocean Bottle remains a suitable startup-origin case study: the independent reviewer reports a B Lab listing describing a 2019 founding and a LinkedIn company profile listing 2018. These differing
+published statements describe a relatively recent venture; neither is resolved into an unqualified founding date. The accessible commercial website supports the SEO case study; current legal startup
+classification was not independently established.
+
+Verified page observations
+ID / page
+
+Observed public structure
+
+Use in strategy
+
+OB-01
+https://oceanbottle.co/
+
+Canonical homepage; title ‘The World's Most Needed Reusable Water Bottle’; description and H1 frame
+reusable bottles and ocean-plastic collection; navigation links to collections, product pages, impact,
+FAQs, contact, and news.
+
+Source-specific context
+
+OB-02
+Canonical product page; title ‘Ocean Bottle Original | Insulated Reusable Water Bottle’; product H1
+https://oceanbottle.co/products/original-bo ‘Original Bottle’; delivered markup links to related products, FAQs, and the impact page.
+ttle
+
+Source-specific context
+
+OB-03
+https://oceanbottle.co/pages/faqs
+
+Source-specific context
+
+Canonical FAQ page; title ‘FAQs | Ocean Bottle’; H1 ‘Frequently Asked Questions’; visible section
+headings cover plastic collection, returns, delivery, warranty, pre-orders, product, engraving, and
+discounts.
+
+OB-04
+Canonical impact page; title and description make Ocean Bottle’s plastic-collection statement; H1 ‘Our
+https://oceanbottle.co/pages/ocean-impac Impact’; headings include ‘1 for 1000’, ‘How it works’, partners, and a company statement about B Corp
+t
+certification.
+
+Source-specific context
+
+OB-05
+B Lab directory could not be retrieved from this cloud environment; it is not used to validate certification.
+https://www.bcorporation.net/en-us/find-ab-corp/company/ocean-bottle/
+
+Unavailable; excluded from validation
+
+Assessment
+The delivered pages expose canonical URLs, distinct titles, one visible H1 per sampled page, and links between product, FAQ, impact, collection, contact, and news routes. This supports a practical
+topic-to-page model. Mobile experience, CWV, crawl coverage, structured-data validity, indexing, accessibility conformance, rankings, and analytics were not tested and remain implementation checks.
+
+Conversion-path interpretation
+Observed navigation and page relationships support a proposed path from impact or educational discovery to product review, then FAQ/delivery reassurance and add-to-cart. This is an interpretation of
+public structure, not evidence of user behavior or conversion performance.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 1
+
+2. Long-tail keyword architecture
+Keyword entries are qualitative opportunities created from page language, page roles, and customer questions. Search volume, difficulty, ranking position, and click forecasts were not accessed.
+Keyword / intent
+
+Target page
+
+Priority / rationale
+
+insulated reusable water bottle
+transactional
+
+/products/original-bottle
+
+High — Product title and description explicitly use insulated and reusable.
+
+reusable water bottle with ocean plastic collection
+commercial
+
+/pages/ocean-impact
+
+High — Impact message is present on homepage and impact page.
+
+double walled insulated reusable bottle
+transactional
+
+/products/original-bottle
+
+High — Derived from the product-page description; no volume claim.
+
+how does ocean plastic collection work
+informational
+
+/pages/ocean-impact
+
+Medium — Maps to the observed ‘How it works’ section.
+
+reusable bottle warranty and returns
+informational
+
+/pages/faqs
+
+Medium — Maps to observed FAQ categories.
+
+reusable water bottle delivery information
+informational
+
+/pages/faqs
+
+Medium — Maps to observed delivery FAQ section.
+
+ocean bottle original features
+commercial
+
+/products/original-bottle
+
+Medium — Brand-plus-product phrase mapped to the Original Bottle page.
+
+reusable bottle engraving gift
+transactional
+
+/pages/engraving
+
+Medium — Existing navigation exposes an engraving route; page content was not
+audited.
+
+sustainable corporate reusable bottle gifting
+commercial
+
+/pages/co-brand
+
+Medium — Existing navigation exposes co-brand route; page content was not
+audited.
+
+why use a reusable water bottle
+informational
+
+/blogs/news
+
+Low — Proposed educational article cluster; no volume or ranking claim.
+
+how to clean an insulated reusable bottle
+informational
+
+/pages/faqs
+
+Low — Proposed support-content expansion from product FAQ intent.
+
+reusable bottle workplace wellbeing gift
+commercial
+
+/pages/wholesale
+
+Low — Proposed B2B discovery topic; wholesale navigation was observed but
+content was not audited.
+
+Prioritization method
+P1/P2/P3 reflects closeness to an accessible product, impact, support, or proposed education page and clarity of intent—not market size. Start with P1 product and impact pages; use Search Console and
+analytics only after authorized access to verify queries, impressions, and outcomes.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 2
+
+3. On-page SEO optimization map
+Existing facts are limited to the sampled pages and their delivered metadata/headings. Titles, descriptions, hierarchy, links, and content changes below are proposed implementation work.
+
+P1 | Product — https://oceanbottle.co/products/original-bottle
+Primary / secondary
+
+Proposed title and meta
+
+Proposed hierarchy and links
+
+Gap / measurement
+
+insulated reusable water bottle
+double walled reusable bottle, Ocean
+Bottle Original features
+
+Original Bottle | Insulated Reusable Water
+Bottle | Ocean Bottle
+Explore the Ocean Bottle Original, an insulated
+reusable water bottle. Review features, FAQs
+and Ocean Bottle’s stated collection model.
+
+H1: Original insulated reusable water bottle
+H2: Original Bottle features; How the stated 1 for
+1000 model works; Delivery, warranty and care
+FAQs
+Links: /pages/ocean-impact, /pages/faqs,
+/collections/water-bottles
+
+Add scannable feature-to-benefit copy, care
+guidance, and a contextual FAQ block without
+adding unsupported environmental or material
+claims.
+Organic landing sessions, add-to-cart rate,
+FAQ-link clicks, and purchase rate in
+consented analytics.
+
+P1 | Impact explainer — https://oceanbottle.co/pages/ocean-impact
+Primary / secondary
+
+Proposed title and meta
+
+Proposed hierarchy and links
+
+Gap / measurement
+
+reusable water bottle with ocean plastic
+collection
+how ocean plastic collection works,
+ocean plastic collection model
+
+How Ocean Bottle’s Plastic Collection Model
+Works
+Learn how Ocean Bottle describes its stated 1
+for 1000 plastic-collection model, the questions
+it answers, and related reusable bottle pages.
+
+H1: How Ocean Bottle describes its collection
+model
+H2: The stated 1 for 1000 model; Questions to
+answer before purchase; Explore reusable bottle
+options
+Links: /products/original-bottle, /pages/faqs,
+/collections/water-bottles
+
+Create a concise explanatory summary with
+dated methodology links and a
+product-to-impact decision path; retain clear
+attribution for company claims.
+Organic entrances, product-page
+click-through, engaged time, and assisted
+add-to-cart events.
+
+P2 | Support / trust — https://oceanbottle.co/pages/faqs
+Primary / secondary
+
+Proposed title and meta
+
+Proposed hierarchy and links
+
+Gap / measurement
+
+reusable bottle warranty and returns
+reusable water bottle delivery
+information, insulated bottle care
+
+Reusable Bottle FAQs: Delivery, Warranty and
+Care | Ocean Bottle
+Find Ocean Bottle FAQs about delivery,
+warranty, returns, product care, engraving and
+the company’s stated collection model.
+
+H1: Ocean Bottle delivery, warranty and care FAQs
+H2: Delivery and returns; Warranty and product
+care; Collection-model questions
+Links: /products/original-bottle,
+/pages/ocean-impact, /pages/contact
+
+Add jump links, concise answer summaries,
+and product-context links; validate
+structured-data eligibility before
+implementation.
+Organic FAQ entrances, support-contact rate,
+product click-through, and return-visit rate.
+
+P3 | Proposed educational hub — https://oceanbottle.co/blogs/news
+Primary / secondary
+
+Proposed title and meta
+
+Proposed hierarchy and links
+
+Gap / measurement
+
+why use a reusable water bottle
+reusable bottle habit guide, how to clean
+an insulated reusable bottle
+
+Reusable Bottle Guides and Care Advice |
+Ocean Bottle
+Browse proposed reusable bottle guides, care
+explainers and impact-model context, with links
+to relevant Ocean Bottle product and FAQ
+pages.
+
+H1: Reusable bottle guides and care advice
+H2: Choose a reusable bottle; Care and cleaning
+guidance; Understand the stated collection model
+Links: /products/original-bottle, /pages/faqs,
+/pages/ocean-impact
+
+Build a small topic cluster with author/date
+governance and links to commercial and
+support pages; the current blog content was
+not audited.
+Indexed pages, organic non-brand entrances,
+assisted product clicks, and
+content-to-product CTR.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 3
+
+4. Paid acquisition funnel and measurement
+All stages are proposed. Retargeting is conditional on valid consent, applicable policy, and authorized account controls.
+Stage
+
+Audience / channel
+
+Message / landing page
+
+CTA, event and KPI
+
+Awareness
+
+New reusable-hydration and gift researchers
+Google non-brand search; Meta/YouTube
+prospecting
+
+Problem/utility and attributed impact explainer
+/pages/ocean-impact
+
+Read the model
+Event: Engaged visit
+KPI: Reach, qualified clicks, engaged sessions
+
+Consideration
+
+Visitors who viewed product or impact pages
+Search remarketing only where consented;
+Meta/YouTube retargeting where permitted
+
+Feature, care, FAQ and comparison-oriented proof
+/products/original-bottle
+
+Explore Original Bottle
+Event: Product view / FAQ interaction
+KPI: Product CTR, add-to-cart rate
+
+Conversion
+
+High-intent product viewers and cart visitors
+Brand and product search; consented cart
+retargeting
+
+Clear product choice, delivery/warranty pathway
+/products/original-bottle
+
+Add to cart
+Event: Purchase
+KPI: Cost per purchase, CAC, revenue
+
+Retention
+
+Consented purchasers and subscribers
+Email only; no paid retargeting without separate
+consent
+
+Care, use and timely replenishment/accessory education
+/pages/faqs
+
+Get care guidance
+Event: Repeat purchase / support resolution
+KPI: Repeat purchase rate, unsubscribes, support
+contacts
+
+Attribution and optimization
+• Use consent-aware analytics and a documented UTM taxonomy: source, medium, campaign, content, term.
+• Keep paid-platform reporting separate from analytics attribution; reconcile purchase events only after consent and implementation review.
+• Define CAC as media spend divided by attributed new customers; define ROAS as attributed revenue divided by media spend. Zero denominators produce an explicit unavailable result.
+
+90-day proposed budget
+Allocation
+
+Proposed GBP
+
+Planning role
+
+Google Search
+
+£4,500
+
+Media delivery
+
+Meta prospecting
+
+£3,000
+
+Media delivery
+
+YouTube
+
+£1,500
+
+Media delivery
+
+Consented retargeting reserve
+
+£1,000
+
+Media delivery
+
+Measurement and creative
+
+£2,000
+
+Creative, tracking and reporting readiness
+
+Proposed 90-day planning budget; no spend is authorized or incurred.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 4
+
+5. Consent-aware email re-engagement
+These are proposed automation rules only. They require documented lawful basis, clear preference controls, a working unsubscribe mechanism, suppression of opted-out contacts, frequency caps, and
+review against the relevant privacy and email rules before activation.
+Workflow / entry
+
+Sequence from entry
+
+Conversion / exit
+
+Welcome / nurture
+Confirmed marketing opt-in; no prior purchase, active
+cart or browse workflow.
+
+0h: Welcome to your next refill routine
+48h: What would make refilling easier for you?
+120h: Your reusable bottle questions, answered
+
+qualified_product_view, faq_visit, add_to_cart
+Purchase ends pre-purchase flows; repeat purchase ends
+post-purchase flow. All flows exit on suppression, expiry or
+final-message completion.
+
+Browsing without purchase
+Two consented product views within seven days; no
+cart or purchase.
+
+24h: Still comparing reusable bottle options?
+72h: What do you need to know before choosing?
+
+qualified_product_view, faq_visit
+Purchase ends pre-purchase flows; repeat purchase ends
+post-purchase flow. All flows exit on suppression, expiry or
+final-message completion.
+
+Cart abandonment
+Clock starts at last cart activity; only enroll when no
+purchase and separate marketing consent exists; first
+message requires four inactive hours.
+
+4h: Would you like to review your bottle choice?
+52h: One last reminder, with the practical details
+
+checkout_started, purchase
+Purchase ends pre-purchase flows; repeat purchase ends
+post-purchase flow. All flows exit on suppression, expiry or
+final-message completion.
+
+Post-purchase re-engagement
+336h: Make the most of your reusable bottle
+First purchase and confirmed delivery event; separate 504h: How is your refill routine working?
+marketing consent; unresolved support issues pause 720h: Would another bottle fit a real need?
+entry.
+
+care_guide_visit, feedback_or_support_contact,
+repeat_purchase
+Purchase ends pre-purchase flows; repeat purchase ends
+post-purchase flow. All flows exit on suppression, expiry or
+final-message completion.
+
+Automation decision table
+Event / condition
+
+Decision
+
+Unsubscribe, consent withdrawal, bounce, complaint
+
+Suppress immediately; clear active flow; no further marketing drafts.
+
+Purchase / repeat purchase
+
+Exit pre-purchase / post-purchase sequence; care entry needs confirmed delivery and consent.
+
+Duplicate / priority
+
+One flow at a time: post-purchase > cart > browse > welcome. Duplicate entries do not restart clocks.
+
+Frequency cap / support issue
+
+At most one message per 24h and three per rolling seven days; defer without advancing. Support pauses all messages.
+
+Inactivity / deadline / completion
+
+Expire or complete; no replay in pilot. Recheck consent and suppression before every message.
+
+Supporting appendix
+DM_Task4_Email_Workflow_Appendix.pdf contains every message’s full body, preview, CTA, conversion event and consent/exit rules. Machine-readable messages and a synthetic event simulator are in
+research/task4/. No automation is activated.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 5
+
+6. Financial model, implementation order, and limitations
+Formula: impressions = media budget ÷ blended CPM × 1,000; sessions = impressions × CTR; customers = sessions × purchase conversion rate; CAC = media spend ÷ customers; ROAS = attributed
+revenue ÷ media spend. The figures below are scenario inputs, not benchmarks, forecasts, or results.
+Scenario
+
+CPM / CTR
+
+Impressions / sessions
+
+Conv. / customers
+
+AOV / revenue
+
+Media CAC / ROAS
+
+All-in cost / customer
+
+Low
+
+£12.80 / 0.8%
+
+781,250 / 6,250
+
+1.2% / 75
+
+£45 / £3,375
+
+£133.33 / 0.34x
+
+£160.00
+
+Base
+
+£10.00 / 0.8%
+
+1,000,000 / 8,000
+
+2.0% / 160
+
+£55 / £8,800
+
+£62.50 / 0.88x
+
+£75.00
+
+High
+
+£8.00 / 0.8%
+
+1,250,000 / 10,000
+
+3.2% / 320
+
+£65 / £20,800
+
+£31.25 / 2.08x
+
+£37.50
+
+Media versus all-in economics
+Media CAC retains the GBP 10,000 advertising denominator. Separately, all-in acquisition cost per customer = full GBP 12,000 project allocation / modeled customers: Low GBP 160.00, Base GBP 75.00,
+High GBP 37.50. These are planning allocations, not accounting outcomes. ROAS always remains attributed revenue / advertising spend; creative costs do not change its denominator.
+
+Recommended sequence
+1. Validate claims, consent, tracking plan, and analytics governance. 2. Implement P1 product and impact maps. 3. Publish only approved, attributed content. 4. Instrument product, cart, purchase, and
+email events. 5. Launch a small authorized test with a spend cap; compare outcomes against the model, not against assumed figures. 6. Reallocate only after a documented attribution and quality review.
+
+Sources and limitations
+Official page records: homepage, Original Bottle, FAQs, Ocean Impact (Codex retrieval, 13 October 2026 UTC). Codex’s B Lab retrieval returned 403. Separately, reviewer-supplied observations received
+13 October 2026 report B Lab certification/founding in 2019 and LinkedIn founding in 2018; reviewer collection dates were not supplied. The discrepancy remains unresolved. URLs:
+https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/ and https://www.linkedin.com/company/the-ocean-bottle/. No real keyword metrics, rankings, analytics, conversion, revenue or
+technical performance was verified. Company environmental figures remain attributed, without independent outcome validation.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 6
+
+

@@ -1,0 +1,33 @@
+test_all_suppression_events_exit_every_workflow (test_email_workflows.WorkflowTests.test_all_suppression_events_exit_every_workflow) ... ok
+test_completion_blocks_reentry (test_email_workflows.WorkflowTests.test_completion_blocks_reentry) ... ok
+test_consent_is_rechecked_between_messages (test_email_workflows.WorkflowTests.test_consent_is_rechecked_between_messages) ... ok
+test_delays_and_duplicate_entry_preserve_clock (test_email_workflows.WorkflowTests.test_delays_and_duplicate_entry_preserve_clock) ... ok
+test_each_workflow_enters_and_completes_in_order (test_email_workflows.WorkflowTests.test_each_workflow_enters_and_completes_in_order) ... ok
+test_frequency_gap_defers_without_advancing (test_email_workflows.WorkflowTests.test_frequency_gap_defers_without_advancing) ... ok
+test_inactivity_and_deadline_expire_all_flows (test_email_workflows.WorkflowTests.test_inactivity_and_deadline_expire_all_flows) ... ok
+test_no_consent_blocks_all_entries (test_email_workflows.WorkflowTests.test_no_consent_blocks_all_entries) ... ok
+test_post_purchase_requires_purchase_and_delivery (test_email_workflows.WorkflowTests.test_post_purchase_requires_purchase_and_delivery) ... ok
+test_priority_prevents_overlapping_workflows (test_email_workflows.WorkflowTests.test_priority_prevents_overlapping_workflows) ... ok
+test_purchase_exits_pre_purchase_and_repeat_purchase_exits_care (test_email_workflows.WorkflowTests.test_purchase_exits_pre_purchase_and_repeat_purchase_exits_care) ... ok
+test_return_to_cart_exits_reminders (test_email_workflows.WorkflowTests.test_return_to_cart_exits_reminders) ... ok
+test_rolling_cap_defers_and_never_bursts_overdue_steps (test_email_workflows.WorkflowTests.test_rolling_cap_defers_and_never_bursts_overdue_steps) ... ok
+test_support_pause_and_resume (test_email_workflows.WorkflowTests.test_support_pause_and_resume) ... ok
+test_all_in_cost_and_media_roas_are_separate (test_strategy.StrategyTests.test_all_in_cost_and_media_roas_are_separate) ... ok
+test_budget_reconciles (test_strategy.StrategyTests.test_budget_reconciles) ... ok
+test_corrupted_all_in_calculation_is_rejected (test_strategy.StrategyTests.test_corrupted_all_in_calculation_is_rejected) ... ok
+test_email_flow_has_consent_and_exit_rules (test_strategy.StrategyTests.test_email_flow_has_consent_and_exit_rules) ... ok
+test_funnel_has_all_stages_and_measurement (test_strategy.StrategyTests.test_funnel_has_all_stages_and_measurement) ... ok
+test_keyword_coverage_and_intents (test_strategy.StrategyTests.test_keyword_coverage_and_intents) ... ok
+test_missing_email_copy_and_invalid_delay_are_rejected (test_strategy.StrategyTests.test_missing_email_copy_and_invalid_delay_are_rejected) ... ok
+test_observations_keep_blocked_source_separate (test_strategy.StrategyTests.test_observations_keep_blocked_source_separate) ... ok
+test_reviewer_provenance_and_unresolved_years (test_strategy.StrategyTests.test_reviewer_provenance_and_unresolved_years) ... ok
+test_scenarios_are_ordered (test_strategy.StrategyTests.test_scenarios_are_ordered) ... ok
+test_scenarios_reconcile_formulae (test_strategy.StrategyTests.test_scenarios_reconcile_formulae) ... ok
+test_seo_map_has_required_fields (test_strategy.StrategyTests.test_seo_map_has_required_fields) ... ok
+test_strategy_validates (test_strategy.StrategyTests.test_strategy_validates) ... ok
+test_zero_denominator_is_rejected (test_strategy.StrategyTests.test_zero_denominator_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.037s
+
+OK

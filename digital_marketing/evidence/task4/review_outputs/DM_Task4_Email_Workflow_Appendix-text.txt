@@ -1,0 +1,212 @@
+Supporting appendix: Welcome / nurture
+Proposed, inactive automation. Trigger: subscription_confirmed. Entry: Confirmed marketing opt-in; no prior purchase, active
+cart or browse workflow.
+Expiry: 168h from entry. Policy: one per 24h; three per rolling seven days; no duplicate restart; recheck consent/suppression
+before each message.
+
+welcome-1 | +0h | Welcome to your next refill routine
+Preview: Start with product details, practical questions and a clear choice.
+Hello,
+Thank you for choosing to hear from Ocean Bottle. If you are exploring a reusable bottle, start with the Original Bottle page to
+review the available features and options. Our FAQs cover delivery, returns and warranty questions so you can decide at your
+own pace.
+You can also read how Ocean Bottle describes its collection model on the impact page. We do not ask you to take an
+environmental statement on trust: review the explanation before deciding.
+Explore the Original Bottle when you are ready.
+Ocean Bottle team
+[Email preferences] | [Unsubscribe]
+Proposed draft: links and factual product instructions need approval before activation.
+CTA: Explore Original Bottle (/products/original-bottle) | Event: qualified_product_view
+
+welcome-2 | +48h | What would make refilling easier for you?
+Preview: A simple planning prompt for commuting, work or everyday use.
+Hello,
+Think about where a reusable bottle would fit into your day: the commute, your desk or a bag you already carry. Choose a
+practical routine first, then compare the Original Bottle details with what you need.
+If you have questions about care, delivery or warranty, our FAQ page is a useful next stop. There is no need to make a choice
+before those questions are answered.
+Read the FAQs and return to the product page when it suits you.
+Ocean Bottle team
+[Email preferences] | [Unsubscribe]
+Proposed draft: links and factual product instructions need approval before activation.
+CTA: Read bottle FAQs (/pages/faqs) | Event: faq_visit
+Exit: Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or
+final-message completion.
+Suppression: Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before
+every message.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 1
+
+Supporting appendix: Welcome / nurture
+Proposed, inactive automation. Trigger: subscription_confirmed. Entry: Confirmed marketing opt-in; no prior purchase, active
+cart or browse workflow.
+Expiry: 168h from entry. Policy: one per 24h; three per rolling seven days; no duplicate restart; recheck consent/suppression
+before each message.
+
+welcome-3 | +120h | Your reusable bottle questions, answered
+Preview: Review the details once more, or update what you want to hear about.
+Hello,
+This is the last message in this welcome series. If you are still comparing options, the Original Bottle page brings the product
+information together, and the FAQs explain delivery and support topics.
+Take a look only if the bottle fits your needs. You can change your email preferences or unsubscribe at any time using the
+links below.
+Thank you for considering Ocean Bottle.
+Ocean Bottle team
+[Email preferences] | [Unsubscribe]
+Proposed draft: links and factual product instructions need approval before activation.
+CTA: Review Original Bottle (/products/original-bottle) | Event: add_to_cart
+Exit: Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or
+final-message completion.
+Suppression: Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before
+every message.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 2
+
+Supporting appendix: Browsing without purchase
+Proposed, inactive automation. Trigger: product_view_twice. Entry: Two consented product views within seven days; no cart
+or purchase.
+Expiry: 168h from entry. Policy: one per 24h; three per rolling seven days; no duplicate restart; recheck consent/suppression
+before each message.
+
+browse-1 | +24h | Still comparing reusable bottle options?
+Preview: Review the Original Bottle details without rushing your decision.
+Hello,
+You recently explored the Original Bottle. If you are still comparing options, return to the product page to review the current
+features, choices and availability.
+Before ordering, check the delivery, warranty and returns information in our FAQs. This message is an invitation to review the
+details, not a promise that an item is reserved.
+Find the information you need before deciding.
+Ocean Bottle team
+[Email preferences] | [Unsubscribe]
+Proposed draft: links and factual product instructions need approval before activation.
+CTA: Review product details (/products/original-bottle) | Event: qualified_product_view
+
+browse-2 | +72h | What do you need to know before choosing?
+Preview: Delivery, warranty and care information in one place.
+Hello,
+Choosing a reusable bottle should include the practical details. Our FAQ sections cover delivery, returns, warranty and
+product questions. Use those answers to check whether the Original Bottle is right for you.
+If a question remains, use the contact link on the website rather than guessing from an advertisement. We will stop this
+browsing series here unless you take another qualifying action under an approved future policy.
+Ocean Bottle team
+[Email preferences] | [Unsubscribe]
+Proposed draft: links and factual product instructions need approval before activation.
+CTA: Check delivery and warranty FAQs (/pages/faqs) | Event: faq_visit
+Exit: Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or
+final-message completion.
+Suppression: Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before
+every message.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 3
+
+Supporting appendix: Cart abandonment
+Proposed, inactive automation. Trigger: cart_abandoned. Entry: Clock starts at last cart activity; only enroll when no purchase
+and separate marketing consent exists; first message requires four inactive hours.
+Expiry: 96h from entry. Policy: one per 24h; three per rolling seven days; no duplicate restart; recheck consent/suppression
+before each message.
+
+cart-1 | +4h | Would you like to review your bottle choice?
+Preview: Return to the product information before placing an order.
+Hello,
+You started considering an Ocean Bottle order. If you want to continue, review the Original Bottle page and select your
+preferred option again. Check the current price and availability on the website before ordering.
+If delivery or returns were a concern, the FAQ page may help. We have not reserved stock or applied a discount in this
+message.
+Continue only when the choice works for you.
+Ocean Bottle team
+[Email preferences] | [Unsubscribe]
+Proposed draft: links and factual product instructions need approval before activation.
+CTA: Review Original Bottle (/products/original-bottle) | Event: checkout_started
+
+cart-2 | +52h | One last reminder, with the practical details
+Preview: Check delivery and support information if you are still deciding.
+Hello,
+This is our final reminder about your earlier bottle selection. You can revisit the product page and check delivery, returns and
+warranty details before completing an order.
+If you have already decided against it, no action is needed. This cart series will end, and you can update your email
+preferences or unsubscribe using the links below.
+Thank you for considering Ocean Bottle.
+Ocean Bottle team
+[Email preferences] | [Unsubscribe]
+Proposed draft: links and factual product instructions need approval before activation.
+CTA: Check order FAQs (/pages/faqs) | Event: purchase
+Exit: Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or
+final-message completion.
+Suppression: Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before
+every message.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 4
+
+Supporting appendix: Post-purchase re-engagement
+Proposed, inactive automation. Trigger: delivery_confirmed. Entry: First purchase and confirmed delivery event; separate
+marketing consent; unresolved support issues pause entry.
+Expiry: 840h from entry. Policy: one per 24h; three per rolling seven days; no duplicate restart; recheck consent/suppression
+before each message.
+
+post_purchase-1 | +336h | Make the most of your reusable bottle
+Preview: Start with the current care and support information.
+Hello,
+We hope the bottle is fitting into your routine. Please review the current care instructions and product FAQs before cleaning or
+using it in a new way.
+If anything is unclear or there is a problem with the order, contact the support team through the website. We will pause
+promotional follow-ups while an unresolved support issue is being handled.
+Ocean Bottle team
+[Email preferences] | [Unsubscribe]
+Proposed draft: links and factual product instructions need approval before activation.
+CTA: Read care and support FAQs (/pages/faqs) | Event: care_guide_visit
+
+post_purchase-2 | +504h | How is your refill routine working?
+Preview: Share a question or request help if something is not right.
+Hello,
+Now that you have had time to try the bottle, we would welcome a question or feedback about your experience. We do not
+assume that every purchase works perfectly for every person.
+If you need help, use the website contact page and explain the issue. No public review is required, and support takes priority
+over further promotional messages.
+Ocean Bottle team
+[Email preferences] | [Unsubscribe]
+Proposed draft: links and factual product instructions need approval before activation.
+CTA: Contact support or share feedback (/pages/contact) | Event: feedback_or_support_contact
+Exit: Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or
+final-message completion.
+Suppression: Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before
+every message.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 5
+
+Supporting appendix: Post-purchase re-engagement
+Proposed, inactive automation. Trigger: delivery_confirmed. Entry: First purchase and confirmed delivery event; separate
+marketing consent; unresolved support issues pause entry.
+Expiry: 840h from entry. Policy: one per 24h; three per rolling seven days; no duplicate restart; recheck consent/suppression
+before each message.
+
+post_purchase-3 | +720h | Would another bottle fit a real need?
+Preview: Review current options only if you have a use for them.
+Hello,
+If you are considering a gift or a second bottle for a different routine, you can review the current range on the website. Check
+product details and delivery information before ordering.
+There is no need to buy again to take part in this email programme. This is the final message in our post-purchase series; use
+the preference links below to choose what you hear from us next.
+Ocean Bottle team
+[Email preferences] | [Unsubscribe]
+Proposed draft: links and factual product instructions need approval before activation.
+CTA: Explore the current bottle range (/collections/water-bottles) | Event: repeat_purchase
+Exit: Purchase ends pre-purchase flows; repeat purchase ends post-purchase flow. All flows exit on suppression, expiry or
+final-message completion.
+Suppression: Recheck marketing consent, unsubscribe, withdrawal, hard bounce, complaint and global suppression before
+every message.
+
+Ocean Bottle | proposed SEO and acquisition strategy | Task 4
+
+Page 6
+
+
