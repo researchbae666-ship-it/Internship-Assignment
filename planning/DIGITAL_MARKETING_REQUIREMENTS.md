@@ -35,6 +35,16 @@ The access evidence and calculation output are retained under
 `digital_marketing/evidence/task2/`; a final audit PDF is deferred rather than
 fabricated.
 
+## Task 3 execution record — 13 October 2026
+
+The fictional RefillLoop campaign has a machine-readable 30-day calendar, a
+validated USD 3,000 proposed media allocation, platform strategies, copy,
+targeting assumptions, measurement plan, test plan, risk controls, and a
+reviewable PDF at `digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf`.
+Its 53 planned actions span Instagram (30), LinkedIn (12), and YouTube (11).
+All product, price, budget, targeting, KPI, and performance values are labeled
+as assumptions or targets; no campaign was published or funded.
+
 ## Task 1
 
 The LinkedIn announcement is optional/deferred. A private caption may be drafted

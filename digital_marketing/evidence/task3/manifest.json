@@ -1,0 +1,79 @@
+{
+  "budget": {
+    "allocation": {
+      "Instagram": 1350,
+      "LinkedIn": 1050,
+      "YouTube": 600
+    },
+    "assumption": "Illustrative media-only planning budget; no spend is authorized or incurred.",
+    "currency": "USD",
+    "total": 3000
+  },
+  "calendar": {
+    "actions": 53,
+    "days_covered": 30,
+    "platform_action_counts": {
+      "Instagram": 30,
+      "LinkedIn": 12,
+      "YouTube": 11
+    },
+    "required_fields_per_action": 14
+  },
+  "calendar_sha256": "89bc99e190908c10a1451edad157cf1f358bf19ce4805cef6e1cd4f78e99525b",
+  "commands": [
+    {
+      "command": "python digital_marketing/research/task3/build_campaign.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python digital_marketing/research/task3/test_campaign.py",
+      "exit_code": 0,
+      "tests_failed": 0,
+      "tests_run": 5
+    },
+    {
+      "command": "python digital_marketing/tools/generate_task3_report.py",
+      "exit_code": 0
+    },
+    {
+      "command": "pdfinfo digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf",
+      "exit_code": 0
+    },
+    {
+      "command": "pdftotext digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf artifacts/digital_marketing/task3/report_text.txt",
+      "exit_code": 0
+    },
+    {
+      "command": "pdftoppm -png -r 144 digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf artifacts/digital_marketing/task3_render_final/page",
+      "exit_code": 0
+    }
+  ],
+  "generated_utc": "2026-10-13T08:42:17Z",
+  "kind": "digital_marketing_task3_campaign_evidence",
+  "limitations": [
+    "Fictional proposed product and campaign; no publication, spend, customer, performance, environmental, scientific, or competitor claim.",
+    "Task 2 remains evidence-blocked and was not used as a completed finding."
+  ],
+  "pdf": {
+    "bytes": 37925,
+    "page_size": "A4 landscape",
+    "pages": 15,
+    "path": "digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf",
+    "sha256": "8f46dc586c5f2b6db919f3f0178785af49e21678d544a8f06fd63979abc82f81"
+  },
+  "render_qa": {
+    "pages_rendered": 15,
+    "visual_inspection": "All rendered pages inspected; no clipping, unexpected blank pages, or corrupted text observed."
+  },
+  "source_revision": "159bbca88f6e0eb2389188147a6577049cda373c",
+  "text_qa": {
+    "required_sections_present": [
+      "Campaign premise and positioning",
+      "Audience, objectives, and channel roles",
+      "Paid media, measurement, testing, and safeguards",
+      "Editorial calendar",
+      "Days 28\u201330",
+      "Limitations"
+    ]
+  }
+}

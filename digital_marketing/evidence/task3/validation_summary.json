@@ -1,0 +1,11 @@
+{
+  "budget_allocation_sum": 3000,
+  "budget_total": 3000,
+  "calendar_validation": "passed",
+  "days_covered": 30,
+  "platform_action_counts": {
+    "Instagram": 30,
+    "LinkedIn": 12,
+    "YouTube": 11
+  }
+}

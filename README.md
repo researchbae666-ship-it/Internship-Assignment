@@ -18,7 +18,9 @@ guidance, research, evidence, and deliverables without relocating approved
 Python code. The Digital Marketing plan proposes a reusable-hydration market
 context. Initial Task 2 collection was blocked by the cloud proxy, so its
 evidence records the actual access failure and contains no invented metrics or
-audit conclusions. Read the [dual-track master plan](planning/DUAL_TRACK_MASTER_PLAN.md), [Marketing requirements](planning/DIGITAL_MARKETING_REQUIREMENTS.md), [research plan](planning/DIGITAL_MARKETING_RESEARCH_PLAN.md), [Python enhancement roadmap](planning/PYTHON_ENHANCEMENT_ROADMAP.md), and [submission strategy](planning/DUAL_TRACK_SUBMISSION_STRATEGY.md).
+audit conclusions. Task 3 now has a reviewable fictional RefillLoop campaign
+roadmap and [PDF](digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf);
+it does not represent a live product or campaign. Read the [dual-track master plan](planning/DUAL_TRACK_MASTER_PLAN.md), [Marketing requirements](planning/DIGITAL_MARKETING_REQUIREMENTS.md), [research plan](planning/DIGITAL_MARKETING_RESEARCH_PLAN.md), [Python enhancement roadmap](planning/PYTHON_ENHANCEMENT_ROADMAP.md), and [submission strategy](planning/DUAL_TRACK_SUBMISSION_STRATEGY.md).
 
 This public repository must never contain an offer letter, identity details,
 student ID, contact details, private images, or credentials. Track eligibility
