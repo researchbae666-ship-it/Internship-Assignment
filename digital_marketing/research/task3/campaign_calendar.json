@@ -53,8 +53,8 @@
     },
     {
       "objective": "Generate early-access intent",
-      "smart_target": "Model 300 proposed qualified interest-form completions, with the actual result reported only after a live, consented launch.",
-      "baseline_assumption": "Illustrative 1.5% landing-page completion rate; not a forecast.",
+      "smart_target": "Model 30 base-scenario qualified interest-form completions over 30 days; report 300 only as a stretch scenario with separate traffic conditions.",
+      "baseline_assumption": "Base scenario uses 120,000 impressions, 1.0% assumed CTR, and 2.5% assumed form completion; not a forecast.",
       "measurement": "Consent-aware form-completion event and source UTM."
     }
   ],
@@ -68,6 +68,249 @@
     },
     "assumption": "Illustrative media-only planning budget; no spend is authorized or incurred."
   },
+  "targeting_specifications": {
+    "Instagram": {
+      "targeting_id": "IG-KHI-01",
+      "geography": "Proposed initial test market: Karachi metropolitan area; rationale: one defined urban test area makes creative learning easier to interpret. This is not evidence of demand.",
+      "language": "English creative; review Urdu adaptation for comprehension and platform capability before launch.",
+      "age": "Proposed 23–40 where available; verify current platform controls.",
+      "inclusion": "Policy-compliant interest/context tests around commuting, hybrid work, productivity, fitness routines, and reusable products; verify availability before use.",
+      "exclusion": "Exclude existing interest-form completers from conversion retargeting where a lawful consent-aware audience is available; do not infer sensitive traits.",
+      "placement": "Reels, Stories, and Feed tested separately; retain placement-level reporting.",
+      "conversion_event": "Consent-aware early-interest form completion or qualified concept-page visit.",
+      "privacy_policy": "Use platform-approved controls only; verify options and privacy requirements before a live campaign."
+    },
+    "LinkedIn": {
+      "targeting_id": "LI-KHI-01",
+      "geography": "Proposed initial test market: Karachi metropolitan area; use a single professional-context test area for interpretable learning.",
+      "language": "English professional copy; review Urdu adaptation separately if supported and appropriate.",
+      "age": "No age-based professional targeting is proposed; use platform-approved professional context only.",
+      "inclusion": "Verify current targeting for people operations, workplace experience, facilities, and operations functions; use role/function contexts, not sensitive inferences.",
+      "exclusion": "Exclude current employees and completed interest-form audiences only where lawful, consented, and supported by the platform.",
+      "placement": "Feed and document/article formats; compare sponsored document with text-post treatment.",
+      "conversion_event": "Qualified toolkit download or consent-aware early-interest form completion.",
+      "privacy_policy": "Platform controls and minimum-audience rules must be verified before launch."
+    },
+    "YouTube": {
+      "targeting_id": "YT-KHI-01",
+      "geography": "Proposed initial test market: Karachi metropolitan area; separate geographic expansion from the first creative test.",
+      "language": "English spoken/captioned creative; review Urdu captions or alternate creative before use.",
+      "age": "Proposed adult audience only where age controls are available and policy-compliant; verify current options.",
+      "inclusion": "Contextual tests around commuting organization, workplace productivity, fitness routines, and reusable-product education; verify placement controls.",
+      "exclusion": "Exclude made-for-children content and unsuitable placements using current documented controls; do not profile sensitive audiences.",
+      "placement": "Shorts for discovery; skippable long-form/contextual inventory for demonstrations; report format separately.",
+      "conversion_event": "Qualified concept-page session or consent-aware early-interest form completion.",
+      "privacy_policy": "Verify current YouTube/Google Ads targeting, placement, and consent requirements before launch."
+    }
+  },
+  "funnel": {
+    "formula": "interest completions = impressions × click-through rate × landing-form completion rate",
+    "units": {
+      "impressions": "impressions",
+      "click_through_rate": "decimal share",
+      "landing_sessions": "sessions",
+      "form_completion_rate": "decimal share",
+      "interest_completions": "completed consent-aware forms"
+    },
+    "scenarios": [
+      {
+        "name": "Low",
+        "impressions": 75000,
+        "click_through_rate": 0.006,
+        "landing_sessions": 450,
+        "form_completion_rate": 0.015,
+        "interest_completions": 6.75,
+        "classification": "illustrative planning scenario"
+      },
+      {
+        "name": "Base",
+        "impressions": 120000,
+        "click_through_rate": 0.01,
+        "landing_sessions": 1200,
+        "form_completion_rate": 0.025,
+        "interest_completions": 30,
+        "classification": "primary planned target; assumptions only"
+      },
+      {
+        "name": "High",
+        "impressions": 180000,
+        "click_through_rate": 0.016,
+        "landing_sessions": 2880,
+        "form_completion_rate": 0.035,
+        "interest_completions": 100.8,
+        "classification": "illustrative upside scenario"
+      },
+      {
+        "name": "Stretch",
+        "impressions": 240000,
+        "click_through_rate": 0.025,
+        "landing_sessions": 6000,
+        "form_completion_rate": 0.05,
+        "interest_completions": 300,
+        "classification": "not a primary target; requires 6,000 sessions and materially stronger traffic conditions or additional authorized reach"
+      }
+    ]
+  },
+  "budget_pacing": [
+    {
+      "action_id": "instagram-08",
+      "platform": "Instagram",
+      "day": 8,
+      "phase": "Launch",
+      "proposed_spend_usd": 300,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "instagram-10",
+      "platform": "Instagram",
+      "day": 10,
+      "phase": "Launch",
+      "proposed_spend_usd": 180,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "instagram-15",
+      "platform": "Instagram",
+      "day": 15,
+      "phase": "Education",
+      "proposed_spend_usd": 180,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "instagram-19",
+      "platform": "Instagram",
+      "day": 19,
+      "phase": "Optimization",
+      "proposed_spend_usd": 180,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "instagram-23",
+      "platform": "Instagram",
+      "day": 23,
+      "phase": "Conversion",
+      "proposed_spend_usd": 180,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "instagram-24",
+      "platform": "Instagram",
+      "day": 24,
+      "phase": "Conversion",
+      "proposed_spend_usd": 180,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "instagram-27",
+      "platform": "Instagram",
+      "day": 27,
+      "phase": "Conversion",
+      "proposed_spend_usd": 150,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "linkedin-07",
+      "platform": "LinkedIn",
+      "day": 7,
+      "phase": "Prelaunch",
+      "proposed_spend_usd": 150,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "linkedin-15",
+      "platform": "LinkedIn",
+      "day": 15,
+      "phase": "Education",
+      "proposed_spend_usd": 300,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "linkedin-23",
+      "platform": "LinkedIn",
+      "day": 23,
+      "phase": "Conversion",
+      "proposed_spend_usd": 300,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "linkedin-28",
+      "platform": "LinkedIn",
+      "day": 28,
+      "phase": "Conversion",
+      "proposed_spend_usd": 300,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "youtube-08",
+      "platform": "YouTube",
+      "day": 8,
+      "phase": "Launch",
+      "proposed_spend_usd": 150,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "youtube-15",
+      "platform": "YouTube",
+      "day": 15,
+      "phase": "Education",
+      "proposed_spend_usd": 150,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "youtube-22",
+      "platform": "YouTube",
+      "day": 22,
+      "phase": "Optimization",
+      "proposed_spend_usd": 150,
+      "note": "Proposed media-only spend; not incurred."
+    },
+    {
+      "action_id": "youtube-29",
+      "platform": "YouTube",
+      "day": 29,
+      "phase": "Conversion",
+      "proposed_spend_usd": 150,
+      "note": "Proposed media-only spend; not incurred."
+    }
+  ],
+  "ab_tests": [
+    {
+      "id": "AB-01",
+      "hypothesis": "A routine-friction hook earns more qualified concept clicks than a general product-reveal hook.",
+      "control": "Day 8 utility-led reveal",
+      "treatment": "Day 8 routine-friction opening",
+      "audience": "IG-KHI-01 / Maya creative route",
+      "primary_metric": "UTM-tagged concept-page click-through rate",
+      "decision_criterion": "Pre-agree a minimum delivery threshold; retain the variant with the stronger primary metric and document context."
+    },
+    {
+      "id": "AB-02",
+      "hypothesis": "A LinkedIn document explaining implementation earns more qualified clicks than a professional text post.",
+      "control": "Text-post treatment",
+      "treatment": "Document-post treatment",
+      "audience": "LI-KHI-01 / Aisha creative route",
+      "primary_metric": "Qualified toolkit or concept-page clicks",
+      "decision_criterion": "Compare only after equivalent planned delivery conditions; record no winner if evidence is insufficient."
+    },
+    {
+      "id": "AB-03",
+      "hypothesis": "A workplace-toolkit video opening sustains more qualified attention than a feature-led opening.",
+      "control": "Feature-led opening",
+      "treatment": "Workplace-toolkit opening",
+      "audience": "YT-KHI-01 / Aisha contextual route",
+      "primary_metric": "Average view duration and end-screen click-through rate",
+      "decision_criterion": "Use a pre-agreed attention threshold and report both measures, not views alone."
+    },
+    {
+      "id": "AB-04",
+      "hypothesis": "‘Choose your path’ creates more qualified interest than ‘request early access’ for undecided routine seekers.",
+      "control": "Request early access",
+      "treatment": "Choose your path",
+      "audience": "IG-KHI-01 / Maya and Sam retargeting only if lawful and consent-aware",
+      "primary_metric": "Consent-aware form completion rate",
+      "decision_criterion": "Require comparable landing experience and documented delivery before deciding."
+    }
+  ],
   "sources": [
     {
       "reference": "Digital Marketing & Branding Tasks & Instructions.md",
@@ -80,6 +323,7 @@
   ],
   "actions": [
     {
+      "action_id": "instagram-01",
       "day": 1,
       "phase": "Tease",
       "platform": "Instagram",
@@ -87,15 +331,38 @@
       "campaign_theme": "The daily carry problem",
       "creative_concept": "A quick-cut commute montage asks: ‘One bottle, one routine?’",
       "target_persona": "Maya — hybrid commuter",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. A quick-cut commute montage asks: ‘One bottle, one routine?’",
+      "copy_or_script": "A proposed RefillLoop routine starts by mapping the moments when your carry setup changes.",
       "cta": "Save the launch reminder.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "commute",
+        "primary_keyword": "commuter hydration routine",
+        "supporting_keywords": [
+          "hybrid work commute",
+          "bag packing routine",
+          "desk to gym"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Find ideas for changing locations and carry contexts.",
+        "rationale": "Connects the Instagram format to the commute discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "A proposed RefillLoop routine starts by mapping the moments when your carry setup changes.",
+        "headline_or_hook": "Your day has more than one stop.",
+        "cta_line": "Save the launch reminder."
+      }
     },
     {
+      "action_id": "instagram-02",
       "day": 2,
       "phase": "Tease",
       "platform": "Instagram",
@@ -103,15 +370,38 @@
       "campaign_theme": "Modular by design",
       "creative_concept": "Exploded-view carousel introduces the proposed replaceable components.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Exploded-view carousel introduces the proposed replaceable components.",
+      "copy_or_script": "Explore a fictional modular concept built around switching contexts, not a promised product feature.",
       "cta": "Join the early-access list.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "modular",
+        "primary_keyword": "modular reusable bottle concept",
+        "supporting_keywords": [
+          "modular product design",
+          "reusable hydration",
+          "product concept"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Understand the proposed modular-product framing.",
+        "rationale": "Connects the Instagram format to the modular discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Explore a fictional modular concept built around switching contexts, not a promised product feature.",
+        "headline_or_hook": "What if your bottle routine could change with your day?",
+        "cta_line": "Join the early-access list."
+      }
     },
     {
+      "action_id": "linkedin-02",
       "day": 2,
       "phase": "Prelaunch",
       "platform": "LinkedIn",
@@ -119,15 +409,38 @@
       "campaign_theme": "The hidden cost of fragmented routines",
       "creative_concept": "A proposed product brief: why commuters, facilities teams, and wellbeing leads need fewer hydration handoffs.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: A proposed product brief: why commuters, facilities teams, and wellbeing leads need fewer hydration handoffs.",
+      "copy_or_script": "The hidden cost of fragmented routines. A proposed product brief: why commuters, facilities teams, and wellbeing leads need fewer hydration handoffs. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Read the concept brief.",
       "distribution": "Organic",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the LinkedIn format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "The hidden cost of fragmented routines. A proposed product brief: why commuters, facilities teams, and wellbeing leads need fewer hydration handoffs. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "The hidden cost of fragmented routines",
+        "cta_line": "Read the concept brief."
+      }
     },
     {
+      "action_id": "instagram-03",
       "day": 3,
       "phase": "Tease",
       "platform": "Instagram",
@@ -135,15 +448,38 @@
       "campaign_theme": "Your refill friction",
       "creative_concept": "Question sticker: ‘What makes reusable habits hard to keep?’",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Question sticker: ‘What makes reusable habits hard to keep?’",
+      "copy_or_script": "Tell us where your routine breaks: leaving home, arriving at work, or after training.",
       "cta": "Reply with one barrier.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Tell us where your routine breaks: leaving home, arriving at work, or after training.",
+        "headline_or_hook": "The hard part is often remembering the next refill.",
+        "cta_line": "Reply with one barrier."
+      }
     },
     {
+      "action_id": "youtube-03",
       "day": 3,
       "phase": "Tease",
       "platform": "YouTube",
@@ -151,15 +487,39 @@
       "campaign_theme": "The refill friction in 20 seconds",
       "creative_concept": "Vertical script: bag, desk, gym; caption: ‘What would make your routine easier?’",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop concept video: Vertical script: bag, desk, gym; caption: ‘What would make your routine easier?’",
+      "copy_or_script": "Vertical script: bag, desk, gym; caption: ‘What would make your routine easier?’ This video describes a fictional proposed campaign concept; it does not claim product availability or outcome. Outline: Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
       "cta": "Subscribe for the concept series.",
       "distribution": "Organic",
       "proposed_publication_time": "17:00 audience local time (test variable)",
       "kpi": "Shorts views / viewed-versus-swiped-away",
       "responsible_role": "Video producer",
-      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+      "targeting_id": "YT-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "refill routine",
+          "reusable hydration",
+          "modular product concept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the YouTube format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "video_title": "RefillLoop concept: The refill friction in 20 seconds",
+        "description": "Vertical script: bag, desk, gym; caption: ‘What would make your routine easier?’ This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "script_outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
+        "cta_line": "Subscribe for the concept series."
+      }
     },
     {
+      "action_id": "instagram-04",
       "day": 4,
       "phase": "Tease",
       "platform": "Instagram",
@@ -167,15 +527,38 @@
       "campaign_theme": "Built for handoffs",
       "creative_concept": "Desk-to-gym transition shows a proposed modular carry routine.",
       "target_persona": "Maya — hybrid commuter",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Desk-to-gym transition shows a proposed modular carry routine.",
+      "copy_or_script": "This concept creative follows the handoffs that make reusable habits harder to repeat.",
       "cta": "Comment with your daily switch.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "This concept creative follows the handoffs that make reusable habits harder to repeat.",
+        "headline_or_hook": "Commute. Desk. Training. One routine map.",
+        "cta_line": "Comment with your daily switch."
+      }
     },
     {
+      "action_id": "linkedin-04",
       "day": 4,
       "phase": "Prelaunch",
       "platform": "LinkedIn",
@@ -183,15 +566,38 @@
       "campaign_theme": "Designing for routines, not novelty",
       "creative_concept": "Professional storytelling frames RefillLoop as a fictional exercise in modular service design.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: Professional storytelling frames RefillLoop as a fictional exercise in modular service design.",
+      "copy_or_script": "Designing for routines, not novelty. Professional storytelling frames RefillLoop as a fictional exercise in modular service design. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Comment with a workflow friction.",
       "distribution": "Organic",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "modular",
+        "primary_keyword": "modular reusable bottle concept",
+        "supporting_keywords": [
+          "modular product design",
+          "reusable hydration",
+          "product concept"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Understand the proposed modular-product framing.",
+        "rationale": "Connects the LinkedIn format to the modular discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Designing for routines, not novelty. Professional storytelling frames RefillLoop as a fictional exercise in modular service design. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "Designing for routines, not novelty",
+        "cta_line": "Comment with a workflow friction."
+      }
     },
     {
+      "action_id": "instagram-05",
       "day": 5,
       "phase": "Tease",
       "platform": "Instagram",
@@ -199,15 +605,38 @@
       "campaign_theme": "Routine reset",
       "creative_concept": "Before/after bag-pack sequence frames refill preparation as a simple ritual.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Before/after bag-pack sequence frames refill preparation as a simple ritual.",
+      "copy_or_script": "Save this proposed packing cue and adapt it to your own day.",
       "cta": "Save the packing checklist.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Save this proposed packing cue and adapt it to your own day.",
+        "headline_or_hook": "A better routine begins before the bag leaves the door.",
+        "cta_line": "Save the packing checklist."
+      }
     },
     {
+      "action_id": "instagram-06",
       "day": 6,
       "phase": "Tease",
       "platform": "Instagram",
@@ -215,15 +644,38 @@
       "campaign_theme": "Countdown",
       "creative_concept": "Five-second timer and component silhouettes introduce launch week.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Five-second timer and component silhouettes introduce launch week.",
+      "copy_or_script": "Follow the concept countdown; availability is not being promised.",
       "cta": "Turn on reminders.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Follow the concept countdown; availability is not being promised.",
+        "headline_or_hook": "Something new is being explored for changing routines.",
+        "cta_line": "Turn on reminders."
+      }
     },
     {
+      "action_id": "youtube-06",
       "day": 6,
       "phase": "Tease",
       "platform": "YouTube",
@@ -231,15 +683,39 @@
       "campaign_theme": "A proposed module swap",
       "creative_concept": "Vertical script: show an animated module change with labels for the fictional components.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop concept video: Vertical script: show an animated module change with labels for the fictional components.",
+      "copy_or_script": "Vertical script: show an animated module change with labels for the fictional components. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome. Outline: Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
       "cta": "Watch the launch reveal.",
       "distribution": "Organic",
       "proposed_publication_time": "17:00 audience local time (test variable)",
       "kpi": "Shorts views / viewed-versus-swiped-away",
       "responsible_role": "Video producer",
-      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+      "targeting_id": "YT-KHI-01",
+      "keyword_strategy": {
+        "cluster": "modular",
+        "primary_keyword": "modular reusable bottle concept",
+        "supporting_keywords": [
+          "modular product design",
+          "reusable hydration",
+          "product concept"
+        ],
+        "hashtags_or_video_tags": [
+          "refill routine",
+          "reusable hydration",
+          "modular product concept"
+        ],
+        "search_discovery_intent": "Understand the proposed modular-product framing.",
+        "rationale": "Connects the YouTube format to the modular discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "video_title": "RefillLoop concept: A proposed module swap",
+        "description": "Vertical script: show an animated module change with labels for the fictional components. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "script_outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
+        "cta_line": "Watch the launch reveal."
+      }
     },
     {
+      "action_id": "instagram-07",
       "day": 7,
       "phase": "Prelaunch",
       "platform": "Instagram",
@@ -247,15 +723,38 @@
       "campaign_theme": "Choose your loop",
       "creative_concept": "Story poll compares commuting, training, and desk-day routines.",
       "target_persona": "Maya — hybrid commuter",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Story poll compares commuting, training, and desk-day routines.",
+      "copy_or_script": "Vote: commute, desk day, or training. The answer informs a future concept test.",
       "cta": "Vote for your routine.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Vote: commute, desk day, or training. The answer informs a future concept test.",
+        "headline_or_hook": "Which moment needs the clearest refill cue?",
+        "cta_line": "Vote for your routine."
+      }
     },
     {
+      "action_id": "linkedin-07",
       "day": 7,
       "phase": "Prelaunch",
       "platform": "LinkedIn",
@@ -263,15 +762,38 @@
       "campaign_theme": "Workplace refill prompt",
       "creative_concept": "Five slides show a proposed facilities-team activation: location cue, owner, message, measure, learn.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: Five slides show a proposed facilities-team activation: location cue, owner, message, measure, learn.",
+      "copy_or_script": "Workplace refill prompt. Five slides show a proposed facilities-team activation: location cue, owner, message, measure, learn. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Save the activation template.",
       "distribution": "Paid",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "workplace",
+        "primary_keyword": "workplace wellbeing routine",
+        "supporting_keywords": [
+          "workplace hydration prompt",
+          "hybrid team wellbeing",
+          "facilities activation"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Find a proposed workplace implementation or discussion tool.",
+        "rationale": "Connects the LinkedIn format to the workplace discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Workplace refill prompt. Five slides show a proposed facilities-team activation: location cue, owner, message, measure, learn. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "Workplace refill prompt",
+        "cta_line": "Save the activation template."
+      }
     },
     {
+      "action_id": "instagram-08",
       "day": 8,
       "phase": "Launch",
       "platform": "Instagram",
@@ -279,15 +801,39 @@
       "campaign_theme": "Reveal",
       "creative_concept": "Hero reel reveals the fictional RefillLoop concept and its proposed module system.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Hero reel reveals the fictional RefillLoop concept and its proposed module system.",
+      "copy_or_script": "This reveal introduces an idea to test, not a product ready to buy.",
       "cta": "Visit the concept page.",
       "distribution": "Paid",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "modular",
+        "primary_keyword": "modular reusable bottle concept",
+        "supporting_keywords": [
+          "modular product design",
+          "reusable hydration",
+          "product concept"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Understand the proposed modular-product framing.",
+        "rationale": "Connects the Instagram format to the modular discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "This reveal introduces an idea to test, not a product ready to buy.",
+        "headline_or_hook": "Meet RefillLoop — a proposed modular hydration concept.",
+        "cta_line": "Visit the concept page."
+      },
+      "ab_test_id": "AB-01"
     },
     {
+      "action_id": "youtube-08",
       "day": 8,
       "phase": "Launch",
       "platform": "YouTube",
@@ -295,15 +841,39 @@
       "campaign_theme": "RefillLoop concept walkthrough",
       "creative_concept": "Four-minute narrated demonstration explains the fictional concept, intended users, care assumptions, and open questions.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop concept video: Four-minute narrated demonstration explains the fictional concept, intended users, care assumptions, and open questions.",
+      "copy_or_script": "Four-minute narrated demonstration explains the fictional concept, intended users, care assumptions, and open questions. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome. Outline: Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
       "cta": "Visit the concept page.",
       "distribution": "Paid",
       "proposed_publication_time": "17:00 audience local time (test variable)",
       "kpi": "Average view duration / end-screen CTR",
       "responsible_role": "Video producer",
-      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+      "targeting_id": "YT-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "refill routine",
+          "reusable hydration",
+          "modular product concept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the YouTube format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "video_title": "RefillLoop concept: RefillLoop concept walkthrough",
+        "description": "Four-minute narrated demonstration explains the fictional concept, intended users, care assumptions, and open questions. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "script_outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
+        "cta_line": "Visit the concept page."
+      }
     },
     {
+      "action_id": "instagram-09",
       "day": 9,
       "phase": "Launch",
       "platform": "Instagram",
@@ -311,15 +881,38 @@
       "campaign_theme": "What changes",
       "creative_concept": "Carousel contrasts a single-use habit with a planned refill routine without environmental performance claims.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Carousel contrasts a single-use habit with a planned refill routine without environmental performance claims.",
+      "copy_or_script": "See how a proposed routine map can connect carry, fill, and reset.",
       "cta": "Explore the proposed system.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "See how a proposed routine map can connect carry, fill, and reset.",
+        "headline_or_hook": "A reusable habit needs a plan for the in-between moments.",
+        "cta_line": "Explore the proposed system."
+      }
     },
     {
+      "action_id": "linkedin-09",
       "day": 9,
       "phase": "Launch",
       "platform": "LinkedIn",
@@ -327,15 +920,38 @@
       "campaign_theme": "Which barrier matters most?",
       "creative_concept": "Poll options test time, carry convenience, cleaning, and forgetting as assumed barriers.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: Poll options test time, carry convenience, cleaning, and forgetting as assumed barriers.",
+      "copy_or_script": "Which barrier matters most?. Poll options test time, carry convenience, cleaning, and forgetting as assumed barriers. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Vote and explain.",
       "distribution": "Organic",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the LinkedIn format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Which barrier matters most?. Poll options test time, carry convenience, cleaning, and forgetting as assumed barriers. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "Which barrier matters most?",
+        "cta_line": "Vote and explain."
+      }
     },
     {
+      "action_id": "instagram-10",
       "day": 10,
       "phase": "Launch",
       "platform": "Instagram",
@@ -343,15 +959,38 @@
       "campaign_theme": "First-use flow",
       "creative_concept": "Short demonstration shows proposed assemble, fill, carry, and clean steps.",
       "target_persona": "Maya — hybrid commuter",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Short demonstration shows proposed assemble, fill, carry, and clean steps.",
+      "copy_or_script": "Watch the concept flow, then decide which step needs more clarity.",
       "cta": "Watch the full demo.",
       "distribution": "Paid",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Watch the concept flow, then decide which step needs more clarity.",
+        "headline_or_hook": "Four proposed steps: assemble, fill, carry, reset.",
+        "cta_line": "Watch the full demo."
+      }
     },
     {
+      "action_id": "instagram-11",
       "day": 11,
       "phase": "Launch",
       "platform": "Instagram",
@@ -359,15 +998,38 @@
       "campaign_theme": "Design choices",
       "creative_concept": "Macro shots highlight texture, closure, and module transitions as creative concepts.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Macro shots highlight texture, closure, and module transitions as creative concepts.",
+      "copy_or_script": "Zoom in on the fictional components and share the question you would ask first.",
       "cta": "Save the feature guide.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "modular",
+        "primary_keyword": "modular reusable bottle concept",
+        "supporting_keywords": [
+          "modular product design",
+          "reusable hydration",
+          "product concept"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Understand the proposed modular-product framing.",
+        "rationale": "Connects the Instagram format to the modular discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Zoom in on the fictional components and share the question you would ask first.",
+        "headline_or_hook": "Design details only matter when they support a routine.",
+        "cta_line": "Save the feature guide."
+      }
     },
     {
+      "action_id": "youtube-11",
       "day": 11,
       "phase": "Launch",
       "platform": "YouTube",
@@ -375,15 +1037,39 @@
       "campaign_theme": "Three routine cues",
       "creative_concept": "Vertical script gives three proposed prompts: bag check, desk reset, post-workout refill.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop concept video: Vertical script gives three proposed prompts: bag check, desk reset, post-workout refill.",
+      "copy_or_script": "Vertical script gives three proposed prompts: bag check, desk reset, post-workout refill. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome. Outline: Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
       "cta": "Try one cue.",
       "distribution": "Organic",
       "proposed_publication_time": "17:00 audience local time (test variable)",
       "kpi": "Shorts views / viewed-versus-swiped-away",
       "responsible_role": "Video producer",
-      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+      "targeting_id": "YT-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "refill routine",
+          "reusable hydration",
+          "modular product concept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the YouTube format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "video_title": "RefillLoop concept: Three routine cues",
+        "description": "Vertical script gives three proposed prompts: bag check, desk reset, post-workout refill. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "script_outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
+        "cta_line": "Try one cue."
+      }
     },
     {
+      "action_id": "instagram-12",
       "day": 12,
       "phase": "Launch",
       "platform": "Instagram",
@@ -391,15 +1077,38 @@
       "campaign_theme": "Routine proof",
       "creative_concept": "Creator-style POV follows a fictional commuter’s refill prompts.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Creator-style POV follows a fictional commuter’s refill prompts.",
+      "copy_or_script": "This creator-style scenario is illustrative; share the cue that works for you.",
       "cta": "Share your refill cue.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "This creator-style scenario is illustrative; share the cue that works for you.",
+        "headline_or_hook": "A refill cue can travel with the rest of your routine.",
+        "cta_line": "Share your refill cue."
+      }
     },
     {
+      "action_id": "linkedin-12",
       "day": 12,
       "phase": "Launch",
       "platform": "LinkedIn",
@@ -407,15 +1116,38 @@
       "campaign_theme": "A day in a hybrid-work routine",
       "creative_concept": "A fictional persona illustrates proposed use across commute, desk, and training.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: A fictional persona illustrates proposed use across commute, desk, and training.",
+      "copy_or_script": "A day in a hybrid-work routine. A fictional persona illustrates proposed use across commute, desk, and training. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Review the use-case map.",
       "distribution": "Organic",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "workplace",
+        "primary_keyword": "workplace wellbeing routine",
+        "supporting_keywords": [
+          "workplace hydration prompt",
+          "hybrid team wellbeing",
+          "facilities activation"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Find a proposed workplace implementation or discussion tool.",
+        "rationale": "Connects the LinkedIn format to the workplace discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "A day in a hybrid-work routine. A fictional persona illustrates proposed use across commute, desk, and training. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "A day in a hybrid-work routine",
+        "cta_line": "Review the use-case map."
+      }
     },
     {
+      "action_id": "instagram-13",
       "day": 13,
       "phase": "Education",
       "platform": "Instagram",
@@ -423,15 +1155,38 @@
       "campaign_theme": "Module logic",
       "creative_concept": "Carousel explains which proposed component fits work, travel, or training.",
       "target_persona": "Maya — hybrid commuter",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Carousel explains which proposed component fits work, travel, or training.",
+      "copy_or_script": "Start with the context, then test what you actually need.",
       "cta": "Build a routine.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "modular",
+        "primary_keyword": "modular reusable bottle concept",
+        "supporting_keywords": [
+          "modular product design",
+          "reusable hydration",
+          "product concept"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Understand the proposed modular-product framing.",
+        "rationale": "Connects the Instagram format to the modular discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Start with the context, then test what you actually need.",
+        "headline_or_hook": "Choose a proposed configuration for work, travel, or training.",
+        "cta_line": "Build a routine."
+      }
     },
     {
+      "action_id": "instagram-14",
       "day": 14,
       "phase": "Education",
       "platform": "Instagram",
@@ -439,15 +1194,38 @@
       "campaign_theme": "Care without claims",
       "creative_concept": "Step-by-step care animation presents a proposed maintenance checklist.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Step-by-step care animation presents a proposed maintenance checklist.",
+      "copy_or_script": "Save this proposed checklist; final product instructions would require validation.",
       "cta": "Download the checklist.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "education",
+        "primary_keyword": "refill habit education",
+        "supporting_keywords": [
+          "hydration routine checklist",
+          "care checklist",
+          "habit stacking"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Learn a proposed routine or care framework without performance claims.",
+        "rationale": "Connects the Instagram format to the education discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Save this proposed checklist; final product instructions would require validation.",
+        "headline_or_hook": "Care guidance should be clear before it is persuasive.",
+        "cta_line": "Download the checklist."
+      }
     },
     {
+      "action_id": "instagram-15",
       "day": 15,
       "phase": "Education",
       "platform": "Instagram",
@@ -455,15 +1233,38 @@
       "campaign_theme": "Habit stack",
       "creative_concept": "Reel pairs filling a bottle with an existing morning habit.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Reel pairs filling a bottle with an existing morning habit.",
+      "copy_or_script": "A calendar reminder, bag check, or desk reset can become the cue.",
       "cta": "Try one habit stack.",
       "distribution": "Paid",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "education",
+        "primary_keyword": "refill habit education",
+        "supporting_keywords": [
+          "hydration routine checklist",
+          "care checklist",
+          "habit stacking"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Learn a proposed routine or care framework without performance claims.",
+        "rationale": "Connects the Instagram format to the education discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "A calendar reminder, bag check, or desk reset can become the cue.",
+        "headline_or_hook": "Try linking one refill action to a habit you already have.",
+        "cta_line": "Try one habit stack."
+      }
     },
     {
+      "action_id": "linkedin-15",
       "day": 15,
       "phase": "Education",
       "platform": "LinkedIn",
@@ -471,15 +1272,39 @@
       "campaign_theme": "From awareness to habit",
       "creative_concept": "Thought-leadership article explains the proposed campaign’s behavior-design logic and measurement plan.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: Thought-leadership article explains the proposed campaign’s behavior-design logic and measurement plan.",
+      "copy_or_script": "From awareness to habit. Thought-leadership article explains the proposed campaign’s behavior-design logic and measurement plan. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Read the full framework.",
       "distribution": "Paid",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "education",
+        "primary_keyword": "refill habit education",
+        "supporting_keywords": [
+          "hydration routine checklist",
+          "care checklist",
+          "habit stacking"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Learn a proposed routine or care framework without performance claims.",
+        "rationale": "Connects the LinkedIn format to the education discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "From awareness to habit. Thought-leadership article explains the proposed campaign’s behavior-design logic and measurement plan. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "From awareness to habit",
+        "cta_line": "Read the full framework."
+      },
+      "ab_test_id": "AB-02"
     },
     {
+      "action_id": "youtube-15",
       "day": 15,
       "phase": "Education",
       "platform": "YouTube",
@@ -487,15 +1312,39 @@
       "campaign_theme": "How a modular routine is planned",
       "creative_concept": "Five-minute behind-the-brief video distinguishes design assumptions from verified product claims.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop concept video: Five-minute behind-the-brief video distinguishes design assumptions from verified product claims.",
+      "copy_or_script": "Five-minute behind-the-brief video distinguishes design assumptions from verified product claims. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome. Outline: Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
       "cta": "Comment with a test question.",
       "distribution": "Paid",
       "proposed_publication_time": "17:00 audience local time (test variable)",
       "kpi": "Average view duration / end-screen CTR",
       "responsible_role": "Video producer",
-      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+      "targeting_id": "YT-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "refill routine",
+          "reusable hydration",
+          "modular product concept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the YouTube format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "video_title": "RefillLoop concept: How a modular routine is planned",
+        "description": "Five-minute behind-the-brief video distinguishes design assumptions from verified product claims. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "script_outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
+        "cta_line": "Comment with a test question."
+      }
     },
     {
+      "action_id": "instagram-16",
       "day": 16,
       "phase": "Education",
       "platform": "Instagram",
@@ -503,15 +1352,38 @@
       "campaign_theme": "What is modular?",
       "creative_concept": "Question box answers common concept questions in plain language.",
       "target_persona": "Maya — hybrid commuter",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Question box answers common concept questions in plain language.",
+      "copy_or_script": "Ask about modules, routine prompts, or what still needs testing.",
       "cta": "Ask a question.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Ask about modules, routine prompts, or what still needs testing.",
+        "headline_or_hook": "Questions make a concept stronger.",
+        "cta_line": "Ask a question."
+      }
     },
     {
+      "action_id": "instagram-17",
       "day": 17,
       "phase": "Education",
       "platform": "Instagram",
@@ -519,15 +1391,38 @@
       "campaign_theme": "Carry confidence",
       "creative_concept": "Packing sequence demonstrates a proposed workday configuration.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Packing sequence demonstrates a proposed workday configuration.",
+      "copy_or_script": "Save this fictional configuration as a discussion prompt, not a performance claim.",
       "cta": "Save this setup.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "commute",
+        "primary_keyword": "commuter hydration routine",
+        "supporting_keywords": [
+          "hybrid work commute",
+          "bag packing routine",
+          "desk to gym"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Find ideas for changing locations and carry contexts.",
+        "rationale": "Connects the Instagram format to the commute discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Save this fictional configuration as a discussion prompt, not a performance claim.",
+        "headline_or_hook": "A workday carry setup should be easy to explain.",
+        "cta_line": "Save this setup."
+      }
     },
     {
+      "action_id": "youtube-17",
       "day": 17,
       "phase": "Education",
       "platform": "YouTube",
@@ -535,15 +1430,39 @@
       "campaign_theme": "Desk-to-door carry setup",
       "creative_concept": "Vertical transition follows a fictional hybrid worker through a proposed configuration.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop concept video: Vertical transition follows a fictional hybrid worker through a proposed configuration.",
+      "copy_or_script": "Vertical transition follows a fictional hybrid worker through a proposed configuration. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome. Outline: Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
       "cta": "Save the setup idea.",
       "distribution": "Organic",
       "proposed_publication_time": "17:00 audience local time (test variable)",
       "kpi": "Shorts views / viewed-versus-swiped-away",
       "responsible_role": "Video producer",
-      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+      "targeting_id": "YT-KHI-01",
+      "keyword_strategy": {
+        "cluster": "commute",
+        "primary_keyword": "commuter hydration routine",
+        "supporting_keywords": [
+          "hybrid work commute",
+          "bag packing routine",
+          "desk to gym"
+        ],
+        "hashtags_or_video_tags": [
+          "refill routine",
+          "reusable hydration",
+          "modular product concept"
+        ],
+        "search_discovery_intent": "Find ideas for changing locations and carry contexts.",
+        "rationale": "Connects the YouTube format to the commute discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "video_title": "RefillLoop concept: Desk-to-door carry setup",
+        "description": "Vertical transition follows a fictional hybrid worker through a proposed configuration. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "script_outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
+        "cta_line": "Save the setup idea."
+      }
     },
     {
+      "action_id": "instagram-18",
       "day": 18,
       "phase": "Education",
       "platform": "Instagram",
@@ -551,15 +1470,38 @@
       "campaign_theme": "Community prompt",
       "creative_concept": "Story asks followers to post their refill station setup.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Story asks followers to post their refill station setup.",
+      "copy_or_script": "Use the campaign prompt to share a setup idea; do not share personal data.",
       "cta": "Tag the campaign prompt.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Use the campaign prompt to share a setup idea; do not share personal data.",
+        "headline_or_hook": "Show the place where your refill routine starts.",
+        "cta_line": "Tag the campaign prompt."
+      }
     },
     {
+      "action_id": "linkedin-18",
       "day": 18,
       "phase": "Education",
       "platform": "LinkedIn",
@@ -567,15 +1509,38 @@
       "campaign_theme": "What teams can measure",
       "creative_concept": "A proposed dashboard defines reach, qualified visits, waitlist intent, and feedback—not claimed outcomes.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: A proposed dashboard defines reach, qualified visits, waitlist intent, and feedback—not claimed outcomes.",
+      "copy_or_script": "What teams can measure. A proposed dashboard defines reach, qualified visits, waitlist intent, and feedback—not claimed outcomes. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Download KPI definitions.",
       "distribution": "Organic",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "workplace",
+        "primary_keyword": "workplace wellbeing routine",
+        "supporting_keywords": [
+          "workplace hydration prompt",
+          "hybrid team wellbeing",
+          "facilities activation"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Find a proposed workplace implementation or discussion tool.",
+        "rationale": "Connects the LinkedIn format to the workplace discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "What teams can measure. A proposed dashboard defines reach, qualified visits, waitlist intent, and feedback—not claimed outcomes. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "What teams can measure",
+        "cta_line": "Download KPI definitions."
+      }
     },
     {
+      "action_id": "instagram-19",
       "day": 19,
       "phase": "Optimization",
       "platform": "Instagram",
@@ -583,15 +1548,39 @@
       "campaign_theme": "Feature preference",
       "creative_concept": "Two creative directions invite a preference vote: utility-first or lifestyle-first.",
       "target_persona": "Maya — hybrid commuter",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Two creative directions invite a preference vote: utility-first or lifestyle-first.",
+      "copy_or_script": "Vote so the next proposed message test begins with a clear audience preference.",
       "cta": "Vote in the poll.",
       "distribution": "Paid",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Vote so the next proposed message test begins with a clear audience preference.",
+        "headline_or_hook": "Would you rather see utility-first or lifestyle-first creative?",
+        "cta_line": "Vote in the poll."
+      },
+      "ab_test_id": "AB-04"
     },
     {
+      "action_id": "instagram-20",
       "day": 20,
       "phase": "Optimization",
       "platform": "Instagram",
@@ -599,15 +1588,38 @@
       "campaign_theme": "Objection clinic",
       "creative_concept": "Carousel addresses proposed buyer questions about fit, care, and routine.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Carousel addresses proposed buyer questions about fit, care, and routine.",
+      "copy_or_script": "Send the question that would prevent you from trying a new concept.",
       "cta": "Send a question.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Send the question that would prevent you from trying a new concept.",
+        "headline_or_hook": "Fit, care, and routine are questions worth answering plainly.",
+        "cta_line": "Send a question."
+      }
     },
     {
+      "action_id": "youtube-20",
       "day": 20,
       "phase": "Optimization",
       "platform": "YouTube",
@@ -615,15 +1627,39 @@
       "campaign_theme": "Care checklist preview",
       "creative_concept": "Vertical checklist introduces simple proposed care steps; no health or material-performance claim.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop concept video: Vertical checklist introduces simple proposed care steps; no health or material-performance claim.",
+      "copy_or_script": "Vertical checklist introduces simple proposed care steps; no health or material-performance claim. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome. Outline: Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
       "cta": "Watch the detailed guide.",
       "distribution": "Organic",
       "proposed_publication_time": "17:00 audience local time (test variable)",
       "kpi": "Shorts views / viewed-versus-swiped-away",
       "responsible_role": "Video producer",
-      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+      "targeting_id": "YT-KHI-01",
+      "keyword_strategy": {
+        "cluster": "education",
+        "primary_keyword": "refill habit education",
+        "supporting_keywords": [
+          "hydration routine checklist",
+          "care checklist",
+          "habit stacking"
+        ],
+        "hashtags_or_video_tags": [
+          "refill routine",
+          "reusable hydration",
+          "modular product concept"
+        ],
+        "search_discovery_intent": "Learn a proposed routine or care framework without performance claims.",
+        "rationale": "Connects the YouTube format to the education discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "video_title": "RefillLoop concept: Care checklist preview",
+        "description": "Vertical checklist introduces simple proposed care steps; no health or material-performance claim. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "script_outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
+        "cta_line": "Watch the detailed guide."
+      }
     },
     {
+      "action_id": "instagram-21",
       "day": 21,
       "phase": "Optimization",
       "platform": "Instagram",
@@ -631,15 +1667,38 @@
       "campaign_theme": "Behind the brief",
       "creative_concept": "Reel explains that RefillLoop is a proposed modular-product concept.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Reel explains that RefillLoop is a proposed modular-product concept.",
+      "copy_or_script": "This brief separates planned design language from verified product claims.",
       "cta": "Follow for build updates.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "This brief separates planned design language from verified product claims.",
+        "headline_or_hook": "Behind every concept is a list of assumptions to test.",
+        "cta_line": "Follow for build updates."
+      }
     },
     {
+      "action_id": "linkedin-21",
       "day": 21,
       "phase": "Optimization",
       "platform": "LinkedIn",
@@ -647,15 +1706,38 @@
       "campaign_theme": "What the audience told us to test",
       "creative_concept": "States planned A/B questions, not results: utility versus lifestyle framing and CTA wording.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: States planned A/B questions, not results: utility versus lifestyle framing and CTA wording.",
+      "copy_or_script": "What the audience told us to test. States planned A/B questions, not results: utility versus lifestyle framing and CTA wording. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Follow the test plan.",
       "distribution": "Organic",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the LinkedIn format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "What the audience told us to test. States planned A/B questions, not results: utility versus lifestyle framing and CTA wording. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "What the audience told us to test",
+        "cta_line": "Follow the test plan."
+      }
     },
     {
+      "action_id": "instagram-22",
       "day": 22,
       "phase": "Optimization",
       "platform": "Instagram",
@@ -663,15 +1745,38 @@
       "campaign_theme": "Desk-day system",
       "creative_concept": "Fast-cut workflow shows proposed hydration cues between meetings.",
       "target_persona": "Maya — hybrid commuter",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Fast-cut workflow shows proposed hydration cues between meetings.",
+      "copy_or_script": "Save this proposed reset sequence for your next workday experiment.",
       "cta": "Save the desk routine.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "commute",
+        "primary_keyword": "commuter hydration routine",
+        "supporting_keywords": [
+          "hybrid work commute",
+          "bag packing routine",
+          "desk to gym"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Find ideas for changing locations and carry contexts.",
+        "rationale": "Connects the Instagram format to the commute discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Save this proposed reset sequence for your next workday experiment.",
+        "headline_or_hook": "A desk routine needs a cue that fits between meetings.",
+        "cta_line": "Save the desk routine."
+      }
     },
     {
+      "action_id": "youtube-22",
       "day": 22,
       "phase": "Optimization",
       "platform": "YouTube",
@@ -679,15 +1784,40 @@
       "campaign_theme": "Workplace refill challenge toolkit",
       "creative_concept": "Six-minute tutorial gives a proposed internal-activation playbook for people teams and facilities leads.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop concept video: Six-minute tutorial gives a proposed internal-activation playbook for people teams and facilities leads.",
+      "copy_or_script": "Six-minute tutorial gives a proposed internal-activation playbook for people teams and facilities leads. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome. Outline: Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
       "cta": "Download the toolkit.",
       "distribution": "Paid",
       "proposed_publication_time": "17:00 audience local time (test variable)",
       "kpi": "Average view duration / end-screen CTR",
       "responsible_role": "Video producer",
-      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+      "targeting_id": "YT-KHI-01",
+      "keyword_strategy": {
+        "cluster": "workplace",
+        "primary_keyword": "workplace wellbeing routine",
+        "supporting_keywords": [
+          "workplace hydration prompt",
+          "hybrid team wellbeing",
+          "facilities activation"
+        ],
+        "hashtags_or_video_tags": [
+          "refill routine",
+          "reusable hydration",
+          "modular product concept"
+        ],
+        "search_discovery_intent": "Find a proposed workplace implementation or discussion tool.",
+        "rationale": "Connects the YouTube format to the workplace discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "video_title": "RefillLoop concept: Workplace refill challenge toolkit",
+        "description": "Six-minute tutorial gives a proposed internal-activation playbook for people teams and facilities leads. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "script_outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
+        "cta_line": "Download the toolkit."
+      },
+      "ab_test_id": "AB-03"
     },
     {
+      "action_id": "instagram-23",
       "day": 23,
       "phase": "Conversion",
       "platform": "Instagram",
@@ -695,15 +1825,39 @@
       "campaign_theme": "Choose your starting point",
       "creative_concept": "Carousel routes three fictional personas to their suggested configuration.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Carousel routes three fictional personas to their suggested configuration.",
+      "copy_or_script": "Choose commuter, desk-day, or training to see the relevant concept path.",
       "cta": "Choose your path.",
       "distribution": "Paid",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Choose commuter, desk-day, or training to see the relevant concept path.",
+        "headline_or_hook": "Start with the routine that changes most often.",
+        "cta_line": "Choose your path."
+      },
+      "ab_test_id": "AB-04"
     },
     {
+      "action_id": "linkedin-23",
       "day": 23,
       "phase": "Conversion",
       "platform": "LinkedIn",
@@ -711,15 +1865,39 @@
       "campaign_theme": "Modular product storytelling",
       "creative_concept": "Shows how one concept becomes a consumer reel, a workplace brief, and a demonstration script.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: Shows how one concept becomes a consumer reel, a workplace brief, and a demonstration script.",
+      "copy_or_script": "Modular product storytelling. Shows how one concept becomes a consumer reel, a workplace brief, and a demonstration script. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Save the content map.",
       "distribution": "Paid",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the LinkedIn format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Modular product storytelling. Shows how one concept becomes a consumer reel, a workplace brief, and a demonstration script. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "Modular product storytelling",
+        "cta_line": "Save the content map."
+      },
+      "ab_test_id": "AB-02"
     },
     {
+      "action_id": "instagram-24",
       "day": 24,
       "phase": "Conversion",
       "platform": "Instagram",
@@ -727,15 +1905,38 @@
       "campaign_theme": "Early-access value",
       "creative_concept": "Reel states the proposed early-access benefit without promising availability.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Reel states the proposed early-access benefit without promising availability.",
+      "copy_or_script": "Request a future update if the concept is relevant to your routine.",
       "cta": "Request early access.",
       "distribution": "Paid",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Request a future update if the concept is relevant to your routine.",
+        "headline_or_hook": "Early access begins with informed interest, not urgency.",
+        "cta_line": "Request early access."
+      }
     },
     {
+      "action_id": "instagram-25",
       "day": 25,
       "phase": "Conversion",
       "platform": "Instagram",
@@ -743,15 +1944,38 @@
       "campaign_theme": "FAQ recap",
       "creative_concept": "Story sequence answers the most common campaign questions collected to date.",
       "target_persona": "Maya — hybrid commuter",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Story sequence answers the most common campaign questions collected to date.",
+      "copy_or_script": "Review the questions this fictional campaign is designed to answer.",
       "cta": "Review the concept FAQ.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "education",
+        "primary_keyword": "refill habit education",
+        "supporting_keywords": [
+          "hydration routine checklist",
+          "care checklist",
+          "habit stacking"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Learn a proposed routine or care framework without performance claims.",
+        "rationale": "Connects the Instagram format to the education discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Review the questions this fictional campaign is designed to answer.",
+        "headline_or_hook": "FAQ first, assumptions second.",
+        "cta_line": "Review the concept FAQ."
+      }
     },
     {
+      "action_id": "youtube-25",
       "day": 25,
       "phase": "Conversion",
       "platform": "YouTube",
@@ -759,15 +1983,39 @@
       "campaign_theme": "Choose your loop",
       "creative_concept": "Vertical quiz asks viewers to select commuter, trainer, or desk-day configuration.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop concept video: Vertical quiz asks viewers to select commuter, trainer, or desk-day configuration.",
+      "copy_or_script": "Vertical quiz asks viewers to select commuter, trainer, or desk-day configuration. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome. Outline: Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
       "cta": "Comment with your route.",
       "distribution": "Organic",
       "proposed_publication_time": "17:00 audience local time (test variable)",
       "kpi": "Shorts views / viewed-versus-swiped-away",
       "responsible_role": "Video producer",
-      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+      "targeting_id": "YT-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "refill routine",
+          "reusable hydration",
+          "modular product concept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the YouTube format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "video_title": "RefillLoop concept: Choose your loop",
+        "description": "Vertical quiz asks viewers to select commuter, trainer, or desk-day configuration. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "script_outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
+        "cta_line": "Comment with your route."
+      }
     },
     {
+      "action_id": "instagram-26",
       "day": 26,
       "phase": "Conversion",
       "platform": "Instagram",
@@ -775,15 +2023,38 @@
       "campaign_theme": "Workplace challenge",
       "creative_concept": "Reel invites teams to test a proposed refill-routine prompt internally.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Reel invites teams to test a proposed refill-routine prompt internally.",
+      "copy_or_script": "Download the proposed internal prompt and adapt it with workplace approval.",
       "cta": "Download the team prompt.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "workplace",
+        "primary_keyword": "workplace wellbeing routine",
+        "supporting_keywords": [
+          "workplace hydration prompt",
+          "hybrid team wellbeing",
+          "facilities activation"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Find a proposed workplace implementation or discussion tool.",
+        "rationale": "Connects the Instagram format to the workplace discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Download the proposed internal prompt and adapt it with workplace approval.",
+        "headline_or_hook": "Teams can test a refill cue without making a product claim.",
+        "cta_line": "Download the team prompt."
+      }
     },
     {
+      "action_id": "linkedin-26",
       "day": 26,
       "phase": "Conversion",
       "platform": "LinkedIn",
@@ -791,15 +2062,38 @@
       "campaign_theme": "What earns early-access interest?",
       "creative_concept": "Poll tests clarity, utility, design, and community as proposed message routes.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: Poll tests clarity, utility, design, and community as proposed message routes.",
+      "copy_or_script": "What earns early-access interest?. Poll tests clarity, utility, design, and community as proposed message routes. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Choose one factor.",
       "distribution": "Organic",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the LinkedIn format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "What earns early-access interest?. Poll tests clarity, utility, design, and community as proposed message routes. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "What earns early-access interest?",
+        "cta_line": "Choose one factor."
+      }
     },
     {
+      "action_id": "instagram-27",
       "day": 27,
       "phase": "Conversion",
       "platform": "Instagram",
@@ -807,15 +2101,38 @@
       "campaign_theme": "Last-call reminder",
       "creative_concept": "Countdown creative reminds viewers that early-access interest is still proposed.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Countdown creative reminds viewers that early-access interest is still proposed.",
+      "copy_or_script": "Join the interest list only if you want a future, consent-aware update.",
       "cta": "Join the interest list.",
       "distribution": "Paid",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Join the interest list only if you want a future, consent-aware update.",
+        "headline_or_hook": "Still curious about the proposed concept?",
+        "cta_line": "Join the interest list."
+      }
     },
     {
+      "action_id": "youtube-27",
       "day": 27,
       "phase": "Conversion",
       "platform": "YouTube",
@@ -823,15 +2140,39 @@
       "campaign_theme": "FAQ in 30 seconds",
       "creative_concept": "Answer three campaign questions: what is modular, who is it for, and what is still being tested.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop concept video: Answer three campaign questions: what is modular, who is it for, and what is still being tested.",
+      "copy_or_script": "Answer three campaign questions: what is modular, who is it for, and what is still being tested. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome. Outline: Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
       "cta": "Ask another question.",
       "distribution": "Organic",
       "proposed_publication_time": "17:00 audience local time (test variable)",
       "kpi": "Shorts views / viewed-versus-swiped-away",
       "responsible_role": "Video producer",
-      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+      "targeting_id": "YT-KHI-01",
+      "keyword_strategy": {
+        "cluster": "education",
+        "primary_keyword": "refill habit education",
+        "supporting_keywords": [
+          "hydration routine checklist",
+          "care checklist",
+          "habit stacking"
+        ],
+        "hashtags_or_video_tags": [
+          "refill routine",
+          "reusable hydration",
+          "modular product concept"
+        ],
+        "search_discovery_intent": "Learn a proposed routine or care framework without performance claims.",
+        "rationale": "Connects the YouTube format to the education discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "video_title": "RefillLoop concept: FAQ in 30 seconds",
+        "description": "Answer three campaign questions: what is modular, who is it for, and what is still being tested. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "script_outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
+        "cta_line": "Ask another question."
+      }
     },
     {
+      "action_id": "instagram-28",
       "day": 28,
       "phase": "Conversion",
       "platform": "Instagram",
@@ -839,15 +2180,38 @@
       "campaign_theme": "Community thank-you",
       "creative_concept": "Carousel recaps ideas shared during the fictional campaign exercise.",
       "target_persona": "Maya — hybrid commuter",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Carousel recaps ideas shared during the fictional campaign exercise.",
+      "copy_or_script": "Share one change that would make your routine easier to repeat.",
       "cta": "Share one improvement.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Share one change that would make your routine easier to repeat.",
+        "headline_or_hook": "Community ideas can improve a concept before a launch exists.",
+        "cta_line": "Share one improvement."
+      }
     },
     {
+      "action_id": "linkedin-28",
       "day": 28,
       "phase": "Conversion",
       "platform": "LinkedIn",
@@ -855,15 +2219,38 @@
       "campaign_theme": "Implementation checklist",
       "creative_concept": "Practical checklist covers creative approval, landing-page QA, tagging, consent, and response ownership.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: Practical checklist covers creative approval, landing-page QA, tagging, consent, and response ownership.",
+      "copy_or_script": "Implementation checklist. Practical checklist covers creative approval, landing-page QA, tagging, consent, and response ownership. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Share with a launch lead.",
       "distribution": "Paid",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the LinkedIn format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Implementation checklist. Practical checklist covers creative approval, landing-page QA, tagging, consent, and response ownership. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "Implementation checklist",
+        "cta_line": "Share with a launch lead."
+      }
     },
     {
+      "action_id": "instagram-29",
       "day": 29,
       "phase": "Conversion",
       "platform": "Instagram",
@@ -871,15 +2258,38 @@
       "campaign_theme": "Next-loop preview",
       "creative_concept": "Reel previews post-campaign concept testing and feedback review.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Reel previews post-campaign concept testing and feedback review.",
+      "copy_or_script": "Follow for future concept-development updates, not availability promises.",
       "cta": "Stay on the list.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Reach / 3-second view rate",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Follow for future concept-development updates, not availability promises.",
+        "headline_or_hook": "The next loop is feedback, testing, and clearer decisions.",
+        "cta_line": "Stay on the list."
+      }
     },
     {
+      "action_id": "youtube-29",
       "day": 29,
       "phase": "Conversion",
       "platform": "YouTube",
@@ -887,15 +2297,39 @@
       "campaign_theme": "Campaign learning recap",
       "creative_concept": "Five-minute recap covers proposed experiments, feedback collection, and real-launch prerequisites.",
       "target_persona": "Sam — active routine builder",
-      "copy_or_script": "RefillLoop concept video: Five-minute recap covers proposed experiments, feedback collection, and real-launch prerequisites.",
+      "copy_or_script": "Five-minute recap covers proposed experiments, feedback collection, and real-launch prerequisites. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome. Outline: Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
       "cta": "Join the interest list.",
       "distribution": "Paid",
       "proposed_publication_time": "17:00 audience local time (test variable)",
       "kpi": "Average view duration / end-screen CTR",
       "responsible_role": "Video producer",
-      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+      "production_requirements": "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+      "targeting_id": "YT-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "refill routine",
+          "reusable hydration",
+          "modular product concept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the YouTube format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "video_title": "RefillLoop concept: Campaign learning recap",
+        "description": "Five-minute recap covers proposed experiments, feedback collection, and real-launch prerequisites. This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "script_outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action.",
+        "cta_line": "Join the interest list."
+      }
     },
     {
+      "action_id": "instagram-30",
       "day": 30,
       "phase": "Conversion",
       "platform": "Instagram",
@@ -903,15 +2337,38 @@
       "campaign_theme": "Close and learn",
       "creative_concept": "Story survey asks what content would help a future buyer decide.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop — proposed modular hydration for the moments your routine changes. Story survey asks what content would help a future buyer decide.",
+      "copy_or_script": "Answer one question so a future launch can explain the right thing first.",
       "cta": "Complete the one-question survey.",
       "distribution": "Organic",
       "proposed_publication_time": "18:30 audience local time (test variable)",
       "kpi": "Saves, replies, or poll participation",
       "responsible_role": "Social lead",
-      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+      "production_requirements": "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+      "targeting_id": "IG-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#RefillLoopConcept",
+          "#ReusableHydration",
+          "#RoutineDesign"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the Instagram format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Answer one question so a future launch can explain the right thing first.",
+        "headline_or_hook": "What content would help you decide later?",
+        "cta_line": "Complete the one-question survey."
+      }
     },
     {
+      "action_id": "linkedin-30",
       "day": 30,
       "phase": "Conversion",
       "platform": "LinkedIn",
@@ -919,14 +2376,36 @@
       "campaign_theme": "Campaign learning handoff",
       "creative_concept": "Closes the fictional exercise with what to preserve, test, and validate before a real launch.",
       "target_persona": "Aisha — workplace wellbeing lead",
-      "copy_or_script": "RefillLoop planning note: Closes the fictional exercise with what to preserve, test, and validate before a real launch.",
+      "copy_or_script": "Campaign learning handoff. Closes the fictional exercise with what to preserve, test, and validate before a real launch. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
       "cta": "Request the planning template.",
       "distribution": "Organic",
       "proposed_publication_time": "09:00 target professional local time (test variable)",
       "kpi": "Document opens / qualified clicks / poll votes",
       "responsible_role": "B2B content lead",
-      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review."
+      "production_requirements": "Professional copy edit; document design or article QA; UTM link and claim review.",
+      "targeting_id": "LI-KHI-01",
+      "keyword_strategy": {
+        "cluster": "routine",
+        "primary_keyword": "reusable hydration routine",
+        "supporting_keywords": [
+          "daily refill habit",
+          "routine design",
+          "carry routine"
+        ],
+        "hashtags_or_video_tags": [
+          "#WorkplaceWellbeing",
+          "#RoutineDesign",
+          "#ProductConcept"
+        ],
+        "search_discovery_intent": "Discover practical routine prompts for a proposed reusable-hydration concept.",
+        "rationale": "Connects the LinkedIn format to the routine discovery cluster; no search volume or ranking is claimed."
+      },
+      "ad_copy": {
+        "primary_text": "Campaign learning handoff. Closes the fictional exercise with what to preserve, test, and validate before a real launch. This is a proposed planning exercise for teams that want to make routine prompts easier to test.",
+        "headline_or_hook": "Campaign learning handoff",
+        "cta_line": "Request the planning template."
+      }
     }
   ],
-  "source_revision": "159bbca88f6e0eb2389188147a6577049cda373c"
+  "source_revision": "6529790e096df3bab1a38f4bb1adc66d4517c558"
 }

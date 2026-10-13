@@ -42,8 +42,16 @@ validated USD 3,000 proposed media allocation, platform strategies, copy,
 targeting assumptions, measurement plan, test plan, risk controls, and a
 reviewable PDF at `digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf`.
 Its 53 planned actions span Instagram (30), LinkedIn (12), and YouTube (11).
-All product, price, budget, targeting, KPI, and performance values are labeled
-as assumptions or targets; no campaign was published or funded.
+Each action has a primary keyword, supporting terms, tags or video tags,
+discovery intent, rationale, targeting identifier, and action-level copy. The
+calendar maps all 15 paid actions to budget-pacing rows, which reconcile to
+USD 1,350 for Instagram, USD 1,050 for LinkedIn, and USD 600 for YouTube. The
+funnel explicitly models low, base, high, and stretch scenarios: the base case
+is 120,000 impressions × 1.0% CTR × 2.5% form completion = 30 modeled interest
+completions; 300 appears only as a stretch scenario requiring 240,000
+impressions, 2.5% CTR, and 5.0% completion. All product, price, budget,
+targeting, KPI, and performance values are labeled as assumptions or targets;
+no campaign was published or funded.
 
 ## Task 1
 

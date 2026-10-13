@@ -90,7 +90,7 @@ def build_pdf(data: dict, output: Path) -> None:
     targeting_rows = [["Platform", "Proposed audience / inclusion", "Placement, event, and safeguard"]]
     for platform, spec in data["targeting_specifications"].items():
         targeting_rows.append([platform, f"<b>Market:</b> {spec['geography']}<br/><b>Language:</b> {spec['language']}<br/><b>Age:</b> {spec['age']}<br/><b>Include:</b> {spec['inclusion']}", f"<b>Placement:</b> {spec['placement']}<br/><b>Event:</b> {spec['conversion_event']}<br/><b>Exclude:</b> {spec['exclusion']}<br/><b>Policy:</b> {spec['privacy_policy']}"])
-    story += [table(targeting_rows, [31*mm, 112*mm, 99*mm], small), Spacer(1, 5*mm), para("Keyword and tag clusters", h2)]
+    story += [table(targeting_rows, [31*mm, 112*mm, 99*mm], small), PageBreak(), para("Keyword and tag clusters", h1), para("Every editorial action is assigned one primary keyword, supporting terms, discovery intent, and channel-appropriate tags. These are proposed discoverability inputs for a fictional product; they are neither measured search-volume claims nor evidence of platform delivery.", body)]
     clusters = {}
     for item in data["actions"]:
         strategy = item["keyword_strategy"]
@@ -98,12 +98,12 @@ def build_pdf(data: dict, output: Path) -> None:
     keyword_rows = [["Cluster", "Primary and supporting terms", "Discovery intent / proposed tags"]]
     for name, strategy in sorted(clusters.items()):
         keyword_rows.append([name.title(), "<b>Primary:</b> " + strategy["primary_keyword"] + "<br/>" + ", ".join(strategy["supporting_keywords"]), strategy["search_discovery_intent"] + "<br/>" + ", ".join(strategy["hashtags_or_video_tags"])])
-    story += [table(keyword_rows, [42*mm, 104*mm, 96*mm], body), PageBreak()]
+    story += [table(keyword_rows, [42*mm, 104*mm, 96*mm], body), para("Calendar application", h2), para("The editorial calendar prints the primary keyword and proposed tags on every action. Instagram tags support topic discovery; LinkedIn tags support professional context; and YouTube tags and titles support video discoverability. The campaign team should review current platform guidance before publication and avoid implying unverified product capabilities.", body), PageBreak()]
 
     story += [para("Paid media, measurement, testing, and safeguards", h1)]
     budget = data["budget"]
     budget_rows = [["Platform", "Proposed media allocation", "Role"]] + [[p, f"{budget['currency']} {amount:,.0f}", "Amplify the platform role; no spend incurred."] for p, amount in budget["allocation"].items()] + [["Total", f"{budget['currency']} {budget['total']:,.0f}", budget["assumption"]]]
-    story += [table(budget_rows, [55*mm, 65*mm, 122*mm], body), para("Budget pacing", h2)]
+    story += [table(budget_rows, [55*mm, 65*mm, 122*mm], body), para("Budget-control rules", h2), para("No money is authorized or spent by this plan. Before a future authorized launch, reconcile approved platform budgets against this allocation, apply account-level spend caps, retain pacing records, and pause any action that lacks approved creative, consent handling, or a valid conversion destination.", body), PageBreak(), para("Budget pacing", h1), para("Each paid action maps to a day, platform, phase, and proposed allocation. The rows below reconcile exactly to the proposed USD 3,000 media budget; organic actions have no paid allocation.", body)]
     pacing_rows = [["Day / action", "Platform / phase", "Proposed spend", "Purpose"]]
     for row in data["budget_pacing"]:
         pacing_rows.append([f"Day {row['day']}<br/>{row['action_id']}", row["platform"] + "<br/>" + row["phase"], f"USD {row['proposed_spend_usd']:,.0f}", row["note"]])
@@ -118,9 +118,9 @@ def build_pdf(data: dict, output: Path) -> None:
     ab_rows = [["Test", "Hypothesis and variants", "Audience / metric / decision"]]
     for test in data["ab_tests"]:
         ab_rows.append([test["id"], test["hypothesis"] + "<br/><b>Control:</b> " + test["control"] + "<br/><b>Treatment:</b> " + test["treatment"], "<b>Audience:</b> " + test["audience"] + "<br/><b>Metric:</b> " + test["primary_metric"] + "<br/><b>Decision:</b> " + test["decision_criterion"]])
-    story += [table(ab_rows, [22*mm, 102*mm, 118*mm], small), para("Risk register", h2)]
+    story += [table(ab_rows, [22*mm, 102*mm, 118*mm], small), PageBreak(), para("Risk register and launch safeguards", h1), para("These controls are a pre-launch operating checklist for a future authorized campaign. They do not imply that a product, account, audience, budget, or approval is currently available.", body)]
     risk_rows = [["Risk", "Control / contingency owner"] , ["Fictional concept mistaken for a live product", "Use a clear proposed-concept disclaimer; social lead pauses or corrects creative."], ["Unsupported environmental, material, or health claim", "Legal/claim review before release; substitute factual concept language."], ["Comment or consent issue", "Community lead uses an approved response and escalation path."], ["Production or platform-delivery delay", "Keep a tested static fallback and reschedule with a logged reason."]]
-    story += [table(risk_rows, [92*mm, 150*mm], body), PageBreak()]
+    story += [table(risk_rows, [92*mm, 150*mm], body), para("Contingency sequence", h2), para("1. Pause the affected placement or creative. 2. Preserve the reason, timing, and relevant evidence in the campaign log. 3. Escalate claims, consent, accessibility, or community issues to the assigned reviewer. 4. Use a pre-approved static fallback only after review. 5. Record the decision before rescheduling. This sequence reduces unsupported claims and keeps outcomes distinguishable from proposed targets.", body), para("Approval gates", h2), para("A marketing lead approves the editorial calendar; a product owner verifies factual claims and availability; a privacy reviewer confirms consent handling; a community lead confirms response coverage; and the budget owner authorizes spend. These roles are proposed responsibilities, not evidence that people or accounts are assigned.", body), PageBreak()]
 
     story += [para("Editorial calendar", h1), para("Every action below is planned. Proposed publication times are test variables in the audience’s local time; they are not evidence of optimal behavior.", body)]
     actions = data["actions"]
@@ -145,7 +145,7 @@ def build_pdf(data: dict, output: Path) -> None:
     story += [PageBreak(), para("Copy, implementation, and references", h1), para("Copy variations", h2)]
     for text in ["Utility: ‘Your day changes. Your refill routine can have a plan.’ — Explore the concept.", "Routine: ‘One small cue can make the next refill easier to remember.’ — Try a habit stack.", "Professional: ‘Workplace wellbeing ideas need an owner, a cue, and a way to learn.’ — Save the activation template.", "Feedback: ‘What would make a reusable routine easier to repeat?’ — Share one barrier."]:
         story.append(para("• " + text, body))
-    story += [para("Implementation readiness checklist", h2), para("Before any real campaign: validate product claims and availability; confirm privacy/consent flow; approve creative and accessibility captions; create landing page and UTM taxonomy; configure permitted platform targeting; assign community response coverage; validate conversion events; and obtain separate authorization for publication or paid spend.", body), para("Sources and attribution", h2)]
+    story += [para("Implementation readiness checklist", h2), para("Before any real campaign: validate product claims and availability; confirm privacy/consent flow; approve creative and accessibility captions; create landing page and UTM taxonomy; configure permitted platform targeting; assign community response coverage; validate conversion events; and obtain separate authorization for publication or paid spend.", body), para("Measurement handoff", h2), para("Create a campaign dashboard with separate paid and organic views. Attribute clicks through a documented UTM taxonomy; record video attention and reach only within the relevant platform; maintain a consent-aware completion log; and compare creative variants only within their defined audience and decision rule. Do not treat modeled scenario outputs as achieved performance.", body), para("Sources and attribution", h2)]
     for source in data["sources"]:
         story.append(para("• " + source["reference"] + " — " + source["use"], body))
     story += [para("Limitations", h2), para("This is a fictional campaign plan. It does not report market research, competitor performance, an existing product, environmental impact, scientific benefit, customer result, campaign result, advertising spend, or publication. The prior Task 2 competitor audit remains evidence-blocked and is not used as a completed finding here.", body)]
