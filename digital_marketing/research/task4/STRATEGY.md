@@ -5,8 +5,13 @@
 Ocean Bottle is retained as the selected target because its live public
 direct-to-consumer website was accessible during collection. The supplied
 starting point described a 2019 origin, but this collection did not verify that
-year from a retrievable primary record; the strategy therefore does not present
-the founding year as a fact. The accessible site pages support a public
+year from a retrievable primary record. The independent reviewer subsequently
+reported a 2019 founding statement on B Lab and a differing 2018 statement on
+LinkedIn. Both are retained as secondary reviewer observations, received on
+13 October 2026; exact reviewer collection dates were not supplied. Neither is
+resolved into an unqualified date. This supports a startup-origin case study
+without asserting a precise founding year or current legal startup status.
+The accessible site pages support a public
 structure review, while all proposed SEO, paid-media, and email actions remain
 recommendations.
 
@@ -16,7 +21,9 @@ product page has a clear purchase-oriented destination; the FAQ categories
 cover delivery, warranty, returns, product, engraving, and discounts; and the
 impact page explains the company’s stated model. The report treats all product,
 impact, and B Corp statements as Ocean Bottle claims. The B Lab directory URL
-returned HTTP 403 and is not used as independent confirmation.
+returned HTTP 403 in the original Codex collection. The later independent
+reviewer observation of certification is separately attributed and does not
+rewrite that historical access result.
 
 ## Search strategy
 
@@ -33,8 +40,16 @@ The proposed acquisition funnel separates awareness, consideration, conversion,
 and retention. Each stage has an audience, allowed channel, message, landing
 page, CTA, conversion event, and KPI. Retargeting is conditional on consent,
 platform policy, and an authorized account. The email flows use explicit entry,
-delay, subject, copy purpose, exit rules, and suppression conditions; they are
-not activated or sent.
+delay, subject, preview text, fully drafted body, CTA, intended conversion,
+exit rules, and suppression conditions. Four workflows contain ten messages:
+welcome 0/48/120h, browsing 24/72h, cart 4/52h from last activity, and care
+336/504/720h after confirmed delivery. The shared cap is one marketing message
+per 24 hours and three per rolling seven days. Higher-priority flows replace
+lower: post-purchase > cart > browse > welcome. Purchases, suppression,
+inactivity deadlines, and completion clear flows; duplicate entries never
+restart clocks. Support issues pause messages. The pure event simulator runs
+only synthetic decisions and has no sending capability. External entry filters
+(such as two browse events) require authorized instrumentation before use.
 
 ## Financial model
 
@@ -44,3 +59,6 @@ impressions, sessions, customers, attributed revenue, CAC, and ROAS from
 explicit inputs. The model uses a GBP 10,000 media denominator and rejects zero
 or negative denominator scenarios before calculating CAC or ROAS. It is a
 planning sensitivity model, not a forecast or real performance record.
+All-in project cost per customer separately uses GBP 12,000: Low GBP 160.00,
+Base GBP 75.00, High GBP 37.50. Media CAC and ROAS retain GBP 10,000 media
+spend as their denominator; all-in allocation is not an accounting outcome.

@@ -60,8 +60,13 @@ pages, their observable titles, descriptions, canonical URLs, headings, and
 internal route relationships. A B Lab directory URL returned HTTP 403 and is
 explicitly excluded as independent validation. The strategy provides a
 qualitative 12-keyword intent map, four-page on-page SEO map, four-stage
-consent-aware acquisition funnel, four-email re-engagement design, and a
-formula-tested low/base/high CAC and ROAS model. No founding-year, ranking,
+consent-aware acquisition funnel, four multi-step email workflows with ten full
+message drafts, shared caps, priority, suppression and synthetic transition
+tests. The formula-tested low/base/high model retains media CAC and ROAS and
+adds all-in cost per customer using the GBP 12,000 project allocation. Two
+reviewer-provided sources report differing 2019 and 2018 founding years; these
+are attributed secondary observations with unavailable collection dates, not an
+unqualified date claim. No ranking,
 search-volume, analytics, campaign, revenue, or certification performance claim
 is made without a verified source. All budgets, audiences, and financial values
 are proposed model assumptions.

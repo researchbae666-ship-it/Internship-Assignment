@@ -6,6 +6,7 @@ import json
 import subprocess
 from pathlib import Path
 from typing import Any
+from email_workflows import POLICY, workflows
 
 
 ROOT = Path(__file__).resolve().parent
@@ -43,6 +44,8 @@ def modeled_scenario(name: str, cpm_gbp: float, ctr: float, conversion_rate: flo
         "aov_gbp": aov_gbp,
         "attributed_revenue_gbp": revenue,
         "cac_gbp": media_budget / customers if customers else None,
+        "all_in_budget_gbp": 12_000.0,
+        "all_in_acquisition_cost_gbp": 12_000.0 / customers if customers else None,
         "roas": revenue / media_budget if media_budget else None,
     }
 
@@ -136,12 +139,6 @@ def build_strategy() -> dict[str, Any]:
         ("Conversion", "High-intent product viewers and cart visitors", "Brand and product search; consented cart retargeting", "Clear product choice, delivery/warranty pathway", "/products/original-bottle", "Add to cart", "Purchase", "Cost per purchase, CAC, revenue"),
         ("Retention", "Consented purchasers and subscribers", "Email only; no paid retargeting without separate consent", "Care, use and timely replenishment/accessory education", "/pages/faqs", "Get care guidance", "Repeat purchase / support resolution", "Repeat purchase rate, unsubscribes, support contacts"),
     ]
-    emails = [
-        ("E1", "Consented subscriber; no purchase", "Immediately", "A reusable routine starts with one choice", "Welcome message; link to product, FAQs, and attributed impact explanation.", "Product-view event; exit on purchase"),
-        ("E2", "Viewed product twice; no cart; marketing consent", "2 days", "Questions before choosing a reusable bottle?", "Decision-support email with product, delivery, warranty and care links.", "Product-view or add-to-cart event; exit on purchase/unsubscribe"),
-        ("E3", "Cart started; no purchase; marketing consent", "4 hours", "Your Ocean Bottle selection is waiting", "Single reminder with product link and delivery/returns path; no urgency claim unless verified.", "Purchase, unsubscribe, or 7-day timeout"),
-        ("E4", "Purchaser; marketing consent", "14 days after delivery-status event if available", "Care guidance for your reusable bottle", "Useful care and FAQ links; invite feedback without assuming product satisfaction.", "Repeat purchase, unsubscribe, or preference update"),
-    ]
     scenarios = [
         modeled_scenario("Low", 12.8, 0.008, 0.012, 45.0),
         modeled_scenario("Base", 10.0, 0.008, 0.020, 55.0),
@@ -150,13 +147,18 @@ def build_strategy() -> dict[str, Any]:
     return {
         "subject": {
             "name": "Ocean Bottle", "website": "https://oceanbottle.co/",
-            "selection": "Retained as the task’s startup website subject because an active direct-to-consumer website is publicly accessible. The 2019 founding-year statement supplied in the task authorization was not independently verified in this collection, so the report does not state it as a fact.",
+            "selection": "Ocean Bottle remains a suitable startup-origin case study: the independent reviewer reports a B Lab listing describing a 2019 founding and a LinkedIn company profile listing 2018. These differing published statements describe a relatively recent venture; neither is resolved into an unqualified founding date. The accessible commercial website supports the SEO case study; current legal startup classification was not independently established.",
         },
         "collection_utc": "2026-10-13T11:20:00Z", "observations": observations,
         "keyword_map": [dict(keyword=k, intent=i, target_page=p, priority=pr, rationale=r) for k, i, p, pr, r in keyword_map],
         "seo_map": seo_map,
         "funnel": [dict(stage=s, audience=a, channel=c, message=m, landing_page=l, cta=cta, conversion_event=e, kpi=k) for s,a,c,m,l,cta,e,k in funnel],
-        "emails": [dict(id=i, entry=e, delay=d, subject=s, body=b, exit_rule=x) for i,e,d,s,b,x in emails],
+        "emails": workflows(),
+        "email_policy": POLICY,
+        "reviewer_sources": [
+            {"id": "REV-BLAB", "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/", "founding_year_statement": 2019, "statement": "Reviewer reports B Corp certification and a description of founding in 2019.", "provenance": "Independent reviewer observation supplied by the user; not directly retrieved by Codex.", "received_date": "2026-10-13", "collection_date": None, "limitation": "Reviewer collection date and original snapshot were not supplied; preserve discrepancy without inventing a date."},
+            {"id": "REV-LINKEDIN", "url": "https://www.linkedin.com/company/the-ocean-bottle/", "founding_year_statement": 2018, "statement": "Reviewer reports company profile lists founding year 2018.", "provenance": "Independent reviewer observation supplied by the user; not directly retrieved by Codex.", "received_date": "2026-10-13", "collection_date": None, "limitation": "Reviewer collection date and original snapshot were not supplied; no unqualified founding-year claim."},
+        ],
         "budget": {"currency": "GBP", "total_gbp": 12_000, "media_gbp": 10_000, "allocation": {"Google Search": 4_500, "Meta prospecting": 3_000, "YouTube": 1_500, "Consented retargeting reserve": 1_000, "Measurement and creative": 2_000}, "assumption": "Proposed 90-day planning budget; no spend is authorized or incurred."},
         "scenarios": scenarios,
         "measurement": ["Use consent-aware analytics and a documented UTM taxonomy: source, medium, campaign, content, term.", "Keep paid-platform reporting separate from analytics attribution; reconcile purchase events only after consent and implementation review.", "Define CAC as media spend divided by attributed new customers; define ROAS as attributed revenue divided by media spend. Zero denominators produce an explicit unavailable result."],
@@ -174,7 +176,15 @@ def validate(data: dict[str, Any]) -> list[str]:
     budget = data.get("budget", {})
     if budget.get("total_gbp") != sum(budget.get("allocation", {}).values()): errors.append("budget allocations do not sum to total")
     if budget.get("media_gbp") != sum(v for k,v in budget.get("allocation", {}).items() if k != "Measurement and creative"): errors.append("media allocation does not reconcile")
-    if len(data.get("funnel", [])) != 4 or len(data.get("emails", [])) < 4: errors.append("missing funnel or email stages")
+    if len(data.get("funnel", [])) != 4 or len(data.get("emails", [])) != 4: errors.append("missing funnel or email stages")
+    message_fields = {"id", "trigger", "entry_criteria", "delay_hours_from_entry", "subject", "preview_text", "body", "cta", "cta_path", "conversion_event", "exit_condition", "consent_handling", "suppression_handling"}
+    for flow in data.get("emails", []):
+        if len(flow.get("messages", [])) < 2: errors.append("email workflow needs multiple messages")
+        delays = [message.get("delay_hours_from_entry", -1) for message in flow.get("messages", [])]
+        if delays != sorted(set(delays)) or any(delay < 0 or delay >= flow["expires_after_hours"] for delay in delays): errors.append("invalid email timing")
+        for message in flow.get("messages", []):
+            if not message_fields <= set(message) or any(message.get(field) in (None, "") for field in message_fields): errors.append("incomplete email message")
+    if {source["founding_year_statement"] for source in data.get("reviewer_sources", [])} != {2018, 2019}: errors.append("founding-year discrepancy missing")
     for row in data.get("scenarios", []):
         if row["blended_cpm_gbp"] <= 0 or row["media_budget_gbp"] <= 0 or row["customers"] <= 0:
             errors.append("invalid financial denominator")
@@ -183,6 +193,8 @@ def validate(data: dict[str, Any]) -> list[str]:
         if abs(row["sessions"] - row["impressions"] * row["ctr"]) > 1e-7: errors.append("session formula mismatch")
         if abs(row["customers"] - row["sessions"] * row["purchase_conversion_rate"]) > 1e-7: errors.append("customer formula mismatch")
         if abs(row["cac_gbp"] - row["media_budget_gbp"] / row["customers"]) > 1e-7: errors.append("CAC formula mismatch")
+        if row.get("all_in_budget_gbp") != budget.get("total_gbp"): errors.append("all-in budget mismatch")
+        if abs(row["all_in_acquisition_cost_gbp"] - budget["total_gbp"] / row["customers"]) > 1e-7: errors.append("all-in acquisition cost mismatch")
         if abs(row["roas"] - row["attributed_revenue_gbp"] / row["media_budget_gbp"]) > 1e-7: errors.append("ROAS formula mismatch")
     return errors
 

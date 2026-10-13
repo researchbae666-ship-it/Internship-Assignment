@@ -13,8 +13,17 @@ recorded in the Task 4 evidence manifest.
 | OB-04 | https://oceanbottle.co/pages/ocean-impact | HTTP 200 | Impact-page title, description, headings, and company-attributed impact/B Corp statements. |
 | OB-05 | https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/ | HTTP 403 | Not retrieved; not used to validate B Corp certification. |
 
-Ocean Bottle's 2019 founding-year statement was supplied in the task
-authorization but was not independently verified in this collection. This
-report therefore avoids asserting it as a fact. All Ocean Bottle environmental,
-product, and certification statements are attributed to the company’s own
-accessible pages, not independently validated outcomes.
+## Independent-review handoff received 13 October 2026
+
+| ID | Published URL | Reviewer-reported observation | Provenance / date |
+| --- | --- | --- | --- |
+| REV-BLAB | https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/ | Listing reports B Corp certification and describes founding in 2019 | Independent reviewer observation supplied by user; reviewer collection date and snapshot not supplied; received 2026-10-13 |
+| REV-LINKEDIN | https://www.linkedin.com/company/the-ocean-bottle/ | Company profile lists founding year 2018 | Independent reviewer observation supplied by user; reviewer collection date and snapshot not supplied; received 2026-10-13 |
+
+These secondary records do not replace the historical Codex HTTP 403 result.
+They are independently observed, differing published statements, received from
+the reviewer. No fresh successful Codex retrieval or exact collection time is
+claimed. Neither year is adopted as an unqualified founding date. The recent
+venture origins reported by both records and the accessible commercial website
+support a startup-origin case study; current legal startup status is not
+established. No environmental quantity from this handoff is used.

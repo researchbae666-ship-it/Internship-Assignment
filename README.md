@@ -29,7 +29,12 @@ and acquisition strategy at
 [DM_Task4_SEO_Acquisition_Strategy.pdf](digital_marketing/deliverables/DM_Task4_SEO_Acquisition_Strategy.pdf).
 It separates direct public-page observations from recommended SEO, email, paid
 media, and financial-model actions; no campaign data, account data, ranking, or
-search-volume claim is implied. Read the [dual-track master plan](planning/DUAL_TRACK_MASTER_PLAN.md), [Marketing requirements](planning/DIGITAL_MARKETING_REQUIREMENTS.md), [research plan](planning/DIGITAL_MARKETING_RESEARCH_PLAN.md), [Python enhancement roadmap](planning/PYTHON_ENHANCEMENT_ROADMAP.md), and [submission strategy](planning/DUAL_TRACK_SUBMISSION_STRATEGY.md).
+search-volume claim is implied. Four proposed email workflows now contain ten
+fully drafted messages and synthetic routing tests; the
+[email appendix](digital_marketing/deliverables/DM_Task4_Email_Workflow_Appendix.pdf)
+contains the full scripts. Media CAC/ROAS and all-in acquisition allocations
+are separate, and the reviewer-sourced 2019/2018 founding-year discrepancy is
+preserved. Read the [dual-track master plan](planning/DUAL_TRACK_MASTER_PLAN.md), [Marketing requirements](planning/DIGITAL_MARKETING_REQUIREMENTS.md), [research plan](planning/DIGITAL_MARKETING_RESEARCH_PLAN.md), [Python enhancement roadmap](planning/PYTHON_ENHANCEMENT_ROADMAP.md), and [submission strategy](planning/DUAL_TRACK_SUBMISSION_STRATEGY.md).
 
 This public repository must never contain an offer letter, identity details,
 student ID, contact details, private images, or credentials. Track eligibility
