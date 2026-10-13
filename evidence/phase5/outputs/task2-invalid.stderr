@@ -1,0 +1,4 @@
+usage: task2.py [-h] [--count COUNT] [--benchmark]
+                [--benchmark-counts COUNT [COUNT ...]] [--repeats REPEATS]
+                [--number NUMBER]
+task2.py: error: count must be greater than or equal to zero

@@ -6,7 +6,7 @@
 2. **Phase 2 — Task 2 Fibonacci — authorized 12 October 2026:** implement only Task 2 using ARCHITECTURE.md; add and run real unittest coverage; demonstrate the CLI; collect real Task 2 evidence. Stop for independent review.
 3. **Phase 3 — Task 3 file automation — authorized 12 October 2026:** implement and validate only Task 3 with synthetic fixtures and safe filesystem boundaries. Stop for independent review.
 4. **Phase 4 — Task 4 chatbot — authorized 12 October 2026:** implement and validate only Task 4 with scripted terminal sessions. Stop for independent review.
-5. **Phase 5 — integration, evidence verification, and final PDF — requires approval:** reproduce the approved tasks in clean temporary directories, verify every evidence claim, and generate/inspect the combined PDF. Stop for independent review.
+5. **Phase 5 — integration, evidence verification, and final PDF — authorized and completed 13 October 2026:** reproduced the approved tasks in isolated synthetic workspaces, verified fresh evidence, generated and inspected the combined PDF. Stop for independent PDF review.
 6. **Phase 6 — authorized final submission — requires separate authorization and identity/access resolution:** prepare and, only when explicitly authorized, submit the package through the organizer's Google Form. Record confirmation only if actually observed.
 7. **Optional Task 1 — only after mandatory tasks are complete and separately authorized:** personal offer-letter and LinkedIn work remains out of scope until then.
 

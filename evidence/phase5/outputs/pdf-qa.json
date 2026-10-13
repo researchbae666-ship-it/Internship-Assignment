@@ -1,0 +1,25 @@
+{
+  "outcome": "passed",
+  "page_count": 14,
+  "pdf": "deliverables/Progree_Python_Tasks_2_3_4.pdf",
+  "pdfinfo": {
+    "Encrypted": "no",
+    "Page size": "595.276 x 841.89 pts (A4)",
+    "Pages": "14",
+    "Producer": "ReportLab PDF Library - (opensource)",
+    "Title": "Progree Python Tasks 2, 3 and 4"
+  },
+  "render_checks": {
+    "all_rendered_files_nonempty": true,
+    "dpi": 144,
+    "rendered_page_count": 14,
+    "renderer": "pdftoppm"
+  },
+  "sha256": "e967cec21cf744823ff25fc1dab9ba2a2486fa1b7e23f6ceb945fecfd2801db0",
+  "size_bytes": 28500,
+  "text_checks": {
+    "benchmark_units_present": true,
+    "expected_sections_present": true,
+    "test_claim_matches_manifest": true
+  }
+}

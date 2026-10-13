@@ -1,10 +1,10 @@
 # Progree Python internship assignment
 
-Tasks 2, 3, and 4 are implemented and ready for independent review. The deadline is **18 October 2026**; its exact time and timezone are unconfirmed. Task 1 is optional and deferred.
+Tasks 2, 3, and 4 are implemented, freshly integrated, and documented in a single PDF that is awaiting independent review. The deadline is **18 October 2026**; its exact time and timezone are unconfirmed. Task 1 is optional and deferred.
 
 ## Current status
 
-Phase 4 Task 4 is implemented, tested, and demonstrated with genuine local evidence in `evidence/task4/`. The Python PDF is authoritative; the Digital Marketing document is context only. Original documents remain unchanged. The final report/PDF is not started.
+Phase 5 generated and quality-checked [Progree_Python_Tasks_2_3_4.pdf](deliverables/Progree_Python_Tasks_2_3_4.pdf) from fresh, validated local evidence in `evidence/phase5/`. The Python PDF is authoritative; the Digital Marketing document is context only. Original documents remain unchanged. The report is not a form submission or certificate confirmation.
 
 ## Planned programs and usage
 
@@ -18,6 +18,9 @@ python -m internship.task3 --root fixtures/task3
 python -m internship.task3 --root artifacts/task3/your-synthetic-workspace --apply --csv master.csv
 python -m internship.task4
 python -m unittest discover -s tests -v
+python tools/collect_phase5_evidence.py
+python tools/generate_report.py
+python tools/verify_pdf.py
 ```
 
 `fibonacci(count)` returns exactly `count` terms, beginning `0, 1`. It accepts only non-negative plain integers; `bool`, float, string, and `None` are rejected. The CLI emits a JSON array for a sequence and JSON benchmark data for `--benchmark`; validation errors go to stderr with exit code 2. CLI output is limited to 10,000 terms. Benchmarking uses `timeit` to measure only `fibonacci(count)`, excluding printing, JSON encoding, and metadata collection. It reports sample totals and per-call min/median in seconds, plus Python and platform context. Timings vary by machine and are not performance guarantees.
@@ -32,7 +35,7 @@ Task 4 is a local rule-based terminal chatbot. It has task, Python-learning, and
 
 ## Planned deliverables
 
-Tasks 2–4 source, real automated tests, reproducible CLI demonstrations, raw ignored output in `artifacts/`, and sanitized reviewable evidence in `evidence/task2/`, `evidence/task3/`, and `evidence/task4/` are present. Task 3’s version-controlled `.log` fixtures are explicitly synthetic and are the only `.log` exception in `.gitignore`. The remaining deliverable is one professional PDF covering Tasks 2–4. All report results must be traceable to genuine executions. No personal information or credentials belong in this repository.
+Tasks 2–4 source, real automated tests, reproducible CLI demonstrations, raw ignored output in `artifacts/`, historical task evidence in `evidence/task2/`, `evidence/task3/`, and `evidence/task4/`, and fresh Phase 5 evidence in `evidence/phase5/` are present. Task 3’s version-controlled `.log` fixtures are explicitly synthetic and are the only `.log` exception in `.gitignore`. The final deliverable is [one professional PDF](deliverables/Progree_Python_Tasks_2_3_4.pdf) covering Tasks 2–4. Its generator validates retained-output SHA-256 digests before it writes the report, and `tools/verify_pdf.py` checks its metadata, text, test claim, and rendered page count. No personal information or credentials belong in this repository.
 
 Read [master plan](planning/MASTER_PLAN.md), [requirements](planning/REQUIREMENTS_MATRIX.md), [architecture](planning/ARCHITECTURE.md), [tests](planning/TEST_STRATEGY.md), [submission checklist](planning/SUBMISSION_CHECKLIST.md), [cloud environment](planning/CLOUD_ENVIRONMENT.md), and [status](planning/STATUS.md). Project rules are in [AGENTS.md](AGENTS.md).
 

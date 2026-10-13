@@ -17,9 +17,9 @@ Source inspection: 12 October 2026. Python PDF: one page, extracted using `pdfto
 | T4.3 | Nested if/elif/else and functional dictionary maps | Implemented: callable intent map plus nested pending-choice state handlers |
 | T4.4 | Session variations and graceful fallback | Implemented: context switches, bounded in-memory history, reset/cancel, ambiguity, unknown, EOF, interrupt, and internal-error tests |
 | S.1 | At least 3 of 4 tasks for certificate (messages) | Tasks 2–4 mapped to actual report evidence; eligibility remains organizer decision |
-| S.2 | Combine tasks into ONE PDF (message 2) | One readable PDF, all three task sections, traceable evidence and page inspection |
-| S.3 | Google Form only; no late submissions; 18 October 2026 | Checklist and explicit later submission authorization; no confirmation fabricated |
-| D.1 | User: preserve documents; Phase 1 only | Git diff confirms originals unchanged; no implementation or task execution claims |
+| S.2 | Combine tasks into ONE PDF (message 2) | Implemented: `deliverables/Progree_Python_Tasks_2_3_4.pdf`; 14 A4 pages, text extraction and 14-page render verification recorded in `evidence/phase5/outputs/pdf-qa.json` |
+| S.3 | Google Form only; no late submissions; 18 October 2026 | Submission checklist records later human authorization/access requirements; no submission confirmation fabricated |
+| D.1 | User: preserve documents | Fresh Phase 5 SHA-256 check confirms all four originals match approved commit `31cf193d4bf3b8e0c822875e6b4ba80f4f7d0a3d` |
 
 ## Proposed interpretations requiring Phase 1 review
 

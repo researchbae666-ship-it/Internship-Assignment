@@ -1,6 +1,6 @@
 # Status
 
-As of 12 October 2026: **Phase 4 Task 4 implementation and validation complete; awaiting independent review.**
+As of 13 October 2026: **Phase 5 technical integration, evidence validation, PDF generation, and PDF QA complete; awaiting independent PDF review.**
 
 ## Completed
 
@@ -26,14 +26,17 @@ As of 12 October 2026: **Phase 4 Task 4 implementation and validation complete; 
 - Executed the complete Task 2–4 suite: 48 tests passed (13 Task 2, 20 Task 3, 15 Task 4). Task 4 coverage includes real scripted subprocess dialogue, exit/EOF/Ctrl+C, state transitions, fallbacks, and unexpected-error exit behavior. Fresh transcripts and evidence are captured after the Task 4 source commit.
 - Independent review found three targeted Task 4 behavior gaps: contextual responses did not always update `last_intent`; repeated pending-choice ambiguity did not escalate; and Task 4 treated unrelated follow-up text as successful. The correction preserves the routing design, records the actual contextual intent, adds bounded clarification recovery with help/reset guidance, and classifies Task 4 operation/routing/normalization/session questions separately from unsupported text.
 - Executed the complete corrected Tasks 2–4 suite: 53 tests passed (13 Task 2, 20 Task 3, 20 Task 4). The added Task 4 tests cover contextual intent recording, repeated ambiguity/recovery in three pending states, and Task 4 unsupported-input fallback. Corrected transcripts and metadata preserve `7c23159507b94caccebcbffc32eccf0705c22408` as the earlier evidence source and identify the new source revision.
+- Corrected the residual Task 4 reset/cancel defect: it now clears `clarification_count` together with context, history, and fallback state. The new regression proves two ambiguous turns escalate, reset clears the counter, and the next ambiguous root choice gets the first-attempt clarification. The fresh full suite passed 54 tests (13 Task 2, 20 Task 3, 21 Task 4) in 1.678 seconds.
+- Performed fresh Phase 5 commands from source commit `0ead4fcfc3a94d928af7e7827793a06c7fc17352`. The consolidated manifest records commands, exit codes, UTC start time, Python/platform, fixture references, benchmark samples/units, retained output paths, and SHA-256 digests in `evidence/phase5/manifest.json`.
+- Generated `deliverables/Progree_Python_Tasks_2_3_4.pdf` using ReportLab from validated retained evidence. It is a 14-page A4 report covering Tasks 2–4 only. `pdfinfo`, `pdftotext`, and 14 nonempty 144-DPI `pdftoppm` renders passed; every page was visually inspected for clipping, overflow, font corruption, and unexpected blank pages.
 
 ## Not started
 
-Cross-task integration, final evidence verification, and final PDF generation. Task 1 remains deferred. No external publication or submission has occurred, apart from requested GitHub review commits/PRs.
+Phase 6 final submission requires separate explicit authorization and access resolution. Task 1 remains deferred. No external publication or submission has occurred, apart from requested GitHub review commits/PRs.
 
 ## Blockers and next step
 
-Phase 5 requires explicit approval before integration, final evidence verification, or PDF generation begins. Track eligibility, submission identity, Form access/constraints, deadline time/timezone and optional LinkedIn access remain unverified; see SUBMISSION_CHECKLIST.md. These do not block independent technical work when the relevant phase is approved.
+Phase 6 requires explicit approval before any final submission. Track eligibility, submission identity, Form access/constraints, deadline time/timezone and optional LinkedIn access remain unverified; see SUBMISSION_CHECKLIST.md. These do not block technical PDF review.
 
 ## Phase 1 verification record
 

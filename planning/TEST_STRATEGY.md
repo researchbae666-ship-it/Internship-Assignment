@@ -36,9 +36,17 @@ Executed Task 4 tests cover NFKC/casefold/punctuation/whitespace normalization; 
 
 The final Task 4 correction suite additionally verifies that contextual Task 2, Task 3, Task 4, submission, and Python responses update `last_intent` to their actual reported intent. It exercises first and repeated ambiguity in task selection, Python topics, and Task 2 follow-up, including recovery after a valid choice. It also distinguishes supported Task 4 operation/routing/normalization/session questions from unrelated text. The complete corrected Tasks 2–4 suite executed 53 tests and passed.
 
+## Phase 5 executed integration validation
+
+- The residual Task 4 reset regression was fixed and tested: reset/cancel clears `clarification_count`, preserves the documented history/turn-count behavior, and gives the next ambiguity a first-attempt clarification. The fresh complete suite executed **54 tests in 1.678 seconds** and passed.
+- Fresh Task 2 commands captured count 10, zero, 100-term, and invalid-negative behavior plus a real 5-repeat × 100-execution timeit benchmark for 10, 100, and 1,000 terms.
+- Fresh Task 3 commands used only copied `fixtures/task3` content below isolated `artifacts/task3` children. They captured 7 preview/apply moves, a `notes__1.txt` collision result, a verified 9-record CSV, zero-move repeat regeneration, preserved-content hashes, and a rejected `.txt` CSV destination with unchanged inputs.
+- Fresh Task 4 scripts captured multi-intent routing, contextual benchmark guidance, repeated clarification recovery, reset, exit, unsupported Task 4 input, EOF, and Ctrl+C.
+- `tools/collect_phase5_evidence.py` validates retained raw outputs before publishing `evidence/phase5/manifest.json`. `tools/generate_report.py` refuses mismatched evidence digests or incomplete outcomes. `tools/verify_pdf.py` passed: 14-page A4 PDF, required text sections, report test claim matching the manifest, and 14 nonempty 144-DPI renders.
+
 ## Planned future validation
 
-`python -m unittest discover -s tests -v` followed by each README CLI example in isolated temporary workspaces. Record actual exit codes, test counts and output into ignored artifacts. Re-run affected tests after fixes; complete full relevant suite before phase review. Commands are proposed and have not executed.
+Any future source change requires rerunning `python -m unittest discover -s tests -v`, affected isolated CLI examples, evidence collection, report generation, and PDF QA. No external submission validation is executed here.
 
 ## Planned report verification
 

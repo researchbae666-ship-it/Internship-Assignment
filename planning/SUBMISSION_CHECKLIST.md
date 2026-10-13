@@ -2,17 +2,17 @@
 
 ## Requirements from the messages
 
-- [ ] Complete and document at least 3 of 4 tasks: selected Python Tasks 2,3,4.
-- [ ] Combine all selected task reports into **one PDF**.
+- [x] Complete and document at least 3 of 4 tasks: selected Python Tasks 2,3,4; technical work is recorded in the Phase 5 evidence manifest.
+- [x] Combine all selected task reports into **one PDF**: `deliverables/Progree_Python_Tasks_2_3_4.pdf`, pending independent PDF review.
 - [ ] Review before 18 October 2026; exact cutoff time/timezone unconfirmed. Relative “9 days left” text is historical, not a current countdown.
 - [ ] Submit only through https://forms.gle/pAocy69ctQJvfbUj6 when explicitly authorized; no late submissions accepted according to the message.
 
 ## Technical and report gates
 
-- [ ] Approved implementation phase; real tests pass with recorded counts.
-- [ ] Genuine demonstrations and timeit samples recorded; all report claims traced to evidence.
-- [ ] Original documents unchanged; no credentials or private identity in source/artifacts/PDF.
-- [ ] One PDF visually and textually verified; file opens and contains Tasks 2,3,4.
+- [x] Approved implementation phase; fresh complete suite passed 54 tests with recorded output.
+- [x] Genuine demonstrations and timeit samples recorded; report claims trace to `evidence/phase5/manifest.json` and retained output digests.
+- [x] Original documents unchanged; fresh SHA-256 comparison against approved commit `31cf193d4bf3b8e0c822875e6b4ba80f4f7d0a3d` passed.
+- [x] One PDF visually and textually verified; 14-page A4 file opens, extracts expected text, and renders all 14 pages.
 - [ ] Phase 3 reviewed; report identity fields resolved securely if required.
 
 ## External blockers (do not block independent technical work)

@@ -1,0 +1,10 @@
+source_path,line_number,kind,value
+log/inbound.LOG,2,email,demo.alpha@example.test
+log/inbound.LOG,2,email,demo.beta@example.test
+log/inbound.LOG,2,transaction_id,TXN-A1B2C3
+log/inbound.LOG,2,transaction_id,TXN-Z9Y8X7
+log/inbound.LOG,3,transaction_id,TXN-A1B2C3
+txt/notes__1.txt,1,email,unicode.user@example.test
+txt/notes__1.txt,1,transaction_id,TXN-AB12CD
+txt/notes__1.txt,3,transaction_id,TXN-ABCDE1
+txt/notes__1.txt,3,email,demo.alpha@example.test

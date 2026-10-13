@@ -1,0 +1,330 @@
+{
+  "approved_starting_commit": "31cf193d4bf3b8e0c822875e6b4ba80f4f7d0a3d",
+  "commands": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "outcome": "54 tests passed"
+    },
+    {
+      "command": "python -m internship.task2 --count 10",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m internship.task2 --count 0",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m internship.task2 --count 100",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m internship.task2 --count -1",
+      "exit_code": 2
+    },
+    {
+      "command": "python -m internship.task2 --benchmark --benchmark-counts 10 100 1000 --repeats 5 --number 100",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m internship.task3 --root artifacts/task3/phase5-integration",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m internship.task3 --root artifacts/task3/phase5-integration --apply --csv master.csv",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m internship.task3 --root artifacts/task3/phase5-integration --apply --csv master.csv",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m internship.task3 --root artifacts/task3/phase5-safe-failure --apply --csv notes.txt",
+      "exit_code": 2
+    },
+    {
+      "command": "python -m internship.task4 < scripted-input",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m internship.task4 < /dev/null",
+      "exit_code": 0
+    },
+    {
+      "command": "SIGINT subprocess running python -m internship.task4",
+      "exit_code": 0
+    }
+  ],
+  "evidence_version": 1,
+  "execution_started_utc": "2026-10-13T06:28:55Z",
+  "input_fixtures": [
+    "fixtures/task3/ (copied to artifacts/task3/phase5-integration)",
+    "fixtures/task3/ (copied to artifacts/task3/phase5-safe-failure)"
+  ],
+  "limitations": [
+    "Benchmark samples are environment-dependent measurements, not performance guarantees.",
+    "Task 3 evidence uses copied synthetic fixtures in an isolated artifact child workspace only.",
+    "The report has no personal identity, eligibility decision, certificate approval, organizer deadline hour, or submission confirmation."
+  ],
+  "manifest_created_utc": "2026-10-13T06:47:57Z",
+  "original_document_integrity": "outputs/original_document_integrity.json",
+  "pdf_qa_output": "outputs/pdf-qa.json",
+  "platform": [
+    "Linux-6.18.44-x86_64-with-glibc2.41",
+    "x86_64"
+  ],
+  "python_version": "Python 3.12.14",
+  "retained_output_sha256": {
+    "outputs/full-tests.txt": "f1efca114e1e456dda6befd41e65975c8e7c99ae77be2b9504aae58d4c49f6ae",
+    "outputs/original_document_integrity.json": "db8340848f2fc5f393e41b0255f3b1d0e7f6a4176d9bcbfcd69f800feab032e4",
+    "outputs/pdf-qa.json": "7057b0e9867ea5f4ea9a6efd8b852679e87513b092957c8e7a4cc993befa0b21",
+    "outputs/task2-benchmark.json": "a0a59efacc9ad7dba2cbb2bec10406871c38c87bc7c3ed25e3a59d79d4536d23",
+    "outputs/task2-count-0.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "outputs/task2-count-10.json": "431130567c2d4542244b7ed47fc0eea73c727bbbea19a275adc789b73ac24090",
+    "outputs/task2-count-100.json": "f3054e3b4a52ec9fc2cad422e4403a0b5e4a330041ac85961c6240788e92ae77",
+    "outputs/task2-invalid.stderr": "1b4a6965445adf1062f21fdfd37395c5da9bbf48b7c705b23d25e0f7fdec5f05",
+    "outputs/task3-apply.json": "00e7388b707e86234f2dce7062f2408c955c1f0d744a352c03f200d20e860e0b",
+    "outputs/task3-master.csv": "631c3408b5634f2e0a55ecf6fb7b3f2f0e1380807b057d3ca0966338cf68d43a",
+    "outputs/task3-preview.json": "6823fd8f7995814ce17f6137e9d6150fca4cfa11ff5a44cfbfdec6464dc8d456",
+    "outputs/task3-repeat.json": "2b55b0c37f48a0c53d4453ce53897d75c6800412494802079891df0ad59e3c25",
+    "outputs/task3-safe-failure.stderr": "329201dd000b7f38e384b85c3cf61f231de5255e6a76b5ac217fc9591d6218b4",
+    "outputs/task4-eof.txt": "4d914ff73277bc13bb350341eeff9f07e6ac9fe095965b828aa3af357ab5b274",
+    "outputs/task4-interrupt.txt": "c0dd8d2ca97af2fef2b6f6412db76bc789fbd6ea44ca49ab86bdc6a8e3e640e7",
+    "outputs/task4-main.txt": "a9b850f00d2d5f9e1bafb9a48099b1e23f61f98df3447f388f6af3c5f2c129b1",
+    "outputs/task4-unsupported.txt": "0d7b6cb4ae406b7fd34a4c5f467561ad22b1dda14902c95edd95bfa939b5e950"
+  },
+  "scope": "fresh Phase 5 integration validation; earlier task evidence remains historical",
+  "source_commit": "0ead4fcfc3a94d928af7e7827793a06c7fc17352",
+  "task2": {
+    "benchmark": {
+      "executions_per_repeat": 100,
+      "measurement": "timeit: fibonacci(count) only; excludes printing, JSON encoding, and metadata",
+      "platform": {
+        "machine": "x86_64",
+        "release": "6.18.44",
+        "system": "Linux"
+      },
+      "python_implementation": "CPython",
+      "python_version": "3.12.14",
+      "repeat_count": 5,
+      "results": [
+        {
+          "count": 10,
+          "median_per_call_seconds": 6.322199624264612e-07,
+          "minimum_per_call_seconds": 6.040100561222061e-07,
+          "sample_totals_seconds": [
+            6.670100265182555e-05,
+            6.512000254588202e-05,
+            6.0401005612220615e-05,
+            6.322199624264613e-05,
+            6.119600584497675e-05
+          ]
+        },
+        {
+          "count": 100,
+          "median_per_call_seconds": 6.643259985139593e-06,
+          "minimum_per_call_seconds": 4.8160599544644355e-06,
+          "sample_totals_seconds": [
+            0.0005321589997038245,
+            0.0006643259985139593,
+            0.00048160599544644356,
+            0.001567664003232494,
+            0.0022289010012173094
+          ]
+        },
+        {
+          "count": 1000,
+          "median_per_call_seconds": 7.41217399627203e-05,
+          "minimum_per_call_seconds": 7.341296004597098e-05,
+          "sample_totals_seconds": [
+            0.010569931000645738,
+            0.0073728790011955425,
+            0.007412173996272031,
+            0.007341296004597098,
+            0.018092041995259933
+          ]
+        }
+      ],
+      "units": "seconds"
+    },
+    "benchmark_output": "outputs/task2-benchmark.json",
+    "invalid_diagnostic": "outputs/task2-invalid.stderr",
+    "larger_output": "outputs/task2-count-100.json",
+    "normal_output": "outputs/task2-count-10.json",
+    "zero_output": "outputs/task2-count-0.json"
+  },
+  "task3": {
+    "apply_moves": 7,
+    "apply_output": "outputs/task3-apply.json",
+    "content_hashes_match": true,
+    "csv_rows": [
+      {
+        "kind": "email",
+        "line_number": "2",
+        "source_path": "log/inbound.LOG",
+        "value": "demo.alpha@example.test"
+      },
+      {
+        "kind": "email",
+        "line_number": "2",
+        "source_path": "log/inbound.LOG",
+        "value": "demo.beta@example.test"
+      },
+      {
+        "kind": "transaction_id",
+        "line_number": "2",
+        "source_path": "log/inbound.LOG",
+        "value": "TXN-A1B2C3"
+      },
+      {
+        "kind": "transaction_id",
+        "line_number": "2",
+        "source_path": "log/inbound.LOG",
+        "value": "TXN-Z9Y8X7"
+      },
+      {
+        "kind": "transaction_id",
+        "line_number": "3",
+        "source_path": "log/inbound.LOG",
+        "value": "TXN-A1B2C3"
+      },
+      {
+        "kind": "email",
+        "line_number": "1",
+        "source_path": "txt/notes__1.txt",
+        "value": "unicode.user@example.test"
+      },
+      {
+        "kind": "transaction_id",
+        "line_number": "1",
+        "source_path": "txt/notes__1.txt",
+        "value": "TXN-AB12CD"
+      },
+      {
+        "kind": "transaction_id",
+        "line_number": "3",
+        "source_path": "txt/notes__1.txt",
+        "value": "TXN-ABCDE1"
+      },
+      {
+        "kind": "email",
+        "line_number": "3",
+        "source_path": "txt/notes__1.txt",
+        "value": "demo.alpha@example.test"
+      }
+    ],
+    "master_csv_output": "outputs/task3-master.csv",
+    "moves": [
+      {
+        "destination_path": "no_extension/.metadata",
+        "source_path": ".metadata",
+        "status": "completed"
+      },
+      {
+        "destination_path": "gz/archive.tar.GZ",
+        "source_path": "archive.tar.GZ",
+        "status": "completed"
+      },
+      {
+        "destination_path": "txt/empty.txt",
+        "source_path": "empty.txt",
+        "status": "completed"
+      },
+      {
+        "destination_path": "log/inbound.LOG",
+        "source_path": "inbound.LOG",
+        "status": "completed"
+      },
+      {
+        "destination_path": "txt/notes__1.txt",
+        "source_path": "notes.txt",
+        "status": "completed"
+      },
+      {
+        "destination_path": "no_extension/readme",
+        "source_path": "readme",
+        "status": "completed"
+      },
+      {
+        "destination_path": "txt/report.TXT",
+        "source_path": "report.TXT",
+        "status": "completed"
+      }
+    ],
+    "preview_moves": 7,
+    "preview_output": "outputs/task3-preview.json",
+    "record_count": 9,
+    "records": [
+      {
+        "kind": "email",
+        "line_number": 2,
+        "source_path": "log/inbound.LOG",
+        "value": "demo.alpha@example.test"
+      },
+      {
+        "kind": "email",
+        "line_number": 2,
+        "source_path": "log/inbound.LOG",
+        "value": "demo.beta@example.test"
+      },
+      {
+        "kind": "transaction_id",
+        "line_number": 2,
+        "source_path": "log/inbound.LOG",
+        "value": "TXN-A1B2C3"
+      },
+      {
+        "kind": "transaction_id",
+        "line_number": 2,
+        "source_path": "log/inbound.LOG",
+        "value": "TXN-Z9Y8X7"
+      },
+      {
+        "kind": "transaction_id",
+        "line_number": 3,
+        "source_path": "log/inbound.LOG",
+        "value": "TXN-A1B2C3"
+      },
+      {
+        "kind": "email",
+        "line_number": 1,
+        "source_path": "txt/notes__1.txt",
+        "value": "unicode.user@example.test"
+      },
+      {
+        "kind": "transaction_id",
+        "line_number": 1,
+        "source_path": "txt/notes__1.txt",
+        "value": "TXN-AB12CD"
+      },
+      {
+        "kind": "transaction_id",
+        "line_number": 3,
+        "source_path": "txt/notes__1.txt",
+        "value": "TXN-ABCDE1"
+      },
+      {
+        "kind": "email",
+        "line_number": 3,
+        "source_path": "txt/notes__1.txt",
+        "value": "demo.alpha@example.test"
+      }
+    ],
+    "repeat_moves": 0,
+    "repeat_output": "outputs/task3-repeat.json",
+    "safe_failure_output": "outputs/task3-safe-failure.stderr",
+    "safe_failure_preserved_inputs": true
+  },
+  "task4": {
+    "eof_transcript": "outputs/task4-eof.txt",
+    "interrupt_transcript": "outputs/task4-interrupt.txt",
+    "main_transcript": "outputs/task4-main.txt",
+    "unsupported_transcript": "outputs/task4-unsupported.txt"
+  },
+  "test_summary": {
+    "count": 54,
+    "duration_seconds": 1.678,
+    "outcome": "passed"
+  },
+  "working_directory": "."
+}

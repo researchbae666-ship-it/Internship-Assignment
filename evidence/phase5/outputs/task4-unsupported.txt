@@ -1,0 +1,6 @@
+Welcome to the Progree Python assignment helper. Choose: tasks, python, or submission. Type help at any time; reset/cancel clears context; exit ends this local session.
+you> Task 4 is this local rule-based terminal chatbot. It normalizes text, routes intents with a dictionary, tracks session state, and handles fallbacks. It is being used now; final PDF work is not part of this session.
+you> I do not recognize that as a Task 4 question. Ask about operation, intents, normalization, or session state; or type help/reset.
+you> I still need a clear choice. Choose operation, intents, normalization, or session state. Type help for the main menu or reset to clear this context.
+you> The session keeps the current tree, pending choice, last intent, turn count, and only the most recent 20 normalized turns in memory. It is not persisted.
+you> Goodbye. This session was local and no information was saved or submitted.
