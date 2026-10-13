@@ -156,6 +156,28 @@ class Task4CoreTests(unittest.TestCase):
         self.assertEqual(session.last_intent, "task2_validation")
         self.assertEqual(session.clarification_count, 0)
 
+    def test_reset_clears_clarification_recovery_state(self) -> None:
+        session = task4.SessionState()
+        task4.handle_turn("tasks", session)
+        task4.handle_turn("unclear", session)
+        repeated = task4.handle_turn("still unclear", session)
+        self.assertIn("still need a clear choice", repeated.text)
+        self.assertEqual(session.clarification_count, 2)
+        turns_before_reset = session.turn_count
+
+        reset = task4.handle_turn("reset", session)
+        self.assertEqual(reset.intent, "reset")
+        self.assertEqual(session.clarification_count, 0)
+        self.assertEqual(session.history, ["reset"])
+        self.assertEqual(session.turn_count, turns_before_reset + 1)
+        self.assertEqual(session.pending_choice, "root_choice")
+
+        first_after_reset = task4.handle_turn("unclear again", session)
+        self.assertEqual(first_after_reset.intent, "ambiguous")
+        self.assertIn("Please choose tasks", first_after_reset.text)
+        self.assertNotIn("still need a clear choice", first_after_reset.text)
+        self.assertEqual(session.clarification_count, 1)
+
     def test_session_independence_and_history_bound(self) -> None:
         first = task4.SessionState()
         second = task4.SessionState()

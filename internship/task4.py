@@ -363,6 +363,7 @@ def handle_turn(text: str, session: SessionState) -> TurnResult:
         session.last_intent = "reset"
         session.history = [normalized]
         session.fallback_count = 0
+        session.clarification_count = 0
         return TurnResult("Context reset. Choose tasks, python, or submission.", "reset")
     if intent == "blank":
         session.last_intent = "blank"
