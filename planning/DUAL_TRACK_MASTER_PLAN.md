@@ -17,12 +17,11 @@ authorized work.
 | Phase | Work | Exit evidence | Review gate |
 | --- | --- | --- | --- |
 | DT-0 | Activate dual-track structure and safeguard approved Python baseline | Plans, privacy checks, clean baseline test result | Master-plan review |
-| DT-1 | Python enhancement audit | Prioritized audit with regression impact and small approved change set, if any | Python-enhancement review |
 | DT-2 | Marketing research method | Source registry, observation records, calculation worksheets, limitations | Research-method review |
 | DT-3 | Marketing Task 2 competitor audit | Public-source-backed 3–4-page working report and QA | Task 2 review |
 | DT-4 | Marketing Task 3 campaign roadmap | 30-day matrix, assumptions, copy, measurement model, QA | Task 3 review |
 | DT-5 | Marketing Task 4 SEO and acquisition strategy | Website observations, keyword/SEO map, funnel model, QA | Task 4 review |
-| DT-6 | Selective Python improvements | Approved code/test/evidence changes only | Python final review |
+| DT-6 | Selective Python improvements | Approved code/test/evidence changes only | Python-enhancement review |
 | DT-7 | Track reports and evidence validation | Separate report builds, source/evidence manifests, PDF QA | Report review |
 | DT-8 | Authorized submission preparation | Form-rule verification and user authorization | Submission authorization |
 
@@ -32,7 +31,7 @@ limitations before the next gate begins.
 
 ## Current execution
 
-DT-0 is the only authorized execution in this change. It establishes project
-structure and decision-ready research plans. It does not modify Python
-application behavior, collect marketing metrics, generate a Marketing report,
-or publish or submit anything.
+With the 18 October 2026 deadline, complete Digital Marketing Tasks 2, 3, and
+4 before considering optional Python enhancements. Each remains independently
+reviewed. DT-0 established the structure; the next authorized work is DT-2 and
+DT-3. No phase may publish or submit anything.

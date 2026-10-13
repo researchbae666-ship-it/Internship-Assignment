@@ -28,12 +28,18 @@ audiences, KPIs, assets, and performance values as assumptions or targets.
 
 ### Task 4 proposed website context
 
-Subject to public-access verification, evaluate **LARQ
-(`https://www.livelarq.com/`)** as a consumer hydration-technology company
-website. The future report will only assert details observed on the public site
-on a recorded date. If inaccessible or unsuitable for the startup criterion, a
-replacement will be selected through the same documented rationale before
-research begins.
+Subject to public-access verification, evaluate **Ocean Bottle
+(`https://oceanbottle.co/`)** as the preferred target startup website. This
+replaces LARQ because the review instruction reports that BRITA SE acquired
+LARQ in 2024, which makes LARQ a less defensible startup subject. The same
+instruction reports Ocean Bottle startup origins in 2019. Both background
+claims must be independently verified before a Task 4 report treats them as
+facts; Ocean Bottle's current business status and website suitability also
+remain research questions.
+
+Supporting-source targets are recorded in
+`digital_marketing/research/task4_target_source_targets.md`. They are not
+treated as verified until their primary pages can be accessed and collected.
 
 ## Public research method
 
@@ -62,6 +68,6 @@ research begins.
 | Competitor platform metrics | Public observation needed | Capture or mark unavailable |
 | Engagement rates | Derived estimate | Retain inputs and formula |
 | RefillLoop audience/KPIs/budget | Campaign assumption/target | State rationale and units |
-| LARQ site facts | Public observation needed | Capture page URLs and dates |
+| Ocean Bottle origin/site facts | Public observation needed | Capture primary source URLs and dates |
 | Keyword search volume/rankings | Unavailable without reliable source | Do not fabricate; use qualitative intent and labeled prioritization |
 | CAC/ROAS/conversion/revenue | Modeled scenario input | Present formula, ranges, and sensitivity |
