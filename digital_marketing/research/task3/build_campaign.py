@@ -16,6 +16,7 @@ REQUIRED_ACTION_FIELDS = {
     "creative_concept", "target_persona", "copy_or_script", "cta",
     "distribution", "proposed_publication_time", "kpi", "responsible_role",
     "production_requirements",
+    "action_id", "targeting_id", "keyword_strategy", "ad_copy",
 }
 
 DAY_THEMES = [
@@ -80,18 +81,135 @@ YOUTUBE = {
     29: ("Long-form", "Campaign learning recap", "Five-minute recap covers proposed experiments, feedback collection, and real-launch prerequisites.", "Join the interest list."),
 }
 
+IG_COPY = [
+    ("Your day has more than one stop.", "A proposed RefillLoop routine starts by mapping the moments when your carry setup changes."),
+    ("What if your bottle routine could change with your day?", "Explore a fictional modular concept built around switching contexts, not a promised product feature."),
+    ("The hard part is often remembering the next refill.", "Tell us where your routine breaks: leaving home, arriving at work, or after training."),
+    ("Commute. Desk. Training. One routine map.", "This concept creative follows the handoffs that make reusable habits harder to repeat."),
+    ("A better routine begins before the bag leaves the door.", "Save this proposed packing cue and adapt it to your own day."),
+    ("Something new is being explored for changing routines.", "Follow the concept countdown; availability is not being promised."),
+    ("Which moment needs the clearest refill cue?", "Vote: commute, desk day, or training. The answer informs a future concept test."),
+    ("Meet RefillLoop — a proposed modular hydration concept.", "This reveal introduces an idea to test, not a product ready to buy."),
+    ("A reusable habit needs a plan for the in-between moments.", "See how a proposed routine map can connect carry, fill, and reset."),
+    ("Four proposed steps: assemble, fill, carry, reset.", "Watch the concept flow, then decide which step needs more clarity."),
+    ("Design details only matter when they support a routine.", "Zoom in on the fictional components and share the question you would ask first."),
+    ("A refill cue can travel with the rest of your routine.", "This creator-style scenario is illustrative; share the cue that works for you."),
+    ("Choose a proposed configuration for work, travel, or training.", "Start with the context, then test what you actually need."),
+    ("Care guidance should be clear before it is persuasive.", "Save this proposed checklist; final product instructions would require validation."),
+    ("Try linking one refill action to a habit you already have.", "A calendar reminder, bag check, or desk reset can become the cue."),
+    ("Questions make a concept stronger.", "Ask about modules, routine prompts, or what still needs testing."),
+    ("A workday carry setup should be easy to explain.", "Save this fictional configuration as a discussion prompt, not a performance claim."),
+    ("Show the place where your refill routine starts.", "Use the campaign prompt to share a setup idea; do not share personal data."),
+    ("Would you rather see utility-first or lifestyle-first creative?", "Vote so the next proposed message test begins with a clear audience preference."),
+    ("Fit, care, and routine are questions worth answering plainly.", "Send the question that would prevent you from trying a new concept."),
+    ("Behind every concept is a list of assumptions to test.", "This brief separates planned design language from verified product claims."),
+    ("A desk routine needs a cue that fits between meetings.", "Save this proposed reset sequence for your next workday experiment."),
+    ("Start with the routine that changes most often.", "Choose commuter, desk-day, or training to see the relevant concept path."),
+    ("Early access begins with informed interest, not urgency.", "Request a future update if the concept is relevant to your routine."),
+    ("FAQ first, assumptions second.", "Review the questions this fictional campaign is designed to answer."),
+    ("Teams can test a refill cue without making a product claim.", "Download the proposed internal prompt and adapt it with workplace approval."),
+    ("Still curious about the proposed concept?", "Join the interest list only if you want a future, consent-aware update."),
+    ("Community ideas can improve a concept before a launch exists.", "Share one change that would make your routine easier to repeat."),
+    ("The next loop is feedback, testing, and clearer decisions.", "Follow for future concept-development updates, not availability promises."),
+    ("What content would help you decide later?", "Answer one question so a future launch can explain the right thing first."),
+]
+
+LI_COPY = {
+    day: f"{theme}. {concept} This is a proposed planning exercise for teams that want to make routine prompts easier to test."
+    for day, (_, theme, concept, _) in LINKEDIN.items()
+}
+YT_COPY = {
+    day: {
+        "title": f"RefillLoop concept: {theme}",
+        "description": f"{concept} This video describes a fictional proposed campaign concept; it does not claim product availability or outcome.",
+        "outline": "Hook the routine friction; demonstrate the proposed concept; label assumptions; invite a specific feedback action."
+    }
+    for day, (_, theme, concept, _) in YOUTUBE.items()
+}
+
+PLATFORM_TARGETING = {
+    "Instagram": {
+        "targeting_id": "IG-KHI-01",
+        "geography": "Proposed initial test market: Karachi metropolitan area; rationale: one defined urban test area makes creative learning easier to interpret. This is not evidence of demand.",
+        "language": "English creative; review Urdu adaptation for comprehension and platform capability before launch.",
+        "age": "Proposed 23–40 where available; verify current platform controls.",
+        "inclusion": "Policy-compliant interest/context tests around commuting, hybrid work, productivity, fitness routines, and reusable products; verify availability before use.",
+        "exclusion": "Exclude existing interest-form completers from conversion retargeting where a lawful consent-aware audience is available; do not infer sensitive traits.",
+        "placement": "Reels, Stories, and Feed tested separately; retain placement-level reporting.",
+        "conversion_event": "Consent-aware early-interest form completion or qualified concept-page visit.",
+        "privacy_policy": "Use platform-approved controls only; verify options and privacy requirements before a live campaign."
+    },
+    "LinkedIn": {
+        "targeting_id": "LI-KHI-01",
+        "geography": "Proposed initial test market: Karachi metropolitan area; use a single professional-context test area for interpretable learning.",
+        "language": "English professional copy; review Urdu adaptation separately if supported and appropriate.",
+        "age": "No age-based professional targeting is proposed; use platform-approved professional context only.",
+        "inclusion": "Verify current targeting for people operations, workplace experience, facilities, and operations functions; use role/function contexts, not sensitive inferences.",
+        "exclusion": "Exclude current employees and completed interest-form audiences only where lawful, consented, and supported by the platform.",
+        "placement": "Feed and document/article formats; compare sponsored document with text-post treatment.",
+        "conversion_event": "Qualified toolkit download or consent-aware early-interest form completion.",
+        "privacy_policy": "Platform controls and minimum-audience rules must be verified before launch."
+    },
+    "YouTube": {
+        "targeting_id": "YT-KHI-01",
+        "geography": "Proposed initial test market: Karachi metropolitan area; separate geographic expansion from the first creative test.",
+        "language": "English spoken/captioned creative; review Urdu captions or alternate creative before use.",
+        "age": "Proposed adult audience only where age controls are available and policy-compliant; verify current options.",
+        "inclusion": "Contextual tests around commuting organization, workplace productivity, fitness routines, and reusable-product education; verify placement controls.",
+        "exclusion": "Exclude made-for-children content and unsuitable placements using current documented controls; do not profile sensitive audiences.",
+        "placement": "Shorts for discovery; skippable long-form/contextual inventory for demonstrations; report format separately.",
+        "conversion_event": "Qualified concept-page session or consent-aware early-interest form completion.",
+        "privacy_policy": "Verify current YouTube/Google Ads targeting, placement, and consent requirements before launch."
+    },
+}
+
+KEYWORD_CLUSTERS = {
+    "routine": {"primary": "reusable hydration routine", "supporting": ["daily refill habit", "routine design", "carry routine"], "intent": "Discover practical routine prompts for a proposed reusable-hydration concept."},
+    "commute": {"primary": "commuter hydration routine", "supporting": ["hybrid work commute", "bag packing routine", "desk to gym"], "intent": "Find ideas for changing locations and carry contexts."},
+    "modular": {"primary": "modular reusable bottle concept", "supporting": ["modular product design", "reusable hydration", "product concept"], "intent": "Understand the proposed modular-product framing."},
+    "workplace": {"primary": "workplace wellbeing routine", "supporting": ["workplace hydration prompt", "hybrid team wellbeing", "facilities activation"], "intent": "Find a proposed workplace implementation or discussion tool."},
+    "education": {"primary": "refill habit education", "supporting": ["hydration routine checklist", "care checklist", "habit stacking"], "intent": "Learn a proposed routine or care framework without performance claims."},
+}
+
+
+def keyword_strategy(platform: str, theme: str, phase: str) -> dict[str, Any]:
+    lower = (theme + " " + phase).lower()
+    cluster_name = "workplace" if "work" in lower or "team" in lower else "commute" if any(word in lower for word in ("carry", "commut", "desk")) else "modular" if any(word in lower for word in ("module", "design", "reveal")) else "education" if any(word in lower for word in ("care", "habit", "faq", "logic")) else "routine"
+    cluster = KEYWORD_CLUSTERS[cluster_name]
+    labels = {
+        "Instagram": ["#RefillLoopConcept", "#ReusableHydration", "#RoutineDesign"],
+        "LinkedIn": ["#WorkplaceWellbeing", "#RoutineDesign", "#ProductConcept"],
+        "YouTube": ["refill routine", "reusable hydration", "modular product concept"],
+    }[platform]
+    return {
+        "cluster": cluster_name,
+        "primary_keyword": cluster["primary"],
+        "supporting_keywords": cluster["supporting"],
+        "hashtags_or_video_tags": labels,
+        "search_discovery_intent": cluster["intent"],
+        "rationale": f"Connects the {platform} format to the {cluster_name} discovery cluster; no search volume or ranking is claimed."
+    }
+
 
 def action(day: int, phase: str, platform: str, content_format: str, theme: str,
            concept: str, persona: str, copy: str, cta: str, distribution: str,
-           time: str, kpi: str, role: str, production: str) -> dict[str, Any]:
-    return {
+           time: str, kpi: str, role: str, production: str, ad_copy: dict[str, str],
+           ab_test_id: str | None = None) -> dict[str, Any]:
+    item = {
+        "action_id": f"{platform.lower()}-{day:02d}",
         "day": day, "phase": phase, "platform": platform,
         "content_format": content_format, "campaign_theme": theme,
         "creative_concept": concept, "target_persona": persona,
         "copy_or_script": copy, "cta": cta, "distribution": distribution,
         "proposed_publication_time": time, "kpi": kpi,
         "responsible_role": role, "production_requirements": production,
+        "targeting_id": PLATFORM_TARGETING[platform]["targeting_id"],
+        "keyword_strategy": keyword_strategy(platform, theme, phase),
+        "ad_copy": ad_copy,
     }
+    if ab_test_id:
+        item["ab_test_id"] = ab_test_id
+    return item
 
 
 def build_campaign() -> dict[str, Any]:
@@ -104,31 +222,47 @@ def build_campaign() -> dict[str, Any]:
         actions.append(action(
             day, phase, "Instagram", content_format, theme, concept,
             personas[(day - 1) % len(personas)],
-            f"RefillLoop — proposed modular hydration for the moments your routine changes. {concept}",
+            IG_COPY[day - 1][1],
             cta, paid, "18:30 audience local time (test variable)",
             "Reach / 3-second view rate" if content_format == "Reel" else "Saves, replies, or poll participation",
-            "Social lead", "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review."
+            "Social lead", "Vertical edit or 4–6 slide layout; accessibility captions; legal/claim review.",
+            {"primary_text": IG_COPY[day - 1][1], "headline_or_hook": IG_COPY[day - 1][0], "cta_line": cta},
+            {8: "AB-01", 19: "AB-04", 23: "AB-04"}.get(day)
         ))
     for day, (content_format, theme, concept, cta) in LINKEDIN.items():
         actions.append(action(
             day, "Prelaunch" if day <= 7 else "Launch" if day <= 12 else "Education" if day <= 18 else "Optimization" if day <= 22 else "Conversion",
             "LinkedIn", content_format, theme, concept, "Aisha — workplace wellbeing lead",
-            f"RefillLoop planning note: {concept}", cta,
+            LI_COPY[day], cta,
             "Paid" if day in {7, 15, 23, 28} else "Organic",
             "09:00 target professional local time (test variable)",
             "Document opens / qualified clicks / poll votes", "B2B content lead",
-            "Professional copy edit; document design or article QA; UTM link and claim review."
+            "Professional copy edit; document design or article QA; UTM link and claim review.",
+            {"primary_text": LI_COPY[day], "headline_or_hook": theme, "cta_line": cta},
+            {15: "AB-02", 23: "AB-02"}.get(day)
         ))
     for day, (content_format, theme, concept, cta) in YOUTUBE.items():
         actions.append(action(
             day, "Tease" if day <= 6 else "Launch" if day <= 11 else "Education" if day <= 17 else "Optimization" if day <= 22 else "Conversion",
             "YouTube", content_format, theme, concept, "Sam — active routine builder",
-            f"RefillLoop concept video: {concept}", cta,
+            YT_COPY[day]["description"] + " Outline: " + YT_COPY[day]["outline"], cta,
             "Paid" if day in {8, 15, 22, 29} else "Organic",
             "17:00 audience local time (test variable)",
             "Average view duration / end-screen CTR" if content_format == "Long-form" else "Shorts views / viewed-versus-swiped-away",
-            "Video producer", "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer."
+            "Video producer", "Script, storyboard, voiceover, captions, thumbnail, end screen, and concept disclaimer.",
+            {"video_title": YT_COPY[day]["title"], "description": YT_COPY[day]["description"], "script_outline": YT_COPY[day]["outline"], "cta_line": cta},
+            {22: "AB-03"}.get(day)
         ))
+    pacing = [
+        ("instagram-08", "Instagram", 8, "Launch", 300), ("instagram-10", "Instagram", 10, "Launch", 180),
+        ("instagram-15", "Instagram", 15, "Education", 180), ("instagram-19", "Instagram", 19, "Optimization", 180),
+        ("instagram-23", "Instagram", 23, "Conversion", 180), ("instagram-24", "Instagram", 24, "Conversion", 180),
+        ("instagram-27", "Instagram", 27, "Conversion", 150),
+        ("linkedin-07", "LinkedIn", 7, "Prelaunch", 150), ("linkedin-15", "LinkedIn", 15, "Education", 300),
+        ("linkedin-23", "LinkedIn", 23, "Conversion", 300), ("linkedin-28", "LinkedIn", 28, "Conversion", 300),
+        ("youtube-08", "YouTube", 8, "Launch", 150), ("youtube-15", "YouTube", 15, "Education", 150),
+        ("youtube-22", "YouTube", 22, "Optimization", 150), ("youtube-29", "YouTube", 29, "Conversion", 150),
+    ]
     return {
         "campaign": {
             "name": "RefillLoop: Make the refill routine easier to repeat",
@@ -149,9 +283,27 @@ def build_campaign() -> dict[str, Any]:
         "objectives": [
             {"objective": "Build qualified concept awareness", "smart_target": "Over 30 days, deliver 120,000 proposed paid-and-organic impressions while recording platform-native reach separately.", "baseline_assumption": "No prior audience or account baseline is available.", "measurement": "Platform reach exports and UTM-tagged landing-page sessions."},
             {"objective": "Validate message routes", "smart_target": "Run at least four planned A/B creative or CTA comparisons and retain a decision log by Day 30.", "baseline_assumption": "No prior creative winner is assumed.", "measurement": "Predefined primary KPI per test; do not call a winner without adequate delivery and context."},
-            {"objective": "Generate early-access intent", "smart_target": "Model 300 proposed qualified interest-form completions, with the actual result reported only after a live, consented launch.", "baseline_assumption": "Illustrative 1.5% landing-page completion rate; not a forecast.", "measurement": "Consent-aware form-completion event and source UTM."},
+            {"objective": "Generate early-access intent", "smart_target": "Model 30 base-scenario qualified interest-form completions over 30 days; report 300 only as a stretch scenario with separate traffic conditions.", "baseline_assumption": "Base scenario uses 120,000 impressions, 1.0% assumed CTR, and 2.5% assumed form completion; not a forecast.", "measurement": "Consent-aware form-completion event and source UTM."},
         ],
         "budget": {"currency": "USD", "total": 3000, "allocation": {"Instagram": 1350, "LinkedIn": 1050, "YouTube": 600}, "assumption": "Illustrative media-only planning budget; no spend is authorized or incurred."},
+        "targeting_specifications": PLATFORM_TARGETING,
+        "funnel": {
+            "formula": "interest completions = impressions × click-through rate × landing-form completion rate",
+            "units": {"impressions": "impressions", "click_through_rate": "decimal share", "landing_sessions": "sessions", "form_completion_rate": "decimal share", "interest_completions": "completed consent-aware forms"},
+            "scenarios": [
+                {"name": "Low", "impressions": 75000, "click_through_rate": 0.006, "landing_sessions": 450, "form_completion_rate": 0.015, "interest_completions": 6.75, "classification": "illustrative planning scenario"},
+                {"name": "Base", "impressions": 120000, "click_through_rate": 0.01, "landing_sessions": 1200, "form_completion_rate": 0.025, "interest_completions": 30, "classification": "primary planned target; assumptions only"},
+                {"name": "High", "impressions": 180000, "click_through_rate": 0.016, "landing_sessions": 2880, "form_completion_rate": 0.035, "interest_completions": 100.8, "classification": "illustrative upside scenario"},
+                {"name": "Stretch", "impressions": 240000, "click_through_rate": 0.025, "landing_sessions": 6000, "form_completion_rate": 0.05, "interest_completions": 300, "classification": "not a primary target; requires 6,000 sessions and materially stronger traffic conditions or additional authorized reach"},
+            ]
+        },
+        "budget_pacing": [{"action_id": action_id, "platform": platform, "day": day, "phase": phase, "proposed_spend_usd": spend, "note": "Proposed media-only spend; not incurred."} for action_id, platform, day, phase, spend in pacing],
+        "ab_tests": [
+            {"id": "AB-01", "hypothesis": "A routine-friction hook earns more qualified concept clicks than a general product-reveal hook.", "control": "Day 8 utility-led reveal", "treatment": "Day 8 routine-friction opening", "audience": "IG-KHI-01 / Maya creative route", "primary_metric": "UTM-tagged concept-page click-through rate", "decision_criterion": "Pre-agree a minimum delivery threshold; retain the variant with the stronger primary metric and document context."},
+            {"id": "AB-02", "hypothesis": "A LinkedIn document explaining implementation earns more qualified clicks than a professional text post.", "control": "Text-post treatment", "treatment": "Document-post treatment", "audience": "LI-KHI-01 / Aisha creative route", "primary_metric": "Qualified toolkit or concept-page clicks", "decision_criterion": "Compare only after equivalent planned delivery conditions; record no winner if evidence is insufficient."},
+            {"id": "AB-03", "hypothesis": "A workplace-toolkit video opening sustains more qualified attention than a feature-led opening.", "control": "Feature-led opening", "treatment": "Workplace-toolkit opening", "audience": "YT-KHI-01 / Aisha contextual route", "primary_metric": "Average view duration and end-screen click-through rate", "decision_criterion": "Use a pre-agreed attention threshold and report both measures, not views alone."},
+            {"id": "AB-04", "hypothesis": "‘Choose your path’ creates more qualified interest than ‘request early access’ for undecided routine seekers.", "control": "Request early access", "treatment": "Choose your path", "audience": "IG-KHI-01 / Maya and Sam retargeting only if lawful and consent-aware", "primary_metric": "Consent-aware form completion rate", "decision_criterion": "Require comparable landing experience and documented delivery before deciding."},
+        ],
         "sources": [
             {"reference": "Digital Marketing & Branding Tasks & Instructions.md", "use": "Task 3 required platforms and deliverable scope."},
             {"reference": "planning/DIGITAL_MARKETING_RESEARCH_PLAN.md", "use": "Approved fictional RefillLoop campaign context."}
@@ -175,9 +327,32 @@ def validate(campaign: dict[str, Any]) -> list[str]:
             errors.append(f"Action {index} is missing: {sorted(missing)}")
         if item["day"] not in range(1, 31):
             errors.append(f"Action {index} has an invalid day.")
+    for index, item in enumerate(actions, start=1):
+        keyword = item.get("keyword_strategy", {})
+        if not keyword.get("primary_keyword") or not keyword.get("hashtags_or_video_tags"):
+            errors.append(f"Action {index} has no usable keyword/tag strategy.")
+        if item.get("targeting_id") not in {spec["targeting_id"] for spec in campaign.get("targeting_specifications", {}).values()}:
+            errors.append(f"Action {index} has an invalid targeting specification.")
     budget = campaign["budget"]
     if sum(budget["allocation"].values()) != budget["total"]:
         errors.append("Paid-media allocation does not equal total budget.")
+    pacing = campaign.get("budget_pacing", [])
+    pacing_by_platform = Counter()
+    for row in pacing:
+        pacing_by_platform[row["platform"]] += row["proposed_spend_usd"]
+    if dict(pacing_by_platform) != budget["allocation"]:
+        errors.append("Budget pacing does not reconcile to platform allocation.")
+    paid_action_ids = {item["action_id"] for item in actions if item["distribution"] == "Paid"}
+    if paid_action_ids != {row["action_id"] for row in pacing}:
+        errors.append("Every paid action must have exactly one pacing allocation.")
+    for scenario in campaign.get("funnel", {}).get("scenarios", []):
+        sessions = scenario["impressions"] * scenario["click_through_rate"]
+        completions = sessions * scenario["form_completion_rate"]
+        if abs(sessions - scenario["landing_sessions"]) > 1e-9 or abs(completions - scenario["interest_completions"]) > 1e-9:
+            errors.append(f"Funnel arithmetic does not reconcile for {scenario['name']}.")
+    for test in campaign.get("ab_tests", []):
+        if not all(test.get(field) for field in ("hypothesis", "control", "treatment", "audience", "primary_metric", "decision_criterion")):
+            errors.append(f"A/B test {test.get('id', 'unknown')} is incomplete.")
     return errors
 
 

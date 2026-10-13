@@ -42,11 +42,11 @@ be reviewed against each platform's current policy before any future launch.
 
 Primary measures are platform-native reach, video attention, saves/replies,
 qualified UTM clicks, consent-aware interest-form completions, and feedback
-themes. No achieved result is implied. Planned A/B tests compare utility-first
-versus lifestyle-first creative, “join interest list” versus “explore the
-concept” CTA, a commuter versus desk-day hook, and document versus text-post
-presentation. Hold a decision log: hypothesis, audience, creative, primary KPI,
-delivery context, result, and next action.
+themes. No achieved result is implied. Four planned A/B tests compare a
+routine-friction hook with a reveal hook, LinkedIn document with text post,
+workplace-toolkit with feature-led video opening, and “choose your path” with
+“request early access.” Hold a decision log: hypothesis, audience, control,
+treatment, primary KPI, delivery context, result, and next action.
 
 Optimization rules: do not declare a winner from a single post; pause only a
 paid variant after delivery is sufficient for its pre-agreed test threshold;
@@ -59,10 +59,52 @@ owner and a fallback creative or response path.
 ## Budget model
 
 The illustrative media-only budget is USD 3,000: Instagram USD 1,350, LinkedIn
-USD 1,050, and YouTube USD 600. This is a proposed allocation, not spend. It
-excludes production, web, agency, tax, and platform fees. Actual bids, CPM,
-conversion rate, and cost per interest must be measured only during a
-authorized live campaign.
+USD 1,050, and YouTube USD 600. The calendar maps every planned paid action to
+one proposed pacing row. This is a proposed allocation, not spend. It excludes
+production, web, agency, tax, and platform fees. Actual bids, CPM, conversion
+rate, and cost per interest must be measured only during an authorized live
+campaign.
+
+## Targeting and discovery plan
+
+The proposed initial test market is Karachi metropolitan area. This is a
+planning choice that keeps the first creative test geographically bounded; it
+does not establish demand. Instagram uses proposed adult audience controls,
+policy-compliant interests/context, and Reel/Story/Feed placement reporting.
+LinkedIn uses proposed professional contexts for people operations, workplace
+experience, facilities, and operations, avoiding age-based professional
+targeting. YouTube uses proposed adult contextual placements around commuting,
+workplace productivity, fitness routines, and reusable-product education.
+
+All platform controls, exclusions, languages, placement options, consent rules,
+and minimum-audience requirements must be verified in the relevant ad platform
+before a live campaign. No sensitive targeting or discriminatory inference is
+proposed.
+
+Each action has a primary keyword, supporting terms, discovery intent, and
+hashtags or video tags. The clusters are reusable hydration routines, commuting
+and carry routines, modular-product concepts, workplace wellbeing, and refill
+habit education. Tags are a proposed discovery structure; no search volume,
+ranking, or reach is claimed.
+
+## Reconciled planning funnel
+
+The primary base scenario is: **120,000 assumed impressions × 1.0% assumed CTR
+= 1,200 landing sessions × 2.5% assumed form-completion rate = 30 interest
+completions**. This replaces the unsupported implication that 300 completions
+could arise from the same assumptions.
+
+| Scenario | Impressions | CTR | Sessions | Form rate | Modeled completions |
+| --- | ---: | ---: | ---: | ---: |
+| Low | 75,000 | 0.6% | 450 | 1.5% | 6.75 |
+| Base | 120,000 | 1.0% | 1,200 | 2.5% | 30 |
+| High | 180,000 | 1.6% | 2,880 | 3.5% | 100.8 |
+| Stretch | 240,000 | 2.5% | 6,000 | 5.0% | 300 |
+
+These are arithmetic scenarios, not market benchmarks or forecasts. The 300
+completion case is a stretch condition requiring 6,000 sessions and materially
+stronger traffic conditions or additional authorized reach; it is not the
+primary planned target.
 
 ## Copy variations
 

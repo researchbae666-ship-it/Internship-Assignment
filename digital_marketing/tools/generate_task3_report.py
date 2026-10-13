@@ -86,10 +86,39 @@ def build_pdf(data: dict, output: Path) -> None:
     objective_rows = [["Objective", "Target / assumption", "Measurement"]] + [[o["objective"], o["smart_target"] + "<br/><i>Baseline: " + o["baseline_assumption"] + "</i>", o["measurement"]] for o in data["objectives"]]
     story += [table(objective_rows, [55*mm, 128*mm, 59*mm], body), Spacer(1, 5*mm), para("Channel roles", h2), para("Instagram delivers routine prompts, visual saves, polls, and community response. LinkedIn delivers professional storytelling, workplace use cases, and toolkit content. YouTube uses Shorts for discovery and long-form video for concept demonstration and implementation detail.", body), PageBreak()]
 
+    story += [para("Targeting and keyword strategy", h1), para("All filters below are proposed and must be checked against current platform policy, account eligibility, controls, consent obligations, and minimum-audience rules before launch. They are not evidence that a filter is available or that an audience will perform.", body)]
+    targeting_rows = [["Platform", "Proposed audience / inclusion", "Placement, event, and safeguard"]]
+    for platform, spec in data["targeting_specifications"].items():
+        targeting_rows.append([platform, f"<b>Market:</b> {spec['geography']}<br/><b>Language:</b> {spec['language']}<br/><b>Age:</b> {spec['age']}<br/><b>Include:</b> {spec['inclusion']}", f"<b>Placement:</b> {spec['placement']}<br/><b>Event:</b> {spec['conversion_event']}<br/><b>Exclude:</b> {spec['exclusion']}<br/><b>Policy:</b> {spec['privacy_policy']}"])
+    story += [table(targeting_rows, [31*mm, 112*mm, 99*mm], small), Spacer(1, 5*mm), para("Keyword and tag clusters", h2)]
+    clusters = {}
+    for item in data["actions"]:
+        strategy = item["keyword_strategy"]
+        clusters.setdefault(strategy["cluster"], strategy)
+    keyword_rows = [["Cluster", "Primary and supporting terms", "Discovery intent / proposed tags"]]
+    for name, strategy in sorted(clusters.items()):
+        keyword_rows.append([name.title(), "<b>Primary:</b> " + strategy["primary_keyword"] + "<br/>" + ", ".join(strategy["supporting_keywords"]), strategy["search_discovery_intent"] + "<br/>" + ", ".join(strategy["hashtags_or_video_tags"])])
+    story += [table(keyword_rows, [42*mm, 104*mm, 96*mm], body), PageBreak()]
+
     story += [para("Paid media, measurement, testing, and safeguards", h1)]
     budget = data["budget"]
     budget_rows = [["Platform", "Proposed media allocation", "Role"]] + [[p, f"{budget['currency']} {amount:,.0f}", "Amplify the platform role; no spend incurred."] for p, amount in budget["allocation"].items()] + [["Total", f"{budget['currency']} {budget['total']:,.0f}", budget["assumption"]]]
-    story += [table(budget_rows, [55*mm, 65*mm, 122*mm], body), para("Dashboard specification", h2), para("Track platform-native reach and video attention separately; tag campaign links with source, medium, campaign, content, and test variant; record consent-aware interest-form completions; and maintain a qualitative feedback-theme log. No metric becomes a business result until a real authorized campaign runs.", body), para("A/B testing and optimization rules", h2), para("Planned comparisons: utility-first versus lifestyle-first creative; ‘join interest list’ versus ‘explore the concept’ CTA; commuter versus desk-day hook; and LinkedIn document versus text post. Log hypothesis, audience, creative, primary KPI, delivery context, result, and next action. Do not declare a winner from one post; shift budget only in small documented increments after the pre-agreed delivery condition is met.", body), para("Risk register", h2)]
+    story += [table(budget_rows, [55*mm, 65*mm, 122*mm], body), para("Budget pacing", h2)]
+    pacing_rows = [["Day / action", "Platform / phase", "Proposed spend", "Purpose"]]
+    for row in data["budget_pacing"]:
+        pacing_rows.append([f"Day {row['day']}<br/>{row['action_id']}", row["platform"] + "<br/>" + row["phase"], f"USD {row['proposed_spend_usd']:,.0f}", row["note"]])
+    story += [table(pacing_rows, [38*mm, 42*mm, 35*mm, 127*mm], small), PageBreak()]
+
+    funnel = data["funnel"]
+    story += [para("Funnel mathematics and measurement", h1), para("Formula: " + funnel["formula"] + ". Rates are decimal assumptions; outputs are modeled planning arithmetic, not benchmarks or forecasts.", body)]
+    funnel_rows = [["Scenario", "Impressions", "CTR", "Landing sessions", "Form rate", "Modeled completions", "Classification"]]
+    for row in funnel["scenarios"]:
+        funnel_rows.append([row["name"], f"{row['impressions']:,}", f"{row['click_through_rate']:.1%}", f"{row['landing_sessions']:,.0f}", f"{row['form_completion_rate']:.1%}", f"{row['interest_completions']:,.2f}", row["classification"]])
+    story += [table(funnel_rows, [25*mm, 28*mm, 20*mm, 32*mm, 24*mm, 32*mm, 81*mm], small), para("Dashboard specification", h2), para("Track platform-native reach and video attention separately; tag campaign links with source, medium, campaign, content, and test variant; record consent-aware interest-form completions; and maintain a qualitative feedback-theme log. No metric becomes a business result until a real authorized campaign runs.", body), para("A/B testing and optimization rules", h2)]
+    ab_rows = [["Test", "Hypothesis and variants", "Audience / metric / decision"]]
+    for test in data["ab_tests"]:
+        ab_rows.append([test["id"], test["hypothesis"] + "<br/><b>Control:</b> " + test["control"] + "<br/><b>Treatment:</b> " + test["treatment"], "<b>Audience:</b> " + test["audience"] + "<br/><b>Metric:</b> " + test["primary_metric"] + "<br/><b>Decision:</b> " + test["decision_criterion"]])
+    story += [table(ab_rows, [22*mm, 102*mm, 118*mm], small), para("Risk register", h2)]
     risk_rows = [["Risk", "Control / contingency owner"] , ["Fictional concept mistaken for a live product", "Use a clear proposed-concept disclaimer; social lead pauses or corrects creative."], ["Unsupported environmental, material, or health claim", "Legal/claim review before release; substitute factual concept language."], ["Comment or consent issue", "Community lead uses an approved response and escalation path."], ["Production or platform-delivery delay", "Keep a tested static fallback and reschedule with a logged reason."]]
     story += [table(risk_rows, [92*mm, 150*mm], body), PageBreak()]
 
@@ -102,7 +131,7 @@ def build_pdf(data: dict, output: Path) -> None:
         for item in subset:
             rows.append([
                 f"Day {item['day']}<br/>{item['platform']}<br/>{item['phase']}",
-                f"{item['content_format']}<br/>{item['campaign_theme']}",
+                f"{item['content_format']}<br/>{item['campaign_theme']}<br/><b>Keyword:</b> {item['keyword_strategy']['primary_keyword']}<br/><b>Tags:</b> {', '.join(item['keyword_strategy']['hashtags_or_video_tags'])}",
                 item["creative_concept"] + "<br/><i>" + item["copy_or_script"] + "</i>",
                 item["cta"] + "<br/>" + item["distribution"],
                 item["proposed_publication_time"] + "<br/>" + item["kpi"],
