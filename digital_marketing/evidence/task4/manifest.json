@@ -1,0 +1,18 @@
+{
+  "kind": "digital_marketing_task4_seo_acquisition_evidence",
+  "generated_utc": "2026-10-13T11:46:46Z",
+  "execution_source_revision": "5c3fc7f4f1df120aa6f95fc0c0a3b886b6c6b954",
+  "website_sources": [
+    {"id": "OB-01", "url": "https://oceanbottle.co/", "http_status": 200, "sha256": "a0324e31472db1e4c25ebaf51ad613ecc663e7dbc4b842916ebc604afe839aa0"},
+    {"id": "OB-02", "url": "https://oceanbottle.co/products/original-bottle", "http_status": 200, "sha256": "5eed2a769e4331ddf00d820f0f36851debfa175dfa369084cc393b9ae41240cd"},
+    {"id": "OB-03", "url": "https://oceanbottle.co/pages/faqs", "http_status": 200, "sha256": "9cde244793bc0463cd7e1911b7106c197516d73cd5d394e11f3bedf8b9caee9c"},
+    {"id": "OB-04", "url": "https://oceanbottle.co/pages/ocean-impact", "http_status": 200, "sha256": "d7eb830b3135282e07f4079f0b64aa3d6dad7506b8f632c5ee21bc80346ff59d"},
+    {"id": "OB-05", "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/", "http_status": 403, "use": "Unavailable; not used to validate certification."}
+  ],
+  "strategy": {"keywords": 12, "seo_map_rows": 4, "funnel_stages": 4, "email_flows": 4, "scenarios": ["Low", "Base", "High"], "budget_gbp": 12000, "media_budget_gbp": 10000},
+  "strategy_data_sha256": "564f4f4dd73c949473a39e672c786119b23afa1ebb96e8915ea1aa625a1cdd48",
+  "pdf": {"path": "digital_marketing/deliverables/DM_Task4_SEO_Acquisition_Strategy.pdf", "pages": 6, "page_size": "A4 landscape", "bytes": 17893, "sha256": "63cc5525f151ba36aef0b92defde15382adf7ef17cdc2c3eec21c1c7182a2f5c"},
+  "tests": {"task4_strategy": {"run": 10, "failed": 0}, "task4_pdf_style": {"run": 1, "failed": 0}, "approved_python_regression": {"run": 54, "failed": 0}},
+  "render_qa": {"pages_rendered": 6, "dpi": 144, "result": "All pages inspected in two contact sheets; no clipping, low-contrast dark-header text, corrupted glyphs, or unexpected blank pages observed."},
+  "limitations": ["No founding-year, B Corp directory, keyword volume, ranking, analytics, search-console, conversion, revenue, or ad-account data was verified.", "Ocean Bottle product, impact, and certification statements are attributed company statements.", "All acquisition and financial figures are proposed modeled assumptions; no email, advertising, spend, website change, or form submission occurred."]
+}

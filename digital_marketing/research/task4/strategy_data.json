@@ -363,5 +363,5 @@
     "Keep paid-platform reporting separate from analytics attribution; reconcile purchase events only after consent and implementation review.",
     "Define CAC as media spend divided by attributed new customers; define ROAS as attributed revenue divided by media spend. Zero denominators produce an explicit unavailable result."
   ],
-  "source_revision": "dd112a9e5874a72dcfc191b968e2a61235e4a407"
+  "source_revision": "5c3fc7f4f1df120aa6f95fc0c0a3b886b6c6b954"
 }

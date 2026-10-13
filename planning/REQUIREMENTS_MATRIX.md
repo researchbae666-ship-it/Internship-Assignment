@@ -28,15 +28,15 @@ planned only under the dual-track scope activated on 13 October 2026.
 
 | ID | Source requirement | Required evidence and completion criterion | Current state |
 | --- | --- | --- | --- |
-| DM2.1 | Audit three competing consumer brands | Sector rationale, three profiles, public source URLs/dates, comparable observation window | Planned; no metrics collected |
-| DM2.2 | Analyze cadence, engagement, and brand position | Observable post records, transparent rate formulas or unavailable labels, visual/theme comparison | Planned |
-| DM2.3 | Identify gaps and recommendations (3–4 pages) | Findings traceable to observations; practical recommendations separated from facts | Planned |
-| DM3.1 | 30-day integrated campaign | Product rationale, personas, positioning, target KPI assumptions, complete editorial matrix | Planned |
-| DM3.2 | Instagram, LinkedIn, and YouTube execution | Channel-specific asset, copy, CTA, targeting, hashtags/keywords, owner, KPI per scheduled action | Planned |
-| DM3.3 | Paid and optimization plan | Proposed allocations, testing/measurement/risk plan; no launched campaign or achieved result claim | Planned |
-| DM4.1 | Enterprise search strategy for target startup | Public website observation log, intent clusters, long-tail research provenance and prioritization | Planned |
-| DM4.2 | On-page SEO map | Proposed titles, metas, URL, headers, pillars, internal links; actual versus recommended clearly separated | Planned |
-| DM4.3 | Growth acquisition funnel | Proposed funnel, landing/conversion events, email drip, model formulas/assumptions and sensitivity | Planned |
+| DM2.1 | Audit three competing consumer brands | Sector rationale, three profiles, public source URLs/dates, comparable observation window | Evidence-blocked; no metrics collected |
+| DM2.2 | Analyze cadence, engagement, and brand position | Observable post records, transparent rate formulas or unavailable labels, visual/theme comparison | Evidence-blocked |
+| DM2.3 | Identify gaps and recommendations (3–4 pages) | Findings traceable to observations; practical recommendations separated from facts | Evidence-blocked |
+| DM3.1 | 30-day integrated campaign | Product rationale, personas, positioning, target KPI assumptions, complete editorial matrix | Complete; independently approved |
+| DM3.2 | Instagram, LinkedIn, and YouTube execution | Channel-specific asset, copy, CTA, targeting, hashtags/keywords, owner, KPI per scheduled action | Complete; independently approved |
+| DM3.3 | Paid and optimization plan | Proposed allocations, testing/measurement/risk plan; no launched campaign or achieved result claim | Complete; independently approved |
+| DM4.1 | Enterprise search strategy for target startup | Public website observation log, intent clusters, long-tail research provenance and prioritization | Complete; awaiting independent review |
+| DM4.2 | On-page SEO map | Proposed titles, metas, URL, headers, pillars, internal links; actual versus recommended clearly separated | Complete; awaiting independent review |
+| DM4.3 | Growth acquisition funnel | Proposed funnel, landing/conversion events, email drip, model formulas/assumptions and sensitivity | Complete; awaiting independent review |
 | DM-S.1 | Shared notice: at least three of four tasks | Tasks 2–4 must each reach independently reviewed completion; certificate remains organizer decision | Pending |
 | DM-S.2 | Shared notice: one PDF | Future Marketing PDF; optional combined portfolio only after organizer clarification | Pending |
 
