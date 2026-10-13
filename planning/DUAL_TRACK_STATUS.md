@@ -2,7 +2,7 @@
 
 **Status date:** 2026-10-13 (UTC)
 
-**Branch:** `marketing/task3-campaign`
+**Branch:** `marketing/task4-seo-acquisition`
 
 **Approved Python baseline:** `6fda8d6000a0f3db097c4fc12d673323ded84384`
 
@@ -14,7 +14,7 @@
 | Python Programming | Enhancements | Planned | Roadmap only; no code changes authorized or made |
 | Digital Marketing & Branding | Task 2 | Collection blocked | The 13 October 2026 cloud proxy denied all requested brand and platform hosts; no account, post, metric, or audit finding was invented |
 | Digital Marketing & Branding | Task 3 | Complete; awaiting independent review | 53-action fictional RefillLoop roadmap, strengthened validation evidence, and 20-page PDF; no campaign launched or spend incurred |
-| Digital Marketing & Branding | Task 4 | Planned | Proposed website subject to public-access review; no audit performed |
+| Digital Marketing & Branding | Task 4 | Complete; awaiting independent review | Ocean Bottle SEO and acquisition strategy uses directly retrieved official-page records, tested financial model, and six-page PDF; no campaign, email, site, or spend action occurred |
 | Digital Marketing & Branding | Task 1 | Deferred | No draft published and no offer-letter material stored |
 
 ## DT-0 completion record

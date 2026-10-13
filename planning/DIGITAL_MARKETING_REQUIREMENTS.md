@@ -53,6 +53,19 @@ impressions, 2.5% CTR, and 5.0% completion. All product, price, budget,
 targeting, KPI, and performance values are labeled as assumptions or targets;
 no campaign was published or funded.
 
+## Task 4 execution record — 13 October 2026
+
+The Ocean Bottle strategy records direct retrieval of four official public
+pages, their observable titles, descriptions, canonical URLs, headings, and
+internal route relationships. A B Lab directory URL returned HTTP 403 and is
+explicitly excluded as independent validation. The strategy provides a
+qualitative 12-keyword intent map, four-page on-page SEO map, four-stage
+consent-aware acquisition funnel, four-email re-engagement design, and a
+formula-tested low/base/high CAC and ROAS model. No founding-year, ranking,
+search-volume, analytics, campaign, revenue, or certification performance claim
+is made without a verified source. All budgets, audiences, and financial values
+are proposed model assumptions.
+
 ## Task 1
 
 The LinkedIn announcement is optional/deferred. A private caption may be drafted

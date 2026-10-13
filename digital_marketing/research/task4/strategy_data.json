@@ -1,0 +1,367 @@
+{
+  "subject": {
+    "name": "Ocean Bottle",
+    "website": "https://oceanbottle.co/",
+    "selection": "Retained as the task\u2019s startup website subject because an active direct-to-consumer website is publicly accessible. The 2019 founding-year statement supplied in the task authorization was not independently verified in this collection, so the report does not state it as a fact."
+  },
+  "collection_utc": "2026-10-13T11:20:00Z",
+  "observations": [
+    {
+      "id": "OB-01",
+      "url": "https://oceanbottle.co/",
+      "status": 200,
+      "observed": "Canonical homepage; title \u2018The World's Most Needed Reusable Water Bottle\u2019; description and H1 frame reusable bottles and ocean-plastic collection; navigation links to collections, product pages, impact, FAQs, contact, and news."
+    },
+    {
+      "id": "OB-02",
+      "url": "https://oceanbottle.co/products/original-bottle",
+      "status": 200,
+      "observed": "Canonical product page; title \u2018Ocean Bottle Original | Insulated Reusable Water Bottle\u2019; product H1 \u2018Original Bottle\u2019; delivered markup links to related products, FAQs, and the impact page."
+    },
+    {
+      "id": "OB-03",
+      "url": "https://oceanbottle.co/pages/faqs",
+      "status": 200,
+      "observed": "Canonical FAQ page; title \u2018FAQs | Ocean Bottle\u2019; H1 \u2018Frequently Asked Questions\u2019; visible section headings cover plastic collection, returns, delivery, warranty, pre-orders, product, engraving, and discounts."
+    },
+    {
+      "id": "OB-04",
+      "url": "https://oceanbottle.co/pages/ocean-impact",
+      "status": 200,
+      "observed": "Canonical impact page; title and description make Ocean Bottle\u2019s plastic-collection statement; H1 \u2018Our Impact\u2019; headings include \u20181 for 1000\u2019, \u2018How it works\u2019, partners, and a company statement about B Corp certification."
+    },
+    {
+      "id": "OB-05",
+      "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/",
+      "status": 403,
+      "observed": "B Lab directory could not be retrieved from this cloud environment; it is not used to validate certification."
+    }
+  ],
+  "keyword_map": [
+    {
+      "keyword": "insulated reusable water bottle",
+      "intent": "transactional",
+      "target_page": "/products/original-bottle",
+      "priority": "High",
+      "rationale": "Product title and description explicitly use insulated and reusable."
+    },
+    {
+      "keyword": "reusable water bottle with ocean plastic collection",
+      "intent": "commercial",
+      "target_page": "/pages/ocean-impact",
+      "priority": "High",
+      "rationale": "Impact message is present on homepage and impact page."
+    },
+    {
+      "keyword": "double walled insulated reusable bottle",
+      "intent": "transactional",
+      "target_page": "/products/original-bottle",
+      "priority": "High",
+      "rationale": "Derived from the product-page description; no volume claim."
+    },
+    {
+      "keyword": "how does ocean plastic collection work",
+      "intent": "informational",
+      "target_page": "/pages/ocean-impact",
+      "priority": "Medium",
+      "rationale": "Maps to the observed \u2018How it works\u2019 section."
+    },
+    {
+      "keyword": "reusable bottle warranty and returns",
+      "intent": "informational",
+      "target_page": "/pages/faqs",
+      "priority": "Medium",
+      "rationale": "Maps to observed FAQ categories."
+    },
+    {
+      "keyword": "reusable water bottle delivery information",
+      "intent": "informational",
+      "target_page": "/pages/faqs",
+      "priority": "Medium",
+      "rationale": "Maps to observed delivery FAQ section."
+    },
+    {
+      "keyword": "ocean bottle original features",
+      "intent": "commercial",
+      "target_page": "/products/original-bottle",
+      "priority": "Medium",
+      "rationale": "Brand-plus-product phrase mapped to the Original Bottle page."
+    },
+    {
+      "keyword": "reusable bottle engraving gift",
+      "intent": "transactional",
+      "target_page": "/pages/engraving",
+      "priority": "Medium",
+      "rationale": "Existing navigation exposes an engraving route; page content was not audited."
+    },
+    {
+      "keyword": "sustainable corporate reusable bottle gifting",
+      "intent": "commercial",
+      "target_page": "/pages/co-brand",
+      "priority": "Medium",
+      "rationale": "Existing navigation exposes co-brand route; page content was not audited."
+    },
+    {
+      "keyword": "why use a reusable water bottle",
+      "intent": "informational",
+      "target_page": "/blogs/news",
+      "priority": "Low",
+      "rationale": "Proposed educational article cluster; no volume or ranking claim."
+    },
+    {
+      "keyword": "how to clean an insulated reusable bottle",
+      "intent": "informational",
+      "target_page": "/pages/faqs",
+      "priority": "Low",
+      "rationale": "Proposed support-content expansion from product FAQ intent."
+    },
+    {
+      "keyword": "reusable bottle workplace wellbeing gift",
+      "intent": "commercial",
+      "target_page": "/pages/wholesale",
+      "priority": "Low",
+      "rationale": "Proposed B2B discovery topic; wholesale navigation was observed but content was not audited."
+    }
+  ],
+  "seo_map": [
+    {
+      "existing_url": "https://oceanbottle.co/products/original-bottle",
+      "page_role": "Product",
+      "primary_keyword": "insulated reusable water bottle",
+      "secondary_keywords": [
+        "double walled reusable bottle",
+        "Ocean Bottle Original features"
+      ],
+      "proposed_title": "Original Bottle | Insulated Reusable Water Bottle | Ocean Bottle",
+      "proposed_meta_description": "Explore the Ocean Bottle Original, an insulated reusable water bottle. Review features, FAQs and Ocean Bottle\u2019s stated collection model.",
+      "proposed_h1": "Original insulated reusable water bottle",
+      "proposed_h2s": [
+        "Original Bottle features",
+        "How the stated 1 for 1000 model works",
+        "Delivery, warranty and care FAQs"
+      ],
+      "internal_links": [
+        "/pages/ocean-impact",
+        "/pages/faqs",
+        "/collections/water-bottles"
+      ],
+      "content_gap": "Add scannable feature-to-benefit copy, care guidance, and a contextual FAQ block without adding unsupported environmental or material claims.",
+      "priority": "P1",
+      "measurement": "Organic landing sessions, add-to-cart rate, FAQ-link clicks, and purchase rate in consented analytics."
+    },
+    {
+      "existing_url": "https://oceanbottle.co/pages/ocean-impact",
+      "page_role": "Impact explainer",
+      "primary_keyword": "reusable water bottle with ocean plastic collection",
+      "secondary_keywords": [
+        "how ocean plastic collection works",
+        "ocean plastic collection model"
+      ],
+      "proposed_title": "How Ocean Bottle\u2019s Plastic Collection Model Works",
+      "proposed_meta_description": "Learn how Ocean Bottle describes its stated 1 for 1000 plastic-collection model, the questions it answers, and related reusable bottle pages.",
+      "proposed_h1": "How Ocean Bottle describes its collection model",
+      "proposed_h2s": [
+        "The stated 1 for 1000 model",
+        "Questions to answer before purchase",
+        "Explore reusable bottle options"
+      ],
+      "internal_links": [
+        "/products/original-bottle",
+        "/pages/faqs",
+        "/collections/water-bottles"
+      ],
+      "content_gap": "Create a concise explanatory summary with dated methodology links and a product-to-impact decision path; retain clear attribution for company claims.",
+      "priority": "P1",
+      "measurement": "Organic entrances, product-page click-through, engaged time, and assisted add-to-cart events."
+    },
+    {
+      "existing_url": "https://oceanbottle.co/pages/faqs",
+      "page_role": "Support / trust",
+      "primary_keyword": "reusable bottle warranty and returns",
+      "secondary_keywords": [
+        "reusable water bottle delivery information",
+        "insulated bottle care"
+      ],
+      "proposed_title": "Reusable Bottle FAQs: Delivery, Warranty and Care | Ocean Bottle",
+      "proposed_meta_description": "Find Ocean Bottle FAQs about delivery, warranty, returns, product care, engraving and the company\u2019s stated collection model.",
+      "proposed_h1": "Ocean Bottle delivery, warranty and care FAQs",
+      "proposed_h2s": [
+        "Delivery and returns",
+        "Warranty and product care",
+        "Collection-model questions"
+      ],
+      "internal_links": [
+        "/products/original-bottle",
+        "/pages/ocean-impact",
+        "/pages/contact"
+      ],
+      "content_gap": "Add jump links, concise answer summaries, and product-context links; validate structured-data eligibility before implementation.",
+      "priority": "P2",
+      "measurement": "Organic FAQ entrances, support-contact rate, product click-through, and return-visit rate."
+    },
+    {
+      "existing_url": "https://oceanbottle.co/blogs/news",
+      "page_role": "Proposed educational hub",
+      "primary_keyword": "why use a reusable water bottle",
+      "secondary_keywords": [
+        "reusable bottle habit guide",
+        "how to clean an insulated reusable bottle"
+      ],
+      "proposed_title": "Reusable Bottle Guides and Care Advice | Ocean Bottle",
+      "proposed_meta_description": "Browse proposed reusable bottle guides, care explainers and impact-model context, with links to relevant Ocean Bottle product and FAQ pages.",
+      "proposed_h1": "Reusable bottle guides and care advice",
+      "proposed_h2s": [
+        "Choose a reusable bottle",
+        "Care and cleaning guidance",
+        "Understand the stated collection model"
+      ],
+      "internal_links": [
+        "/products/original-bottle",
+        "/pages/faqs",
+        "/pages/ocean-impact"
+      ],
+      "content_gap": "Build a small topic cluster with author/date governance and links to commercial and support pages; the current blog content was not audited.",
+      "priority": "P3",
+      "measurement": "Indexed pages, organic non-brand entrances, assisted product clicks, and content-to-product CTR."
+    }
+  ],
+  "funnel": [
+    {
+      "stage": "Awareness",
+      "audience": "New reusable-hydration and gift researchers",
+      "channel": "Google non-brand search; Meta/YouTube prospecting",
+      "message": "Problem/utility and attributed impact explainer",
+      "landing_page": "/pages/ocean-impact",
+      "cta": "Read the model",
+      "conversion_event": "Engaged visit",
+      "kpi": "Reach, qualified clicks, engaged sessions"
+    },
+    {
+      "stage": "Consideration",
+      "audience": "Visitors who viewed product or impact pages",
+      "channel": "Search remarketing only where consented; Meta/YouTube retargeting where permitted",
+      "message": "Feature, care, FAQ and comparison-oriented proof",
+      "landing_page": "/products/original-bottle",
+      "cta": "Explore Original Bottle",
+      "conversion_event": "Product view / FAQ interaction",
+      "kpi": "Product CTR, add-to-cart rate"
+    },
+    {
+      "stage": "Conversion",
+      "audience": "High-intent product viewers and cart visitors",
+      "channel": "Brand and product search; consented cart retargeting",
+      "message": "Clear product choice, delivery/warranty pathway",
+      "landing_page": "/products/original-bottle",
+      "cta": "Add to cart",
+      "conversion_event": "Purchase",
+      "kpi": "Cost per purchase, CAC, revenue"
+    },
+    {
+      "stage": "Retention",
+      "audience": "Consented purchasers and subscribers",
+      "channel": "Email only; no paid retargeting without separate consent",
+      "message": "Care, use and timely replenishment/accessory education",
+      "landing_page": "/pages/faqs",
+      "cta": "Get care guidance",
+      "conversion_event": "Repeat purchase / support resolution",
+      "kpi": "Repeat purchase rate, unsubscribes, support contacts"
+    }
+  ],
+  "emails": [
+    {
+      "id": "E1",
+      "entry": "Consented subscriber; no purchase",
+      "delay": "Immediately",
+      "subject": "A reusable routine starts with one choice",
+      "body": "Welcome message; link to product, FAQs, and attributed impact explanation.",
+      "exit_rule": "Product-view event; exit on purchase"
+    },
+    {
+      "id": "E2",
+      "entry": "Viewed product twice; no cart; marketing consent",
+      "delay": "2 days",
+      "subject": "Questions before choosing a reusable bottle?",
+      "body": "Decision-support email with product, delivery, warranty and care links.",
+      "exit_rule": "Product-view or add-to-cart event; exit on purchase/unsubscribe"
+    },
+    {
+      "id": "E3",
+      "entry": "Cart started; no purchase; marketing consent",
+      "delay": "4 hours",
+      "subject": "Your Ocean Bottle selection is waiting",
+      "body": "Single reminder with product link and delivery/returns path; no urgency claim unless verified.",
+      "exit_rule": "Purchase, unsubscribe, or 7-day timeout"
+    },
+    {
+      "id": "E4",
+      "entry": "Purchaser; marketing consent",
+      "delay": "14 days after delivery-status event if available",
+      "subject": "Care guidance for your reusable bottle",
+      "body": "Useful care and FAQ links; invite feedback without assuming product satisfaction.",
+      "exit_rule": "Repeat purchase, unsubscribe, or preference update"
+    }
+  ],
+  "budget": {
+    "currency": "GBP",
+    "total_gbp": 12000,
+    "media_gbp": 10000,
+    "allocation": {
+      "Google Search": 4500,
+      "Meta prospecting": 3000,
+      "YouTube": 1500,
+      "Consented retargeting reserve": 1000,
+      "Measurement and creative": 2000
+    },
+    "assumption": "Proposed 90-day planning budget; no spend is authorized or incurred."
+  },
+  "scenarios": [
+    {
+      "name": "Low",
+      "media_budget_gbp": 10000.0,
+      "blended_cpm_gbp": 12.8,
+      "ctr": 0.008,
+      "impressions": 781250.0,
+      "sessions": 6250.0,
+      "purchase_conversion_rate": 0.012,
+      "customers": 75.0,
+      "aov_gbp": 45.0,
+      "attributed_revenue_gbp": 3375.0,
+      "cac_gbp": 133.33333333333334,
+      "roas": 0.3375
+    },
+    {
+      "name": "Base",
+      "media_budget_gbp": 10000.0,
+      "blended_cpm_gbp": 10.0,
+      "ctr": 0.008,
+      "impressions": 1000000.0,
+      "sessions": 8000.0,
+      "purchase_conversion_rate": 0.02,
+      "customers": 160.0,
+      "aov_gbp": 55.0,
+      "attributed_revenue_gbp": 8800.0,
+      "cac_gbp": 62.5,
+      "roas": 0.88
+    },
+    {
+      "name": "High",
+      "media_budget_gbp": 10000.0,
+      "blended_cpm_gbp": 8.0,
+      "ctr": 0.008,
+      "impressions": 1250000.0,
+      "sessions": 10000.0,
+      "purchase_conversion_rate": 0.032,
+      "customers": 320.0,
+      "aov_gbp": 65.0,
+      "attributed_revenue_gbp": 20800.0,
+      "cac_gbp": 31.25,
+      "roas": 2.08
+    }
+  ],
+  "measurement": [
+    "Use consent-aware analytics and a documented UTM taxonomy: source, medium, campaign, content, term.",
+    "Keep paid-platform reporting separate from analytics attribution; reconcile purchase events only after consent and implementation review.",
+    "Define CAC as media spend divided by attributed new customers; define ROAS as attributed revenue divided by media spend. Zero denominators produce an explicit unavailable result."
+  ],
+  "source_revision": "dd112a9e5874a72dcfc191b968e2a61235e4a407"
+}
