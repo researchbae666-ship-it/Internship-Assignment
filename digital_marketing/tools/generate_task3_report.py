@@ -44,7 +44,16 @@ def header_footer(canvas, doc):
 
 
 def table(rows, widths, small, header=True):
-    converted = [[para(str(cell), small) for cell in row] for row in rows]
+    header_style = ParagraphStyle(
+        "TableHeader",
+        parent=small,
+        fontName="Helvetica-Bold",
+        textColor=colors.white,
+    )
+    converted = [
+        [para(str(cell), header_style if header and row_index == 0 else small) for cell in row]
+        for row_index, row in enumerate(rows)
+    ]
     result = Table(converted, colWidths=widths, repeatRows=1 if header else 0, hAlign="LEFT")
     result.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, 0), NAVY) if header else ("BACKGROUND", (0, 0), (-1, -1), colors.white),
