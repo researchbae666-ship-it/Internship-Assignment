@@ -1,5 +1,10 @@
 # Proposed technical architecture
 
+> **Dual-track update — 13 October 2026:** Approved Python architecture remains
+> in place. `python/` adds only compatibility-safe workstream guidance, while
+> `digital_marketing/` holds separate research/evidence/deliverable areas. See
+> `DUAL_TRACK_MASTER_PLAN.md`; no Python application architecture changed.
+
 All interfaces below are specifications, not implemented features.
 
 ## Layout

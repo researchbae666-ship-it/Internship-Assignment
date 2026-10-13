@@ -1,5 +1,11 @@
 # Master plan
 
+> **Superseded scope note — 13 October 2026:** This is the historical Python
+> phase plan through the approved Phase 5 baseline. The active cross-track plan
+> is `DUAL_TRACK_MASTER_PLAN.md`; Digital Marketing & Branding is now active
+> scope and follows its own review gates. Do not reinterpret these historical
+> phase labels as authorization to alter the approved Python baseline.
+
 ## Phase gates
 
 1. **Phase 1 — authorized now:** inspect sources/environment, define specifications and tests, create project governance and planning documents, verify document integrity, commit for review. Stop for approval.
@@ -16,7 +22,11 @@ Planning date: 12 October 2026. Target implementation after approval by 14 Octob
 
 ## Dependencies and scope
 
-Use Python standard library for programs/testing, ReportLab for PDF creation. No live services or credentials are required for technical work. Keep task modules independent; generate evidence only after tests pass. Use existing checkout; no worktree. Task 1 stays deferred. No marketing implementation is in scope.
+Use Python standard library for programs/testing, ReportLab for PDF creation.
+No live services or credentials are required for technical work. Keep task
+modules independent; generate evidence only after tests pass. Use the existing
+checkout; no worktree. Task 1 stays deferred. Marketing scope, research, and
+review sequencing are governed by `DUAL_TRACK_MASTER_PLAN.md`.
 
 ## Completion gates
 

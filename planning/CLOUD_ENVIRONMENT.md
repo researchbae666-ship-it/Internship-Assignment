@@ -1,5 +1,11 @@
 # Actual cloud environment
 
+> **Dual-track setup update — 13 October 2026:** The recorded toolchain remains
+> suitable for the existing Python workflow. The active branch is now
+> `dual-track/marketing-and-enhancements`; no dependency, service, credential,
+> or environment-configuration change is required for the planning-only
+> Marketing setup.
+
 Observed 12 October 2026 in `/workspace/Internship-Assignment`.
 
 | Item | Observation |

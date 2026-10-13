@@ -1,5 +1,10 @@
 # Status
 
+> **Scope update — 13 October 2026:** Python Phase 5 remains the approved
+> historical baseline. Digital Marketing & Branding is now an active, separate
+> workstream. The detailed state is in `DUAL_TRACK_STATUS.md`; no Digital
+> Marketing task is complete at this checkpoint.
+
 As of 13 October 2026: **Phase 5 technical integration, evidence validation, PDF generation, and PDF QA complete; awaiting independent PDF review.**
 
 ## Completed

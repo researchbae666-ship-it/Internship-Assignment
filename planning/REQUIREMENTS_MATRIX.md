@@ -1,6 +1,9 @@
 # Requirements matrix
 
-Source inspection: 12 October 2026. Python PDF: one page, extracted using `pdftotext -layout`. All original files read. Tasks 2–4 are implemented and tested.
+Source inspection: Python PDF extracted using `pdftotext -layout`; the supplied
+Digital Marketing brief is available as a Markdown transcription. The approved
+Python Tasks 2–4 are implemented and tested. Digital Marketing Tasks 2–4 are
+planned only under the dual-track scope activated on 13 October 2026.
 
 | ID | Source requirement | Planned acceptance evidence |
 | --- | --- | --- |
@@ -20,6 +23,22 @@ Source inspection: 12 October 2026. Python PDF: one page, extracted using `pdfto
 | S.2 | Combine tasks into ONE PDF (message 2) | Implemented: `deliverables/Progree_Python_Tasks_2_3_4.pdf`; 14 A4 pages, text extraction and 14-page render verification recorded in `evidence/phase5/outputs/pdf-qa.json` |
 | S.3 | Google Form only; no late submissions; 18 October 2026 | Submission checklist records later human authorization/access requirements; no submission confirmation fabricated |
 | D.1 | User: preserve documents | Fresh Phase 5 SHA-256 check confirms all four originals match approved commit `31cf193d4bf3b8e0c822875e6b4ba80f4f7d0a3d` |
+
+## Digital Marketing & Branding — planned evidence matrix
+
+| ID | Source requirement | Required evidence and completion criterion | Current state |
+| --- | --- | --- | --- |
+| DM2.1 | Audit three competing consumer brands | Sector rationale, three profiles, public source URLs/dates, comparable observation window | Planned; no metrics collected |
+| DM2.2 | Analyze cadence, engagement, and brand position | Observable post records, transparent rate formulas or unavailable labels, visual/theme comparison | Planned |
+| DM2.3 | Identify gaps and recommendations (3–4 pages) | Findings traceable to observations; practical recommendations separated from facts | Planned |
+| DM3.1 | 30-day integrated campaign | Product rationale, personas, positioning, target KPI assumptions, complete editorial matrix | Planned |
+| DM3.2 | Instagram, LinkedIn, and YouTube execution | Channel-specific asset, copy, CTA, targeting, hashtags/keywords, owner, KPI per scheduled action | Planned |
+| DM3.3 | Paid and optimization plan | Proposed allocations, testing/measurement/risk plan; no launched campaign or achieved result claim | Planned |
+| DM4.1 | Enterprise search strategy for target startup | Public website observation log, intent clusters, long-tail research provenance and prioritization | Planned |
+| DM4.2 | On-page SEO map | Proposed titles, metas, URL, headers, pillars, internal links; actual versus recommended clearly separated | Planned |
+| DM4.3 | Growth acquisition funnel | Proposed funnel, landing/conversion events, email drip, model formulas/assumptions and sensitivity | Planned |
+| DM-S.1 | Shared notice: at least three of four tasks | Tasks 2–4 must each reach independently reviewed completion; certificate remains organizer decision | Pending |
+| DM-S.2 | Shared notice: one PDF | Future Marketing PDF; optional combined portfolio only after organizer clarification | Pending |
 
 ## Proposed interpretations requiring Phase 1 review
 

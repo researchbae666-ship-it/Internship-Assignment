@@ -1,10 +1,27 @@
-# Progree Python internship assignment
+# Progree dual-track internship assignment
 
-Tasks 2, 3, and 4 are implemented, freshly integrated, and documented in a single PDF that is awaiting independent review. The deadline is **18 October 2026**; its exact time and timezone are unconfirmed. Task 1 is optional and deferred.
+The repository now maintains two distinct Progree workstreams: **Python
+Programming** and **Digital Marketing & Branding**. The Python Tasks 2–4 are
+implemented, integrated, and preserved as an approved historical baseline. The
+Digital Marketing Tasks 2–4 are active planning scope only; no Marketing task
+is claimed complete. The deadline is **18 October 2026**; its exact time and
+timezone are unconfirmed. Task 1 is optional and deferred for both tracks.
 
 ## Current status
 
-Phase 5 generated and quality-checked [Progree_Python_Tasks_2_3_4.pdf](deliverables/Progree_Python_Tasks_2_3_4.pdf) from fresh, validated local evidence in `evidence/phase5/`. The Python PDF is authoritative; the Digital Marketing document is context only. Original documents remain unchanged. The report is not a form submission or certificate confirmation.
+Phase 5 generated and quality-checked [Progree_Python_Tasks_2_3_4.pdf](deliverables/Progree_Python_Tasks_2_3_4.pdf) from fresh, validated local evidence in `evidence/phase5/`. That Python report remains unchanged while dual-track plans are reviewed. The available Digital Marketing brief is now active scope and is governed by the separate dual-track plans. Original documents remain unchanged. No report is a form submission or certificate confirmation.
+
+## Dual-track planning
+
+The `python/` and `digital_marketing/` directories separate future workstream
+guidance, research, evidence, and deliverables without relocating approved
+Python code. The Digital Marketing plan proposes a reusable-hydration market
+context, subject to public research and review; it contains no collected metrics
+or claimed campaign results. Read the [dual-track master plan](planning/DUAL_TRACK_MASTER_PLAN.md), [Marketing requirements](planning/DIGITAL_MARKETING_REQUIREMENTS.md), [research plan](planning/DIGITAL_MARKETING_RESEARCH_PLAN.md), [Python enhancement roadmap](planning/PYTHON_ENHANCEMENT_ROADMAP.md), and [submission strategy](planning/DUAL_TRACK_SUBMISSION_STRATEGY.md).
+
+This public repository must never contain an offer letter, identity details,
+student ID, contact details, private images, or credentials. Track eligibility
+and whether one form response can submit both reports remain organizer questions.
 
 ## Planned programs and usage
 

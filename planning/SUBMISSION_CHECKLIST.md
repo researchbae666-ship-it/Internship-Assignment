@@ -1,5 +1,10 @@
 # Submission checklist
 
+> **Dual-track update — 13 October 2026:** Retain one independently reviewable
+> report per track. The notices do not clarify whether Python and Digital
+> Marketing may share one Google Form response or one PDF. See
+> `DUAL_TRACK_SUBMISSION_STRATEGY.md`; do not submit until this is confirmed.
+
 ## Requirements from the messages
 
 - [x] Complete and document at least 3 of 4 tasks: selected Python Tasks 2,3,4; technical work is recorded in the Phase 5 evidence manifest.

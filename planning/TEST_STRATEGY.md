@@ -1,5 +1,10 @@
 # Planned test and evidence strategy
 
+> **Dual-track update — 13 October 2026:** The existing automated strategy and
+> results apply to Python. Digital Marketing has no software test claim yet;
+> its future QA will validate source provenance, calculations, claim labels,
+> report citations, and modeled-versus-observed separation.
+
 ## Executed tests
 
 Tasks 2–4 have standard-library unittest coverage. The final Task 3 suite executed 33 tests and passed. Task 4 adds 15 tests for routing, state, graceful termination, and subprocess interaction. The Task 4 implementation run executed **48 tests and passed**. Evidence records the exact post-implementation source revision; final Task 4 execution evidence is captured after that commit. Tests use temporary directories below ignored `artifacts/task3/` and version-controlled synthetic fixtures; no testing dependency is required.
