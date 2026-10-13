@@ -69,7 +69,7 @@ def build_pdf(data: dict, output: Path) -> None:
     h1 = ParagraphStyle("H1", parent=styles["Heading1"], fontName="Helvetica-Bold", fontSize=17, leading=21, textColor=NAVY, spaceBefore=7, spaceAfter=8)
     h2 = ParagraphStyle("H2", parent=styles["Heading2"], fontName="Helvetica-Bold", fontSize=11, leading=14, textColor=TEAL, spaceBefore=6, spaceAfter=4)
     body = ParagraphStyle("Body", parent=styles["BodyText"], fontSize=9, leading=12, textColor=INK, spaceAfter=6)
-    small = ParagraphStyle("Small", parent=body, fontSize=6.4, leading=7.5, spaceAfter=0)
+    small = ParagraphStyle("Small", parent=body, fontSize=7.1, leading=8.5, spaceAfter=0)
     doc = SimpleDocTemplate(str(output), pagesize=landscape(A4), leftMargin=15*mm, rightMargin=15*mm, topMargin=14*mm, bottomMargin=20*mm, title="RefillLoop 30-Day Campaign Roadmap", author="Internship project")
     story = []
     c = data["campaign"]
