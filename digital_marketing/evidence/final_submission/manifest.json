@@ -1,0 +1,58 @@
+{
+  "checks": {
+    "bookmarks": true,
+    "font_resources": true,
+    "metadata_privacy": true,
+    "ordered_source_pages": true,
+    "page_labels": true,
+    "required_boundary_language": true,
+    "text_extraction": true
+  },
+  "extracted_text_characters": 89239,
+  "generated_utc_date": "2026-10-14",
+  "metadata": {
+    "/Author": "Anonymous internship project",
+    "/Creator": "Progree final-submission preparation",
+    "/Keywords": "Digital Marketing, Task 2, Task 3, Task 4, review copy",
+    "/Producer": "pypdf",
+    "/Subject": "Consolidated review copy; Task 2 remains evidence-limited and pending rubric acceptance",
+    "/Title": "Progree Digital Marketing & Branding \u2014 Tasks 2\u20134 Review Copy"
+  },
+  "output": "deliverables/Progree_Digital_Marketing_Tasks_2_3_4_COMBINED_REVIEW.pdf",
+  "output_sha256": "24a211ea4cdd68f83b02ce216aa43b15bc6a65a5952776cbe8c57bccda9f0059",
+  "page_count": 38,
+  "pages_with_no_extractable_text": [],
+  "pages_with_no_font_resources": [],
+  "result": "passed",
+  "source_documents": [
+    {
+      "pages": 4,
+      "path": "deliverables/DM_Task2_Competitor_Audit_SECONDARY_DRAFT.pdf",
+      "sha256": "7d997791e61c901c1ac7c901c16d4bcc4a70c3e4255f092c166a6afb889d49a3"
+    },
+    {
+      "pages": 20,
+      "path": "deliverables/DM_Task3_30_Day_Campaign.pdf",
+      "sha256": "ecf3eef10ad417b71c31e5ab2bd986d933f4470195afb11f7283131a515159b8"
+    },
+    {
+      "pages": 6,
+      "path": "deliverables/DM_Task4_SEO_Acquisition_Strategy.pdf",
+      "sha256": "c61cc2d5268f8b7691e433a427bda44dcda83171fd399e414e8d04b2129d1ce9"
+    },
+    {
+      "pages": 6,
+      "path": "deliverables/DM_Task4_Email_Workflow_Appendix.pdf",
+      "sha256": "56be92ee96117ccc4dac08dcc512efd0eca2ebbc36ca8ad2092e4099f47becf5"
+    }
+  ],
+  "source_hashes_unchanged": {
+    "Task 2 \u2014 Evidence-Limited Public-Source Competitor Audit": true,
+    "Task 3 \u2014 RefillLoop 30-Day Campaign": true,
+    "Task 4 Supporting Appendix \u2014 Email Workflows": true,
+    "Task 4 \u2014 Ocean Bottle SEO & Acquisition Strategy": true
+  },
+  "source_page_count": 36,
+  "source_uri_hyperlinks": 0,
+  "uri_hyperlinks_retained": 0
+}
