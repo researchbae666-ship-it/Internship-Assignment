@@ -21,7 +21,7 @@ class RecoveryReportTests(unittest.TestCase):
         style = ParagraphStyle("TestBody", textColor=colors.black, fontName="Helvetica")
         result = table([["Header"], ["Body"]], [100], style)
         self.assertEqual(colors.white, result._cellvalues[0][0].style.textColor)
-        self.assertEqual("Helvetica-Bold", result._cellvalues[0][0].style.fontName)
+        self.assertEqual("AuditSans-Bold", result._cellvalues[0][0].style.fontName)
         self.assertEqual(colors.black, result._cellvalues[1][0].style.textColor)
 
     def test_four_page_draft_retains_claims_and_missing_metrics(self):

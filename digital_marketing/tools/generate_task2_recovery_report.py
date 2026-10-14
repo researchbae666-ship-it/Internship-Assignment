@@ -4,11 +4,14 @@ import json
 import re
 import sys
 from pathlib import Path
+import reportlab
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4, landscape
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, PageBreak, Spacer
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
 
 ROOT = Path(__file__).resolve().parents[2]
 RESEARCH = ROOT / "digital_marketing/research/task2/recovery"
@@ -20,6 +23,10 @@ from metrics import calculate
 NAVY = colors.HexColor("#12324A")
 TEAL = colors.HexColor("#197D82")
 INK = colors.HexColor("#1E2A32")
+FONT_DIR = Path(reportlab.__file__).resolve().parent / "fonts"
+pdfmetrics.registerFont(TTFont("AuditSans", str(FONT_DIR / "Vera.ttf")))
+pdfmetrics.registerFont(TTFont("AuditSans-Bold", str(FONT_DIR / "VeraBd.ttf")))
+pdfmetrics.registerFontFamily("AuditSans", normal="AuditSans", bold="AuditSans-Bold")
 
 
 def paragraph(value, style):
@@ -27,7 +34,7 @@ def paragraph(value, style):
 
 
 def table(rows, widths, style):
-    header = ParagraphStyle("RecoveryHeader", parent=style, textColor=colors.white, fontName="Helvetica-Bold")
+    header = ParagraphStyle("RecoveryHeader", parent=style, textColor=colors.white, fontName="AuditSans-Bold")
     cells = [[paragraph(cell, header if index == 0 else style) for cell in row] for index, row in enumerate(rows)]
     result = Table(cells, colWidths=widths, repeatRows=1)
     result.setStyle(TableStyle([("BACKGROUND", (0, 0), (-1, 0), NAVY), ("GRID", (0, 0), (-1, -1), .3, colors.HexColor("#B7C8CD")), ("VALIGN", (0, 0), (-1, -1), "TOP"), ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#EAF3F3")]), ("TOPPADDING", (0, 0), (-1, -1), 5), ("BOTTOMPADDING", (0, 0), (-1, -1), 5)]))
@@ -36,7 +43,7 @@ def table(rows, widths, style):
 
 def footer(canvas, document):
     canvas.saveState()
-    canvas.setFont("Helvetica", 8)
+    canvas.setFont("AuditSans", 8)
     canvas.setFillColor(NAVY)
     canvas.drawString(15*mm, 10*mm, "TASK 2 | PARTIAL EVIDENCE DRAFT | PERIOD METRICS NOT COMPLETED")
     canvas.drawRightString(document.pagesize[0]-15*mm, 10*mm, f"Page {document.page}")
@@ -48,9 +55,9 @@ def build_pdf(data, sources, browsers, output):
     if errors:
         raise ValueError("Source validation failed: " + "; ".join(errors))
     styles = getSampleStyleSheet()
-    title = ParagraphStyle("RecoveryTitle", parent=styles["Heading1"], fontSize=20, leading=24, textColor=NAVY, spaceAfter=8)
-    heading = ParagraphStyle("RecoveryHeading", parent=styles["Heading2"], fontSize=12, leading=15, textColor=TEAL, spaceBefore=7, spaceAfter=5)
-    body = ParagraphStyle("RecoveryBody", parent=styles["BodyText"], fontSize=9.2, leading=12, textColor=INK, spaceAfter=6)
+    title = ParagraphStyle("RecoveryTitle", parent=styles["Heading1"], fontName="AuditSans-Bold", fontSize=20, leading=24, textColor=NAVY, spaceAfter=8)
+    heading = ParagraphStyle("RecoveryHeading", parent=styles["Heading2"], fontName="AuditSans-Bold", fontSize=12, leading=15, textColor=TEAL, spaceBefore=7, spaceAfter=5)
+    body = ParagraphStyle("RecoveryBody", parent=styles["BodyText"], fontName="AuditSans", fontSize=9.2, leading=12, textColor=INK, spaceAfter=6)
     small = ParagraphStyle("RecoveryTable", parent=body, fontSize=8.5, leading=10.2, spaceAfter=0)
     p = lambda text: paragraph(text, body)
     h = lambda text: paragraph(text, heading)
