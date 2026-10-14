@@ -29,6 +29,17 @@
 
 ## Active blockers and decisions
 
+### Task 2 independent handoff update — 14 October 2026
+
+The supplied 13 October public-source starter is preserved verbatim under
+`digital_marketing/research/task2/handoff/`. It supports qualitative comparison
+and corrected secondary LinkedIn identities, including Owala's affiliated
+showcase. It supplies no posting cadence or engagement measurements. The earlier
+historical count claims remain explicitly uncorroborated net changes, not post
+inventories. Task 2 remains incomplete as a measured competitor audit. A separate
+four-page HANDOFF_DRAFT preserves all original recovery and historical records.
+No extra material is requested; the available evidence is used within its limits.
+
 1. Organizer confirmation is needed for Python-track enrollment and for whether
    two tracks require separate form responses/PDFs.
 2. The exact submission cutoff hour and timezone are unknown.

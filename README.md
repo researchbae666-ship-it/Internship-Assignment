@@ -80,3 +80,14 @@ Tasks 2–4 source, real automated tests, reproducible CLI demonstrations, raw i
 Read [master plan](planning/MASTER_PLAN.md), [requirements](planning/REQUIREMENTS_MATRIX.md), [architecture](planning/ARCHITECTURE.md), [tests](planning/TEST_STRATEGY.md), [submission checklist](planning/SUBMISSION_CHECKLIST.md), [cloud environment](planning/CLOUD_ENVIRONMENT.md), and [status](planning/STATUS.md). Project rules are in [AGENTS.md](AGENTS.md).
 
 The Google Form requires a separate authorized submission step. No submission or LinkedIn action has been performed.
+# Task 2 secondary-source update
+
+The independent reviewer public-source handoff is preserved in
+`digital_marketing/research/task2/handoff/`. The new partial report is
+`digital_marketing/deliverables/DM_Task2_Competitor_Audit_HANDOFF_DRAFT.pdf`.
+Task 2 remains incomplete for measured-audit approval; no social metrics are
+invented. Reproduce using
+`python digital_marketing/tools/generate_task2_handoff_report.py` and validate
+with `python -m unittest discover -s digital_marketing/research/task2/handoff -v`.
+Execution records are in `digital_marketing/evidence/task2/handoff/`.
+

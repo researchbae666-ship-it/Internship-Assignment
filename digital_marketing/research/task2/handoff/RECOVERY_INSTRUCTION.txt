@@ -1,0 +1,166 @@
+PROGREE — DIGITAL MARKETING TASK 2 RECOVERY AND COMPLETION
+
+Repository: researchbae666-ship-it/Internship-Assignment
+
+Approved Task 4 implementation:
+3fd0c7d4e84acb566395185064fea2eac1732b71
+
+Create a branch from this exact commit:
+
+marketing/task2-recovery
+
+TASK 4 INDEPENDENT REVIEW RESULT
+
+The Task 4 implementation, email workflows, financial models and content are approved.
+
+Both Task 4 PDF binary SHA-256 hashes were independently verified.
+
+Independent final page-by-page visual approval is still pending, but no substantive changes are required.
+
+Do not modify Task 3, Task 4, the existing Python programs, their PDFs, or historical evidence.
+
+NEW OBJECTIVE
+
+Recover and finish Digital Marketing Task 2: Multi-Platform Competitor Brand Footprint Audit.
+
+This is now the highest-priority incomplete marketing assignment.
+
+OFFICIAL REQUIREMENTS
+
+Produce a professional 3–4-page report comparing three competing consumer brands, including:
+
+- Cross-platform brand footprints
+- Posting cadence
+- Estimated platform engagement rates where supported
+- Visual and thematic positioning
+- Evidence-backed competitive comparisons
+- Actionable market gaps
+
+APPROVED BRANDS
+
+Stanley 1913
+Hydro Flask
+Owala
+
+Sector: reusable hydration and insulated drinkware.
+
+The previously approved historical collection recorded cloud proxy CONNECT 403 failures and no verified posts or metrics.
+
+Preserve that evidence and its original dates. Do not alter historical observations to imply successful access.
+
+An independent reviewer subsequently collected a public-source handoff for these brands. The user may attach it to this Codex conversation.
+
+FIRST: RETEST NETWORK ACCESS
+
+Before conducting research, verify whether the current Codex environment can retrieve each official brand website and the relevant public social accounts.
+
+Task 4 successfully fetched four Ocean Bottle pages, so access conditions may have changed.
+
+Record the actual outcomes, URLs, HTTP statuses, collection dates and source digests.
+
+Do not bypass authentication or platform access controls.
+
+If direct social networks remain unavailable, use legitimately accessible public sources and request precise user-supplied screenshots of official public pages where necessary.
+
+Do not request account passwords or private analytics.
+
+RESEARCH METHODOLOGY
+
+Use the previously selected observation window:
+15 September–12 October 2026 UTC.
+
+Preserve a common period across the three brands.
+
+For every observed post, retain:
+- Brand
+- Verified official account
+- Platform
+- Post URL
+- Publication date
+- Collection date
+- Publicly visible engagement measures
+- Relevant content characteristics
+- Evidence reference
+
+Determine whether the retrieved post sample is complete enough to calculate posting cadence. If not, label it as observed minimum activity or a sample-based estimate, not the account's complete frequency.
+
+Calculate visible-interaction rates only where genuine numerators and denominators are available.
+
+Keep Instagram, LinkedIn and YouTube metrics separate when definitions or denominators are incompatible.
+
+Never substitute zero for unavailable data.
+
+Do not fabricate follower counts, interactions, content observations, engagement rates or social metrics.
+
+COMPETITIVE ANALYSIS
+
+Analyze each verified brand's:
+- Positioning
+- Audience appeal
+- Visual identity
+- Editorial themes
+- Content formats
+- Creator/community strategies where observed
+- Product versus lifestyle storytelling
+- Calls to action
+- Differences between platform strategies
+
+Identify actionable market gaps only where the observed evidence supports the conclusions.
+
+Connect selected recommendations to the fictional RefillLoop market-entry context where useful, without claiming that the RefillLoop campaign was launched.
+
+DELIVERABLES
+
+Update the existing Task 2 research and evidence areas. Preserve earlier blocker records as historical evidence.
+
+Produce:
+- Verified source registry
+- Structured observations
+- Reproducible metric calculations
+- Transparent limitations
+- Competitive positioning matrix
+- Professional 3–4-page Task 2 PDF
+- Meaningful automated validation
+- Evidence manifest, page renders and QA record
+
+Review every report claim against the supporting source material.
+
+Ensure tables, citations and graphics are readable.
+
+Use explicit white bold text for dark table headers.
+
+REQUIRED REVIEW GATE
+
+If enough legitimate evidence is collected, complete the audit, run tests, generate the PDF, and stop for review.
+
+If genuine evidence remains insufficient, do not invent a finished audit. Instead report precisely:
+- Which sources worked
+- Which sources failed
+- What credible comparisons are possible
+- What information is missing
+- Whether particular public-page screenshots could resolve the gaps
+- What alternative compliant completion path is available
+
+DEADLINE PRIORITY
+
+The submission notice sets 18 October 2026 as the deadline, with exact cutoff hour/timezone unverified.
+
+Avoid unnecessary refactoring.
+
+Do not work on optional Python enhancements.
+
+Do not publish a LinkedIn announcement or offer letter.
+
+Do not merge branches into main.
+
+Do not submit any internship form.
+
+Commit and push actual verified work.
+
+Return the new commit SHA, source results, data coverage, key evidence-backed findings, PDF information if generated, and GitHub comparison link.
+
+STOP FOR INDEPENDENT TASK 2 REVIEW.
+
+End with:
+
+AWAITING DIGITAL MARKETING TASK 2 RECOVERY REVIEW.
