@@ -86,7 +86,7 @@ def build(output=OUTPUT):
       p('<b>References:</b> https://www.stanley1913.com/ ; https://www.hydroflask.com/ ; https://owalalife.com/ . Full newsroom, press-kit and account links plus review date/provenance appear in research/task2/handoff/PUBLIC_SOURCE_HANDOFF_2026-10-13.md. Direct source timestamps/digests: evidence/task2/recovery/source_records.json and browser_records.json.'),
       p('<b>Reproduction:</b> python digital_marketing/tools/generate_task2_secondary_report.py . Original assignment brief: Digital Marketing &amp; Branding Tasks &amp; Instructions.md. Earlier reports are historical and unchanged.')]
     output.parent.mkdir(parents=True, exist_ok=True)
-    SimpleDocTemplate(str(output), pagesize=landscape(A4), leftMargin=15*mm, rightMargin=15*mm, topMargin=14*mm, bottomMargin=20*mm).build(story, onFirstPage=footer, onLaterPages=footer)
+    SimpleDocTemplate(str(output), pagesize=landscape(A4), leftMargin=15*mm, rightMargin=15*mm, topMargin=14*mm, bottomMargin=20*mm, title='Hydration Competitor Audit — Limited Secondary-Evidence Draft', author='Internship project').build(story, onFirstPage=footer, onLaterPages=footer)
     return output
 
 

@@ -82,6 +82,13 @@ Read [master plan](planning/MASTER_PLAN.md), [requirements](planning/REQUIREMENT
 The Google Form requires a separate authorized submission step. No submission or LinkedIn action has been performed.
 # Task 2 secondary-source update
 
+Latest limited audit:
+`digital_marketing/deliverables/DM_Task2_Competitor_Audit_SECONDARY_DRAFT.pdf`.
+It incorporates reviewer-verified cumulative HypeAuditor snapshots and October
+proprietary estimates, with full method limitations. Reproduce via
+`python digital_marketing/tools/collect_task2_secondary_evidence.py`.
+Task 2 remains incomplete for unconditional measured-audit approval.
+
 The independent reviewer public-source handoff is preserved in
 `digital_marketing/research/task2/handoff/`. The new partial report is
 `digital_marketing/deliverables/DM_Task2_Competitor_Audit_HANDOFF_DRAFT.pdf`.

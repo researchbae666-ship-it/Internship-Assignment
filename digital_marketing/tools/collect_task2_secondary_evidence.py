@@ -48,7 +48,7 @@ def main():
         text = result.stdout + result.stderr
         output = ev / f'command-{index}.txt'
         output.write_text(text.replace(str(ROOT), '<repository>'))
-        match = re.search(r'Ran (\d+) tests', text)
+        match = re.search(r'Ran (\d+) tests?', text)
         records.append({'command': command, 'utc': datetime.now(timezone.utc).isoformat(), 'exit_code': result.returncode, 'tests_run': int(match.group(1)) if match else None, 'output': str(output.relative_to(ROOT))})
         if result.returncode:
             raise RuntimeError(text)
