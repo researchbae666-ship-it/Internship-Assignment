@@ -1,0 +1,1071 @@
+[
+  {
+    "id": "stanley",
+    "url": "https://www.stanley1913.com/",
+    "collected_utc": "2026-10-14T06:35:10.271369+00:00",
+    "http_status": 200,
+    "final_url": "https://www.stanley1913.com/",
+    "transport_exit_code": 0,
+    "transport_error": "",
+    "account_verification": "user-approved official website; identity corroborated by branded page and outgoing official accounts",
+    "sha256_raw": "1890e3bfb615c2a2649f146d8f3b137c3dbfa10dc36d752f0d70e8a4644d12de",
+    "raw_bytes": 534648,
+    "method": "unauthenticated normal public GET",
+    "extract": {
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Stanley PMI Online Store | Offers an assortment of Vacuum Bottles, Mugs, thermoses, Cookware and more!"
+        },
+        {
+          "name": "og:url",
+          "content": "https://www.stanley1913.com/"
+        },
+        {
+          "name": "og:title",
+          "content": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More"
+        },
+        {
+          "name": "og:description",
+          "content": "Stanley PMI Online Store | Offers an assortment of Vacuum Bottles, Mugs, thermoses, Cookware and more!"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "title",
+          "text": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More"
+        },
+        {
+          "tag": "h3",
+          "text": "Featured"
+        },
+        {
+          "tag": "h3",
+          "text": "Drinkware"
+        },
+        {
+          "tag": "h3",
+          "text": "Lunchboxes & Coolers"
+        },
+        {
+          "tag": "h3",
+          "text": "Shop by Color"
+        },
+        {
+          "tag": "h3",
+          "text": "Shop Popular Sizes"
+        },
+        {
+          "tag": "h3",
+          "text": "Accessories"
+        },
+        {
+          "tag": "h3",
+          "text": "Activity"
+        },
+        {
+          "tag": "h3",
+          "text": "Fill, toss, go"
+        },
+        {
+          "tag": "h3",
+          "text": "Trending"
+        },
+        {
+          "tag": "h3",
+          "text": "Stanley 1913 x Devin Booker"
+        },
+        {
+          "tag": "h3",
+          "text": "The colors are here"
+        },
+        {
+          "tag": "h3",
+          "text": "A whole new game"
+        },
+        {
+          "tag": "h3",
+          "text": "Again. And again."
+        },
+        {
+          "tag": "h2",
+          "text": "Search"
+        },
+        {
+          "tag": "h2",
+          "text": "Grab some extras!"
+        },
+        {
+          "tag": "h2",
+          "text": "Grab some extras!"
+        },
+        {
+          "tag": "title",
+          "text": "Stanley Club Logo"
+        },
+        {
+          "tag": "h2",
+          "text": "WELCOME"
+        },
+        {
+          "tag": "h3",
+          "text": "Unlock Perks"
+        },
+        {
+          "tag": "h3",
+          "text": "ACCOUNT"
+        },
+        {
+          "tag": "h2",
+          "text": "My Status Messaging"
+        },
+        {
+          "tag": "h2",
+          "text": "Select Your Location"
+        },
+        {
+          "tag": "h3",
+          "text": "Americas"
+        },
+        {
+          "tag": "h3",
+          "text": "Asia Pacific"
+        },
+        {
+          "tag": "h3",
+          "text": "Europe"
+        },
+        {
+          "tag": "h2",
+          "text": "Out of office"
+        },
+        {
+          "tag": "h2",
+          "text": "Shop the collection"
+        },
+        {
+          "tag": "h2",
+          "text": "Shop Gifts for Him"
+        },
+        {
+          "tag": "h2",
+          "text": "Shop Gifts for Her"
+        },
+        {
+          "tag": "h2",
+          "text": "Gifts under $50"
+        },
+        {
+          "tag": "h3",
+          "text": "Everyday Camp Mug Set"
+        },
+        {
+          "tag": "h3",
+          "text": "The Transit 2.0 Flip Top Mug"
+        },
+        {
+          "tag": "h3",
+          "text": "The Everyday Tumbler"
+        },
+        {
+          "tag": "h3",
+          "text": "The Reserve Wine Tumbler"
+        },
+        {
+          "tag": "h3",
+          "text": "Classic Easy Fill Wide Mouth Flask"
+        },
+        {
+          "tag": "h3",
+          "text": "The Flowstate™ Spring Water Bottle"
+        },
+        {
+          "tag": "h3",
+          "text": "The Vitalize™ Shaker Bottle"
+        },
+        {
+          "tag": "h2",
+          "text": "Make it theirs"
+        },
+        {
+          "tag": "h3",
+          "text": "Customize the Fall Collection."
+        },
+        {
+          "tag": "h2",
+          "text": "Gifted once. Used daily."
+        },
+        {
+          "tag": "h3",
+          "text": "The Everyday Suburban Mug"
+        },
+        {
+          "tag": "h2",
+          "text": "Be the first to know"
+        },
+        {
+          "tag": "h3",
+          "text": "To receive SMS updates, text STANLEY1913 to 22936"
+        },
+        {
+          "tag": "h2",
+          "text": "Need Help?"
+        },
+        {
+          "tag": "h3",
+          "text": "Company"
+        },
+        {
+          "tag": "h3",
+          "text": "Support"
+        },
+        {
+          "tag": "h3",
+          "text": "Legal"
+        }
+      ],
+      "public_text": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More Skip to content Enter ↵ This is a carousel with auto-rotating slides. Activate any of the buttons to disable rotation. Use Next and Previous buttons to navigate, or jump to a slide with the slide dots. Shop New Arrivals Free Shipping Over $50 Welcome to Stanley 1913 | A Brand of PMI Join the Club Support Select Location and Language USA Shop Shop Shop Featured New Arrivals Best Sellers Quenchers Leakproof IceFlow Collection Customize Drinkware Tumblers Water Bottles Coffee & Tea Barware Vacuum Bottles Shop All Drinkware Lunchboxes & Coolers Lunchboxes Coolers & Jugs Camp Cookware Shop by Color Pink Black Blue Grey Green White Red Purple Yellow Brown Shop Popular Sizes 14 OZ 16 OZ 20 OZ 24 OZ 30 OZ 40 OZ Accessories Bags, Backpacks, & Totes Water Bottle Holders Straws & Toppers Lids Shop All Accessories Activity Soccer Golf Basketball Camping & Hiking Fill, toss, go Leakproof tumblers and bottles. No spills. No kidding. Shop Now Trending Trending Trending Vitalize Collection Coffee & Tea Lunchboxes Dark Navy Trending on TikTok Stanley 1913 x Devin Booker Out of office. Shop now The colors are here The new Stanley 1913 Fall Collection is here Shop Now A whole new game The new Stanley 1913 x TOGETHXR Collection. Shop Now Again. And again. The new Stanley 1913 x Caitlin Clark Collection. Shop Now Customize Sale Join the Club Store Locator Help Select Location and Language USA Search Search Cart 0 0 items The item(s) you are adding / updating can't be added due to availability. Grab some extras! Grab some extras! View Full Cart Stanley Club Logo WELCOME Sign In Sign Up * indicates a required field Email* Password* Forgot your password? Sign In Sign in with Shop Reset your password We will send you an email to reset your password If this email matches an account, we’ve sent you an email with a link to update your password. Email* Submit Cancel Sign In Unlock Perks Early Access Club Exclusives Vault Drops * indicates a required field Email* Email First name* Last name* Password* Password must contain: At least one lowercase letter At least one uppercase letter At least one number At least one special character Minimum 8 characters Ship to United States Phone Please enter a valid phone number. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP or clicking the unsubscribe link (where available). Privacy Policy & Terms Text me with news and offers (optional) Birthday (optional) We want to help you celebrate! Let us know when your birthday is and we'll send you a gift on your big day* Birthday (optional) Day -- 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 Month -- January February March April May June July August September October November December Year -- Thank you for entering a valid date. Day, Month, and Year must be provided to submit form. Based on your responses you are not currently eligible to enroll. You must be 18 years or older to create an account. * If your birthday is within the next 30 days, your reward will be granted in delay, up to 30 days. Sign Up By clicking \"Sign Up Now,\" you agree to the Stanley1913 Terms and Conditions including receiving marketing via email about new products, special promotions, offers and more. See our Privacy Policy for details about our information practices. California consumers, see our Notice of Financial Incentives . ACCOUNT HI, Stanley 1913 Club - Member My Status Messaging This is where you'll see your rewards once you start earning them (in other words, get shopping). Check your status Quencher ProTour Say hello to leakproof Shop Now Dashboard Refer a Friend Personal Info Order History Addresses Take Back Sign Out Select Your Location Americas USA English Canada English Brazil Portuguese Argentina Spanish 4 countries Asia Pacific Australia English Korea Korean New Zealand English Japan 日本語 Indonesia English Taiwan Chinese Thailand Thai Malaysia Malay Singapore English India English 10 regions Europe United Kingdom English Europe English Germany German Netherlands Dutch France French Spain Spanish Poland Polish 7 countries Out of office For wherever and whatever fuels you. The Stanley 1913 x Devin Booker Collection. Off Court. On point. Shop Now This is a carousel with auto-rotating slides. Activate any of the buttons to disable rotation. Use Next and Previous buttons to navigate, or jump to a slide with the slide dots. Shop the collection Stanley 1913 x Devin Booker Wellspring Bottle Stanley 1913 x Devin Booker Everyday Pet Bowl Stanley 1913 x Devin Booker IceFlow™ Flip Straw 2.0 Jug Stanley 1913 x Devin Booker New Legend Lunchbox Stanley 1913 x Devin Booker Pre-Party Flask and Shot Glass Set Holiday Gift Guides Shop Gifts for Him Holiday Gift Guides Shop Gifts for Her Gifts under $50 This is a product carousel. Use swipe gestures, keyboard arrow keys, or the Next and Previous buttons to navigate between slides. You can also jump directly to a slide using the slide dots. 11 OZ | Salt Bows/Rouge Bows Everyday Camp Mug Set $45.00 16 OZ | Shadow Green Night Sky The Transit 2.0 Flip Top Mug $35.00 16 OZ | Wintergreen Peppermint Stripe The Everyday Tumbler $35.00 11OZ | Salt Ribbon The Reserve Wine Tumbler $30.00 8 OZ | Black 2.0 Classic Easy Fill Wide Mouth Flask $26.00 20 OZ | Bedrock Gloss The Flowstate™ Spring Water Bottle $35.00 20 OZ | Dark Blossom The Vitalize™ Shaker Bottle $40.00 Shop all Make it theirs Customize the Fall Collection. Shop Now Gifted once. Used daily. This is a carousel with auto-rotating slides. Activate any of the buttons to disable rotation. Use Next and Previous buttons to navigate, or jump to a slide with the slide dots. The Everyday Suburban Mug Shop Now Be the first to know Hear about new arrivals, sales, and other news. To receive SMS updates, text STANLEY1913 to 22936 Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP or clicking the unsubscribe link (where available). Privacy Policy & Terms . TikTok Instagram Facebook YouTube Need Help? Track My Order Start A Return Contact Us Company About Stanley 1913 Careers Newsroom Stanley 1913 Creators Fund Sustainability Take Back Program Blogs Affiliate Program Stanley 1913 Club Loyalty Program Site Map Company About Stanley 1913 Careers Newsroom Stanley 1913 Creators Fund Sustainability Take Back Program Blogs Affiliate Program Stanley 1913 Club Loyalty Program Site Map Support FAQ Contact Us Returns Stainless-Steel Warranty Policy Product Recalls Soft Goods Warranty Policy Find a Retail Store Order Tracking Support FAQ Contact Us Returns Stainless-Steel Warranty Policy Product Recalls Soft Goods Warranty Policy Find a Retail Store Order Tracking Legal Terms of Sale [Updated] Terms of Service [Updated] Privacy Policy [Updated] Your Privacy Choices Responsible Supply Chain Statement Patent Information Do Not Sell/Share - Cookie Preferences Legal Terms of Sale [Updated] Terms of Service [Updated] Privacy Policy [Updated] Your Privacy Choices Responsible Supply Chain Statement Patent Information Do Not Sell/Share - Cookie Preferences ©PMI WW Brands, LLC, All Rights Reserved Select Location and Language USA Choosing a selection results in a full page refresh. Opens in a new window. ${{amount}}",
+      "social_links": [
+        "https://www.facebook.com/Stanley1913/",
+        "https://www.instagram.com/stanley1913_brand/",
+        "https://www.tiktok.com/@stanley1913",
+        "https://www.youtube.com/@Stanley1913"
+      ],
+      "public_post_links": [],
+      "image_alt_records": [
+        {
+          "alt": "Buy with prime logo",
+          "src": "//www.stanley1913.com/cdn/shop/files/Group.svg?v=1761690009&width=192"
+        },
+        {
+          "alt": "Location Icon",
+          "src": "//www.stanley1913.com/cdn/shop/files/Location.svg?v=1754511147"
+        },
+        {
+          "alt": "Info Icon",
+          "src": "//www.stanley1913.com/cdn/shop/files/Icon_Base.svg?v=1754511147"
+        },
+        {
+          "alt": "The Stanley Quencher ProTour Flip Straw Tumbler 30 OZ in Black",
+          "src": "//www.stanley1913.com/cdn/shop/files/Web_PNG_Square-TheQuencherProTourFlipStrawTumbler30OZ-Black2.0-Front.png?v=1758731232&width=150"
+        },
+        {
+          "alt": "Dashboard Icon",
+          "src": "//www.stanley1913.com/cdn/shop/files/Dashboard.svg?v=1730917597"
+        },
+        {
+          "alt": "Personal Info Icon",
+          "src": "//www.stanley1913.com/cdn/shop/files/PersonalInfo.svg?v=1730917597"
+        },
+        {
+          "alt": "Order History Icon",
+          "src": "//www.stanley1913.com/cdn/shop/files/OrderHistory.svg?v=1730917597"
+        },
+        {
+          "alt": "Address Book Icon",
+          "src": "//www.stanley1913.com/cdn/shop/files/Addresses.svg?v=1730917597"
+        },
+        {
+          "alt": "Stanley 1913 Everyday Camp Mug Set 11 OZ in Salt Bows/Rouge Bows | Front View",
+          "src": "//www.stanley1913.com/cdn/shop/files/Web_PNG_Square-The_Stay_Hot_Stacking_Cup_Set-10_oz_0.29_L-Salt_Bows_-_Rouge_Bows-Front.png?v=1791323339&width=412"
+        },
+        {
+          "alt": "Stanley 1913 The Transit 2.0 Flip Top Mug 16 OZ in Shadow Green Night Sky | Front View",
+          "src": "//www.stanley1913.com/cdn/shop/files/Web_PNG_Square-The_Transit_Flip_Top_Mug-16_oz_0.47_L-Shadow_Green_Ribbon-Front_afc09df3-c38f-4243-89fc-f3f875f52790.png?v=1791323320&width=412"
+        },
+        {
+          "alt": "Stanley 1913 The Everyday Tumbler 16 OZ in Wintergreen Peppermint Stripe | Front View",
+          "src": "//www.stanley1913.com/cdn/shop/files/Web_PNG_Square-The_Everyday_Tumbler-16_oz_0.47_L-Wintergreen_Peppermint_Stripe-Front.png?v=1791323343&width=412"
+        },
+        {
+          "alt": "Stanley 1913 The Reserve Wine Tumbler 11 OZ in Salt Ribbon | Front View",
+          "src": "//www.stanley1913.com/cdn/shop/files/Web_PNG_Square-The_Reserve_Wine_Tumbler-11_oz_0.32_L-Salt_Ribbon-Front.png?v=1791323316&width=412"
+        },
+        {
+          "alt": "Stanley 1913 Classic Easy Fill Wide Mouth Flask 8 OZ in Black 2.0 | Front View",
+          "src": "//www.stanley1913.com/cdn/shop/files/Web_PNG_Square-The_Easy_Fill_Wide_Mouth_Flask_8OZ_-_Black_2.0_-_Front.png?v=1745612637&width=412"
+        },
+        {
+          "alt": "Stanley 1913 The Flowstate™ Spring Water Bottle 20 OZ in Bedrock Gloss | Front View",
+          "src": "//www.stanley1913.com/cdn/shop/files/Web_PNG_Square-The_Flowstate_Spring_Bottle-20_oz_0.59_L-Bedrock_Gloss-Front.png?v=1788291488&width=412"
+        },
+        {
+          "alt": "Stanley 1913 The Vitalize™ Shaker Bottle 20 OZ in Dark Blossom | Front View",
+          "src": "//www.stanley1913.com/cdn/shop/files/Web_PNG_Square-TheVitalizeShaker20OZ-DarkBlossom-Front.png?v=1770052895&width=412"
+        }
+      ]
+    },
+    "curl_http_code": "200"
+  },
+  {
+    "id": "hydro",
+    "url": "https://www.hydroflask.com/",
+    "collected_utc": "2026-10-14T06:35:11.166695+00:00",
+    "http_status": 200,
+    "final_url": "https://www.hydroflask.com/",
+    "transport_exit_code": 0,
+    "transport_error": "",
+    "account_verification": "user-approved official website; identity corroborated by branded page and outgoing official accounts",
+    "sha256_raw": "9eeb2aa4bdc25fd1408599927c93b314616bc5591556b3b176ab834cb537ea26",
+    "raw_bytes": 1271906,
+    "method": "unauthenticated normal public GET",
+    "extract": {
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Hydro Flask creates insulated, stainless steel water bottles to keep you hydrated on any adventure. Let's go!"
+        },
+        {
+          "name": "og:title",
+          "content": "Hydro Flask: Sustainable & Refillable Water Bottles | Hydro Flask"
+        },
+        {
+          "name": "og:description",
+          "content": "Hydro Flask creates insulated, stainless steel water bottles to keep you hydrated on any adventure. Let's go!"
+        },
+        {
+          "name": "og:url",
+          "content": "https://www.hydroflask.com/"
+        },
+        {
+          "name": "og:title",
+          "content": "Hydro Flask Reusable Bottles"
+        },
+        {
+          "name": "og:url",
+          "content": "https://www.hydroflask.com/"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "title",
+          "text": "Hydro Flask: Sustainable & Refillable Water Bottles | Hydro Flask"
+        },
+        {
+          "tag": "h2",
+          "text": "Drinkware"
+        },
+        {
+          "tag": "h2",
+          "text": "Featured"
+        },
+        {
+          "tag": "h2",
+          "text": "SHOP BY CATEGORY"
+        },
+        {
+          "tag": "h2",
+          "text": "POPULAR SIZES"
+        },
+        {
+          "tag": "h2",
+          "text": "SHOP BY COLOR"
+        },
+        {
+          "tag": "h2",
+          "text": "Collections"
+        },
+        {
+          "tag": "h2",
+          "text": "Featured"
+        },
+        {
+          "tag": "h2",
+          "text": "SHOP BY COLLECTIONS"
+        },
+        {
+          "tag": "h2",
+          "text": "LIMITED EDITIONS"
+        },
+        {
+          "tag": "h2",
+          "text": "Coolers & Lunch"
+        },
+        {
+          "tag": "h2",
+          "text": "Featured"
+        },
+        {
+          "tag": "h2",
+          "text": "SHOP BY CATEGORY"
+        },
+        {
+          "tag": "h2",
+          "text": "KITCHEN & DINING"
+        },
+        {
+          "tag": "h2",
+          "text": "Customize"
+        },
+        {
+          "tag": "h2",
+          "text": "Explore"
+        },
+        {
+          "tag": "h2",
+          "text": "Featured"
+        },
+        {
+          "tag": "h2",
+          "text": "ABOUT HYDRO FLASK"
+        },
+        {
+          "tag": "h2",
+          "text": "BLOG"
+        },
+        {
+          "tag": "h2",
+          "text": "MIDNIGHT Glimmer"
+        },
+        {
+          "tag": "h2",
+          "text": "Woodland Camo"
+        },
+        {
+          "tag": "h2",
+          "text": "Lightweight Collection"
+        },
+        {
+          "tag": "h2",
+          "text": "Level Up"
+        },
+        {
+          "tag": "h2",
+          "text": "Level up lunch"
+        },
+        {
+          "tag": "h3",
+          "text": "Trending Now"
+        },
+        {
+          "tag": "h3",
+          "text": "Our commitment to responsible advocacy."
+        },
+        {
+          "tag": "h2",
+          "text": "Video player"
+        },
+        {
+          "tag": "h2",
+          "text": "Support"
+        },
+        {
+          "tag": "h2",
+          "text": "Company"
+        },
+        {
+          "tag": "h2",
+          "text": "Account"
+        },
+        {
+          "tag": "h2",
+          "text": "Resources"
+        },
+        {
+          "tag": "h2",
+          "text": "Stay in touch!"
+        },
+        {
+          "tag": "h2",
+          "text": "Select Your Region"
+        },
+        {
+          "tag": "title",
+          "text": "loader"
+        },
+        {
+          "tag": "h2",
+          "text": "Choose Your Location"
+        },
+        {
+          "tag": "h2",
+          "text": "Remove Item"
+        },
+        {
+          "tag": "title",
+          "text": "loader"
+        },
+        {
+          "tag": "h2",
+          "text": "Your Cart ( )"
+        },
+        {
+          "tag": "title",
+          "text": ""
+        },
+        {
+          "tag": "title",
+          "text": "triangle"
+        },
+        {
+          "tag": "title",
+          "text": "loader"
+        },
+        {
+          "tag": "title",
+          "text": "loader"
+        },
+        {
+          "tag": "h2",
+          "text": "Sign In"
+        },
+        {
+          "tag": "title",
+          "text": "exclamation-circle"
+        },
+        {
+          "tag": "h2",
+          "text": "Don’t have an account?"
+        }
+      ],
+      "public_text": "Hydro Flask: Sustainable & Refillable Water Bottles | Hydro Flask Skip to Main Content Skip to Search Skip to Footer Skip to Customer Chat Skip to Accessibility Widget JavaScript seems to be disabled in your browser. For the best experience on our site, be sure to turn on Javascript in your browser. Rewards Contact Us Gift Cards USA | EN Drinkware Back Drinkware Shop Bottles & Drinkware Featured Shop Bottles & Drinkware Micro Hydro Straw Bottles NEW New Arrivals Limited Edition Bestsellers Trending Sale SHOP BY CATEGORY SHOP BY CATEGORY Bottles Kids Drinkware Micro Hydro Cups & Tumblers Coffee & Tea Lightweight Beer, Wine & Spirits Drinkware Accessories POPULAR SIZES POPULAR SIZES 32 oz 24 oz 40 oz 20 oz 200ml / 6.7 oz 300ml / 10 oz 400ml / 13.5 oz SHOP BY COLOR SHOP BY COLOR Purple Red Pink Green Blue Black White Gray Neutral Find your bottle The ideal sip awaits. Take The Quiz Collections Back Collections Featured Kids Tailgating Back to School Sports & Fitness Travel Bundles SHOP BY COLLECTIONS SHOP BY COLLECTIONS Micro Hydro Straw Bottles Carryout™ Coolers Lightweight Bottles Woodland Camo Role Model Collection Sekou Collection Music Studio Collection LIMITED EDITIONS LIMITED EDITIONS Midnight Glimmer NEW Quest Daydream Game On Glitch Arc World of Eric Carle™ Kids Collection For all of your back to school needs. Shop Kids Coolers & Lunch Back Coolers & Lunch Shop All Coolers & Lunch Featured Shop All Coolers & Lunch Food Containers Carryout™ Collection SHOP BY CATEGORY SHOP BY CATEGORY Soft Coolers Insulated Totes Lunch Boxes Bags & Packs Cooler Accessories KITCHEN & DINING KITCHEN & DINING Shop All Kitchen & Dining Outdoor Kitchen Outdoor Dining Food Containers Coffee & Tea Find your cooler Find the perfect cooler for you. Take The Quiz Customize Back Customize Engraving Make it your own. Engrave Now Customize Build your own custom Hydro Flask. Start Now Corporate Sales Custom products for your business. Learn More Hydro Finder Explore Back Explore Featured Trade In Your Bottle Refer a Friend U.S. Snowboard Team Pro Deal FAQ (opens in a new tab) ABOUT HYDRO FLASK ABOUT HYDRO FLASK Our Story Brand Values Careers (opens in a new tab) Warranty BLOG BLOG All blog articles Tips & Tricks Recipes People & Partners Clean & Care Product Recommendations My Account My Rewards My Favorites My Orders Sign Out Sign In Create an Account Track My Order Search is currently unavailable. To use search functionality, please accept cookies in your preferences. Manage Cookie Preferences Failed to load content. Please try again. Two new sizes, now with a straw cap. Shop Micro Hydro Straw Bottle Free shipping on orders $49+ Shop Now NEW Lightweight Quest: Made for Trail Days & Camp Mornings. Shop Now MIDNIGHT Glimmer Seasonal sips inspired by the night sky. Shop Limited Editions Tailgating Coffee & Tea Halloween Spirit Everyday Hydration Kickoff cooler weather with Hydro Flask. Shop New NEW Woodland Camo Blend in or stand out with our newest pattern. Shop Woodland Camo Lightweight Collection Shop Lightweight 12 oz Lightweight Mug Final $34.95 16 oz Lightweight Flip Sip Travel Mug Final $37.95 12 oz Lightweight Mug - Cypress Green Final $34.95 24 oz Lightweight Flex Straw Bottle Final $44.95 32 oz Lightweight Chug Cap Bottle - Atlas Final $49.95 16 oz Lightweight Chug Cap Bottle Final $37.95 32 oz Lightweight Flex Straw Bottle Final $49.95 40 oz Lightweight Flex Cap Bottle Final $54.95 Go to slide 1 Go to slide 2 Go to slide 3 Go to slide 4 Go to slide 5 Go to slide 6 Go to slide 7 Go to slide 8 Level Up Limited Edition with glow-in-the- dark accents, transparent cap and unlimited lives. Shop Game On Level up lunch Shop Lunch Carryout™ Lunch Bag Final $49.95 Carryout™ Lunch Box Final $39.95 Carryout™ Lunch Tote Final $49.95 Carryout™ Lunch Rolltop Final $39.95 Go to slide 1 Go to slide 2 Go to slide 3 Go to slide 4 Trending Now Bottles & Drinkware New Colors Bundles Coolers & Totes Micro Hydro Lightweight Our commitment to responsible advocacy. Hydro Flask is proud to support Ocean Conservancy® as the official hydration partner and Platinum Champion of its Protect Where We Play℠ initiative. Learn More Video player Shop Now Support Contact Us Find a Store FAQs Warranty Shipping & Returns Track Your Order Gift Cards Gift Cards Terms and Conditions Store Credit Terms and Conditions Company Our Story Brand Values Careers (Opens in a new window) Intentional Design Account Account Refer A Friend Loyalty Rewards Loyalty Terms & Conditions Trade-In Program Resources Group Customization Dealer Central Pro Deal Product Donation Inquiry Stay in touch! Be the first to know about new products, special offers, & more. (Opens in a new window) (Opens in a new window) (Opens in a new window) (Opens in a new window) (Opens in a new window) By entering my email above, I consent to receiving marketing and other promotional emails and consent to the Privacy Policy . I may opt-out at any time (Opens in a new window) (Opens in a new window) (Opens in a new window) (Opens in a new window) (Opens in a new window) © 2026 Hydro Flask. Terms & Privacy USA | EN (Opens in a new window) Anti-human Trafficking and Modern Slavery Statement | Helen of Troy (Opens in a new window) Select Your Region Loading... loader Loading... Choose Your Location Loading... Remove Item Are you sure you would like to remove this item from the shopping cart? Cancel OK loader Loading... My Cart Your Cart ( ) View Cart Free Shipping Goal Tooltip Free Shipping is available for all orders over for USA delivery addresses only. triangle You have no items in your shopping cart. Product is out of stock. Please remove this item from your Cart in order to checkout. SKU: View GARAN labels per bundle item Quantity 1 2 3 4 5 6 7 8 9 10+ Frequently bought together Sign Up For Free Add to Cart Shop now Subtotal: Subtotal after discount: loader Loading... Checkout Free shipping on orders $49+ loader Loading... Sign In Sign In form Email Password hidden Password shown Password Forgot Password? Forgot Your Password? protected by reCAPTCHA Privacy - Terms image/svg+xml Sign In exclamation-circle Don’t have an account? Creating an account has many benefits: check out faster, keep more than one address, track orders and more. Create an Account Loading... Unable to load the registration form. Please try again. Retry",
+      "social_links": [
+        "https://www.facebook.com/hydroflask",
+        "https://www.instagram.com/hydroflask/",
+        "https://www.tiktok.com/@hydroflask?lang=en",
+        "https://www.youtube.com/user/hydroflask"
+      ],
+      "public_post_links": [],
+      "image_alt_records": [
+        {
+          "alt": "Hydroflask store logo",
+          "src": "https://www.hydroflask.com/static/version1791448759/frontend/MagebitHoT/hydroflask/en_US/images/logo.svg"
+        },
+        {
+          "alt": "12 oz Lightweight Mug",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/5/2/5210-1-new_1.png"
+        },
+        {
+          "alt": "16 oz Lightweight Flip Sip Travel Mug",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/5/2/5210-2_1.png"
+        },
+        {
+          "alt": "12 oz Lightweight Mug - Cypress Green",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/5/2/5210-3_1.png"
+        },
+        {
+          "alt": "24 oz Lightweight Flex Straw Bottle",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/5/2/5210-4_1.png"
+        },
+        {
+          "alt": "32 oz Lightweight Chug Cap Bottle - Atlas",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/5/2/5210-5_1.png"
+        },
+        {
+          "alt": "16 oz Lightweight Chug Cap Bottle",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/5/2/5210-6.png"
+        },
+        {
+          "alt": "32 oz Lightweight Flex Straw Bottle",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/5/2/5210-7-new.png"
+        },
+        {
+          "alt": "40 oz Lightweight Flex Cap Bottle",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/5/2/5210-8.png"
+        },
+        {
+          "alt": "Carryout™ Lunch Bag",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/h/o/hohfus-5003-slide-1-stndup.png"
+        },
+        {
+          "alt": "Carryout™ Lunch Box",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/h/o/hohfus-5003-slide-2-clam.png"
+        },
+        {
+          "alt": "Carryout™ Lunch Tote",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/h/o/hohfus-5003-slide-3-ltote.png"
+        },
+        {
+          "alt": "Carryout™ Lunch Rolltop",
+          "src": "https://www.hydroflask.com/media/catalog/product/cache/b8c9541a8f4dfd11699094b47d2449f5/h/o/hohfus-5003-slide-4-fldng.png"
+        },
+        {
+          "alt": "instagram",
+          "src": "https://www.hydroflask.com/media/socials/hydroflask/instagram.svg"
+        },
+        {
+          "alt": "tiktok",
+          "src": "https://www.hydroflask.com/media/socials/oxo/tiktok3.svg"
+        },
+        {
+          "alt": "facebook",
+          "src": "https://www.hydroflask.com/media/socials/hydroflask/facebook.svg"
+        },
+        {
+          "alt": "youtube",
+          "src": "https://www.hydroflask.com/media/socials/hydroflask/youtube.svg"
+        },
+        {
+          "alt": "pinterest",
+          "src": "https://www.hydroflask.com/media/socials/hydroflask/pinterest.svg"
+        },
+        {
+          "alt": "instagram",
+          "src": "https://www.hydroflask.com/media/socials/hydroflask/instagram.svg"
+        },
+        {
+          "alt": "tiktok",
+          "src": "https://www.hydroflask.com/media/socials/oxo/tiktok3.svg"
+        },
+        {
+          "alt": "facebook",
+          "src": "https://www.hydroflask.com/media/socials/hydroflask/facebook.svg"
+        },
+        {
+          "alt": "youtube",
+          "src": "https://www.hydroflask.com/media/socials/hydroflask/youtube.svg"
+        },
+        {
+          "alt": "pinterest",
+          "src": "https://www.hydroflask.com/media/socials/hydroflask/pinterest.svg"
+        },
+        {
+          "alt": "Essential Accessibility assistive technology app for people with physical disabilities",
+          "src": "https://www.hydroflask.com/media/footer/hydroflask/accessibility_icon.svg"
+        }
+      ]
+    },
+    "curl_http_code": "200"
+  },
+  {
+    "id": "owala",
+    "url": "https://owalalife.com/",
+    "collected_utc": "2026-10-14T06:35:11.480927+00:00",
+    "http_status": 200,
+    "final_url": "https://owalalife.com/",
+    "transport_exit_code": 0,
+    "transport_error": "",
+    "account_verification": "user-approved official website; identity corroborated by branded page and outgoing official accounts",
+    "sha256_raw": "8ed8772e6d16440dad1e11f550b72779f02460ea9a85b738487ce1c85acf8d28",
+    "raw_bytes": 409572,
+    "method": "unauthenticated normal public GET",
+    "extract": {
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Owala Bags"
+        },
+        {
+          "name": "og:url",
+          "content": "https://owalalife.com/"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "title",
+          "text": "Water Bottles, Tumblers, Coffee Mugs & More | Owala®"
+        },
+        {
+          "tag": "h2",
+          "text": "Your cart is empty"
+        },
+        {
+          "tag": "title",
+          "text": "Search Icon"
+        },
+        {
+          "tag": "title",
+          "text": "Logo"
+        },
+        {
+          "tag": "title",
+          "text": "Logo"
+        },
+        {
+          "tag": "h2",
+          "text": "Our Instagram Feed"
+        },
+        {
+          "tag": "h3",
+          "text": "Support + -"
+        },
+        {
+          "tag": "h3",
+          "text": "Top Pages + -"
+        },
+        {
+          "tag": "h3",
+          "text": "Connect + -"
+        },
+        {
+          "tag": "h3",
+          "text": "Company + -"
+        },
+        {
+          "tag": "h2",
+          "text": "Support"
+        },
+        {
+          "tag": "h2",
+          "text": "Top Pages"
+        },
+        {
+          "tag": "h2",
+          "text": "Connect"
+        },
+        {
+          "tag": "h2",
+          "text": "Company"
+        }
+      ],
+      "public_text": "Water Bottles, Tumblers, Coffee Mugs & More | Owala® Skip to main content Your cart is empty Shop FreeSip® Shop Freesip® Twist Shop 40oz Tumbler Shop All Search Icon Clear Logo 0 FreeSip® Family Color Drop Customize Logo Search Blog Support Sign In 0 Drinkware + Bags Accessories Bundles Shop All Gift Giving Color Drop Customize Corporate Gifting 20% Off Sitewide Shop bestsellers FreeSip® The original. FreeSip® Sway Cupholder-friendly. SmoothSip® Slider For coffee lovers The Sun-Day Tote Packs flat. Hauls big. FreeSip® The original. FreeSip® Sway Cupholder-friendly. SmoothSip® Slider For coffee lovers The Sun-Day Tote Packs flat. Hauls big. Shop by category Shop All Hydration Water bottles and tumblers Coffee & Tea Leakproof travel mugs Bags Insulated totes, crossbodies, & carry-alls Accessories Lids, straws, & sidekicks Shop by category Shop All Hydration Water bottles and tumblers Coffee & Tea Leakproof travel mugs Bags Insulated totes, crossbodies, & carry-alls Accessories Lids, straws, & sidekicks #Owala Our Instagram Feed @owala → Where boring ends. United States Support + - Top Pages + - Connect + - Company + - Support FAQ Warranty Returns Contact Us Replacement Parts Accessibility Do not sell or share my personal information Your Privacy Choices Top Pages FreeSip® Color Drop Blog FreeSip® Twist SmoothSip® Slider Tumblers Owalafy It Customize Connect Owala Crew Press Kit Company About Us Careers Intellectual Property Privacy Policy Shipping Policy Terms of Service © 2025 Trove Brands, LLC. All Rights Reserved. | Accessibility Statement | Manage Cookies | Do Not Sell Or Share My Personal Information | Your Privacy Choices",
+      "social_links": [
+        "https://www.instagram.com/owala/"
+      ],
+      "public_post_links": [],
+      "image_alt_records": [
+        {
+          "alt": "Round we Ghost",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/OW_Halloween_Website_Hero_Mobile_B_1512x720_2.webp?v=1789663667&width=100&crop=center"
+        },
+        {
+          "alt": "Fall Collection",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/OW_Fall_Banner_Mobile_B_1024x720_2.webp?v=1790967536&width=100&crop=center"
+        },
+        {
+          "alt": "Golf Collection",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/OW_Golf-Website-Hero-Mobile-B-1512x720.avif?v=1790355802&width=100&crop=center"
+        },
+        {
+          "alt": "Owala FreeSip, hot pink insulated stainless steel bottle with matching flip cap and carry loop.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/FreeSip.png?v=1780077501"
+        },
+        {
+          "alt": "Owala FreeSip Sway, periwinkle blue insulated stainless steel bottle with matching flip cap and carry loop.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/FreeSipSway.png?v=1780077452"
+        },
+        {
+          "alt": "Owala SmoothSip Slider, deep burgundy insulated travel tumbler with black slider lid.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/SmoothSipSlider.png?v=1780077386"
+        },
+        {
+          "alt": "Owala Sun-Day Collapsible Tote, cream and tan checkered everyday tote with matching tan carry straps.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/Sunday_Tote.png?v=1780077330"
+        },
+        {
+          "alt": "Owala FreeSip, hot pink insulated stainless steel bottle with matching flip cap and carry loop.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/FreeSip.png?v=1780077501"
+        },
+        {
+          "alt": "Owala FreeSip Sway, periwinkle blue insulated stainless steel bottle with matching flip cap and carry loop.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/FreeSipSway.png?v=1780077452"
+        },
+        {
+          "alt": "Owala SmoothSip Slider, deep burgundy insulated travel tumbler with black slider lid.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/SmoothSipSlider.png?v=1780077386"
+        },
+        {
+          "alt": "Owala Sun-Day Collapsible Tote, cream and tan checkered everyday tote with matching tan carry straps.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/Sunday_Tote.png?v=1780077330"
+        },
+        {
+          "alt": "A woman holding a cream-colored Owala FreeSip Sway bottle.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/HYDRATION.jpg?v=1780078131"
+        },
+        {
+          "alt": "An orange Owala travel mug resting in a blue bag filled with golf balls",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/COFFEE_TEA.jpg?v=1780078131"
+        },
+        {
+          "alt": "People on a beach carrying a large blue Owala tote and a mint-green crossbody bag",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/BAGS.jpg?v=1780078131"
+        },
+        {
+          "alt": "A person holding a white Owala FreeSip bottle with a Bottle Boot.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/ACCESSORIES.jpg?v=1780078131"
+        },
+        {
+          "alt": "A woman holding a cream-colored Owala FreeSip Sway bottle.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/HYDRATION.jpg?v=1780078131"
+        },
+        {
+          "alt": "An orange Owala travel mug resting in a blue bag filled with golf balls",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/COFFEE_TEA.jpg?v=1780078131"
+        },
+        {
+          "alt": "People on a beach carrying a large blue Owala tote and a mint-green crossbody bag",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/BAGS.jpg?v=1780078131"
+        },
+        {
+          "alt": "A person holding a white Owala FreeSip bottle with a Bottle Boot.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/ACCESSORIES.jpg?v=1780078131"
+        },
+        {
+          "alt": "Two people relax on a picnic blanket surrounded by Owala insulated totes, a crossbody bag, and a water bottle, with text reading 'See what the buzz is all about.' and a 'Learn More' button. Opens in a new tab.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/L_TABLET_-_1024_1.jpg?v=1780422451"
+        },
+        {
+          "alt": "Two people relax on a picnic blanket surrounded by Owala insulated totes, a crossbody bag, and a water bottle, with text reading 'See what the buzz is all about.' and a 'Learn More' button. Opens in a new tab.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/LG_DESKTOP-1728_1.avif?v=1785268766"
+        },
+        {
+          "alt": "Two people relax on a picnic blanket surrounded by Owala insulated totes, a crossbody bag, and a water bottle, with text reading 'See what the buzz is all about.' and a 'Learn More' button. Opens in a new tab.",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/MOBILE_-_390_1.jpg?v=1780422450"
+        },
+        {
+          "alt": "Owala trust and features banner: Award Winning Products, Limited Lifetime Warranty, Amazing Owala Community, and Excellent Customer Service icons with labels",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/ICONS_LG_DESKTOP_1728.jpg?v=1780082984"
+        },
+        {
+          "alt": "Owala trust and features banner: Award Winning Products, Limited Lifetime Warranty, Amazing Owala Community, and Excellent Customer Service icons with labels",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/ICONS_TABLET_640.jpg?v=1780082983"
+        },
+        {
+          "alt": "Owala trust and features banner: Award Winning Products, Limited Lifetime Warranty, Amazing Owala Community, and Excellent Customer Service icons with labels",
+          "src": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/ICONS_MOBILE_390.jpg?v=1780082984"
+        },
+        {
+          "alt": "DataGrail manage privacy options",
+          "src": "https://www.datagrail.io/wp-content/themes/datagrail/assets/images/dnsos-toggle-icon.png"
+        }
+      ]
+    },
+    "curl_http_code": "200"
+  },
+  {
+    "id": "stanley-instagram",
+    "url": "https://www.instagram.com/stanley1913_brand/",
+    "collected_utc": "2026-10-14T06:35:12.075919+00:00",
+    "http_status": 200,
+    "final_url": "https://www.instagram.com/stanley1913_brand/",
+    "transport_exit_code": 0,
+    "transport_error": "",
+    "account_verification": "verified by outgoing link on https://www.stanley1913.com/",
+    "sha256_raw": "57f276107323b22939bfefb91434e2c13fecd05062b4a3bbd6aa15372439cc6e",
+    "raw_bytes": 744964,
+    "method": "unauthenticated normal public GET",
+    "extract": {
+      "metadata": [
+        {
+          "name": "og:title",
+          "content": "Stanley 1913 (@stanley1913_brand) • Instagram photos and videos"
+        },
+        {
+          "name": "og:url",
+          "content": "https://www.instagram.com/stanley1913_brand/"
+        },
+        {
+          "name": "og:description",
+          "content": "2M Followers, 599 Following, 2,476 Posts - See Instagram photos and videos from Stanley 1913 (@stanley1913_brand)"
+        },
+        {
+          "name": "description",
+          "content": "2M Followers, 599 Following, 2,476 Posts - Stanley 1913 (@stanley1913_brand) on Instagram: \"Since 1913, we have been fueling life's adventures, delivering quality food and beverage gear that's #BuiltForLife\nA Brand of PMI\""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "title",
+          "text": "Stanley 1913 (@stanley1913_brand) • Instagram photos and videos"
+        },
+        {
+          "tag": "title",
+          "text": "Instagram"
+        },
+        {
+          "tag": "title",
+          "text": "Down chevron icon"
+        }
+      ],
+      "public_text": "Stanley 1913 (@stanley1913_brand) • Instagram photos and videos Instagram Log In Sign Up Meta About Blog Jobs Help API Privacy Consumer Health Privacy Terms Locations Popular Instagram Lite Meta AI Muse Threads Contact Uploading & Non-Users Meta Verified English Down chevron icon Afrikaans العربية Čeština Dansk Deutsch Ελληνικά English English (UK) Español (España) Español فارسی Suomi Français עברית Bahasa Indonesia Italiano 日本語 한국어 Bahasa Melayu Norsk Nederlands Polski Português (Brasil) Português (Portugal) Русский Svenska ภาษาไทย Filipino Türkçe 中文(简体) 中文(台灣) বাংলা ગુજરાતી हिन्दी Hrvatski Magyar ಕನ್ನಡ മലയാളം मराठी नेपाली ਪੰਜਾਬੀ සිංහල Slovenčina தமிழ் తెలుగు اردو Tiếng Việt 中文(香港) Български Français (Canada) Română Српски Українська © 2026 Instagram from Meta",
+      "social_links": [
+        "https://www.facebook.com/help/instagram/261704639352628"
+      ],
+      "public_post_links": [],
+      "image_alt_records": []
+    },
+    "curl_http_code": "200"
+  },
+  {
+    "id": "stanley-youtube",
+    "url": "https://www.youtube.com/@Stanley1913",
+    "collected_utc": "2026-10-14T06:35:12.838963+00:00",
+    "http_status": null,
+    "final_url": "https://www.youtube.com/@Stanley1913",
+    "transport_exit_code": 56,
+    "transport_error": "curl: (56) CONNECT tunnel failed, response 403",
+    "account_verification": "verified by outgoing link on https://www.stanley1913.com/",
+    "sha256_raw": null,
+    "raw_bytes": 0,
+    "method": "unauthenticated normal public GET",
+    "curl_http_code": "000"
+  },
+  {
+    "id": "hydro-instagram",
+    "url": "https://www.instagram.com/hydroflask/",
+    "collected_utc": "2026-10-14T06:35:12.852047+00:00",
+    "http_status": 200,
+    "final_url": "https://www.instagram.com/hydroflask/",
+    "transport_exit_code": 0,
+    "transport_error": "",
+    "account_verification": "verified by outgoing link on https://www.hydroflask.com/",
+    "sha256_raw": "a9a87725964943dfb937409ba145aef34ef2ec2759b566bf9748e9a99f515b91",
+    "raw_bytes": 744228,
+    "method": "unauthenticated normal public GET",
+    "extract": {
+      "metadata": [
+        {
+          "name": "og:title",
+          "content": "Hydro Flask (@hydroflask) • Instagram photos and videos"
+        },
+        {
+          "name": "og:url",
+          "content": "https://www.instagram.com/hydroflask/"
+        },
+        {
+          "name": "og:description",
+          "content": "630K Followers, 3,045 Following, 3,851 Posts - See Instagram photos and videos from Hydro Flask (@hydroflask)"
+        },
+        {
+          "name": "description",
+          "content": "630K Followers, 3,045 Following, 3,851 Posts - Hydro Flask (@hydroflask) on Instagram: \"Your hydration, your style.\nWe Make It. You #OwnIt 💧\""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "title",
+          "text": "Hydro Flask (@hydroflask) • Instagram photos and videos"
+        },
+        {
+          "tag": "title",
+          "text": "Instagram"
+        },
+        {
+          "tag": "title",
+          "text": "Down chevron icon"
+        }
+      ],
+      "public_text": "Hydro Flask (@hydroflask) • Instagram photos and videos Instagram Log In Sign Up Meta About Blog Jobs Help API Privacy Consumer Health Privacy Terms Locations Popular Instagram Lite Meta AI Muse Threads Contact Uploading & Non-Users Meta Verified English Down chevron icon Afrikaans العربية Čeština Dansk Deutsch Ελληνικά English English (UK) Español (España) Español فارسی Suomi Français עברית Bahasa Indonesia Italiano 日本語 한국어 Bahasa Melayu Norsk Nederlands Polski Português (Brasil) Português (Portugal) Русский Svenska ภาษาไทย Filipino Türkçe 中文(简体) 中文(台灣) বাংলা ગુજરાતી हिन्दी Hrvatski Magyar ಕನ್ನಡ മലയാളം मराठी नेपाली ਪੰਜਾਬੀ සිංහල Slovenčina தமிழ் తెలుగు اردو Tiếng Việt 中文(香港) Български Français (Canada) Română Српски Українська © 2026 Instagram from Meta",
+      "social_links": [
+        "https://www.facebook.com/help/instagram/261704639352628"
+      ],
+      "public_post_links": [],
+      "image_alt_records": []
+    },
+    "curl_http_code": "200"
+  },
+  {
+    "id": "hydro-youtube",
+    "url": "https://www.youtube.com/user/hydroflask",
+    "collected_utc": "2026-10-14T06:35:13.456338+00:00",
+    "http_status": null,
+    "final_url": "https://www.youtube.com/user/hydroflask",
+    "transport_exit_code": 56,
+    "transport_error": "curl: (56) CONNECT tunnel failed, response 403",
+    "account_verification": "verified by outgoing link on https://www.hydroflask.com/",
+    "sha256_raw": null,
+    "raw_bytes": 0,
+    "method": "unauthenticated normal public GET",
+    "curl_http_code": "000"
+  },
+  {
+    "id": "owala-instagram",
+    "url": "https://www.instagram.com/owala/",
+    "collected_utc": "2026-10-14T06:35:13.469772+00:00",
+    "http_status": 200,
+    "final_url": "https://www.instagram.com/owala/",
+    "transport_exit_code": 0,
+    "transport_error": "",
+    "account_verification": "verified by outgoing link on https://owalalife.com/",
+    "sha256_raw": "7e6b53cca0e1edd7f620171d32e9d8a396d6b8d86b31641aa728b7716f61ad89",
+    "raw_bytes": 744007,
+    "method": "unauthenticated normal public GET",
+    "extract": {
+      "metadata": [
+        {
+          "name": "og:title",
+          "content": "Owala (@owala) • Instagram photos and videos"
+        },
+        {
+          "name": "og:url",
+          "content": "https://www.instagram.com/owala/"
+        },
+        {
+          "name": "og:description",
+          "content": "1M Followers, 123 Following, 1,123 Posts - See Instagram photos and videos from Owala (@owala)"
+        },
+        {
+          "name": "description",
+          "content": "1M Followers, 123 Following, 1,123 Posts - Owala (@owala) on Instagram: \"⭐️ Where Boring Ends.\n🙌 FreeSip® (yes, we patented that)\n💧 Sip or swig, it's your choice.\""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "title",
+          "text": "Owala (@owala) • Instagram photos and videos"
+        },
+        {
+          "tag": "title",
+          "text": "Instagram"
+        },
+        {
+          "tag": "title",
+          "text": "Down chevron icon"
+        }
+      ],
+      "public_text": "Owala (@owala) • Instagram photos and videos Instagram Log In Sign Up Meta About Blog Jobs Help API Privacy Consumer Health Privacy Terms Locations Popular Instagram Lite Meta AI Muse Threads Contact Uploading & Non-Users Meta Verified English Down chevron icon Afrikaans العربية Čeština Dansk Deutsch Ελληνικά English English (UK) Español (España) Español فارسی Suomi Français עברית Bahasa Indonesia Italiano 日本語 한국어 Bahasa Melayu Norsk Nederlands Polski Português (Brasil) Português (Portugal) Русский Svenska ภาษาไทย Filipino Türkçe 中文(简体) 中文(台灣) বাংলা ગુજરાતી हिन्दी Hrvatski Magyar ಕನ್ನಡ മലയാളം मराठी नेपाली ਪੰਜਾਬੀ සිංහල Slovenčina தமிழ் తెలుగు اردو Tiếng Việt 中文(香港) Български Français (Canada) Română Српски Українська © 2026 Instagram from Meta",
+      "social_links": [
+        "https://www.facebook.com/help/instagram/261704639352628"
+      ],
+      "public_post_links": [],
+      "image_alt_records": []
+    },
+    "curl_http_code": "200"
+  },
+  {
+    "id": "owala-youtube",
+    "url": "https://www.youtube.com/@owala",
+    "collected_utc": "2026-10-14T06:35:14.356231+00:00",
+    "http_status": null,
+    "final_url": "https://www.youtube.com/@owala",
+    "transport_exit_code": 56,
+    "transport_error": "curl: (56) CONNECT tunnel failed, response 403",
+    "account_verification": "unverified candidate; not an official-account finding",
+    "sha256_raw": null,
+    "raw_bytes": 0,
+    "method": "unauthenticated normal public GET",
+    "curl_http_code": "000"
+  },
+  {
+    "id": "stanley-linkedin",
+    "url": "https://www.linkedin.com/company/stanley1913/",
+    "collected_utc": "2026-10-14T06:35:14.368453+00:00",
+    "http_status": 999,
+    "final_url": "https://www.linkedin.com/company/stanley1913/",
+    "transport_exit_code": 0,
+    "transport_error": "",
+    "account_verification": "unverified candidate; not an official-account finding",
+    "sha256_raw": "644031a68bde879af85bcc9cb3e6fa1e9a6b0f61d49307581974b5dbc09d3de8",
+    "raw_bytes": 1530,
+    "method": "unauthenticated normal public GET",
+    "curl_http_code": "999"
+  },
+  {
+    "id": "hydro-linkedin",
+    "url": "https://www.linkedin.com/company/hydro-flask/",
+    "collected_utc": "2026-10-14T06:35:14.582924+00:00",
+    "http_status": 999,
+    "final_url": "https://www.linkedin.com/company/hydro-flask/",
+    "transport_exit_code": 0,
+    "transport_error": "",
+    "account_verification": "unverified candidate; not an official-account finding",
+    "sha256_raw": "644031a68bde879af85bcc9cb3e6fa1e9a6b0f61d49307581974b5dbc09d3de8",
+    "raw_bytes": 1530,
+    "method": "unauthenticated normal public GET",
+    "curl_http_code": "999"
+  },
+  {
+    "id": "owala-linkedin",
+    "url": "https://www.linkedin.com/company/owala/",
+    "collected_utc": "2026-10-14T06:35:14.740236+00:00",
+    "http_status": 999,
+    "final_url": "https://www.linkedin.com/company/owala/",
+    "transport_exit_code": 0,
+    "transport_error": "",
+    "account_verification": "unverified candidate; not an official-account finding",
+    "sha256_raw": "644031a68bde879af85bcc9cb3e6fa1e9a6b0f61d49307581974b5dbc09d3de8",
+    "raw_bytes": 1530,
+    "method": "unauthenticated normal public GET",
+    "curl_http_code": "999"
+  }
+]

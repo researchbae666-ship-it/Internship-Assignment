@@ -1,0 +1,100 @@
+{
+  "observation_window": {
+    "start_utc": "2026-09-15T00:00:00+00:00",
+    "end_utc": "2026-10-12T23:59:59+00:00",
+    "days": 28
+  },
+  "measurements": [
+    {
+      "brand": "Stanley 1913",
+      "platform": "Instagram",
+      "verified_posts_in_window": 0,
+      "inventory_complete": false,
+      "weekly_activity": null,
+      "cadence_classification": "unavailable; no verifiable dated post sample",
+      "visible_interaction_proxies": [],
+      "engagement_available": false
+    },
+    {
+      "brand": "Stanley 1913",
+      "platform": "LinkedIn",
+      "verified_posts_in_window": 0,
+      "inventory_complete": false,
+      "weekly_activity": null,
+      "cadence_classification": "unavailable; no verifiable dated post sample",
+      "visible_interaction_proxies": [],
+      "engagement_available": false
+    },
+    {
+      "brand": "Stanley 1913",
+      "platform": "YouTube",
+      "verified_posts_in_window": 0,
+      "inventory_complete": false,
+      "weekly_activity": null,
+      "cadence_classification": "unavailable; no verifiable dated post sample",
+      "visible_interaction_proxies": [],
+      "engagement_available": false
+    },
+    {
+      "brand": "Hydro Flask",
+      "platform": "Instagram",
+      "verified_posts_in_window": 0,
+      "inventory_complete": false,
+      "weekly_activity": null,
+      "cadence_classification": "unavailable; no verifiable dated post sample",
+      "visible_interaction_proxies": [],
+      "engagement_available": false
+    },
+    {
+      "brand": "Hydro Flask",
+      "platform": "LinkedIn",
+      "verified_posts_in_window": 0,
+      "inventory_complete": false,
+      "weekly_activity": null,
+      "cadence_classification": "unavailable; no verifiable dated post sample",
+      "visible_interaction_proxies": [],
+      "engagement_available": false
+    },
+    {
+      "brand": "Hydro Flask",
+      "platform": "YouTube",
+      "verified_posts_in_window": 0,
+      "inventory_complete": false,
+      "weekly_activity": null,
+      "cadence_classification": "unavailable; no verifiable dated post sample",
+      "visible_interaction_proxies": [],
+      "engagement_available": false
+    },
+    {
+      "brand": "Owala",
+      "platform": "Instagram",
+      "verified_posts_in_window": 0,
+      "inventory_complete": false,
+      "weekly_activity": null,
+      "cadence_classification": "unavailable; no verifiable dated post sample",
+      "visible_interaction_proxies": [],
+      "engagement_available": false
+    },
+    {
+      "brand": "Owala",
+      "platform": "LinkedIn",
+      "verified_posts_in_window": 0,
+      "inventory_complete": false,
+      "weekly_activity": null,
+      "cadence_classification": "unavailable; no verifiable dated post sample",
+      "visible_interaction_proxies": [],
+      "engagement_available": false
+    },
+    {
+      "brand": "Owala",
+      "platform": "YouTube",
+      "verified_posts_in_window": 0,
+      "inventory_complete": false,
+      "weekly_activity": null,
+      "cadence_classification": "unavailable; no verifiable dated post sample",
+      "visible_interaction_proxies": [],
+      "engagement_available": false
+    }
+  ],
+  "has_dated_post_evidence": false
+}

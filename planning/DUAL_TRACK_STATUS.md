@@ -1,8 +1,8 @@
 # Dual-track status
 
-**Status date:** 2026-10-13 (UTC)
+**Status date:** 2026-10-14 (UTC)
 
-**Branch:** `marketing/task4-seo-acquisition`
+**Branch:** `marketing/task2-recovery`
 
 **Approved Python baseline:** `6fda8d6000a0f3db097c4fc12d673323ded84384`
 
@@ -12,7 +12,7 @@
 | --- | --- | --- | --- |
 | Python Programming | Tasks 2–4 | Approved historical baseline retained | Existing Phase 5 evidence, tests, and PDF retained; no behavior changed in DT-0 |
 | Python Programming | Enhancements | Planned | Roadmap only; no code changes authorized or made |
-| Digital Marketing & Branding | Task 2 | Collection blocked | The 13 October 2026 cloud proxy denied all requested brand and platform hosts; no account, post, metric, or audit finding was invented |
+| Digital Marketing & Branding | Task 2 | Partly recovered; period measurements still blocked | Three websites and Instagram profile records recovered on 14 October; five official social links verified. Zero dated posts recovered for the fixed window; cadence/engagement unavailable. Four-page evidence-backed draft prepared; original 13 October blockers unchanged. |
 | Digital Marketing & Branding | Task 3 | Complete; awaiting independent review | 53-action fictional RefillLoop roadmap, strengthened validation evidence, and 20-page PDF; no campaign launched or spend incurred |
 | Digital Marketing & Branding | Task 4 | Targeted corrections prepared; awaiting final independent review | Six-page main analysis plus supporting email appendix; ten scripted messages in four workflows; separate all-in economics; reviewer-sourced 2019/2018 discrepancy remains unresolved |
 | Digital Marketing & Branding | Task 1 | Deferred | No draft published and no offer-letter material stored |

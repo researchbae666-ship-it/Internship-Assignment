@@ -18,7 +18,13 @@ guidance, research, evidence, and deliverables without relocating approved
 Python code. The Digital Marketing plan proposes a reusable-hydration market
 context. Initial Task 2 collection was blocked by the cloud proxy, so its
 evidence records the actual access failure and contains no invented metrics or
-audit conclusions. Task 3 now has a reviewable fictional RefillLoop campaign
+audit conclusions. On 14 October, Task 2 website/profile access partly recovered:
+three official websites and Instagram profiles provide source-backed qualitative
+comparisons, but no dated posts or period metrics. A
+[four-page recovery draft](digital_marketing/deliverables/DM_Task2_Competitor_Audit_RECOVERY_DRAFT.pdf)
+and [completion blockers](digital_marketing/research/task2/recovery/COMPLETION_BLOCKERS.md)
+record the precise remaining evidence needs. Task 2 is still incomplete.
+Task 3 now has a reviewable fictional RefillLoop campaign
 roadmap and [PDF](digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf).
 Its 53 actions each retain a primary keyword, supporting terms, discovery
 intent, tags, a platform targeting reference, and distinct proposed copy. The

@@ -1,0 +1,293 @@
+{
+  "status": "partial evidence-backed draft; period metrics blocked",
+  "observation_window": {
+    "start_utc": "2026-09-15T00:00:00+00:00",
+    "end_utc": "2026-10-12T23:59:59+00:00",
+    "days": 28
+  },
+  "source_ids": [
+    "stanley",
+    "hydro",
+    "owala",
+    "stanley-instagram",
+    "stanley-youtube",
+    "hydro-instagram",
+    "hydro-youtube",
+    "owala-instagram",
+    "owala-youtube",
+    "stanley-linkedin",
+    "hydro-linkedin",
+    "owala-linkedin"
+  ],
+  "browser_source_ids": [
+    "stanley-browser",
+    "hydro-browser",
+    "owala-browser",
+    "stanley-instagram-browser",
+    "hydro-instagram-browser",
+    "owala-instagram-browser"
+  ],
+  "accounts": [
+    {
+      "brand": "Stanley 1913",
+      "platform": "Instagram",
+      "account_url": "https://www.instagram.com/stanley1913_brand/",
+      "verified": true,
+      "source_id": "stanley-instagram",
+      "verification_source_id": "stanley",
+      "window_inventory_complete": false,
+      "availability": "public profile metadata only; posts unavailable",
+      "profile_display": "1.7M",
+      "profile_html_display": "2M Followers, 599 Following, 2,476 Posts - See Instagram photos and videos from Stanley 1913 (@stanley1913_brand)",
+      "exact_followers": null,
+      "display_limitation": "Rounded current profile snapshot; HTTP and browser displays differ. Neither is treated as an exact or period-matched denominator."
+    },
+    {
+      "brand": "Stanley 1913",
+      "platform": "LinkedIn",
+      "account_url": "https://www.linkedin.com/company/stanley1913/",
+      "verified": false,
+      "source_id": "stanley-linkedin",
+      "verification_source_id": null,
+      "window_inventory_complete": false,
+      "availability": "HTTP 999; content unavailable and candidate identity unverified",
+      "profile_display": null,
+      "profile_html_display": null,
+      "exact_followers": null
+    },
+    {
+      "brand": "Stanley 1913",
+      "platform": "YouTube",
+      "account_url": "https://www.youtube.com/@Stanley1913",
+      "verified": true,
+      "source_id": "stanley-youtube",
+      "verification_source_id": "stanley",
+      "window_inventory_complete": false,
+      "availability": "proxy CONNECT blocked; origin HTTP response unavailable",
+      "profile_display": null,
+      "profile_html_display": null,
+      "exact_followers": null
+    },
+    {
+      "brand": "Hydro Flask",
+      "platform": "Instagram",
+      "account_url": "https://www.instagram.com/hydroflask/",
+      "verified": true,
+      "source_id": "hydro-instagram",
+      "verification_source_id": "hydro",
+      "window_inventory_complete": false,
+      "availability": "public profile metadata only; posts unavailable",
+      "profile_display": "629K",
+      "profile_html_display": "630K Followers, 3,045 Following, 3,851 Posts - See Instagram photos and videos from Hydro Flask (@hydroflask)",
+      "exact_followers": null,
+      "display_limitation": "Rounded current profile snapshot; HTTP and browser displays differ. Neither is treated as an exact or period-matched denominator."
+    },
+    {
+      "brand": "Hydro Flask",
+      "platform": "LinkedIn",
+      "account_url": "https://www.linkedin.com/company/hydro-flask/",
+      "verified": false,
+      "source_id": "hydro-linkedin",
+      "verification_source_id": null,
+      "window_inventory_complete": false,
+      "availability": "HTTP 999; content unavailable and candidate identity unverified",
+      "profile_display": null,
+      "profile_html_display": null,
+      "exact_followers": null
+    },
+    {
+      "brand": "Hydro Flask",
+      "platform": "YouTube",
+      "account_url": "https://www.youtube.com/user/hydroflask",
+      "verified": true,
+      "source_id": "hydro-youtube",
+      "verification_source_id": "hydro",
+      "window_inventory_complete": false,
+      "availability": "proxy CONNECT blocked; origin HTTP response unavailable",
+      "profile_display": null,
+      "profile_html_display": null,
+      "exact_followers": null
+    },
+    {
+      "brand": "Owala",
+      "platform": "Instagram",
+      "account_url": "https://www.instagram.com/owala/",
+      "verified": true,
+      "source_id": "owala-instagram",
+      "verification_source_id": "owala",
+      "window_inventory_complete": false,
+      "availability": "public profile metadata only; posts unavailable",
+      "profile_display": "1.1M",
+      "profile_html_display": "1M Followers, 123 Following, 1,123 Posts - See Instagram photos and videos from Owala (@owala)",
+      "exact_followers": null,
+      "display_limitation": "Rounded current profile snapshot; HTTP and browser displays differ. Neither is treated as an exact or period-matched denominator."
+    },
+    {
+      "brand": "Owala",
+      "platform": "LinkedIn",
+      "account_url": "https://www.linkedin.com/company/owala/",
+      "verified": false,
+      "source_id": "owala-linkedin",
+      "verification_source_id": null,
+      "window_inventory_complete": false,
+      "availability": "HTTP 999; content unavailable and candidate identity unverified",
+      "profile_display": null,
+      "profile_html_display": null,
+      "exact_followers": null
+    },
+    {
+      "brand": "Owala",
+      "platform": "YouTube",
+      "account_url": "https://www.youtube.com/@owala",
+      "verified": false,
+      "source_id": "owala-youtube",
+      "verification_source_id": null,
+      "window_inventory_complete": false,
+      "availability": "proxy CONNECT blocked; origin HTTP response unavailable",
+      "profile_display": null,
+      "profile_html_display": null,
+      "exact_followers": null
+    }
+  ],
+  "posts": [],
+  "facts": [
+    {
+      "id": "S1",
+      "brand": "Stanley 1913",
+      "source_id": "stanley",
+      "type": "quoted_public_text",
+      "quote": "The Stanley 1913 x Devin Booker Collection.",
+      "interpretation": "Named collaboration anchors the current homepage; creator-led lifestyle appeal is a plausible positioning interpretation, not verified conversion performance."
+    },
+    {
+      "id": "S2",
+      "brand": "Stanley 1913",
+      "source_id": "stanley",
+      "type": "quoted_public_text",
+      "quote": "Join the Club",
+      "interpretation": "Membership is an observable acquisition pathway. Creator-fund and loyalty labels are visible, but programme effectiveness and post collaborations are unmeasured."
+    },
+    {
+      "id": "S3",
+      "brand": "Stanley 1913",
+      "source_id": "stanley-instagram-browser",
+      "type": "quoted_public_text",
+      "quote": "#BuiltForLife",
+      "interpretation": "The profile bio reinforces durability/adventure wording. This is profile consistency, not proof of repeated post themes."
+    },
+    {
+      "id": "H1",
+      "brand": "Hydro Flask",
+      "source_id": "hydro",
+      "type": "quoted_public_text",
+      "quote": "Seasonal sips inspired by the night sky.",
+      "interpretation": "Seasonal design/lifestyle language sits beside product features and limited-edition commerce."
+    },
+    {
+      "id": "H2",
+      "brand": "Hydro Flask",
+      "source_id": "hydro",
+      "type": "quoted_public_text",
+      "quote": "Find your bottle",
+      "interpretation": "The bottle-finder and customization paths offer functional decision support; no completion or conversion data is available."
+    },
+    {
+      "id": "H3",
+      "brand": "Hydro Flask",
+      "source_id": "hydro-instagram-browser",
+      "type": "quoted_public_text",
+      "quote": "Your hydration, your style.",
+      "interpretation": "Profile wording connects hydration and self-expression. Clean & Care and Customize highlight labels indicate visible profile organization, not post cadence."
+    },
+    {
+      "id": "O1",
+      "brand": "Owala",
+      "source_id": "owala",
+      "type": "quoted_public_text",
+      "quote": "Cupholder-friendly.",
+      "interpretation": "The FreeSip Sway label supplies a concise everyday-use benefit; appeal to carry/commute contexts is an interpretation."
+    },
+    {
+      "id": "O2",
+      "brand": "Owala",
+      "source_id": "owala",
+      "type": "quoted_public_text",
+      "quote": "Color Drop",
+      "interpretation": "Color Drop and Customize are observable navigation concepts. Their popularity and release frequency were not measured."
+    },
+    {
+      "id": "O3",
+      "brand": "Owala",
+      "source_id": "owala-instagram-browser",
+      "type": "quoted_public_text",
+      "quote": "Where Boring Ends.",
+      "interpretation": "Playful differentiation is visible in the bio. Owala IRL and Owala Fam are profile highlight labels; community outcomes remain unknown."
+    },
+    {
+      "id": "O4",
+      "brand": "Owala",
+      "source_id": "owala",
+      "type": "quoted_public_text",
+      "quote": "Owala FreeSip, hot pink insulated stainless steel bottle with matching flip cap and carry loop.",
+      "interpretation": "Official image alt text describes a bright product colour. Owala page styling and images loaded incompletely, so this is textual visual evidence rather than a full rendered-design judgement."
+    },
+    {
+      "id": "S4",
+      "brand": "Stanley 1913",
+      "source_id": "stanley-browser",
+      "type": "visual_observation",
+      "quote": "Captured homepage hero uses woodland lifestyle photography, with black/white navigation and a Shop Now CTA.",
+      "interpretation": "In this capture, the collection is contextualized within an outdoor scene; do not generalize this one hero to all social creative."
+    },
+    {
+      "id": "H4",
+      "brand": "Hydro Flask",
+      "source_id": "hydro-browser",
+      "type": "visual_observation",
+      "quote": "Captured Midnight Glimmer hero shows product bottles against a dark blue star-like background, with a limited-edition shopping CTA.",
+      "interpretation": "This capture foregrounds the product/colour edition, contrasting with Stanley's captured lifestyle-led hero."
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "P1",
+      "title": "Routine-first comparison aid",
+      "evidence_ids": [
+        "H2",
+        "O1",
+        "S1"
+      ],
+      "proposal": "For fictional RefillLoop, test a commute/desk/training decision carousel with explicit carry and maintenance questions. This complements observed collection and product-benefit framing; it does not claim competitors lack functional guidance.",
+      "validation": "Compare qualified concept-page clicks for routine-led versus collection-led copy in a future authorized test."
+    },
+    {
+      "priority": "P2",
+      "title": "Practical care and module-choice content",
+      "evidence_ids": [
+        "H3",
+        "O1",
+        "S3"
+      ],
+      "proposal": "Develop a clearly hypothetical module/care explainer answering everyday-use questions. Hydro Flask's visible Clean & Care label is a reason to meet that user need, not a claim that the category ignores it.",
+      "validation": "Test saves and FAQ clicks; verify actual product instructions before making factual claims."
+    },
+    {
+      "priority": "P3",
+      "title": "Recognizable community participation",
+      "evidence_ids": [
+        "S2",
+        "O3"
+      ],
+      "proposal": "Plan a low-effort refill-friction prompt with a clear response and privacy path. Membership and community labels show participation cues already exist; research audience response before asserting a market gap.",
+      "validation": "Track voluntary useful replies, moderation burden and consent in a future authorized campaign."
+    }
+  ],
+  "limitations": [
+    "Website/profile snapshots were collected on 14 October 2026, outside the fixed post window; they cannot establish period activity.",
+    "No dated public posts or interaction numerators were recovered; sample size is zero retained posts, not evidence of zero account activity.",
+    "All period cadence and engagement metrics remain null. Rounded profile displays differ across response methods and are not precise denominators.",
+    "LinkedIn candidates and the Owala YouTube candidate are unverified; failure does not imply absent accounts or strategies.",
+    "Owala assets/CSS and Instagram assets loaded incompletely. Owala visual interpretation uses attributed alt text; no complete website or social-grid design assessment is claimed.",
+    "No reviewer handoff or user-supplied public screenshots have been provided in this recovery turn."
+  ]
+}
