@@ -31,6 +31,13 @@
 
 ### Task 2 independent handoff update — 14 October 2026
 
+Final secondary integration now adds reviewer-verified HypeAuditor cumulative
+snapshots and proprietary October estimated rates in a separate SECONDARY_DRAFT.
+The nominal 26-day net-change proxy is not publishing frequency; exact 28-day
+cadence and independently measured engagement remain unavailable. Task 2 remains
+incomplete pending empirical evidence or organizer acceptance of the limited
+method. See `digital_marketing/research/task2/secondary/README.md` for the verdict.
+
 The supplied 13 October public-source starter is preserved verbatim under
 `digital_marketing/research/task2/handoff/`. It supports qualitative comparison
 and corrected secondary LinkedIn identities, including Owala's affiliated

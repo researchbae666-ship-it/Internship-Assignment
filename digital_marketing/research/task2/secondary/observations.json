@@ -1,0 +1,47 @@
+{
+  "provenance": "Independent reviewer via ChatGPT public web research, supplied inline by user; not Codex retrieval",
+  "collected_date_utc": "2026-10-14",
+  "source_note": "VERIFIED_SOURCE_NOTE_2026-10-14.md",
+  "attachment_handling": "One supplementary verification note was supplied inline. No separate attachment bodies were available; no second document is invented. The inline note supplies all figures used.",
+  "snapshot_start": "2026-09-16",
+  "snapshot_end": "2026-10-12",
+  "nominal_interval_days": 26,
+  "engagement_month": "2026-10",
+  "vendor": "HypeAuditor",
+  "classification": "secondary historical cumulative snapshots and proprietary vendor estimates",
+  "rows": [
+    {
+      "brand": "Stanley 1913",
+      "handle": "stanley1913_brand",
+      "url": "https://hypeauditor.com/instagram/stanley1913_brand/",
+      "start_total": 2459,
+      "end_total": 2474,
+      "vendor_estimated_october_engagement_percent": 1.19,
+      "verified_period_post_count": null,
+      "exact_28_day_posts_per_week": null,
+      "independently_calculated_period_engagement_percent": null
+    },
+    {
+      "brand": "Hydro Flask",
+      "handle": "hydroflask",
+      "url": "https://hypeauditor.com/instagram/hydroflask/",
+      "start_total": 3834,
+      "end_total": 3849,
+      "vendor_estimated_october_engagement_percent": 2.38,
+      "verified_period_post_count": null,
+      "exact_28_day_posts_per_week": null,
+      "independently_calculated_period_engagement_percent": null
+    },
+    {
+      "brand": "Owala",
+      "handle": "owala",
+      "url": "https://hypeauditor.com/instagram/owala/",
+      "start_total": 1104,
+      "end_total": 1121,
+      "vendor_estimated_october_engagement_percent": 2.71,
+      "verified_period_post_count": null,
+      "exact_28_day_posts_per_week": null,
+      "independently_calculated_period_engagement_percent": null
+    }
+  ]
+}
