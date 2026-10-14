@@ -1,0 +1,78 @@
+{
+  "status": "partial evidence-backed draft; period metrics blocked",
+  "execution_source_revision": "49babb8a3e1791505d206b7ffce2aa73a6d6af0e",
+  "baseline": "3fd0c7d4e84acb566395185064fea2eac1732b71",
+  "generated_utc": "2026-10-14T06:52:50.151602+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "protected_original_files_compared": 142,
+  "protected_originals_result": "byte-for-byte unchanged",
+  "source_coverage": {
+    "direct_requests": 12,
+    "usable_website_pages": 3,
+    "partial_instagram_profiles": 3,
+    "verified_social_links": 5,
+    "browser_captures": 6,
+    "dated_posts_recovered": 0,
+    "period_metrics": "unavailable; JSON null, never substituted zero"
+  },
+  "source_records": "digital_marketing/evidence/task2/recovery/source_records.json",
+  "browser_records": "digital_marketing/evidence/task2/recovery/browser_records.json",
+  "commands": [
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python digital_marketing/research/task2/recovery/build_audit.py",
+      "executed_utc": "2026-10-14T06:52:48.368359+00:00",
+      "exit_code": 0,
+      "output": "digital_marketing/evidence/task2/recovery/outputs/build.txt",
+      "sha256": "7b5bc0177f101c99a0c97074e15bc40fcab98f3a5618c23f3cd54d74c545768f"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m unittest discover -s digital_marketing/research/task2/recovery -v",
+      "executed_utc": "2026-10-14T06:52:48.461041+00:00",
+      "exit_code": 0,
+      "output": "digital_marketing/evidence/task2/recovery/outputs/recovery-tests.txt",
+      "sha256": "cc9431159d0723bc118988cfe3099c45a81108a5095708f42b95559c7237f231",
+      "tests_run": 15,
+      "outcome": "passed"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python digital_marketing/tools/test_task2_recovery_report.py",
+      "executed_utc": "2026-10-14T06:52:48.709946+00:00",
+      "exit_code": 0,
+      "output": "digital_marketing/evidence/task2/recovery/outputs/report-tests.txt",
+      "sha256": "b9c8aa215af398c4361a3c91aba208b5b2f33cfaaec0787412c9a8d0df93e416",
+      "tests_run": 3,
+      "outcome": "passed"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python digital_marketing/tools/generate_task2_recovery_report.py",
+      "executed_utc": "2026-10-14T06:52:48.883087+00:00",
+      "exit_code": 0,
+      "output": "digital_marketing/evidence/task2/recovery/outputs/generate.txt",
+      "sha256": "eac280722d65abbf2d59c4a2ad0b1023b92489115af90713a58c08c1122fd2cf"
+    }
+  ],
+  "pdf": {
+    "path": "digital_marketing/deliverables/DM_Task2_Competitor_Audit_RECOVERY_DRAFT.pdf",
+    "pages": 4,
+    "bytes": 52284,
+    "sha256": "d6c14962381ebb48c55af6b9b8417e528101c1dcbf771ecba44d2a7116b007e0",
+    "pages_rendered": 4,
+    "render_exit_code": 0
+  },
+  "visual_qa": "Passed: all four final pages rendered at 144 DPI and visually inspected individually at full resolution. Embedded Vera Sans regular/bold fonts, readable 8.5pt table text, explicit white bold headers, no clipping, overlaps or unexpected blank pages. This is presentation QA of a partial draft, not approval of completed period research.",
+  "retained_digests": {
+    "digital_marketing/evidence/task2/recovery/outputs/build.txt": "7b5bc0177f101c99a0c97074e15bc40fcab98f3a5618c23f3cd54d74c545768f",
+    "digital_marketing/evidence/task2/recovery/outputs/generate.txt": "eac280722d65abbf2d59c4a2ad0b1023b92489115af90713a58c08c1122fd2cf",
+    "digital_marketing/evidence/task2/recovery/outputs/pdf-text.txt": "62d5a904c65c902f303fc9a3036eab616a594b411428fbc508ebf0512989a1d3",
+    "digital_marketing/evidence/task2/recovery/outputs/pdfinfo.txt": "525221cfc127a9c216a3aa5f8df4d6cbea3835918761b24788f3f155ca315274",
+    "digital_marketing/evidence/task2/recovery/outputs/recovery-tests.txt": "cc9431159d0723bc118988cfe3099c45a81108a5095708f42b95559c7237f231",
+    "digital_marketing/evidence/task2/recovery/outputs/report-tests.txt": "b9c8aa215af398c4361a3c91aba208b5b2f33cfaaec0787412c9a8d0df93e416",
+    "digital_marketing/evidence/task2/recovery/source_records.json": "d126baf2d7b5825ad02b48e89ce4d8c03455e0bccd65d07b2e0d20d43af50bf4",
+    "digital_marketing/evidence/task2/recovery/browser_records.json": "a6363b31f6b87266ea2c0e6a63b111d0a5fb02cf1dd02f40f967ed3be70c4c44",
+    "digital_marketing/evidence/task2/recovery/metrics.json": "5a8a8195f99ff028cd2da98b6c4876e2e0dbc4710171f9d5478d7485d545a22e",
+    "digital_marketing/research/task2/recovery/observations.json": "8ad40a6a34f7bc2ebf46764843d906db8ff8b1ae28621b5db1ab564c2fef589e"
+  }
+}

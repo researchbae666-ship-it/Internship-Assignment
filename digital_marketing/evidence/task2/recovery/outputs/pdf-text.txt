@@ -1,0 +1,300 @@
+Reusable hydration: competitor footprint audit
+Stanley 1913 • Hydro Flask • Owala | Partial evidence-backed recovery draft | 14 October 2026
+Review status: qualitative source collection recovered; dated posting cadence and visible engagement remain evidence-blocked. This document is not a
+completed measured audit.
+
+Scope and common period
+Approved post window: 15 September–12 October 2026 UTC (28 days). Website and profile snapshots were collected on 14 October 2026 UTC, outside that
+window. They support current positioning observations only. These brands share reusable hydration/insulated-drinkware categories; their wider portfolios are not
+assumed identical.
+
+Verified footprint and access
+Brand
+
+Verified official links
+
+Current collection outcome
+
+Stanley 1913
+
+https://www.stanley1913.com/
+Instagram: https://www.instagram.com/stanley1913_brand/
+YouTube: https://www.youtube.com/@Stanley1913
+
+Website HTTP 200; Instagram HTTP 200 with profile text only. Official
+YouTube link verified, content blocked by CONNECT 403; LinkedIn
+candidate HTTP 999 and unverified.
+
+Hydro Flask
+
+https://www.hydroflask.com/
+Instagram: https://www.instagram.com/hydroflask/
+YouTube: https://www.youtube.com/user/hydroflask
+
+Website HTTP 200; Instagram HTTP 200 with profile text only. Official
+YouTube link verified, content blocked by CONNECT 403; LinkedIn
+candidate HTTP 999 and unverified.
+
+Owala
+
+https://owalalife.com/
+Instagram: https://www.instagram.com/owala/
+
+Website HTTP 200; Instagram HTTP 200 with profile text only. YouTube
+CONNECT 403 (no origin status); LinkedIn candidates HTTP 999. Owala
+YouTube and all LinkedIn candidate identities remain unverified.
+
+Evidence coverage
+Three websites and three official Instagram profiles retrieved. Five social links verified from brand websites: three Instagram and two YouTube. Twelve direct
+URL requests plus six unauthenticated browser captures are retained. Zero dated posts recovered is a collection result, not evidence of zero account activity.
+No passwords, private analytics or access-control bypass were used.
+
+TASK 2 | PARTIAL EVIDENCE DRAFT | PERIOD METRICS NOT COMPLETED
+
+Page 1
+
+Positioning and creative: supported comparisons
+Direct quotations and captured visuals are observations. Audience, emotional appeal and positioning conclusions below are interpretations, not measured
+audience demographics or campaign results.
+Brand
+
+Source-backed observations
+
+Interpretation / boundary
+
+Stanley 1913
+
+[S1] The Stanley 1913 x Devin Booker Collection.
+[S2] Join the Club
+[S3] #BuiltForLife
+[S4] Captured homepage hero uses woodland lifestyle
+photography, with black/white navigation and a Shop Now CTA.
+
+Named collaboration anchors the current homepage; creator-led lifestyle appeal
+is a plausible positioning interpretation, not verified conversion performance.
+Membership is an observable acquisition pathway. Creator-fund and loyalty labels
+are visible, but programme effectiveness and post collaborations are
+unmeasured.
+Full claim-by-claim interpretations and limitations are retained in
+observations.json.
+
+Hydro Flask
+
+[H1] Seasonal sips inspired by the night sky.
+[H2] Find your bottle
+[H3] Your hydration, your style.
+[H4] Captured Midnight Glimmer hero shows product bottles
+against a dark blue star-like background, with a limited-edition
+shopping CTA.
+
+Seasonal design/lifestyle language sits beside product features and
+limited-edition commerce.
+The bottle-finder and customization paths offer functional decision support; no
+completion or conversion data is available.
+Full claim-by-claim interpretations and limitations are retained in
+observations.json.
+
+Owala
+
+[O1] Cupholder-friendly.
+[O2] Color Drop
+[O3] Where Boring Ends.
+[O4] Owala FreeSip, hot pink insulated stainless steel bottle with
+matching flip cap and carry loop.
+
+The FreeSip Sway label supplies a concise everyday-use benefit; appeal to
+carry/commute contexts is an interpretation.
+Color Drop and Customize are observable navigation concepts. Their popularity
+and release frequency were not measured.
+Full claim-by-claim interpretations and limitations are retained in
+observations.json.
+
+Cross-channel consistency and conversion paths
+Stanley's collaboration/club pathways and #BuiltForLife bio offer a lifestyle/durability framing. Hydro Flask's seasonal edition, finder and hydration/style bio mix
+product choice with self-expression. Owala's benefit-led product labels, Color Drop and playful bio combine utility with novelty. Instagram highlight labels provide
+navigation clues only; no recurring post format, creator-post programme, engagement tactic effectiveness, LinkedIn strategy or YouTube editorial pattern was
+verified.
+Stanley and Hydro Flask homepage screenshots were visually inspected. Owala styling/assets loaded incompletely: its colour description is attributed image alt
+text, not a complete visual identity judgement. Snapshot IDs, quoted-source IDs and hashes are retained alongside this report.
+
+TASK 2 | PARTIAL EVIDENCE DRAFT | PERIOD METRICS NOT COMPLETED
+
+Page 2
+
+Period metrics: explicit missing-value treatment
+Each unavailable result is null in the structured worksheet. Rounded profile totals are not period post counts or exact engagement denominators.
+Brand
+
+Platform
+
+Retained dated sample
+
+28-day cadence
+
+Visible interaction proxy
+
+Stanley 1913
+
+Instagram
+
+0 recovered; activity unknown
+
+Unavailable
+
+Unavailable
+
+Stanley 1913
+
+LinkedIn
+
+0 recovered; activity unknown
+
+Unavailable
+
+Unavailable
+
+Stanley 1913
+
+YouTube
+
+0 recovered; activity unknown
+
+Unavailable
+
+Unavailable
+
+Hydro Flask
+
+Instagram
+
+0 recovered; activity unknown
+
+Unavailable
+
+Unavailable
+
+Hydro Flask
+
+LinkedIn
+
+0 recovered; activity unknown
+
+Unavailable
+
+Unavailable
+
+Hydro Flask
+
+YouTube
+
+0 recovered; activity unknown
+
+Unavailable
+
+Unavailable
+
+Owala
+
+Instagram
+
+0 recovered; activity unknown
+
+Unavailable
+
+Unavailable
+
+Owala
+
+LinkedIn
+
+0 recovered; activity unknown
+
+Unavailable
+
+Unavailable
+
+Owala
+
+YouTube
+
+0 recovered; activity unknown
+
+Unavailable
+
+Unavailable
+
+Calculation rules
+With a verified full inventory: posts per week = observed period post count / 28 × 7. With a nonempty incomplete sample, the same arithmetic is labelled
+observed minimum activity. With no verifiable sample, cadence is unavailable. Instagram proxy = (visible likes + visible comments) / exact visible followers ×
+100; LinkedIn uses reactions + comments. YouTube views are not interchangeable with follower denominators. Every post requires official-account identity, URL,
+publication and collection dates, evidence and metric precision.
+
+Profile-display discrepancy
+Rounded displays differed by response method: Stanley 1913 HTML 2M versus browser 1.7M; Hydro Flask HTML 630K versus browser 629K; Owala HTML 1M
+versus browser 1.1M. These are verbatim retrieval snapshots, not precise follower estimates or growth measurements. Neither method's figure is substituted
+into the unavailable period engagement calculation.
+
+TASK 2 | PARTIAL EVIDENCE DRAFT | PERIOD METRICS NOT COMPLETED
+
+Page 3
+
+Recommendations and completion gate
+These are specific RefillLoop market-entry hypotheses grounded in accessible cues, not proven unmet demand or claims that competitors lack a strategy.
+Priority / proposal
+
+Evidence / practical action
+
+Validation before asserting a gap
+
+P1 — Routine-first
+comparison aid
+
+[H2, O1, S1] For fictional RefillLoop, test a commute/desk/training decision
+carousel with explicit carry and maintenance questions. This complements
+observed collection and product-benefit framing; it does not claim competitors
+lack functional guidance.
+
+Compare qualified concept-page clicks for
+routine-led versus collection-led copy in a future
+authorized test.
+
+P2 — Practical care and
+module-choice content
+
+[H3, O1, S3] Develop a clearly hypothetical module/care explainer answering
+everyday-use questions. Hydro Flask's visible Clean & Care label is a reason to
+meet that user need, not a claim that the category ignores it.
+
+Test saves and FAQ clicks; verify actual product
+instructions before making factual claims.
+
+P3 — Recognizable
+community participation
+
+[S2, O3] Plan a low-effort refill-friction prompt with a clear response and privacy
+path. Membership and community labels show participation cues already exist;
+research audience response before asserting a market gap.
+
+Track voluntary useful replies, moderation burden
+and consent in a future authorized campaign.
+
+What would unblock the measured audit?
+Supply the independent reviewer's source-linked handoff. For each brand/platform, provide a dated public post inventory covering the full 28-day window, or a
+clearly labelled comparable sample. Public screenshots should show official handle, post URL/date, visible likes/reactions/comments, and the collection date;
+provide the public follower count and its precision at collection if available. A complete-inventory assertion needs evidence of pagination/window boundaries. No
+private account credentials or analytics are needed.
+
+Sources and reproducibility
+Website snapshots: https://www.stanley1913.com/ ; https://www.hydroflask.com/ ; https://owalalife.com/ . Official Instagram sources:
+https://www.instagram.com/stanley1913_brand/ ; https://www.instagram.com/hydroflask/ ; https://www.instagram.com/owala/ . Official YouTube links:
+https://www.youtube.com/@Stanley1913 ; https://www.youtube.com/user/hydroflask . Sources collected 14 October 2026 UTC; exact
+timestamps/statuses/digests in source_records.json and browser_records.json. Fact IDs S1–S4, H1–H4, O1–O4 resolve to those records in observations.json.
+Reproduction: research/task2/recovery/collect_sources.py, collect_browser.py, build_audit.py and test_recovery.py. Original 13 October proxy-failure records
+remain unchanged outside recovery/. Alternative completion path: import attributed reviewer/public screenshot records, then recompute supported metrics;
+keep inaccessible fields unavailable. Until that evidence arrives, quantitative comparisons and final completion approval remain open.
+
+TASK 2 | PARTIAL EVIDENCE DRAFT | PERIOD METRICS NOT COMPLETED
+
+Page 4
+
+

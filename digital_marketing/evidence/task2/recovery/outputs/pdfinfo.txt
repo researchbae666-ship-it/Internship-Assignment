@@ -1,0 +1,22 @@
+Title:           Task 2 Partial Competitor Audit Recovery Draft
+Subject:         (unspecified)
+Keywords:
+Author:          Internship project
+Creator:         (unspecified)
+Producer:        ReportLab PDF Library - (opensource)
+CreationDate:    Wed Oct 14 06:52:48 2026 UTC
+ModDate:         Wed Oct 14 06:52:48 2026 UTC
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           4
+Encrypted:       no
+Page size:       841.89 x 595.276 pts (A4)
+Page rot:        0
+File size:       52284 bytes
+Optimized:       no
+PDF version:     1.4
