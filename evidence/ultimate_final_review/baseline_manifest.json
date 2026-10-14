@@ -1,0 +1,1596 @@
+{
+  "baseline_branch": "submission/ultimate-final-audit",
+  "baseline_commit": "e421f1b3286eb8ffcc913d33f5185957a87dfb27",
+  "protected_artifacts": {
+    "marketing_assignment_brief": {
+      "bytes": 1972,
+      "git_blob": "438d807d1c41cb954611538d2c86e330e195377d",
+      "matches_expected": true,
+      "path": "Digital Marketing & Branding Tasks & Instructions.md",
+      "sha256": "796d91d53ea594eea6fa6fe5d095253d8af9b058df44c49a5f791fb33d7a9d74"
+    },
+    "marketing_combined": {
+      "bytes": 140895,
+      "expected_bytes": 140895,
+      "expected_pages": 38,
+      "expected_sha256": "24a211ea4cdd68f83b02ce216aa43b15bc6a65a5952776cbe8c57bccda9f0059",
+      "git_blob": "f5435195c23dba8b3ca977b30333e32eeb015e3e",
+      "matches_expected": true,
+      "page_count": 38,
+      "path": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_COMBINED_REVIEW.pdf",
+      "sha256": "24a211ea4cdd68f83b02ce216aa43b15bc6a65a5952776cbe8c57bccda9f0059"
+    },
+    "marketing_task2_source": {
+      "bytes": 51092,
+      "git_blob": "bf2b4da71c5defbd568fbc8997e3de69930dcbb6",
+      "matches_expected": true,
+      "page_count": 4,
+      "path": "digital_marketing/deliverables/DM_Task2_Competitor_Audit_SECONDARY_DRAFT.pdf",
+      "sha256": "7d997791e61c901c1ac7c901c16d4bcc4a70c3e4255f092c166a6afb889d49a3"
+    },
+    "marketing_task3_source": {
+      "bytes": 54265,
+      "git_blob": "028b3d0faffbc706add4e653fd18ff06a5b8308c",
+      "matches_expected": true,
+      "page_count": 20,
+      "path": "digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf",
+      "sha256": "ecf3eef10ad417b71c31e5ab2bd986d933f4470195afb11f7283131a515159b8"
+    },
+    "marketing_task4_appendix_source": {
+      "bytes": 13180,
+      "git_blob": "17f1b33dc955cffd17237e20cd3c4ed3ded552aa",
+      "matches_expected": true,
+      "page_count": 6,
+      "path": "digital_marketing/deliverables/DM_Task4_Email_Workflow_Appendix.pdf",
+      "sha256": "56be92ee96117ccc4dac08dcc512efd0eca2ebbc36ca8ad2092e4099f47becf5"
+    },
+    "marketing_task4_source": {
+      "bytes": 19192,
+      "git_blob": "542bca0b932e91c04b5da8da5408c550ddbc4adc",
+      "matches_expected": true,
+      "page_count": 6,
+      "path": "digital_marketing/deliverables/DM_Task4_SEO_Acquisition_Strategy.pdf",
+      "sha256": "c61cc2d5268f8b7691e433a427bda44dcda83171fd399e414e8d04b2129d1ce9"
+    },
+    "python_assignment_brief": {
+      "bytes": 63134,
+      "git_blob": "59979c320faf27f55808cfb5b5887d0e258fcf71",
+      "matches_expected": true,
+      "page_count": 1,
+      "path": "Python Programming Tasks & Instructions.pdf",
+      "sha256": "b986a96f94f8ea9ccb0c89c3058a3cdb24d956f9560fd18f2bee6b20d7edae72"
+    },
+    "python_report": {
+      "bytes": 28500,
+      "expected_bytes": 28500,
+      "expected_pages": 14,
+      "expected_sha256": "e967cec21cf744823ff25fc1dab9ba2a2486fa1b7e23f6ceb945fecfd2801db0",
+      "git_blob": "77f0d6591374a727ba41fc1a5184d20cc45181e0",
+      "matches_expected": true,
+      "page_count": 14,
+      "path": "deliverables/Progree_Python_Tasks_2_3_4.pdf",
+      "sha256": "e967cec21cf744823ff25fc1dab9ba2a2486fa1b7e23f6ceb945fecfd2801db0"
+    },
+    "submission_notice": {
+      "bytes": 791,
+      "git_blob": "4c2d36a3e8a63f19998922c38ed4170ad76b1d6d",
+      "matches_expected": true,
+      "path": "Text Message 2.md",
+      "sha256": "ecb6807c1b9b3ed02ae666621e983498548f158b42a61553122f9594c97e4772"
+    }
+  },
+  "schema": "progree-ultimate-baseline-v1",
+  "tracked_file_count": 250,
+  "tracked_files": [
+    {
+      "bytes": 13,
+      "git_blob": "d72fd520b1c12f276273f6d5b6cbc0c7f3bbf884",
+      "path": ".gitattributes",
+      "sha256": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b"
+    },
+    {
+      "bytes": 521,
+      "git_blob": "b8520360e3e07ad1b2a901a6fa3e031de57b62a7",
+      "path": ".gitignore",
+      "sha256": "7b53637f55674502277b22151fd9ae6a1838d848a138f898cd1592ff813e0201"
+    },
+    {
+      "bytes": 3730,
+      "git_blob": "75d08304f7c7de6273177269531bf8ad16c5263b",
+      "path": "AGENTS.md",
+      "sha256": "d963cd0b193ec12aab3ae28efa394c381bc305621d0b10a5caab2ee69d5d98be"
+    },
+    {
+      "bytes": 1972,
+      "git_blob": "438d807d1c41cb954611538d2c86e330e195377d",
+      "path": "Digital Marketing & Branding Tasks & Instructions.md",
+      "sha256": "796d91d53ea594eea6fa6fe5d095253d8af9b058df44c49a5f791fb33d7a9d74"
+    },
+    {
+      "bytes": 63134,
+      "git_blob": "59979c320faf27f55808cfb5b5887d0e258fcf71",
+      "page_count": 1,
+      "path": "Python Programming Tasks & Instructions.pdf",
+      "sha256": "b986a96f94f8ea9ccb0c89c3058a3cdb24d956f9560fd18f2bee6b20d7edae72"
+    },
+    {
+      "bytes": 9789,
+      "git_blob": "d5467531faa03e85511b3ba5427b1ba3e33cf00b",
+      "path": "README.md",
+      "sha256": "bf79cd25031d47d3c9e7ba5816e16526f568698fa3973630ecd8abcaec1b1717"
+    },
+    {
+      "bytes": 1441,
+      "git_blob": "035d7769bd72650534b7deb01741e6d782d3937c",
+      "path": "Text Message 1.md",
+      "sha256": "081ff66464cdcfff1126e281257c3c586215bc515b9befd5b9dcc5ecdee2e340"
+    },
+    {
+      "bytes": 791,
+      "git_blob": "4c2d36a3e8a63f19998922c38ed4170ad76b1d6d",
+      "path": "Text Message 2.md",
+      "sha256": "ecb6807c1b9b3ed02ae666621e983498548f158b42a61553122f9594c97e4772"
+    },
+    {
+      "bytes": 28500,
+      "git_blob": "77f0d6591374a727ba41fc1a5184d20cc45181e0",
+      "page_count": 14,
+      "path": "deliverables/Progree_Python_Tasks_2_3_4.pdf",
+      "sha256": "e967cec21cf744823ff25fc1dab9ba2a2486fa1b7e23f6ceb945fecfd2801db0"
+    },
+    {
+      "bytes": 736,
+      "git_blob": "b6207119ffa993b57dae61d938ee0f84f727cb6b",
+      "path": "digital_marketing/README.md",
+      "sha256": "bdbd69ea37c1362171ecd0ff8b764c5db1b92632f276ecc0b86d361aba22f034"
+    },
+    {
+      "bytes": 1,
+      "git_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "path": "digital_marketing/deliverables/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 50279,
+      "git_blob": "bae750d3fcc499a86f7930de24c5a06c208f7dc6",
+      "page_count": 4,
+      "path": "digital_marketing/deliverables/DM_Task2_Competitor_Audit_HANDOFF_DRAFT.pdf",
+      "sha256": "e450deb6e118c41c1ed842387d7d40aef74b221fb8a8f9387ca3f2154cc2cd1e"
+    },
+    {
+      "bytes": 52284,
+      "git_blob": "4dd1b29e1cbc963d0bf8e9cc469292a5031cb0d6",
+      "page_count": 4,
+      "path": "digital_marketing/deliverables/DM_Task2_Competitor_Audit_RECOVERY_DRAFT.pdf",
+      "sha256": "d6c14962381ebb48c55af6b9b8417e528101c1dcbf771ecba44d2a7116b007e0"
+    },
+    {
+      "bytes": 51092,
+      "git_blob": "bf2b4da71c5defbd568fbc8997e3de69930dcbb6",
+      "page_count": 4,
+      "path": "digital_marketing/deliverables/DM_Task2_Competitor_Audit_SECONDARY_DRAFT.pdf",
+      "sha256": "7d997791e61c901c1ac7c901c16d4bcc4a70c3e4255f092c166a6afb889d49a3"
+    },
+    {
+      "bytes": 54265,
+      "git_blob": "028b3d0faffbc706add4e653fd18ff06a5b8308c",
+      "page_count": 20,
+      "path": "digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf",
+      "sha256": "ecf3eef10ad417b71c31e5ab2bd986d933f4470195afb11f7283131a515159b8"
+    },
+    {
+      "bytes": 13180,
+      "git_blob": "17f1b33dc955cffd17237e20cd3c4ed3ded552aa",
+      "page_count": 6,
+      "path": "digital_marketing/deliverables/DM_Task4_Email_Workflow_Appendix.pdf",
+      "sha256": "56be92ee96117ccc4dac08dcc512efd0eca2ebbc36ca8ad2092e4099f47becf5"
+    },
+    {
+      "bytes": 19192,
+      "git_blob": "542bca0b932e91c04b5da8da5408c550ddbc4adc",
+      "page_count": 6,
+      "path": "digital_marketing/deliverables/DM_Task4_SEO_Acquisition_Strategy.pdf",
+      "sha256": "c61cc2d5268f8b7691e433a427bda44dcda83171fd399e414e8d04b2129d1ce9"
+    },
+    {
+      "bytes": 140895,
+      "git_blob": "f5435195c23dba8b3ca977b30333e32eeb015e3e",
+      "page_count": 38,
+      "path": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_COMBINED_REVIEW.pdf",
+      "sha256": "24a211ea4cdd68f83b02ce216aa43b15bc6a65a5952776cbe8c57bccda9f0059"
+    },
+    {
+      "bytes": 1,
+      "git_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "path": "digital_marketing/evidence/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 2207,
+      "git_blob": "f91905ee66272beef0f277223f18f10452104a19",
+      "path": "digital_marketing/evidence/final_submission/QA.md",
+      "sha256": "21d8be74e33c4a9431a918a813c0e5eb6308828153766e8629bb2ef20a9ee94d"
+    },
+    {
+      "bytes": 895,
+      "git_blob": "d73937d4d2333fcf48ed913e0373082398c5bfcb",
+      "path": "digital_marketing/evidence/final_submission/REPRODUCTION.md",
+      "sha256": "8c955a77c2a5eedd94a7e32f86588c31e99820b716262a657cffcf940d94546a"
+    },
+    {
+      "bytes": 2156,
+      "git_blob": "5d0f6846ac5f8905736736316709ac82e3b006e7",
+      "path": "digital_marketing/evidence/final_submission/manifest.json",
+      "sha256": "f392def55aa37a69ec3b74e26f94f7d215c5f07ed45486f1c709f9e69d091134"
+    },
+    {
+      "bytes": 976,
+      "git_blob": "8a41c455c3156db88a750635ed5e3bafba0b5edb",
+      "path": "digital_marketing/evidence/task2/QA.md",
+      "sha256": "afe5c8d2162258921b6825e0c30d0d4049aaec29205adf6454080fbac5bf0753"
+    },
+    {
+      "bytes": 333,
+      "git_blob": "543f5d5ab00f1f083066b05116eeb88bbdc3b52c",
+      "path": "digital_marketing/evidence/task2/README.md",
+      "sha256": "0b693a0b564ed4e3b55cdda113ba8ab431d4850caad33fb6fea4477b261faf75"
+    },
+    {
+      "bytes": 729,
+      "git_blob": "ebdffe0aa48275558e580c9d35b31650e947b7f5",
+      "path": "digital_marketing/evidence/task2/REPORT_STATUS.md",
+      "sha256": "fe28fe8241a413e08e71310157b81aa4dec1e2e96d1c64c07a2df3809f5aca36"
+    },
+    {
+      "bytes": 1228,
+      "git_blob": "bdf20260f546a15bd58ad1ebb4a079c862c86e4b",
+      "path": "digital_marketing/evidence/task2/REPRODUCTION.md",
+      "sha256": "b8a52689ef2d612998de9d14c2e877862a21f41629d6b834a0e880d419431bb0"
+    },
+    {
+      "bytes": 1973,
+      "git_blob": "334b8755c14988097560b151aa6e244e87a50880",
+      "path": "digital_marketing/evidence/task2/access_validation.json",
+      "sha256": "398b9bbbc07cf93c79a5a54f35079be7d750a2d531ffc4896196c2d7e6eb28fc"
+    },
+    {
+      "bytes": 1833,
+      "git_blob": "2329cf8a3a4ebb5d9b49050b272b34f2df7e25f9",
+      "path": "digital_marketing/evidence/task2/handoff/QA.md",
+      "sha256": "edea7a57a540bfc1d16217a3865319ffdc9ac0d6a78d5ff38ee714540474f126"
+    },
+    {
+      "bytes": 872,
+      "git_blob": "336789a685155b029a8658d6d9110ed9708f2d8d",
+      "path": "digital_marketing/evidence/task2/handoff/command-0.txt",
+      "sha256": "4eeeb5c32c7eb973ffc37f227ee3fe3b2560f07e1656d5646755ce39e49e1e37"
+    },
+    {
+      "bytes": 2184,
+      "git_blob": "bf840a9eeda0bc2c1c603af011233ace625d6037",
+      "path": "digital_marketing/evidence/task2/handoff/command-1.txt",
+      "sha256": "4f02d6c5b2e1ca33e1fe4e85cc1ac4d0e2e2ee83e59236bd78a0c8a7021d2b5d"
+    },
+    {
+      "bytes": 502,
+      "git_blob": "5c3269c624779ad2a15c22ce1d655df30dba46c0",
+      "path": "digital_marketing/evidence/task2/handoff/command-2.txt",
+      "sha256": "86a432751600e1ef87e95fd5259301017e3d7341bb66e014efaa1085afff423c"
+    },
+    {
+      "bytes": 7641,
+      "git_blob": "36c55a83e2906ff82446da37dd3c6fdee2d86988",
+      "path": "digital_marketing/evidence/task2/handoff/command-3.txt",
+      "sha256": "a51e3016516ad4fc90d4f6226a32dc0ec67ef8993296e4de75f7232929b2bf25"
+    },
+    {
+      "bytes": 75,
+      "git_blob": "73bb985548e2da34ff488312d84dce82dc68d0d3",
+      "path": "digital_marketing/evidence/task2/handoff/command-4.txt",
+      "sha256": "752b41ebe96e1440faec92e0336669af96229627c98c931844467d5ae16c4b54"
+    },
+    {
+      "bytes": 1200,
+      "git_blob": "9c4c3c58495348e557e895c61bd580bb78541896",
+      "path": "digital_marketing/evidence/task2/handoff/hypeauditor-access-results.json",
+      "sha256": "c953a92d669b35cd8eabeb81e272079e568d888b0efc4a804b6dc915585b08c0"
+    },
+    {
+      "bytes": 5234,
+      "git_blob": "c5efa78ec2fe5724815df784c45a62256192cab0",
+      "path": "digital_marketing/evidence/task2/handoff/manifest.json",
+      "sha256": "cd4b827704de9b6d4d9a62feadde32a995418b4f49e9f16b51c39cb29b578c44"
+    },
+    {
+      "bytes": 7139,
+      "git_blob": "f01f8456e5f8067801580946f9525a834056bab9",
+      "path": "digital_marketing/evidence/task2/handoff/pdf-text.txt",
+      "sha256": "8888360847402976bf9f72593343f28dafdd4ce63f9c70139680b58a075e2fcf"
+    },
+    {
+      "bytes": 597,
+      "git_blob": "1e72dfecd68c5d5dfc22cba663a3c937a6884d6d",
+      "path": "digital_marketing/evidence/task2/handoff/pdfinfo.txt",
+      "sha256": "24e306ed52b3be18ab81c2012e1df7d1232e5be34cbccace67985d9137a8b2e3"
+    },
+    {
+      "bytes": 1525,
+      "git_blob": "adc0fc4346ed886768ca99ad208420e8a4dc182b",
+      "path": "digital_marketing/evidence/task2/manifest.json",
+      "sha256": "9fdd9130a456e51205c1b569fe0c3c3838590a53c7e430e3a6872d525c5a4547"
+    },
+    {
+      "bytes": 278,
+      "git_blob": "a0e139d8ae5474f2a34de38069463d983dcb9bff",
+      "path": "digital_marketing/evidence/task2/metrics_summary.json",
+      "sha256": "7f0a7f63b349f5eda78e6ede9b15f0e9df4aceecb3f40e15244bc1aa4e8cc4fd"
+    },
+    {
+      "bytes": 3172,
+      "git_blob": "b49b9008c4dbe11d9622d062511df8c902ac2b62",
+      "path": "digital_marketing/evidence/task2/recovery/QA.md",
+      "sha256": "7501a4212b916f0ea52bbc491d2383db84ebb4926c2f171412c65ca228a002a3"
+    },
+    {
+      "bytes": 107459,
+      "git_blob": "dc971017a39f01bdaf6e23635338daafb78dc263",
+      "path": "digital_marketing/evidence/task2/recovery/browser_records.json",
+      "sha256": "a6363b31f6b87266ea2c0e6a63b111d0a5fb02cf1dd02f40f967ed3be70c4c44"
+    },
+    {
+      "bytes": 4723,
+      "git_blob": "831dd0e03f20c72e92e0ac1683d815eb052f4c37",
+      "path": "digital_marketing/evidence/task2/recovery/manifest.json",
+      "sha256": "2d74f47dce98b9faf4d8b9860d606899807403e4288dff10e59758703bafdf4c"
+    },
+    {
+      "bytes": 3181,
+      "git_blob": "4c92bdb5ba3432ac44f0d24f1952f54307fc0fea",
+      "path": "digital_marketing/evidence/task2/recovery/metrics.json",
+      "sha256": "5a8a8195f99ff028cd2da98b6c4876e2e0dbc4710171f9d5478d7485d545a22e"
+    },
+    {
+      "bytes": 96,
+      "git_blob": "e1afac6d5da9df7d0f841c0072951287995d3bf4",
+      "path": "digital_marketing/evidence/task2/recovery/outputs/build.txt",
+      "sha256": "7b5bc0177f101c99a0c97074e15bc40fcab98f3a5618c23f3cd54d74c545768f"
+    },
+    {
+      "bytes": 76,
+      "git_blob": "68ef6fcfd8063888d47138f4a7a1ad05610bd3e2",
+      "path": "digital_marketing/evidence/task2/recovery/outputs/generate.txt",
+      "sha256": "eac280722d65abbf2d59c4a2ad0b1023b92489115af90713a58c08c1122fd2cf"
+    },
+    {
+      "bytes": 10113,
+      "git_blob": "b3acb1ac15104f6dff705817534d6bc19e2ccc24",
+      "path": "digital_marketing/evidence/task2/recovery/outputs/pdf-text.txt",
+      "sha256": "62d5a904c65c902f303fc9a3036eab616a594b411428fbc508ebf0512989a1d3"
+    },
+    {
+      "bytes": 631,
+      "git_blob": "73a6b5798379254ce386bbb21fe763a692a668d2",
+      "path": "digital_marketing/evidence/task2/recovery/outputs/pdfinfo.txt",
+      "sha256": "525221cfc127a9c216a3aa5f8df4d6cbea3835918761b24788f3f155ca315274"
+    },
+    {
+      "bytes": 2184,
+      "git_blob": "8a2f1831e53b208323a0257553314a29f0ebcf58",
+      "path": "digital_marketing/evidence/task2/recovery/outputs/recovery-tests.txt",
+      "sha256": "cc9431159d0723bc118988cfe3099c45a81108a5095708f42b95559c7237f231"
+    },
+    {
+      "bytes": 502,
+      "git_blob": "9eca0a5b6fd37e45ae9fc871791a1a239049cff2",
+      "path": "digital_marketing/evidence/task2/recovery/outputs/report-tests.txt",
+      "sha256": "b9c8aa215af398c4361a3c91aba208b5b2f33cfaaec0787412c9a8d0df93e416"
+    },
+    {
+      "bytes": 54072,
+      "git_blob": "5dbb392fe85a584aa14e32cc47e6f19209cf8eaf",
+      "path": "digital_marketing/evidence/task2/recovery/source_records.json",
+      "sha256": "d126baf2d7b5825ad02b48e89ce4d8c03455e0bccd65d07b2e0d20d43af50bf4"
+    },
+    {
+      "bytes": 2857,
+      "git_blob": "97da781ba2b09c1ec715c09571c41e975888a849",
+      "path": "digital_marketing/evidence/task2/secondary/QA.md",
+      "sha256": "4f38fb5cf376587d836d897afb366f2004645566a0609f802556058c5353d440"
+    },
+    {
+      "bytes": 1082,
+      "git_blob": "acf328b3d5a3dea8334091581c03b7c669c230d1",
+      "path": "digital_marketing/evidence/task2/secondary/access-results.json",
+      "sha256": "2a37a1247e916034ccec4b9567038401a74e9e41b507d33de0be26a65a211a39"
+    },
+    {
+      "bytes": 1676,
+      "git_blob": "79d68ce776d9a68c5aa7a989a56a1aaebeb457e9",
+      "path": "digital_marketing/evidence/task2/secondary/calculated-metrics.json",
+      "sha256": "889d0ec1d2610afea4e4cbe8162b96d3a0037c7d04e8a7dcaf823819d9bdec39"
+    },
+    {
+      "bytes": 1080,
+      "git_blob": "355d30860a3404ab5c1a215ec8d18d2d2c852a5b",
+      "path": "digital_marketing/evidence/task2/secondary/command-0.txt",
+      "sha256": "d8431a98e74c5998d34a9e7051673603f0b3d1454ba94424b946e41ab051b3e7"
+    },
+    {
+      "bytes": 872,
+      "git_blob": "2c773e15ed9ace95e63ace018aa1969fce84e072",
+      "path": "digital_marketing/evidence/task2/secondary/command-1.txt",
+      "sha256": "8259895898e5e6259a048d613aafc98774d8e2a5272e986caba02aa6169784b4"
+    },
+    {
+      "bytes": 1379,
+      "git_blob": "a2556295905bb4a6a00606b0b3a5b4ba8bed5640",
+      "path": "digital_marketing/evidence/task2/secondary/command-2.txt",
+      "sha256": "a7ec8c48e98511844a8c413098813f2d440e50f29dddea8ad6ef60cb3706104a"
+    },
+    {
+      "bytes": 3547,
+      "git_blob": "301e3cda91bb802f2656dbeeaf869375ba4914fd",
+      "path": "digital_marketing/evidence/task2/secondary/command-3.txt",
+      "sha256": "e10c24b116c345881825902728c1477101b61c81fded987de99a950beab64abb"
+    },
+    {
+      "bytes": 254,
+      "git_blob": "cfdf142bb1953c2fe419f506dfa185089b3ab2e4",
+      "path": "digital_marketing/evidence/task2/secondary/command-4.txt",
+      "sha256": "9e3dc861b4e5e60ee6472e101c10c8ed136f7339cd8c5c83b073b1e500a9c3f9"
+    },
+    {
+      "bytes": 396,
+      "git_blob": "448365254691a88c40e82379fe8a74f223883768",
+      "path": "digital_marketing/evidence/task2/secondary/command-5.txt",
+      "sha256": "81d93765aea7eb0cf0c767a2634c5f97adfa1c10fa56bc4724e9169bfab9df7d"
+    },
+    {
+      "bytes": 2184,
+      "git_blob": "8a2f1831e53b208323a0257553314a29f0ebcf58",
+      "path": "digital_marketing/evidence/task2/secondary/command-6.txt",
+      "sha256": "cc9431159d0723bc118988cfe3099c45a81108a5095708f42b95559c7237f231"
+    },
+    {
+      "bytes": 502,
+      "git_blob": "ba10eb719829e2f6833301011daefaad51267ce3",
+      "path": "digital_marketing/evidence/task2/secondary/command-7.txt",
+      "sha256": "b3e6f03e36e03576f5888c725da251b6e24b7087e5746ad2228ea4ad7833cdd0"
+    },
+    {
+      "bytes": 7641,
+      "git_blob": "c8a9d6fc805c29afda9d0582b3ef98fb502c42bc",
+      "path": "digital_marketing/evidence/task2/secondary/command-8.txt",
+      "sha256": "4fe006ffca1ea2c7ce783c7fccfb6ab9f96ef90a3b8a21c1630d8d95cc860958"
+    },
+    {
+      "bytes": 77,
+      "git_blob": "e8a3a6f52ce390071deec14cd4ef7c389ec73a36",
+      "path": "digital_marketing/evidence/task2/secondary/command-9.txt",
+      "sha256": "6c88e7995ca160752d7820316185692f4dc347c1501653dca1d25a0c836e8db9"
+    },
+    {
+      "bytes": 7940,
+      "git_blob": "8a4cd1979a22d95a1e3e1a041cf19d77176ca33a",
+      "path": "digital_marketing/evidence/task2/secondary/manifest.json",
+      "sha256": "07221dad880dfb3d7959be99d5b7e0326a7522347a1e9434fec8a4363c7a34aa"
+    },
+    {
+      "bytes": 7947,
+      "git_blob": "2491a9dfe58e784d58aaa91c605c30d47fb40d4f",
+      "path": "digital_marketing/evidence/task2/secondary/pdf-text.txt",
+      "sha256": "ce56bc1c9e6779f5637d52e115dddbcd62e8bef2bad1098282b90a77c426f6dc"
+    },
+    {
+      "bytes": 656,
+      "git_blob": "779606fdfc00e74926670429bad6e0279d37abb3",
+      "path": "digital_marketing/evidence/task2/secondary/pdfinfo.txt",
+      "sha256": "0f001a335398f19218c852890680ffa6e09c86fa6be4bd42ae755d8a2dbd2402"
+    },
+    {
+      "bytes": 1768,
+      "git_blob": "d0cd892a8c8ec53aa99d40cf661574f9b2ec4004",
+      "path": "digital_marketing/evidence/task3/FINAL_REVIEW_RESULTS.md",
+      "sha256": "5705aa644dd4b4b192be73bf29af12985b92bf1658d99bd1fbfe1cacdcac6f8b"
+    },
+    {
+      "bytes": 1002,
+      "git_blob": "e0b2d778bdda9d680c757a50b55b5afd91ad726c",
+      "path": "digital_marketing/evidence/task3/PDF_PRESENTATION_SIGNOFF.md",
+      "sha256": "2ff0c30e2429596e75aafb10824dfc23c5263da242727e00be5c806350aa97ca"
+    },
+    {
+      "bytes": 2782,
+      "git_blob": "17eedb7d35979a51fea5e3f60936269b6c1b8820",
+      "path": "digital_marketing/evidence/task3/QA.md",
+      "sha256": "dc53ab5170be1fb999eed4a414890553521b3a6acace8c0e5f4706e166cc4a60"
+    },
+    {
+      "bytes": 1378,
+      "git_blob": "c3e721eb07e1521f8cabcfb674e3f4ab3830aa56",
+      "path": "digital_marketing/evidence/task3/REPRODUCTION.md",
+      "sha256": "877fd635c4daf18682587868fab8b7fdf4cc081fecfb1aab0407b9c87608cd61"
+    },
+    {
+      "bytes": 902,
+      "git_blob": "356ca15dd3cd5c0880ffac29cce2c59d983e6786",
+      "path": "digital_marketing/evidence/task3/historical/2026-10-13-pre-targeted-improvements.md",
+      "sha256": "5da77bf9f115d9de7b12d9725a7fe77b5661fc32e6a4200442a8e32b41d83461"
+    },
+    {
+      "bytes": 3494,
+      "git_blob": "8892613c4ed8edd5791d78a3418f4e9e836977f6",
+      "path": "digital_marketing/evidence/task3/manifest.json",
+      "sha256": "846bbfce743f1815bde0a3a73a172f324ebe595004fcf2aed902a4618eeeab50"
+    },
+    {
+      "bytes": 744,
+      "git_blob": "8a41f1b4b6c87aebff9372de7f73220646d02f52",
+      "path": "digital_marketing/evidence/task3/validation_summary.json",
+      "sha256": "e6f15055b84d066ae317e487d1f395d1fa6318529aa77473dcad541430f03559"
+    },
+    {
+      "bytes": 3170,
+      "git_blob": "adae10685e4dcf6cd047c0fef65f7bd523cb0551",
+      "path": "digital_marketing/evidence/task4/QA.md",
+      "sha256": "b9721c84f9f80476a57bdd76ca23be2c9bbfbcd33e8cdea0c3fbeff7f783c638"
+    },
+    {
+      "bytes": 1604,
+      "git_blob": "2f9d114c6c2c18bd89d33f715d9f91cbcfdd6a32",
+      "path": "digital_marketing/evidence/task4/REPRODUCTION.md",
+      "sha256": "6c6cbf13eb84b9bcabcaf3bcd7be382b3e154fbeafd60022723adf17dda949ae"
+    },
+    {
+      "bytes": 1572,
+      "git_blob": "f916505dcfaf2aecdf1a9eaafd7b2fd682f8f882",
+      "path": "digital_marketing/evidence/task4/historical/reviewed-QA.md",
+      "sha256": "061f085366636e71e8dec28b00b505e907778c98e6efa628a9116872437741eb"
+    },
+    {
+      "bytes": 2322,
+      "git_blob": "a9a40ef188e6d0851cdc4f9dddc757fac1f623ca",
+      "path": "digital_marketing/evidence/task4/historical/reviewed-manifest.json",
+      "sha256": "5871f7c6ff3394caac678baa1b07ab24eff30240b627b0bc3cc7f0dcf5749227"
+    },
+    {
+      "bytes": 8297,
+      "git_blob": "adacb149559c9f28ba728da04bc5e92f71033688",
+      "path": "digital_marketing/evidence/task4/manifest.json",
+      "sha256": "8d5408f52a91d12c7328cf13978a27c87398f9c5149216a4f4c411152a32bb3d"
+    },
+    {
+      "bytes": 634,
+      "git_blob": "1423b121cf2b5aa80c937dc10566ae411299e705",
+      "path": "digital_marketing/evidence/task4/review_outputs/DM_Task4_Email_Workflow_Appendix-pdfinfo.txt",
+      "sha256": "527a75171496c2155b537417356a7eb7ef8489014a25bec39c94d9e2e0291975"
+    },
+    {
+      "bytes": 11822,
+      "git_blob": "1c81ff07b874df2cd59fc299da4d84d073076957",
+      "path": "digital_marketing/evidence/task4/review_outputs/DM_Task4_Email_Workflow_Appendix-text.txt",
+      "sha256": "ef6406e7cb94d573d70ae6a821c2f6fcb96ae882d2c582cae454438cbd397f5a"
+    },
+    {
+      "bytes": 634,
+      "git_blob": "f3b6f7dde2a63ba6c830a0a18e2849e7f9d9ab56",
+      "path": "digital_marketing/evidence/task4/review_outputs/DM_Task4_SEO_Acquisition_Strategy-pdfinfo.txt",
+      "sha256": "a285325794a1e8c4bd8b8606ac4d71f5be7310ff41c5f0903016db1df8916bc0"
+    },
+    {
+      "bytes": 17191,
+      "git_blob": "fa96e4d74d52a63be10b99ad980511b185218c17",
+      "path": "digital_marketing/evidence/task4/review_outputs/DM_Task4_SEO_Acquisition_Strategy-text.txt",
+      "sha256": "73259452280d6a4c71de2957a617a31d64e644a36c42157e845c30db496e1a9e"
+    },
+    {
+      "bytes": 108,
+      "git_blob": "ba5f650ab28cefcb4e11df380575151add7daf63",
+      "path": "digital_marketing/evidence/task4/review_outputs/build.txt",
+      "sha256": "469bd5820bb0b3f2e86e4b8ba29d2c14d2dbecf3a58fb2f8dbbfc96aa0a92a5a"
+    },
+    {
+      "bytes": 175,
+      "git_blob": "54734136c76f52615f83ff61ba9991bf325f2309",
+      "path": "digital_marketing/evidence/task4/review_outputs/generate.txt",
+      "sha256": "96a6da6cae2eaba63b906447867ccf5bccef8c7a73895be35b9c7db567aefe46"
+    },
+    {
+      "bytes": 396,
+      "git_blob": "448365254691a88c40e82379fe8a74f223883768",
+      "path": "digital_marketing/evidence/task4/review_outputs/pdf-tests.txt",
+      "sha256": "81d93765aea7eb0cf0c767a2634c5f97adfa1c10fa56bc4724e9169bfab9df7d"
+    },
+    {
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "digital_marketing/evidence/task4/review_outputs/preservation.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 7641,
+      "git_blob": "a6e909def453166f1e865a1e94bda0fbf835dd27",
+      "path": "digital_marketing/evidence/task4/review_outputs/python-tests.txt",
+      "sha256": "d77c3ffc18cc2aa6e5b6abfd7e9c5ba64d63eeb6fe1fbf31e7cfa96bcf391065"
+    },
+    {
+      "bytes": 3547,
+      "git_blob": "cf1c4123da9865d6e25ecacb28ce2170230687ff",
+      "path": "digital_marketing/evidence/task4/review_outputs/task4-tests.txt",
+      "sha256": "c160db5438ff0ba4b7dd36b71c1f548735b3a12c75f9444a08f43e38fff4bdc1"
+    },
+    {
+      "bytes": 230,
+      "git_blob": "0d94abbe3e6b370b61d6b8f3f0a7f737762ec31b",
+      "path": "digital_marketing/planning/README.md",
+      "sha256": "a863c7b2174ad18b2ecda6a9236b03bf747e619813d223b17916c9b5118a59f3"
+    },
+    {
+      "bytes": 933,
+      "git_blob": "e29191201fe3776652f2cfe68904f0b001cb6a77",
+      "path": "digital_marketing/research/OBSERVATION_TEMPLATE.md",
+      "sha256": "20827b4278a27ef4a8fe8e307da09d88c08b0404cbf22a1200c3ab13110af291"
+    },
+    {
+      "bytes": 1075,
+      "git_blob": "9786d11022769fd9164fe231af668cac7e2959d8",
+      "path": "digital_marketing/research/SOURCE_REGISTRY.md",
+      "sha256": "12305165c0b35379bceac5f285eb5cf2a8551ca0ca716cefcab345b9d861bab5"
+    },
+    {
+      "bytes": 1166,
+      "git_blob": "760af1c650e7dbb9da6b2901ea644150ffceaf7d",
+      "path": "digital_marketing/research/task2/README.md",
+      "sha256": "b00e286ce25516f1668e5afdac1f66de8f62dbfedcf2913f2d2ad55b39885aa3"
+    },
+    {
+      "bytes": 2115,
+      "git_blob": "59777fd6c4cb1e5528060e146c07b5128276709d",
+      "path": "digital_marketing/research/task2/SOURCE_REGISTRY.md",
+      "sha256": "0c2ce67c8f34548029d33b916623befe9e901101a769ff90e421da8802751ec9"
+    },
+    {
+      "bytes": 2466,
+      "git_blob": "ed78990d8b57d2f654b6670234197b5e1bf4eaf6",
+      "path": "digital_marketing/research/task2/calculate_metrics.py",
+      "sha256": "27f04a9a0bd1f0743c72a80a1d1e5b78c5ba1e47ae3840810bc518d9c4716e23"
+    },
+    {
+      "bytes": 5288,
+      "git_blob": "4a2266f9d241389df13c5bc195e3b52871ce9f66",
+      "path": "digital_marketing/research/task2/handoff/PUBLIC_SOURCE_HANDOFF_2026-10-13.md",
+      "sha256": "bdb2e2e6e11271219cfe4afd06eb0b81e200603813a09b88f8d7f4a111069c42"
+    },
+    {
+      "bytes": 2699,
+      "git_blob": "3155fd3df18c4162cbb9b4bed7551291f66e648c",
+      "path": "digital_marketing/research/task2/handoff/README.md",
+      "sha256": "842de574469e8ee05c41c435679f836d80a5cdd185952c164763c13e066c21cd"
+    },
+    {
+      "bytes": 5615,
+      "git_blob": "470c591ab3bf16f47cdfb790d6571ca505bf5876",
+      "path": "digital_marketing/research/task2/handoff/RECOVERY_INSTRUCTION.txt",
+      "sha256": "f13c8e07bf79b46e271767113e9875db04c604780eddaa03f941687653885828"
+    },
+    {
+      "bytes": 2630,
+      "git_blob": "839e2605dfd3621eddc6eb4a9b3313ec33c2fe5d",
+      "path": "digital_marketing/research/task2/handoff/test_handoff.py",
+      "sha256": "1677e66dd5b2cdc2f79cc5aa154ab2ed1c4a1282670a65f91e58513fe95f6b99"
+    },
+    {
+      "bytes": 1184,
+      "git_blob": "30416c0f9335d5ecec756d5255715e7b55548804",
+      "path": "digital_marketing/research/task2/limitations.md",
+      "sha256": "ea8ebc2a090045b87ee90b1b5fd2a0409f0790615afdce31019c9e0702cb3118"
+    },
+    {
+      "bytes": 1164,
+      "git_blob": "261dd17ab17bf67566dcd20f88c73111b43bc802",
+      "path": "digital_marketing/research/task2/metric_methodology.md",
+      "sha256": "60b506820fe050ce02c7036593b2c7ee9f457f70c310610e95172661c2d6193b"
+    },
+    {
+      "bytes": 1043,
+      "git_blob": "6fef225f994cacd2845eb1247bc7453a22f20483",
+      "path": "digital_marketing/research/task2/observations.json",
+      "sha256": "997168a1993f0ab3f60d4fe9bb964a1c374c9e01b9c7ed3af78e1ed4aa95b364"
+    },
+    {
+      "bytes": 1222,
+      "git_blob": "c128c0f3e6ac88dfe01ef84d625cce4bd15dac82",
+      "path": "digital_marketing/research/task2/positioning_matrix.md",
+      "sha256": "eb21acd33955f2895d737a43be6024fd76997592b102690b9a4f599d67b7e013"
+    },
+    {
+      "bytes": 2804,
+      "git_blob": "96575bfab491e4b5d85ed9cfed58873702121cb3",
+      "path": "digital_marketing/research/task2/recovery/COMPLETION_BLOCKERS.md",
+      "sha256": "a75cc4ab0065ae4d99723eb127de4c287e851eb9d614aa834e5c4b6bd1441d3c"
+    },
+    {
+      "bytes": 2955,
+      "git_blob": "982fa8f1bfce2a6ec9b7a52dd9dd47fea44818b0",
+      "path": "digital_marketing/research/task2/recovery/POSITIONING_MATRIX.md",
+      "sha256": "58f3178fe7aa1250a83401d14c84acc73d279dfb0c6d53245fb0da41adaeb8aa"
+    },
+    {
+      "bytes": 2215,
+      "git_blob": "71582fc290c897d156ec375ff278100b225f28f4",
+      "path": "digital_marketing/research/task2/recovery/README.md",
+      "sha256": "9769597ab39153df0014203a25011eb96515e488afcb2c7b2a5fa9eae06a4fba"
+    },
+    {
+      "bytes": 4602,
+      "git_blob": "327897ba6e1809ee68230d7e275e49586cac042d",
+      "path": "digital_marketing/research/task2/recovery/SOURCE_REGISTRY.md",
+      "sha256": "918aa442ff0a4367da7bfcfcb2cf934cf4c33fdd7c8f2060444de53e63f3a47d"
+    },
+    {
+      "bytes": 12756,
+      "git_blob": "717ddbbec9e341268041a703bea5046d6cafc4c6",
+      "path": "digital_marketing/research/task2/recovery/build_audit.py",
+      "sha256": "1e37cd5dc566e7f9454c1d686a5a2226b21d57b426049fa51acbc57c81d78e9d"
+    },
+    {
+      "bytes": 2541,
+      "git_blob": "38b21d2e1e7d2021f92359c7afd8026a350824d8",
+      "path": "digital_marketing/research/task2/recovery/collect_browser.py",
+      "sha256": "98015bcc927fa39a702ac6907d3d93b0835377bb38fc6dc8bb48ab273f649f18"
+    },
+    {
+      "bytes": 5700,
+      "git_blob": "e67d5718a8e3bb07715f43871a373dd77b6ebc3f",
+      "path": "digital_marketing/research/task2/recovery/collect_sources.py",
+      "sha256": "649f45ba7d793bc1e349c3cc552f6f96969d8ed3e66856856d2022f493fb22b4"
+    },
+    {
+      "bytes": 3319,
+      "git_blob": "6334dd838570aa19130a6ec217747b00632ad1bf",
+      "path": "digital_marketing/research/task2/recovery/metrics.py",
+      "sha256": "71e2ce568fc854e7d99cd7a2a5ef2c4f393cbeda4dfaf4e115324230a8bc2a4f"
+    },
+    {
+      "bytes": 12351,
+      "git_blob": "24d14d89aa572808c261bd178b6efdc2a7915952",
+      "path": "digital_marketing/research/task2/recovery/observations.json",
+      "sha256": "8ad40a6a34f7bc2ebf46764843d906db8ff8b1ae28621b5db1ab564c2fef589e"
+    },
+    {
+      "bytes": 6672,
+      "git_blob": "f587c78ae05ecde22b79d105f7b07384fd2ceca4",
+      "path": "digital_marketing/research/task2/recovery/test_recovery.py",
+      "sha256": "5d2771bdc009278fe867de4f4002042d5bc8428cc46b79d6a634eb10abf46316"
+    },
+    {
+      "bytes": 3094,
+      "git_blob": "30dfa9dacbf66ce90ca8b168dc8963e92eaefb4a",
+      "path": "digital_marketing/research/task2/secondary/README.md",
+      "sha256": "40ae1b91ff8abceb66fe30dda307e9b3d7bb5eb8b1ff482d9cfb2f3faaf595f2"
+    },
+    {
+      "bytes": 3583,
+      "git_blob": "33f63b76dea276cf55659c83686af187bf8ad990",
+      "path": "digital_marketing/research/task2/secondary/VERIFIED_SOURCE_NOTE_2026-10-14.md",
+      "sha256": "dae18011f2f96414f7bf36f54e84d3143e1c6e2b7cd63c0e00769ea18248b691"
+    },
+    {
+      "bytes": 1878,
+      "git_blob": "a2d601a365e32a180b1163aee76a1f318ffb2a00",
+      "path": "digital_marketing/research/task2/secondary/observations.json",
+      "sha256": "591a370f03f55ad28a4bf4bddd1063f745feb68fb868a54aa2b1192ff51bd1e6"
+    },
+    {
+      "bytes": 3141,
+      "git_blob": "72a15fd915009e29780278dfdf8575c3b9065781",
+      "path": "digital_marketing/research/task2/secondary/secondary_metrics.py",
+      "sha256": "cbf3024d9920b2ea9f70e0e8c6188b08c06381a6b9ce1c674667fc87624ac821"
+    },
+    {
+      "bytes": 4329,
+      "git_blob": "d9ef6503ee9200d406d4d43f7b51d26bcd2b345d",
+      "path": "digital_marketing/research/task2/secondary/test_secondary.py",
+      "sha256": "f32206a2d9aec7f5d6cdd02219f7065f8d930b9f8e046614b05839cd27a00111"
+    },
+    {
+      "bytes": 792,
+      "git_blob": "39b616cac7f9093020fa5d5c83820f506908c154",
+      "path": "digital_marketing/research/task3/README.md",
+      "sha256": "241a100a43bcea5b48874d5a533dfd2bda723870cdca1cc744668d05ab74f776"
+    },
+    {
+      "bytes": 35180,
+      "git_blob": "6cd0475b69dc866a4586ac14f671231f43fdc182",
+      "path": "digital_marketing/research/task3/build_campaign.py",
+      "sha256": "dfc75f790703530eef1453dcf7e0a8bd8a786277b2a8f7a2a9f0d79bf8b86995"
+    },
+    {
+      "bytes": 117405,
+      "git_blob": "8dd844c472720f05df2d64cd5504feb95724c7b7",
+      "path": "digital_marketing/research/task3/campaign_calendar.json",
+      "sha256": "8507cdc40dc30479f2f47e402f459cccf45440ad8fef4872efe3aaee9cf91538"
+    },
+    {
+      "bytes": 6200,
+      "git_blob": "23b266614e6122358a5065a10a72176555344ed2",
+      "path": "digital_marketing/research/task3/campaign_strategy.md",
+      "sha256": "663ca48673cfc8d49e396102e0264662104fc7d3a9291e09bfe22cbb3710e9af"
+    },
+    {
+      "bytes": 4970,
+      "git_blob": "a9f9eb8c1b3723f1361decb17e61c903f5e3f451",
+      "path": "digital_marketing/research/task3/test_campaign.py",
+      "sha256": "05b54c7f56b1f6821bc15ddad035a2b519f927dabe527a9f9abc4c69e2883f76"
+    },
+    {
+      "bytes": 2129,
+      "git_blob": "5db35afc345d513e930633e0b74de39e5921001e",
+      "path": "digital_marketing/research/task4/AUTOMATION_DECISIONS.md",
+      "sha256": "c0a918ea1c6acd59b46e51c54552fb428ef78a86dfd7b0cddb8139a16729ab2f"
+    },
+    {
+      "bytes": 1330,
+      "git_blob": "b5272889dba1a85016ddd353c7abac28134ca8fd",
+      "path": "digital_marketing/research/task4/README.md",
+      "sha256": "bd59c4dc3bdec00de1c98efbb66c339bbcd819ef329d93cf898b6666fa4f8a6a"
+    },
+    {
+      "bytes": 2312,
+      "git_blob": "375b0bef29e581b198077e9e0eba1fccacb2502d",
+      "path": "digital_marketing/research/task4/SOURCE_REGISTRY.md",
+      "sha256": "59d8fc5f857ae7768279d3b1f48b2e48b52b0710f2231e977a88314cc6303459"
+    },
+    {
+      "bytes": 3832,
+      "git_blob": "c84c13921dbd5227f78059e35d889fb856025b6b",
+      "path": "digital_marketing/research/task4/STRATEGY.md",
+      "sha256": "49e177c62e5387c5304f20fab18aa72a4e3860b6c0d5e214d301d439ee8e20fe"
+    },
+    {
+      "bytes": 18240,
+      "git_blob": "0b98c9ddfce9a444ccba79ac19034a9597fcdd81",
+      "path": "digital_marketing/research/task4/build_strategy.py",
+      "sha256": "36b03a76042fe1f783758583b52ac570746fd694a3683d6eb3b08f06504b1db7"
+    },
+    {
+      "bytes": 12996,
+      "git_blob": "265b18897ada56ab1a8b06f3e2e92b2549bc8d11",
+      "path": "digital_marketing/research/task4/email_workflows.py",
+      "sha256": "1937bd09a36c8b1525389735f58f6703990314035d571ed519beb06c7b50d480"
+    },
+    {
+      "bytes": 34271,
+      "git_blob": "17a7c322643ac0c017827dd89ec318c7c033dec6",
+      "path": "digital_marketing/research/task4/strategy_data.json",
+      "sha256": "c9b2648abbf960f1530988a35bba7452a8c404f7594d41d79181c629efef1153"
+    },
+    {
+      "bytes": 6429,
+      "git_blob": "62f25b96f39b379976d3ff21388a21e74f6c13fa",
+      "path": "digital_marketing/research/task4/test_email_workflows.py",
+      "sha256": "6d9c4dff6989ab356a8a65256b8c5f1f7985063a260c5f9c73d8011da8b48a65"
+    },
+    {
+      "bytes": 4302,
+      "git_blob": "6bcc4eeaef92609e07dd4d774096cc8fa0cb230c",
+      "path": "digital_marketing/research/task4/test_strategy.py",
+      "sha256": "144a1094d3bdab5f11b19231d9bf8cd3a6fa465ec42a2d92c372fc65e543d1df"
+    },
+    {
+      "bytes": 994,
+      "git_blob": "f3dfcd235e2aae9603296abb0f6a3bb51acffb8c",
+      "path": "digital_marketing/research/task4_target_source_targets.md",
+      "sha256": "92f9d3d4bf15bb07c8eaaf8bd8c098c1c24291b336277e899178a160b3d77532"
+    },
+    {
+      "bytes": 4539,
+      "git_blob": "f3a3830fea7a6cffbf9fe417d6dc027e22a09f8b",
+      "path": "digital_marketing/tools/collect_task2_handoff_evidence.py",
+      "sha256": "605abb7cab6b98e3d4def7cbdedc9af2e67bd33d5f52281a230731953f433439"
+    },
+    {
+      "bytes": 6341,
+      "git_blob": "67af905862901e769ad6e9bd969e9feb2bf4fe6c",
+      "path": "digital_marketing/tools/collect_task2_recovery_evidence.py",
+      "sha256": "586f355c1a068b0d88fe3ea19c7044b77e9e661e1c85ec0af59f58555960a4d1"
+    },
+    {
+      "bytes": 5399,
+      "git_blob": "f5df1e66456b44a9b1025865e23b592e5e3c2911",
+      "path": "digital_marketing/tools/collect_task2_secondary_evidence.py",
+      "sha256": "504e2852f65da971bef662824050c1d6a40230d8fccd9f176314bfdd0fed822c"
+    },
+    {
+      "bytes": 6066,
+      "git_blob": "3b52a1930bb86447558740bd41ad9f6c4f232645",
+      "path": "digital_marketing/tools/collect_task4_review_evidence.py",
+      "sha256": "25e30b3a98937af048661c6f1d498d01e9be56813b81f127187fd2abd3ebba74"
+    },
+    {
+      "bytes": 12569,
+      "git_blob": "d4076fad62471223a8cd2e4db5bc81118955d812",
+      "path": "digital_marketing/tools/generate_combined_review_pdf.py",
+      "sha256": "5eae81afe34fab7680875d43f805dd0cb5a8716b0cd5daa2eda8c6a67ca6e374"
+    },
+    {
+      "bytes": 10054,
+      "git_blob": "ee0677440435bfca647257c16f14a482cb2db700",
+      "path": "digital_marketing/tools/generate_task2_handoff_report.py",
+      "sha256": "a79da24fd81f563cd3044ca79392ccc0d05651e93df59e595a2903f04ff7daee"
+    },
+    {
+      "bytes": 12098,
+      "git_blob": "56da2f863c4f9c31505dd362364042a0cbe93599",
+      "path": "digital_marketing/tools/generate_task2_recovery_report.py",
+      "sha256": "62cdf269a08df0a3fe548a99afcc97813bedb52094f693fe67d92cd68dda18b1"
+    },
+    {
+      "bytes": 11328,
+      "git_blob": "b1af45fb130997085865e80e2c56f76047f31f93",
+      "path": "digital_marketing/tools/generate_task2_secondary_report.py",
+      "sha256": "43b1420fe7650a00d8f80c52557d3133c7aecd03ec438d0503e0455e7f225e45"
+    },
+    {
+      "bytes": 17125,
+      "git_blob": "2233862dcc5ce8eeff8ae2f438106854ee2dbafa",
+      "path": "digital_marketing/tools/generate_task3_report.py",
+      "sha256": "447dcfe01af353b14256172ea6ec2a310c9da9e888edb67bf28e29842c33c788"
+    },
+    {
+      "bytes": 14329,
+      "git_blob": "82cdb8aa1480115d099f645f793eb62367fc64dd",
+      "path": "digital_marketing/tools/generate_task4_report.py",
+      "sha256": "879ea1652fd7bc6a63730733ed3863a21082fc279b2445004c05f2b6949d5db2"
+    },
+    {
+      "bytes": 1095,
+      "git_blob": "5bafab417e78f530982fb56ba075c52e1acdcefb",
+      "path": "digital_marketing/tools/test_generate_combined_review_pdf.py",
+      "sha256": "f6022108649c5d445fa1aad3fc37b683b2e0b2772933a047accfa0d25336f9d8"
+    },
+    {
+      "bytes": 1035,
+      "git_blob": "7e5d73ee9a2d63a44ad32ac918c2a8ffe3bed7a6",
+      "path": "digital_marketing/tools/test_generate_task3_report.py",
+      "sha256": "ab0872090abacf0357ce181b017d8c9efd76c5c6f9d8089a1c7996f3c4c95a0f"
+    },
+    {
+      "bytes": 2299,
+      "git_blob": "052dcab7986a059ad9118816b3c5db1c725a6efe",
+      "path": "digital_marketing/tools/test_generate_task4_report.py",
+      "sha256": "ba9bd7f60a7d54d0b6907773b2bb5b411b244bf9715a887fe0050f463be308d4"
+    },
+    {
+      "bytes": 2547,
+      "git_blob": "f5b69056a75e6b70e1cff1133a8f53d410897ae3",
+      "path": "digital_marketing/tools/test_task2_recovery_report.py",
+      "sha256": "f4143d168842d1529376988907724b2acd3b4423d15c289976378386dec99198"
+    },
+    {
+      "bytes": 4389,
+      "git_blob": "4ffaad2bdcff5ee4c068e8dc0c3a7c9dec75c10c",
+      "path": "evidence/final_submission_review/QA.md",
+      "sha256": "1ea1ad35895945c3d6b880fed3635aa8e13b5919378cd0fdadd4f2f5ebba7bd4"
+    },
+    {
+      "bytes": 9581,
+      "git_blob": "d2ff0821340f7a71139ccdacc3694a89d4aab2f4",
+      "path": "evidence/final_submission_review/manifest.json",
+      "sha256": "666f7b7441f27ba173bb09172dfed90ca66fd3eaf5e62976a8357f8cb686f813"
+    },
+    {
+      "bytes": 800,
+      "git_blob": "08e50b7a258b4c25b9c9a5b33e0b596101f76c1c",
+      "path": "evidence/phase5/README.md",
+      "sha256": "70bdfb99b0eabc63939e5f0b09f46351da7eac37d0868912d6a927adc3f7f3d0"
+    },
+    {
+      "bytes": 10854,
+      "git_blob": "71793fa197d5f68fc7eae83e03424b8b7a23ed0b",
+      "path": "evidence/phase5/manifest.json",
+      "sha256": "bf09e36854c05c4fe5e9deef5c2dbb2b144b46ecb2fbc2cab0a2ff9a84149cae"
+    },
+    {
+      "bytes": 7641,
+      "git_blob": "969560399c098cafb384b78ca65d0d0fd9c5a235",
+      "path": "evidence/phase5/outputs/full-tests.txt",
+      "sha256": "f1efca114e1e456dda6befd41e65975c8e7c99ae77be2b9504aae58d4c49f6ae"
+    },
+    {
+      "bytes": 1192,
+      "git_blob": "71804965cf2ea5e1f1267857a3e6f2704216f69e",
+      "path": "evidence/phase5/outputs/original_document_integrity.json",
+      "sha256": "db8340848f2fc5f393e41b0255f3b1d0e7f6a4176d9bcbfcd69f800feab032e4"
+    },
+    {
+      "bytes": 697,
+      "git_blob": "4ae882ff6350e670b3852f344f99cd189a552227",
+      "path": "evidence/phase5/outputs/pdf-qa.json",
+      "sha256": "7057b0e9867ea5f4ea9a6efd8b852679e87513b092957c8e7a4cc993befa0b21"
+    },
+    {
+      "bytes": 1039,
+      "git_blob": "efc452547d4a2bcfdd001530a676c352bd5ef26e",
+      "path": "evidence/phase5/outputs/task2-benchmark.json",
+      "sha256": "a0a59efacc9ad7dba2cbb2bec10406871c38c87bc7c3ed25e3a59d79d4536d23"
+    },
+    {
+      "bytes": 3,
+      "git_blob": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+      "path": "evidence/phase5/outputs/task2-count-0.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "bytes": 25,
+      "git_blob": "031c1c18722cb3e63eaad52e1ca45d0ccfe66066",
+      "path": "evidence/phase5/outputs/task2-count-10.json",
+      "sha256": "431130567c2d4542244b7ed47fc0eea73c727bbbea19a275adc789b73ac24090"
+    },
+    {
+      "bytes": 1153,
+      "git_blob": "26961cfc9401644511d78fc623364cbbc77f39ef",
+      "path": "evidence/phase5/outputs/task2-count-100.json",
+      "sha256": "f3054e3b4a52ec9fc2cad422e4403a0b5e4a330041ac85961c6240788e92ae77"
+    },
+    {
+      "bytes": 221,
+      "git_blob": "39bbfb68b2a88da5e65dad1faa72f0733d25c9f7",
+      "path": "evidence/phase5/outputs/task2-invalid.stderr",
+      "sha256": "1b4a6965445adf1062f21fdfd37395c5da9bbf48b7c705b23d25e0f7fdec5f05"
+    },
+    {
+      "bytes": 2192,
+      "git_blob": "9c11aa6bd99808877c3a81028b6414d91817a6b4",
+      "path": "evidence/phase5/outputs/task3-apply.json",
+      "sha256": "00e7388b707e86234f2dce7062f2408c955c1f0d744a352c03f200d20e860e0b"
+    },
+    {
+      "bytes": 452,
+      "git_blob": "304a35412c2b0b0399b705aaf96e7cb0b42bb109",
+      "path": "evidence/phase5/outputs/task3-master.csv",
+      "sha256": "631c3408b5634f2e0a55ecf6fb7b3f2f0e1380807b057d3ca0966338cf68d43a"
+    },
+    {
+      "bytes": 1439,
+      "git_blob": "d29da9d4a58979368989aeff0cfc6bea9eacc21b",
+      "path": "evidence/phase5/outputs/task3-preview.json",
+      "sha256": "6823fd8f7995814ce17f6137e9d6150fca4cfa11ff5a44cfbfdec6464dc8d456"
+    },
+    {
+      "bytes": 1105,
+      "git_blob": "db2c2c91dc4bb6bf8a6895eaf319c434e6ea6144",
+      "path": "evidence/phase5/outputs/task3-repeat.json",
+      "sha256": "2b55b0c37f48a0c53d4453ce53897d75c6800412494802079891df0ad59e3c25"
+    },
+    {
+      "bytes": 51,
+      "git_blob": "dae05ecbd37112fff7d8c4d68544a13cd08a4de4",
+      "path": "evidence/phase5/outputs/task3-safe-failure.stderr",
+      "sha256": "329201dd000b7f38e384b85c3cf61f231de5255e6a76b5ac217fc9591d6218b4"
+    },
+    {
+      "bytes": 237,
+      "git_blob": "e0f260e6c5b5bd28e659a295004b9b2e24c1540a",
+      "path": "evidence/phase5/outputs/task4-eof.txt",
+      "sha256": "4d914ff73277bc13bb350341eeff9f07e6ac9fe095965b828aa3af357ab5b274"
+    },
+    {
+      "bytes": 243,
+      "git_blob": "6ee3017beaee90b1410805569ededbd6d72ec456",
+      "path": "evidence/phase5/outputs/task4-interrupt.txt",
+      "sha256": "c0dd8d2ca97af2fef2b6f6412db76bc789fbd6ea44ca49ab86bdc6a8e3e640e7"
+    },
+    {
+      "bytes": 1819,
+      "git_blob": "de71e002979eac906ffc95784ad4c109726bc0ae",
+      "path": "evidence/phase5/outputs/task4-main.txt",
+      "sha256": "a9b850f00d2d5f9e1bafb9a48099b1e23f61f98df3447f388f6af3c5f2c129b1"
+    },
+    {
+      "bytes": 916,
+      "git_blob": "01f5bbd8f0d356dcf754211724ea0774fb47c6cb",
+      "path": "evidence/phase5/outputs/task4-unsupported.txt",
+      "sha256": "0d7b6cb4ae406b7fd34a4c5f467561ad22b1dda14902c95edd95bfa939b5e950"
+    },
+    {
+      "bytes": 1245,
+      "git_blob": "aa9a7debf09b517ce1b0ff5cd317a9ff5f0c0aed",
+      "path": "evidence/task2/BENCHMARK_RESULTS.json",
+      "sha256": "9d1f7e27f38b40a13f423d546c84f4ab6ea0a448135b5b2a39fa0a308315042a"
+    },
+    {
+      "bytes": 753,
+      "git_blob": "f17b13192552c1954f7551bf2ead13e84ad2b491",
+      "path": "evidence/task2/CLI_DEMONSTRATION.md",
+      "sha256": "a26185d86e50bca396a2190e9d109e98cd82f7a0ebb8a9185948a070d5e743ab"
+    },
+    {
+      "bytes": 1802,
+      "git_blob": "bf03e92828e06b2e4530f147c59e1f934ce5add6",
+      "path": "evidence/task2/METADATA.json",
+      "sha256": "eca7d75ad79c1bc338943c18eb46c168ea4686ece127ab67136773cbac7a017b"
+    },
+    {
+      "bytes": 1672,
+      "git_blob": "c67ddd0a6a732c1584e8350f288839bd564ee9f2",
+      "path": "evidence/task2/RAW_TEST_OUTPUT.txt",
+      "sha256": "028024413581125c65a080684f1bc5ce9c9cc81141c356d7f90050f73f685164"
+    },
+    {
+      "bytes": 594,
+      "git_blob": "e8e4162984c7552db5a6e95f2eed64f06c396229",
+      "path": "evidence/task2/REPRODUCE.md",
+      "sha256": "72a54051d76aae123457c68bc6ade567c8148d275ff4759e8ee33f0f50f5899e"
+    },
+    {
+      "bytes": 842,
+      "git_blob": "e0dc849a62f27076a5a06e73c41c32ac87fe3f74",
+      "path": "evidence/task2/TEST_EXECUTION.md",
+      "sha256": "b466e1b3e275763bbc2033f98c7ad88b2a6cd63f23ead29b2f35cb81a6353d37"
+    },
+    {
+      "bytes": 2190,
+      "git_blob": "d7f4e35256ec5fcccf86bbae30955e17128adf0d",
+      "path": "evidence/task3/APPLY_MANIFEST.json",
+      "sha256": "7ea023ab6cfd961bd24cc661e37e1798fc7249826c2042ec4e06487f9e72c2b9"
+    },
+    {
+      "bytes": 1583,
+      "git_blob": "916dccecb85094bafcb12debce861da26c1f5552",
+      "path": "evidence/task3/FINAL_SAFETY.md",
+      "sha256": "4a65ee3ee61378f743106f6d7f1b942514a8f9960364bd587282ab33fa868cbf"
+    },
+    {
+      "bytes": 2190,
+      "git_blob": "d7f4e35256ec5fcccf86bbae30955e17128adf0d",
+      "path": "evidence/task3/FINAL_SAFETY_APPLY.json",
+      "sha256": "7ea023ab6cfd961bd24cc661e37e1798fc7249826c2042ec4e06487f9e72c2b9"
+    },
+    {
+      "bytes": 120,
+      "git_blob": "f6f8bb20eb91fc8760af57f0ed7d1e83f291cedd",
+      "path": "evidence/task3/FINAL_SAFETY_MARKER.json",
+      "sha256": "48c5d2edd02ff02bbd0a5793edab60ec3922db4531d863f0d80d6933c280e636"
+    },
+    {
+      "bytes": 2441,
+      "git_blob": "1e546b276799c89dea4b56fd816acdb0cc64c3e1",
+      "path": "evidence/task3/FINAL_SAFETY_METADATA.json",
+      "sha256": "71d5715eb9e23538d94a3ce896a22832b86934053d862755b6f88bc6cead87c8"
+    },
+    {
+      "bytes": 1437,
+      "git_blob": "bf307e86654d7ab6084d96eb3aafd6755af790cb",
+      "path": "evidence/task3/FINAL_SAFETY_PREVIEW.json",
+      "sha256": "83653842df9bc51dbe6e78b309dc56250c31965084179946b0f368fe6c3e878a"
+    },
+    {
+      "bytes": 1103,
+      "git_blob": "8a7b6c1724dc39e4ad105295f2dbea4804260894",
+      "path": "evidence/task3/FINAL_SAFETY_REPEAT.json",
+      "sha256": "66ec16404a694c1331f614df6b1713a7c9f06990bdb583c745dfdf4095189b37"
+    },
+    {
+      "bytes": 936,
+      "git_blob": "7cb51c02e90a8d88712fad6bed30f03a24e425a4",
+      "path": "evidence/task3/FINAL_SAFETY_REPRODUCE.md",
+      "sha256": "040fe40ca257e7eb72594374e82b9ef17a3c3b16a382bf7962c99334cc430d71"
+    },
+    {
+      "bytes": 1203,
+      "git_blob": "8d745dd969b3538dd670f0c78944a4764e6f737c",
+      "path": "evidence/task3/HISTORY.md",
+      "sha256": "3f13d856208622dd363691631b84f1d4f5540a2208e06083343da2144bf20d5a"
+    },
+    {
+      "bytes": 162,
+      "git_blob": "2717a4efbbb224a066176ae66b727e2f153a5d68",
+      "path": "evidence/task3/INPUT_INVENTORY.txt",
+      "sha256": "054fa2ac85b8be973331bb17713685575c6c25bd570f426e55b47e2133509039"
+    },
+    {
+      "bytes": 756,
+      "git_blob": "ffa4492e5196e887f327bd554a93c964036eb72e",
+      "path": "evidence/task3/INTEGRITY.md",
+      "sha256": "4287df07d6d93a6eb3b5d925d6607dd71ee481fa286c566ec59c4e348df9a671"
+    },
+    {
+      "bytes": 452,
+      "git_blob": "304a35412c2b0b0399b705aaf96e7cb0b42bb109",
+      "path": "evidence/task3/MASTER.csv",
+      "sha256": "631c3408b5634f2e0a55ecf6fb7b3f2f0e1380807b057d3ca0966338cf68d43a"
+    },
+    {
+      "bytes": 2009,
+      "git_blob": "1ddc9ffe7e2b4a7c2b4f638fbcd7f0d73472b399",
+      "path": "evidence/task3/METADATA.json",
+      "sha256": "e85a6b5560e5808c459539dedeca6a2e32eccda753a78f21382ee5c9788376c4"
+    },
+    {
+      "bytes": 148,
+      "git_blob": "4cff575d4ad87358c045cef7346d4556e13e375d",
+      "path": "evidence/task3/ORGANIZED_TREE.txt",
+      "sha256": "72551149c610c8cd967d363e722c9f3942ae739eb7e0684b088029db0dfeaa06"
+    },
+    {
+      "bytes": 1437,
+      "git_blob": "bf307e86654d7ab6084d96eb3aafd6755af790cb",
+      "path": "evidence/task3/PREVIEW_MANIFEST.json",
+      "sha256": "83653842df9bc51dbe6e78b309dc56250c31965084179946b0f368fe6c3e878a"
+    },
+    {
+      "bytes": 1103,
+      "git_blob": "8a7b6c1724dc39e4ad105295f2dbea4804260894",
+      "path": "evidence/task3/REPEAT_MANIFEST.json",
+      "sha256": "66ec16404a694c1331f614df6b1713a7c9f06990bdb583c745dfdf4095189b37"
+    },
+    {
+      "bytes": 998,
+      "git_blob": "c5a1b5eca55bd4dd3b62985f0afabf7c65214940",
+      "path": "evidence/task3/REPRODUCE.md",
+      "sha256": "2387031b48426fbda29a1723a9ea471a9f42fe05105f8e180d9db62a6dd87a8f"
+    },
+    {
+      "bytes": 2190,
+      "git_blob": "d7f4e35256ec5fcccf86bbae30955e17128adf0d",
+      "path": "evidence/task3/REVIEW_FIX_APPLY.json",
+      "sha256": "7ea023ab6cfd961bd24cc661e37e1798fc7249826c2042ec4e06487f9e72c2b9"
+    },
+    {
+      "bytes": 120,
+      "git_blob": "f6f8bb20eb91fc8760af57f0ed7d1e83f291cedd",
+      "path": "evidence/task3/REVIEW_FIX_MARKER.json",
+      "sha256": "48c5d2edd02ff02bbd0a5793edab60ec3922db4531d863f0d80d6933c280e636"
+    },
+    {
+      "bytes": 2050,
+      "git_blob": "bc312a162f7bf3bc6fa324a919832c58acbd7688",
+      "path": "evidence/task3/REVIEW_FIX_METADATA.json",
+      "sha256": "30b24cda411c1f46173774b073df376d3c55292d35cd7de7ba52b039e3df8efe"
+    },
+    {
+      "bytes": 1437,
+      "git_blob": "bf307e86654d7ab6084d96eb3aafd6755af790cb",
+      "path": "evidence/task3/REVIEW_FIX_PREVIEW.json",
+      "sha256": "83653842df9bc51dbe6e78b309dc56250c31965084179946b0f368fe6c3e878a"
+    },
+    {
+      "bytes": 1103,
+      "git_blob": "8a7b6c1724dc39e4ad105295f2dbea4804260894",
+      "path": "evidence/task3/REVIEW_FIX_REPEAT.json",
+      "sha256": "66ec16404a694c1331f614df6b1713a7c9f06990bdb583c745dfdf4095189b37"
+    },
+    {
+      "bytes": 965,
+      "git_blob": "0fa6f4db64b5e2d792e3f2beacea7116c5d302c1",
+      "path": "evidence/task3/REVIEW_FIX_REPRODUCE.md",
+      "sha256": "d4c7fd76b27bdb0efe4a163a433624a4593f1d345053162660f12d3c68d8d9a4"
+    },
+    {
+      "bytes": 4219,
+      "git_blob": "b81bd1f67d28f9c623a5ef2b121f8739c22da350",
+      "path": "evidence/task3/REVIEW_FIX_TEST_OUTPUT.txt",
+      "sha256": "652964047d423a5459fa999c47fcd44ea0155c6b5d8fa8caa5ec7f9c0fa53fce"
+    },
+    {
+      "bytes": 3418,
+      "git_blob": "047fffb88e2b25949cc240a3241fbe4a5b2800ef",
+      "path": "evidence/task3/TEST_OUTPUT.txt",
+      "sha256": "264441d70d284b263ed030a5ade70609fabe934bf3338ee736099357cf22d8d0"
+    },
+    {
+      "bytes": 1008,
+      "git_blob": "c39684e3a8a107a50b4657528948eceea6f6c62d",
+      "path": "evidence/task4/CORRECTION_AMBIGUITY_TRANSCRIPT.txt",
+      "sha256": "7b5ffb5c9b7d655c0a36014f04ded7ab1bbb3846f8bc90f9e0db331340bb176e"
+    },
+    {
+      "bytes": 2021,
+      "git_blob": "3701535f2fe258027216cf33711907f49b78befd",
+      "path": "evidence/task4/CORRECTION_LAST_INTENT_TRANSCRIPT.txt",
+      "sha256": "da179dab8c0dd7179887605eaaf6e0163ff672336f88bf3e0e14dcb3cdbcb340"
+    },
+    {
+      "bytes": 1206,
+      "git_blob": "336dd7aabcfb9c095981efd8de56af2503fb4a43",
+      "path": "evidence/task4/CORRECTION_METADATA.json",
+      "sha256": "43912704a7fd2ef681b7e77f3d174462493af69465af2fb6a50b9c7e688ffa8a"
+    },
+    {
+      "bytes": 834,
+      "git_blob": "6370c385a0f54c340c18a7cd73b67d03fef7c868",
+      "path": "evidence/task4/CORRECTION_NOTES.md",
+      "sha256": "6115437de247526e60d2a31e6459f2a778407281723ad4e9e1350f410782fb1e"
+    },
+    {
+      "bytes": 692,
+      "git_blob": "adc7602de41c478ec21b2424743bb3f3186191c5",
+      "path": "evidence/task4/CORRECTION_REPRODUCE.md",
+      "sha256": "c9483ba6d1e33add97e16a8e11fb104ae5e6589f9f3d6d821c6f9d030fb0d317"
+    },
+    {
+      "bytes": 1162,
+      "git_blob": "966ba0f8349c858d87132c1905604ac8b55433bf",
+      "path": "evidence/task4/CORRECTION_TASK4_FALLBACK_TRANSCRIPT.txt",
+      "sha256": "503fd28c309ab2a8edc3cf4e8589e22917483f3f65fa65c3dfa9c13366cf9d0a"
+    },
+    {
+      "bytes": 615,
+      "git_blob": "7da5d20d6f3b275e49d1efcba4e34ca6482f93d0",
+      "path": "evidence/task4/CORRECTION_TEST_EXECUTION.md",
+      "sha256": "ef54e0aca8f21422982e04673598367cb5ff93ed50279a18f507ef6f1f44a4cc"
+    },
+    {
+      "bytes": 1021,
+      "git_blob": "873c94cd871a040fc216fee4dbbdc84cc2920ac6",
+      "path": "evidence/task4/EOF_AND_INTERRUPT_TRANSCRIPTS.txt",
+      "sha256": "8fecc5af815a35d5f041816f255b23fb69539d00e5f56a5f6d6849e9bcb73d50"
+    },
+    {
+      "bytes": 658,
+      "git_blob": "402765700f7e32c1652cda03a3cac3c773a2270f",
+      "path": "evidence/task4/FALLBACK_TRANSCRIPT.txt",
+      "sha256": "e7f3938e7cd8bb084d117ee62dc25c0d819166a25040a936e4bc0eff2b2b8add"
+    },
+    {
+      "bytes": 1258,
+      "git_blob": "8aa454cd34fd5e48c9f7a9939616a0ae9d3ed337",
+      "path": "evidence/task4/INTENT_COVERAGE.md",
+      "sha256": "3631815541ac644c78eebe13adfb50c57e22cfc8ac304a07a1466428d37decee"
+    },
+    {
+      "bytes": 1883,
+      "git_blob": "851ea4c53d773b2544877435c7d8c5ac4a82b6df",
+      "path": "evidence/task4/MAIN_TRANSCRIPT.txt",
+      "sha256": "6869f56d4f1cd2ad9133d8697a29e0b977cf0d117961e0f23205afb0af0b050b"
+    },
+    {
+      "bytes": 1367,
+      "git_blob": "ed056eb68aebf7c90dbc931f5b0014307a9f9a24",
+      "path": "evidence/task4/METADATA.json",
+      "sha256": "d9f7cec79614ffb3c199db180c49a841d1b78d603c43d496103fdea6a884c2c2"
+    },
+    {
+      "bytes": 689,
+      "git_blob": "8e9dabfb4d2b073e700105b2b7bb768cacdd932f",
+      "path": "evidence/task4/REPRODUCE.md",
+      "sha256": "cfeeaef66bb6be465d2455a0c8e3251ed0d72ab31161881cd7e86fe3b2b62446"
+    },
+    {
+      "bytes": 998,
+      "git_blob": "a1e81f8c352ee69fe8d0fef0670ed6d94e3f83cd",
+      "path": "evidence/task4/STATE_TRANSITIONS.md",
+      "sha256": "920216fbf7a0bd2f648ca91a95d3045fd1952161551888f95ee9eba06bd72187"
+    },
+    {
+      "bytes": 581,
+      "git_blob": "0f489518bc9d04e4da6ffc082e89435530a2a658",
+      "path": "evidence/task4/TEST_EXECUTION.md",
+      "sha256": "37369734818409d2ce262ba313a9b7b9379467a7e4f521a00e88f3aba359a1b8"
+    },
+    {
+      "bytes": 27,
+      "git_blob": "d5271e23c2be39c718b23230e54e16733efe3435",
+      "path": "fixtures/task3/.metadata",
+      "sha256": "79e40aa0c98d2ca0bb78fdd5da9e5d5aab4f26b2aa1abb5bea79562d74bbde62"
+    },
+    {
+      "bytes": 77,
+      "git_blob": "7668e7ce6338ae4e0f4864f2b8bbd7edc4b6e7ec",
+      "path": "fixtures/task3/archive.tar.GZ",
+      "sha256": "0be48719e52a392c1fbd311796c33a84529edcda16f74fd3a0c242dac3508c45"
+    },
+    {
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "fixtures/task3/empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 201,
+      "git_blob": "2646e9e1038c31ea92fafac40c991cf7e5015929",
+      "path": "fixtures/task3/inbound.LOG",
+      "sha256": "b11024f24c89fa8ed797050f8fd5abd7e2d3e1f0aeef4d3d9deb798042c0cad0"
+    },
+    {
+      "bytes": 204,
+      "git_blob": "63549a71f7fbe752f998611c426a3253b69b9033",
+      "path": "fixtures/task3/notes.txt",
+      "sha256": "b5a577cbbae0f0154277d2940d30b8c9c4a816f9e12fb52b6fd1716a5e9731f6"
+    },
+    {
+      "bytes": 36,
+      "git_blob": "05d44d06a24d131947e5bc09004431423659183f",
+      "path": "fixtures/task3/readme",
+      "sha256": "5dbd8311b5bfe1ef851edd00e3df06a1cb38c3264b54ea682b2dde5ee05e9086"
+    },
+    {
+      "bytes": 26,
+      "git_blob": "b2976d87b6adb415d4adb4649fb93edb330d7b20",
+      "path": "fixtures/task3/report.TXT",
+      "sha256": "28d9d384561f6b3db37aa3726108236cacbbee6e0d1749eb32dc77cdd17f2281"
+    },
+    {
+      "bytes": 74,
+      "git_blob": "dc3e5fd4e66fa51685180b2c15df225b6c34e5b9",
+      "path": "fixtures/task3/txt/notes.txt",
+      "sha256": "750167e2808e8eb648441925db5d7cff427d3502fa83e858b699226dfc9d2488"
+    },
+    {
+      "bytes": 60,
+      "git_blob": "623b2a6532a1b7c4007032ae78415e313aa5763b",
+      "path": "internship/__init__.py",
+      "sha256": "efd185022b40707129906e1a0440d7b06e070257fa290a66515f2c25f161fe9d"
+    },
+    {
+      "bytes": 5567,
+      "git_blob": "d9cf211b584435109d67a82d92e8cf4d06cc2ba7",
+      "path": "internship/task2.py",
+      "sha256": "14d061e0b15918bc2511e64fc484c788cac507005c30e8f9ea3407c1fb0f77f6"
+    },
+    {
+      "bytes": 18114,
+      "git_blob": "44f603d72110f66c3d31cb760dbea893fd71d66d",
+      "path": "internship/task3.py",
+      "sha256": "43f912a9bbe26712f7332ffa209bba41da53e88736f16df8ffce560d8fbf48eb"
+    },
+    {
+      "bytes": 19110,
+      "git_blob": "e9e2256936b4dc3315de6bbb6107a9e7a475f2b2",
+      "path": "internship/task4.py",
+      "sha256": "b7f3e5cd1d1cf6acf4f5daf79dc3e84820e7901eefc72856a81817d58680f9c3"
+    },
+    {
+      "bytes": 7540,
+      "git_blob": "f2427f1d43e76d4b4cb5dc0ad0a16e1c9da434a5",
+      "path": "planning/ARCHITECTURE.md",
+      "sha256": "b381d18237374878adacf37a0b90e9df206b4839fd323c84f819aaf63e0eac17"
+    },
+    {
+      "bytes": 2338,
+      "git_blob": "a1e5d77c8a933bd9a551b98b1c5abcc23d44bb46",
+      "path": "planning/CLOUD_ENVIRONMENT.md",
+      "sha256": "ccf1ee168f16b3420b12cfefd9c7c3a424e442ef73bcfa91ec001b5d3f6702bc"
+    },
+    {
+      "bytes": 5193,
+      "git_blob": "5e6cdb77abb387857cfd931cc1e4d4c893e6900c",
+      "path": "planning/DIGITAL_MARKETING_REQUIREMENTS.md",
+      "sha256": "240cdcec416905dd253cbb4e6771b79c6dd81626e7c702c6b7c1758cb7df57da"
+    },
+    {
+      "bytes": 4024,
+      "git_blob": "b144cd5a07c33e1b50b44979e827d3636d0e21bf",
+      "path": "planning/DIGITAL_MARKETING_RESEARCH_PLAN.md",
+      "sha256": "e04c80444392fa19869fcdcfc9989226b455f540adeae66c9ebc8cf16f0e1307"
+    },
+    {
+      "bytes": 2195,
+      "git_blob": "4bf5f592cc75645207b62c721814cddebb54c119",
+      "path": "planning/DUAL_TRACK_MASTER_PLAN.md",
+      "sha256": "1eb2550bab0156fccaad77157e2f4272aa0f5b1b5a1cd6921488f8ab8abc7884"
+    },
+    {
+      "bytes": 3676,
+      "git_blob": "b4c9bd391f794ce3a48a7168d7e6abf4e87588c9",
+      "path": "planning/DUAL_TRACK_STATUS.md",
+      "sha256": "fd549e7cccd2bb98f0a38892ead8b43dd4859879e8c31eab9f3edb83dcf6c638"
+    },
+    {
+      "bytes": 1695,
+      "git_blob": "ab200b298a269b5bb088de0db83893023c62be7d",
+      "path": "planning/DUAL_TRACK_SUBMISSION_STRATEGY.md",
+      "sha256": "9daf2e96ccd793bfe11f6053ccbc51f2a2fef613c5667b194fd218cd7f31a0d8"
+    },
+    {
+      "bytes": 2482,
+      "git_blob": "585f451d0627d87960391423fe8b72c0af72ff4b",
+      "path": "planning/FINAL_SUBMISSION_READINESS.md",
+      "sha256": "f1dda4cfb4c2d509f98ca7f555df241b0c1672002bf99b93f38acc7c5db28cf3"
+    },
+    {
+      "bytes": 3208,
+      "git_blob": "0e4b27468379926e8f5e652d80908cc63ac04b5d",
+      "path": "planning/MASTER_PLAN.md",
+      "sha256": "51f7cf00330b76d75328dca516dbebb76d0c190262701084378d5ae7ba2d26a1"
+    },
+    {
+      "bytes": 2169,
+      "git_blob": "b2eb7efdb48efe5bb9db660ca52f4c66ed9fa152",
+      "path": "planning/PYTHON_ENHANCEMENT_ROADMAP.md",
+      "sha256": "a7422900f6d494b4359ebc7a1c7d2402ba7603c7f71c7131ff69efab73870801"
+    },
+    {
+      "bytes": 6119,
+      "git_blob": "57595cf6d1809c9722e7c602185338f86efded91",
+      "path": "planning/REQUIREMENTS_MATRIX.md",
+      "sha256": "e1e204e1eb15478b8cd2b3be54960da92c0526cc93ec530d512661b00406fc6a"
+    },
+    {
+      "bytes": 8593,
+      "git_blob": "216e5b28c4c41afcc4c9462b6d5b3cccebe40f2b",
+      "path": "planning/STATUS.md",
+      "sha256": "7a6667737668fd994c65458ef347cb2be0efc5ee996131ed83a4b2328dc448e3"
+    },
+    {
+      "bytes": 2440,
+      "git_blob": "65adcd53dd7fe34ed9a3fdacccdea9bda05910dd",
+      "path": "planning/SUBMISSION_CHECKLIST.md",
+      "sha256": "4391100d3b9a8d6e79c948d7d64d30cb3a7d0e616f1e994668bd2332670e6f06"
+    },
+    {
+      "bytes": 7143,
+      "git_blob": "a228f51ee4f8eafb456ebd78dd7a10ade698626c",
+      "path": "planning/TEST_STRATEGY.md",
+      "sha256": "ac5936b4246784452c7dd961e603b290b1dd4dfbe8925f7053f4da1367302000"
+    },
+    {
+      "bytes": 657,
+      "git_blob": "10c1da904d9645c4d383b115ca76ffe1a6f67799",
+      "path": "python/README.md",
+      "sha256": "fea7e7a36ad1f937735727eec66f2434e3bfcfdbf76aa5b3eef8b38b76b423df"
+    },
+    {
+      "bytes": 1,
+      "git_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "path": "python/deliverables/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1,
+      "git_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "path": "python/evidence/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 282,
+      "git_blob": "a35453e3bf2e3d88fde9eddc2f8933f3ab0a0a6e",
+      "path": "python/planning/README.md",
+      "sha256": "963bf8c5461539cff7bf44713331798a7f68ff00f19de9d89aae14a39b3ba030"
+    },
+    {
+      "bytes": 5380,
+      "git_blob": "a03f4ec3ed3dc089449fd31ac17eaedfa523c6e7",
+      "path": "tests/test_task2.py",
+      "sha256": "2eee40c764bffe89f4fed904e58f3811820cf5dd980f3a5d94ff424bda023d9d"
+    },
+    {
+      "bytes": 15103,
+      "git_blob": "797aef180ec3de65c5bf97c14e4225e38da804db",
+      "path": "tests/test_task3.py",
+      "sha256": "68f603934ced91d8782c13255be9422bda6540a443606228f1632366adb77934"
+    },
+    {
+      "bytes": 14211,
+      "git_blob": "00d6ed5f13399572b543f762de89368da527de67",
+      "path": "tests/test_task4.py",
+      "sha256": "d977f41f4c8221da06dfee99cb6cde142792ce9ff0a67787e1940ec631f9048f"
+    },
+    {
+      "bytes": 15950,
+      "git_blob": "3fe4a7b2f66517d538cf08ae055e504e2056adf9",
+      "path": "tools/collect_phase5_evidence.py",
+      "sha256": "1b8a6b3018d23c943c6d9a5c4f807dc7de0a74fdf8a9f33a5869922e6d1bc58e"
+    },
+    {
+      "bytes": 28060,
+      "git_blob": "dc7afa9f0f2cc475dfca533e6f4d498d3c260cd8",
+      "path": "tools/generate_report.py",
+      "sha256": "51fa169bc757f147aba832da87e1943c980237990a262456f902d812a8707667"
+    },
+    {
+      "bytes": 9632,
+      "git_blob": "0681f08023094edd913c6776feaaec3cfc3ef2a4",
+      "path": "tools/review_final_submission_pdfs.py",
+      "sha256": "e0730f4e5829419ccfdf58b1c6ccb047264b4c8965c0b44263370008863dc3e7"
+    },
+    {
+      "bytes": 4301,
+      "git_blob": "4a59f1ee9598b2c3d71bc3e46e440ef29cc78d02",
+      "path": "tools/verify_pdf.py",
+      "sha256": "0b20121797f5c94338caabcec1deb60fa04c9c1ca45e6179cff38c0fd91d9d6e"
+    }
+  ],
+  "working_tree_porcelain_before_audit": ""
+}

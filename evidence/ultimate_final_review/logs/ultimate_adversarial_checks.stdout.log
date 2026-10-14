@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "campaign_and_strategy_metrics": "Campaign duplicate events and Strategy zero-denominator financial data are rejected.",
+    "email_workflow_state": "Consent withdrawal suppresses drafts and the rolling frequency cap defers without advancing.",
+    "fibonacci_input_validation": "Fibonacci and benchmark reject malformed, negative, and zero-denominator-style inputs.",
+    "pdf_integrity_and_navigation": "All source streams survive assembly/candidate navigation; candidates retain text and Marketing has 11 verified URI annotations.",
+    "task3_filesystem_safety": "Task 3 rejects traversal and unsafe moves and neutralizes formula-leading CSV cells."
+  },
+  "outcome": "passed",
+  "protected_hashes_unchanged": true
+}

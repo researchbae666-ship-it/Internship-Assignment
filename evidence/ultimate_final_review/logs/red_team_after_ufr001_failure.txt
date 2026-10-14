@@ -1,0 +1,13 @@
+Command: python tools/ultimate_red_team_checks.py
+Working directory: /workspace/Internship-Assignment
+Result: exit 1 (after UFR-001 remediation and before UFR-002 remediation)
+
+Traceback (most recent call last):
+  ...
+  File "tools/ultimate_red_team_checks.py", line 96, in check_campaign_and_strategy
+    raise AssertionError("campaign validator accepted a duplicate action")
+AssertionError: campaign validator accepted a duplicate action
+
+Reproduction deep-copied the first synthetic planned campaign action and
+appended it to the in-memory campaign fixture. No approved campaign data or
+deliverable was changed during the failing check.

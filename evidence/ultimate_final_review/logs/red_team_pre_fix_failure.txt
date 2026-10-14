@@ -1,0 +1,13 @@
+Command: python tools/ultimate_red_team_checks.py
+Working directory: /workspace/Internship-Assignment
+Result: exit 1 (before UFR-001 remediation)
+
+Traceback (most recent call last):
+  ...
+  File "tools/ultimate_red_team_checks.py", line 83, in check_task3_paths
+    raise AssertionError("Task 3 traversal move escaped its isolated workspace")
+AssertionError: Task 3 traversal move escaped its isolated workspace
+
+Reproduction used only a temporary child of artifacts/task3 and the synthetic
+move PlannedMove("input.txt", "../escape.txt"). The synthetic escaped file was
+removed before applying the remediation.

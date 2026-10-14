@@ -1,0 +1,573 @@
+{
+  "approved_pages_rendered_and_individually_reviewed": 52,
+  "candidate_pages_freshly_rendered": 52,
+  "candidate_vs_approved_pixel_equal_pairs": 52,
+  "candidate_vs_approved_pixel_pair_count": 52,
+  "dpi": 180,
+  "manual_targeted_candidate_review": {
+    "marketing_pages": [
+      6,
+      27,
+      29,
+      32
+    ],
+    "python_pages": [
+      1,
+      3,
+      6,
+      9
+    ],
+    "result": "pass; navigation additions did not visibly alter source content"
+  },
+  "renderer": "pdftoppm",
+  "schema": "progree-ultimate-render-review-v1",
+  "temporary_render_directory": "/tmp/progree-ultimate-final-render",
+  "tracks": {
+    "marketing": {
+      "approved_pdf": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_COMBINED_REVIEW.pdf",
+      "candidate_pages_pixel_equal_to_approved": true,
+      "candidate_pdf": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "dpi": 180,
+      "page_count": 38,
+      "pages": [
+        {
+          "candidate_raster_sha256": "89254a168bc60266e1062efc947212dae0e0873686c8b1e441c06b23c815cb56",
+          "original_raster_sha256": "89254a168bc60266e1062efc947212dae0e0873686c8b1e441c06b23c815cb56",
+          "page": 1,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "4e3a7910b768111e0e1e85b7fd6ea604c50225f9b6475a2e329bf0cddd775aa3",
+          "original_raster_sha256": "4e3a7910b768111e0e1e85b7fd6ea604c50225f9b6475a2e329bf0cddd775aa3",
+          "page": 2,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "c18378d517bb82f01bf29e3de5065e9a58a79f9cf4bb0ddd697f57adbf9712bb",
+          "original_raster_sha256": "c18378d517bb82f01bf29e3de5065e9a58a79f9cf4bb0ddd697f57adbf9712bb",
+          "page": 3,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "3a7b05cb1ca55963cf43c2c4470267987b4cd8140f38b5f86599f6a3e599ef74",
+          "original_raster_sha256": "3a7b05cb1ca55963cf43c2c4470267987b4cd8140f38b5f86599f6a3e599ef74",
+          "page": 4,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "5127e877c86dcdd7b06be432a492da05bc706fae627771c740d8a181145edd5f",
+          "original_raster_sha256": "5127e877c86dcdd7b06be432a492da05bc706fae627771c740d8a181145edd5f",
+          "page": 5,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "a5051fa4134253c783cf8fef847e18286fa32b68e011af4f35f26e2d741fb1e6",
+          "original_raster_sha256": "a5051fa4134253c783cf8fef847e18286fa32b68e011af4f35f26e2d741fb1e6",
+          "page": 6,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "72f4c3c7072d15b874dea4112caf3dcbceb4f6287c3e1936bb51dce344e8749e",
+          "original_raster_sha256": "72f4c3c7072d15b874dea4112caf3dcbceb4f6287c3e1936bb51dce344e8749e",
+          "page": 7,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "15524067819798ed677277e36ad79fe3b9fd64da206148fe2e29ca1e37585175",
+          "original_raster_sha256": "15524067819798ed677277e36ad79fe3b9fd64da206148fe2e29ca1e37585175",
+          "page": 8,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "8a18255ba57a57c1f636fcf0abec619d13db46a75c58f0c29dfd4e251e1c30c3",
+          "original_raster_sha256": "8a18255ba57a57c1f636fcf0abec619d13db46a75c58f0c29dfd4e251e1c30c3",
+          "page": 9,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "205aeb99e33fa7346487bcab8513d802002960129b5b8fcb10b87259e81f757d",
+          "original_raster_sha256": "205aeb99e33fa7346487bcab8513d802002960129b5b8fcb10b87259e81f757d",
+          "page": 10,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "39bd29dee67c9f2b11536cc1523aa6f148de15791a1879b74640fdb7473fac79",
+          "original_raster_sha256": "39bd29dee67c9f2b11536cc1523aa6f148de15791a1879b74640fdb7473fac79",
+          "page": 11,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "46de9542a6a7815a2b8002549ed7b17b58160d001155c71fb588fef238bf2e2b",
+          "original_raster_sha256": "46de9542a6a7815a2b8002549ed7b17b58160d001155c71fb588fef238bf2e2b",
+          "page": 12,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "842d4729b92f7a667d014771acc5745dce928b5a58e031b40a9d7910b27e2ccf",
+          "original_raster_sha256": "842d4729b92f7a667d014771acc5745dce928b5a58e031b40a9d7910b27e2ccf",
+          "page": 13,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "b73dd018482a8148d114f4012beaa9078a5a28727cf116a6f8dff987e5cf0f0e",
+          "original_raster_sha256": "b73dd018482a8148d114f4012beaa9078a5a28727cf116a6f8dff987e5cf0f0e",
+          "page": 14,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "d539531707d8e6fe0f4b3ff6d38b5953d0adec368943cb842563a42a03e93a56",
+          "original_raster_sha256": "d539531707d8e6fe0f4b3ff6d38b5953d0adec368943cb842563a42a03e93a56",
+          "page": 15,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "25bbe876eeaf14155e9ddc507e646682a48145b053f1f6131df64445fbc5ce83",
+          "original_raster_sha256": "25bbe876eeaf14155e9ddc507e646682a48145b053f1f6131df64445fbc5ce83",
+          "page": 16,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "20744f3101a109d2c3a5621b08810a5025d57c1d568d63d0ac53ba4354581e96",
+          "original_raster_sha256": "20744f3101a109d2c3a5621b08810a5025d57c1d568d63d0ac53ba4354581e96",
+          "page": 17,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "fc3f8d0fb46934fdc9a2271a44afb6658902cead2c3c3191034935b4f626fd90",
+          "original_raster_sha256": "fc3f8d0fb46934fdc9a2271a44afb6658902cead2c3c3191034935b4f626fd90",
+          "page": 18,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "162c6c41d8a297331dd53663f304a9746214f5b83c70855790265bce2455edbc",
+          "original_raster_sha256": "162c6c41d8a297331dd53663f304a9746214f5b83c70855790265bce2455edbc",
+          "page": 19,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "057f9e57e084891833e5d4cf096cb6f729dcd9e0e8339f8da6d43ce50cd68e77",
+          "original_raster_sha256": "057f9e57e084891833e5d4cf096cb6f729dcd9e0e8339f8da6d43ce50cd68e77",
+          "page": 20,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "6f44272da63c8712e44eafe84470d23edbb5de8ff8cafc09d86ad070da3750cd",
+          "original_raster_sha256": "6f44272da63c8712e44eafe84470d23edbb5de8ff8cafc09d86ad070da3750cd",
+          "page": 21,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "01a990a5c7850a8060c6f00d7375e174c2b46f0343ce41b6e16b349e86db24e3",
+          "original_raster_sha256": "01a990a5c7850a8060c6f00d7375e174c2b46f0343ce41b6e16b349e86db24e3",
+          "page": 22,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "2b8a7a509bbe8714ec54e442f7843577b58604738eb2a64d819a032e171acc11",
+          "original_raster_sha256": "2b8a7a509bbe8714ec54e442f7843577b58604738eb2a64d819a032e171acc11",
+          "page": 23,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "b58240c53a7451052392436bcb6e5e2234f0a0ba8c9f384b6fc55da23311a6a1",
+          "original_raster_sha256": "b58240c53a7451052392436bcb6e5e2234f0a0ba8c9f384b6fc55da23311a6a1",
+          "page": 24,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "a9d75a988fe5a9fa4d813c1c901595f0165d41a3d903a13ac492bebd77ebbb80",
+          "original_raster_sha256": "a9d75a988fe5a9fa4d813c1c901595f0165d41a3d903a13ac492bebd77ebbb80",
+          "page": 25,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "91c58d2c33eeeef20de3c32d24c00a469482380ed7180afd96e83cb66b631fcd",
+          "original_raster_sha256": "91c58d2c33eeeef20de3c32d24c00a469482380ed7180afd96e83cb66b631fcd",
+          "page": 26,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "cf76bc020c7665984ba0ba60983d64bbf77d4de6249a63d5f73fb85917c0e14b",
+          "original_raster_sha256": "cf76bc020c7665984ba0ba60983d64bbf77d4de6249a63d5f73fb85917c0e14b",
+          "page": 27,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "0e8717726cacc408fc8b49bba99f6fe839c7e95e839c05fe3356499586a44bf6",
+          "original_raster_sha256": "0e8717726cacc408fc8b49bba99f6fe839c7e95e839c05fe3356499586a44bf6",
+          "page": 28,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "d58abf67449dde58174b58cfdbf109d785b8e7a00db50a7b19dd2d36d49d99ad",
+          "original_raster_sha256": "d58abf67449dde58174b58cfdbf109d785b8e7a00db50a7b19dd2d36d49d99ad",
+          "page": 29,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "8ae0c6aa5b158e085be7f8bae726763a78f793a245bae2b726c057b3be416fc8",
+          "original_raster_sha256": "8ae0c6aa5b158e085be7f8bae726763a78f793a245bae2b726c057b3be416fc8",
+          "page": 30,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "b2f6743f4c0b95d0881ea2a1fd558bbe8b667896eee7ad1840085a4cacc36cb2",
+          "original_raster_sha256": "b2f6743f4c0b95d0881ea2a1fd558bbe8b667896eee7ad1840085a4cacc36cb2",
+          "page": 31,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "b098a620704158abdef714109067062a39c2302ae3b4ad3c0198d955267812c3",
+          "original_raster_sha256": "b098a620704158abdef714109067062a39c2302ae3b4ad3c0198d955267812c3",
+          "page": 32,
+          "pixels": [
+            2105,
+            1489
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "a95805f7214cd9f30f2c24063628d552cb5bae69ffd700d5bd30418071e89a03",
+          "original_raster_sha256": "a95805f7214cd9f30f2c24063628d552cb5bae69ffd700d5bd30418071e89a03",
+          "page": 33,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "5996190a566eb62610f4f67fc6ce4763026b9943982cf59d4646ca7ce96e2c5d",
+          "original_raster_sha256": "5996190a566eb62610f4f67fc6ce4763026b9943982cf59d4646ca7ce96e2c5d",
+          "page": 34,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "c8b53072efa2eaab9516a696e21030edfc89b13f89f10458b8f9a4669add2463",
+          "original_raster_sha256": "c8b53072efa2eaab9516a696e21030edfc89b13f89f10458b8f9a4669add2463",
+          "page": 35,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "8d664b3710c080855e6c0e54698bdeb5c951da0fe3536928a11309d5f729c92d",
+          "original_raster_sha256": "8d664b3710c080855e6c0e54698bdeb5c951da0fe3536928a11309d5f729c92d",
+          "page": 36,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "a23785c862b2f83be17d3660dd9e41e5d3d86108714b6b8f9716e9057ee0876b",
+          "original_raster_sha256": "a23785c862b2f83be17d3660dd9e41e5d3d86108714b6b8f9716e9057ee0876b",
+          "page": 37,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "573bd05d871c04ba981f3a1c39cc4e7f5f45a5d54c8cfaa3a13c02a8af92eed8",
+          "original_raster_sha256": "573bd05d871c04ba981f3a1c39cc4e7f5f45a5d54c8cfaa3a13c02a8af92eed8",
+          "page": 38,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        }
+      ]
+    },
+    "python": {
+      "approved_pdf": "deliverables/Progree_Python_Tasks_2_3_4.pdf",
+      "candidate_pages_pixel_equal_to_approved": true,
+      "candidate_pdf": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "dpi": 180,
+      "page_count": 14,
+      "pages": [
+        {
+          "candidate_raster_sha256": "a19fbde34695bca8af396d56ce00c1c091a9c19c4a44cc3411e6682f738bbb85",
+          "original_raster_sha256": "a19fbde34695bca8af396d56ce00c1c091a9c19c4a44cc3411e6682f738bbb85",
+          "page": 1,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "3aed9586f7c2cfe18419181f90683d532656a0c29a5a0531b3ec131abf53ad28",
+          "original_raster_sha256": "3aed9586f7c2cfe18419181f90683d532656a0c29a5a0531b3ec131abf53ad28",
+          "page": 2,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "2504d0b3ff6ebca23e76131be3927422e97187d61163bd4deadb71ba9a3abba7",
+          "original_raster_sha256": "2504d0b3ff6ebca23e76131be3927422e97187d61163bd4deadb71ba9a3abba7",
+          "page": 3,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "0d0fae7080f51906b5bfa51549985d89c32bf6eb5c03bf29be3f32174fb73d28",
+          "original_raster_sha256": "0d0fae7080f51906b5bfa51549985d89c32bf6eb5c03bf29be3f32174fb73d28",
+          "page": 4,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "6750d87075eb61cc8eb77e9dba781116bdfc06bfdc90de028b95693231728e68",
+          "original_raster_sha256": "6750d87075eb61cc8eb77e9dba781116bdfc06bfdc90de028b95693231728e68",
+          "page": 5,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "f72e08e396c67763a5c65f0cd5745f7ad887841055382ed316cb35d707237e60",
+          "original_raster_sha256": "f72e08e396c67763a5c65f0cd5745f7ad887841055382ed316cb35d707237e60",
+          "page": 6,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "a179a19517ae1f0bd33b9999d8dc3fd18da205480f4d7515ac1270444a36f91f",
+          "original_raster_sha256": "a179a19517ae1f0bd33b9999d8dc3fd18da205480f4d7515ac1270444a36f91f",
+          "page": 7,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "dca315ecefabfd4c38d90fb25d16aa96b78b647b0ea7c42ca65d63d2c5e516d9",
+          "original_raster_sha256": "dca315ecefabfd4c38d90fb25d16aa96b78b647b0ea7c42ca65d63d2c5e516d9",
+          "page": 8,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "5b1dd7aa610d8fae98ae84353e3e8d611fdd22811a9265f0a65f881238838ad8",
+          "original_raster_sha256": "5b1dd7aa610d8fae98ae84353e3e8d611fdd22811a9265f0a65f881238838ad8",
+          "page": 9,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "c88a8312f097b7f2ce576c203cba448fb84e0d75e885f20c027a326c2104bdeb",
+          "original_raster_sha256": "c88a8312f097b7f2ce576c203cba448fb84e0d75e885f20c027a326c2104bdeb",
+          "page": 10,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "8265bab49a3116c8f9a055e40a94346c18bff9fb4a1b8b23a9ff4f1753d30e9e",
+          "original_raster_sha256": "8265bab49a3116c8f9a055e40a94346c18bff9fb4a1b8b23a9ff4f1753d30e9e",
+          "page": 11,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "bb98ccdc5b94a068868ff7b06a3ef5dae81fc4aec0e84fc328c318aab5fac8ec",
+          "original_raster_sha256": "bb98ccdc5b94a068868ff7b06a3ef5dae81fc4aec0e84fc328c318aab5fac8ec",
+          "page": 12,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "81f76bd62eec47ac8b1a59fabfd08ea68e2e9d7c0ef2213dbfceaeacc04a4493",
+          "original_raster_sha256": "81f76bd62eec47ac8b1a59fabfd08ea68e2e9d7c0ef2213dbfceaeacc04a4493",
+          "page": 13,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        },
+        {
+          "candidate_raster_sha256": "0d9ac4ae03a80255318875da59db162cacb0de7d05d46588d5b28ad2448bf1b6",
+          "original_raster_sha256": "0d9ac4ae03a80255318875da59db162cacb0de7d05d46588d5b28ad2448bf1b6",
+          "page": 14,
+          "pixels": [
+            1489,
+            2105
+          ],
+          "raster_equal": true
+        }
+      ]
+    }
+  },
+  "visual_review": {
+    "clipping_or_overlap": [],
+    "contrast_or_margin_failures": [],
+    "corrupt_glyphs": [],
+    "mixed_orientation_transitions": "Marketing portrait/landscape transitions render cleanly; page dimensions are retained.",
+    "result": "pass",
+    "unexpected_blank_pages": []
+  }
+}

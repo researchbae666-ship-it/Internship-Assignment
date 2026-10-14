@@ -1,0 +1,13 @@
+test_arithmetic_and_vendor_rates (test_secondary.SecondaryTests.test_arithmetic_and_vendor_rates) ... ok
+test_date_mismatch_and_duplicate_brands_rejected (test_secondary.SecondaryTests.test_date_mismatch_and_duplicate_brands_rejected) ... ok
+test_false_first_party_provenance_and_cadence_rejected (test_secondary.SecondaryTests.test_false_first_party_provenance_and_cadence_rejected) ... ok
+test_missing_invalid_and_bool_values_rejected (test_secondary.SecondaryTests.test_missing_invalid_and_bool_values_rejected) ... ok
+test_numbers_must_match_supplied_note (test_secondary.SecondaryTests.test_numbers_must_match_supplied_note) ... ok
+test_pdf_matches_all_metrics_and_limitations (test_secondary.SecondaryTests.test_pdf_matches_all_metrics_and_limitations) ... ok
+test_period_values_remain_null (test_secondary.SecondaryTests.test_period_values_remain_null) ... ok
+test_wrong_account_or_source_rejected (test_secondary.SecondaryTests.test_wrong_account_or_source_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.059s
+
+OK

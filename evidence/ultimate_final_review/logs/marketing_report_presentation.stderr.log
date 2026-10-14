@@ -1,0 +1,11 @@
+test_dark_header_has_white_bold_paragraphs (test_task2_recovery_report.RecoveryReportTests.test_dark_header_has_white_bold_paragraphs) ... ok
+test_four_page_draft_retains_claims_and_missing_metrics (test_task2_recovery_report.RecoveryReportTests.test_four_page_draft_retains_claims_and_missing_metrics) ... ok
+test_invalid_source_claim_prevents_pdf_output (test_task2_recovery_report.RecoveryReportTests.test_invalid_source_claim_prevents_pdf_output) ... ok
+test_header_cells_use_explicit_white_bold_paragraph_style (test_generate_task3_report.TablePresentationTests.test_header_cells_use_explicit_white_bold_paragraph_style) ... ok
+test_dark_header_uses_explicit_white_bold_paragraph_style (test_generate_task4_report.ReportTableTests.test_dark_header_uses_explicit_white_bold_paragraph_style) ... ok
+test_report_and_appendix_match_machine_readable_content (test_generate_task4_report.ReportTableTests.test_report_and_appendix_match_machine_readable_content) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.173s
+
+OK

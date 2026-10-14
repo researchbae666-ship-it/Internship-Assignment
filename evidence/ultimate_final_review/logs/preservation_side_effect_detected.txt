@@ -1,0 +1,15 @@
+Reproduction: run the initial version of python tools/ultimate_red_team_checks.py
+while generate_combined_review_pdf.MANIFEST still points to the historical QA
+location. The isolated assembly redirected OUTPUT only.
+
+Observed historical-manifest diff before restoration:
+
+--- a/digital_marketing/evidence/final_submission/manifest.json
++++ b/digital_marketing/evidence/final_submission/manifest.json
+@@
+-  "output": "deliverables/Progree_Digital_Marketing_Tasks_2_3_4_COMBINED_REVIEW.pdf",
++  "output": "evidence/.ultimate-combined-assembly-688kcbv3/combined.pdf",
+
+No PDF was changed. The historical manifest was restored to its baseline hash
+before any subsequent work. The harness now redirects both OUTPUT and MANIFEST
+to the temporary directory and is covered by the final full regression run.

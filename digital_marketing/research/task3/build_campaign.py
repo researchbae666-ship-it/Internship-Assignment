@@ -327,6 +327,12 @@ def validate(campaign: dict[str, Any]) -> list[str]:
             errors.append(f"Action {index} is missing: {sorted(missing)}")
         if item["day"] not in range(1, 31):
             errors.append(f"Action {index} has an invalid day.")
+    action_ids = [item.get("action_id") for item in actions]
+    if len(action_ids) != len(set(action_ids)):
+        errors.append("Campaign contains duplicate action IDs.")
+    schedule_slots = [(item.get("day"), item.get("platform")) for item in actions]
+    if len(schedule_slots) != len(set(schedule_slots)):
+        errors.append("Campaign contains duplicate platform/day actions.")
     for index, item in enumerate(actions, start=1):
         keyword = item.get("keyword_strategy", {})
         if not keyword.get("primary_keyword") or not keyword.get("hashtags_or_video_tags"):

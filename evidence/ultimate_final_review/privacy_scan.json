@@ -1,0 +1,364 @@
+{
+  "additional_untracked_files_scanned": 23,
+  "findings": [
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 3,
+      "path": "AGENTS.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 1,
+      "path": "Digital Marketing & Branding Tasks & Instructions.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 1,
+      "path": "Python Programming Tasks & Instructions.pdf"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "README.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "Text Message 1.md"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 2,
+      "path": "deliverables/Progree_Python_Tasks_2_3_4.pdf"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "deliverables/Progree_Python_Tasks_2_3_4.pdf"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 2,
+      "path": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "digital_marketing/evidence/task2/secondary/QA.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 1,
+      "path": "digital_marketing/evidence/task4/QA.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 1,
+      "path": "digital_marketing/evidence/task4/historical/reviewed-QA.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 1,
+      "path": "digital_marketing/research/task2/handoff/RECOVERY_INSTRUCTION.txt"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "digital_marketing/tools/generate_combined_review_pdf.py"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 1,
+      "path": "evidence/final_submission_review/QA.md"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 8,
+      "path": "evidence/phase5/manifest.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/phase5/outputs/task3-apply.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/phase5/outputs/task3-master.csv"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/phase5/outputs/task3-preview.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/phase5/outputs/task3-repeat.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/task3/APPLY_MANIFEST.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/task3/FINAL_SAFETY_APPLY.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/task3/FINAL_SAFETY_PREVIEW.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/task3/FINAL_SAFETY_REPEAT.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/task3/MASTER.csv"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/task3/PREVIEW_MANIFEST.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/task3/REPEAT_MANIFEST.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/task3/REVIEW_FIX_APPLY.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/task3/REVIEW_FIX_PREVIEW.json"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 4,
+      "path": "evidence/task3/REVIEW_FIX_REPEAT.json"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "evidence/ultimate_final_review/QA.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "evidence/ultimate_final_review/SUBMISSION_CHECKLIST.md"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 2,
+      "path": "fixtures/task3/inbound.LOG"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 2,
+      "path": "fixtures/task3/notes.txt"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 1,
+      "path": "planning/ARCHITECTURE.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 1,
+      "path": "planning/DIGITAL_MARKETING_REQUIREMENTS.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 1,
+      "path": "planning/DUAL_TRACK_STATUS.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "planning/DUAL_TRACK_SUBMISSION_STRATEGY.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 1,
+      "path": "planning/SUBMISSION_CHECKLIST.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 3,
+      "path": "planning/ULTIMATE_FINAL_SUBMISSION_READINESS.md"
+    },
+    {
+      "category": "email",
+      "classification": "allowed synthetic test fixture",
+      "match_count": 5,
+      "path": "tests/test_task3.py"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "tools/generate_report.py"
+    },
+    {
+      "category": "secret_assignment",
+      "classification": "scanner expression; no value recorded",
+      "match_count": 1,
+      "path": "tools/ultimate_privacy_audit.py"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 4,
+      "path": "tools/ultimate_privacy_audit.py"
+    }
+  ],
+  "pdf_metadata": [
+    {
+      "author": "",
+      "creator": "",
+      "encrypted": false,
+      "has_javascript": false,
+      "path": "Python Programming Tasks & Instructions.pdf",
+      "title": "Python Programming Tasks & Instructions"
+    },
+    {
+      "author": "",
+      "creator": "(unspecified)",
+      "encrypted": false,
+      "has_javascript": false,
+      "path": "deliverables/Progree_Python_Tasks_2_3_4.pdf",
+      "title": "Progree Python Tasks 2, 3 and 4"
+    },
+    {
+      "author": "Anonymous internship project",
+      "creator": "Progree ultimate final-audit navigation enhancement",
+      "encrypted": false,
+      "has_javascript": false,
+      "path": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "title": "Progree Python Tasks 2, 3 and 4 \u2014 Final Candidate"
+    },
+    {
+      "author": "(anonymous)",
+      "creator": "(unspecified)",
+      "encrypted": false,
+      "has_javascript": false,
+      "path": "digital_marketing/deliverables/DM_Task2_Competitor_Audit_HANDOFF_DRAFT.pdf",
+      "title": "(anonymous)"
+    },
+    {
+      "author": "Internship project",
+      "creator": "(unspecified)",
+      "encrypted": false,
+      "has_javascript": false,
+      "path": "digital_marketing/deliverables/DM_Task2_Competitor_Audit_RECOVERY_DRAFT.pdf",
+      "title": "Task 2 Partial Competitor Audit Recovery Draft"
+    },
+    {
+      "author": "Internship project",
+      "creator": "(unspecified)",
+      "encrypted": false,
+      "has_javascript": false,
+      "path": "digital_marketing/deliverables/DM_Task2_Competitor_Audit_SECONDARY_DRAFT.pdf",
+      "title": "Hydration Competitor Audit \u2014 Limited Secondary-Evidence Draft"
+    },
+    {
+      "author": "Internship project",
+      "creator": "(unspecified)",
+      "encrypted": false,
+      "has_javascript": false,
+      "path": "digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf",
+      "title": "RefillLoop 30-Day Campaign Roadmap"
+    },
+    {
+      "author": "Internship project",
+      "creator": "(unspecified)",
+      "encrypted": false,
+      "has_javascript": false,
+      "path": "digital_marketing/deliverables/DM_Task4_Email_Workflow_Appendix.pdf",
+      "title": "Task 4 Supporting Email Workflow Appendix"
+    },
+    {
+      "author": "Internship project",
+      "creator": "(unspecified)",
+      "encrypted": false,
+      "has_javascript": false,
+      "path": "digital_marketing/deliverables/DM_Task4_SEO_Acquisition_Strategy.pdf",
+      "title": "Ocean Bottle SEO and Acquisition Strategy"
+    },
+    {
+      "author": "Anonymous internship project",
+      "creator": "Progree final-submission preparation",
+      "encrypted": false,
+      "has_javascript": false,
+      "path": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_COMBINED_REVIEW.pdf",
+      "title": "Progree Digital Marketing & Branding \u2014 Tasks 2\u20134 Review Copy"
+    },
+    {
+      "author": "Anonymous internship project",
+      "creator": "Progree ultimate final-audit navigation enhancement",
+      "encrypted": false,
+      "has_javascript": false,
+      "path": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "title": "Progree Digital Marketing & Branding \u2014 Tasks 2\u20134 Final Candidate"
+    }
+  ],
+  "result": "pass",
+  "schema": "progree-ultimate-privacy-scan-v1",
+  "suspicious_filenames": [],
+  "tracked_file_count": 250,
+  "unknown_email_or_phone_or_secret_count": 0
+}

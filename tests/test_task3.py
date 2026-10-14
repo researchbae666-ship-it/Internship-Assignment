@@ -89,6 +89,17 @@ class Task3WorkspaceTest(unittest.TestCase):
         self.assertEqual(target.read_text(encoding="utf-8"), "occupied")
         self.assertTrue((self.workspace / "inbound.LOG").is_file())
 
+    def test_crafted_move_cannot_escape_isolated_workspace(self) -> None:
+        result = task3.apply_plan(
+            self.workspace,
+            [task3.PlannedMove("inbound.LOG", "../escape.txt")],
+        )
+        self.assertFalse(result["complete"])
+        self.assertEqual("failed", result["moves"][0]["status"])
+        self.assertIn("immediate extension directory", result["moves"][0]["detail"])
+        self.assertFalse((self.workspace.parent / "escape.txt").exists())
+        self.assertTrue((self.workspace / "inbound.LOG").is_file())
+
     def test_collision_name_is_deterministic(self) -> None:
         (self.workspace / "report.TXT").write_text("new", encoding="utf-8")
         (self.workspace / "txt").mkdir(exist_ok=True)

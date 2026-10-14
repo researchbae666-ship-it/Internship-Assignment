@@ -159,9 +159,23 @@ def apply_plan(root: str | Path, moves: Iterable[PlannedMove]) -> dict[str, Any]
     preflight_text_decoding(workspace)
     outcomes: list[dict[str, str]] = []
     for move in moves:
-        source = workspace / move.source_path
-        destination = workspace / move.destination_path
         try:
+            source_relative = Path(move.source_path)
+            destination_relative = Path(move.destination_path)
+            if (
+                source_relative.is_absolute()
+                or ".." in source_relative.parts
+                or len(source_relative.parts) != 1
+            ):
+                raise SafetyError("source must be an immediate workspace filename")
+            if (
+                destination_relative.is_absolute()
+                or ".." in destination_relative.parts
+                or len(destination_relative.parts) != 2
+            ):
+                raise SafetyError("destination must be inside an immediate extension directory")
+            source = workspace / source_relative
+            destination = workspace / destination_relative
             if source.parent != workspace or not source.is_file() or source.is_symlink():
                 raise SafetyError("source is no longer an immediate regular file")
             if not _is_below(destination, workspace) or destination.parent.parent != workspace:

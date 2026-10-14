@@ -1,6 +1,7 @@
 """Standard-library checks for the generated RefillLoop campaign data."""
 
 import unittest
+import copy
 
 from build_campaign import REQUIRED_ACTION_FIELDS, build_campaign, validate
 
@@ -88,6 +89,13 @@ class CampaignTests(unittest.TestCase):
         prohibited = ("proven", "guaranteed", "customers achieved", "scientifically", "market-leading")
         for item in self.actions:
             self.assertFalse(any(word in item["copy_or_script"].lower() for word in prohibited))
+
+    def test_duplicate_action_is_rejected(self):
+        duplicated = copy.deepcopy(self.campaign)
+        duplicated["actions"].append(copy.deepcopy(duplicated["actions"][0]))
+        errors = validate(duplicated)
+        self.assertIn("Campaign contains duplicate action IDs.", errors)
+        self.assertIn("Campaign contains duplicate platform/day actions.", errors)
 
 
 if __name__ == "__main__":

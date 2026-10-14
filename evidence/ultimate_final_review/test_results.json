@@ -1,0 +1,140 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": ".",
+      "name": "python_unit",
+      "returncode": 0,
+      "stderr_log": "evidence/ultimate_final_review/logs/python_unit.stderr.log",
+      "stdout_log": "evidence/ultimate_final_review/logs/python_unit.stdout.log",
+      "test_count": 55
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "-v",
+        "test_handoff"
+      ],
+      "cwd": "digital_marketing/research/task2/handoff",
+      "name": "marketing_task2_handoff",
+      "returncode": 0,
+      "stderr_log": "evidence/ultimate_final_review/logs/marketing_task2_handoff.stderr.log",
+      "stdout_log": "evidence/ultimate_final_review/logs/marketing_task2_handoff.stdout.log",
+      "test_count": 6
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "-v",
+        "test_recovery"
+      ],
+      "cwd": "digital_marketing/research/task2/recovery",
+      "name": "marketing_task2_recovery",
+      "returncode": 0,
+      "stderr_log": "evidence/ultimate_final_review/logs/marketing_task2_recovery.stderr.log",
+      "stdout_log": "evidence/ultimate_final_review/logs/marketing_task2_recovery.stdout.log",
+      "test_count": 15
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "-v",
+        "test_secondary"
+      ],
+      "cwd": "digital_marketing/research/task2/secondary",
+      "name": "marketing_task2_secondary",
+      "returncode": 0,
+      "stderr_log": "evidence/ultimate_final_review/logs/marketing_task2_secondary.stderr.log",
+      "stdout_log": "evidence/ultimate_final_review/logs/marketing_task2_secondary.stdout.log",
+      "test_count": 8
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "-v",
+        "test_campaign"
+      ],
+      "cwd": "digital_marketing/research/task3",
+      "name": "marketing_task3",
+      "returncode": 0,
+      "stderr_log": "evidence/ultimate_final_review/logs/marketing_task3.stderr.log",
+      "stdout_log": "evidence/ultimate_final_review/logs/marketing_task3.stdout.log",
+      "test_count": 11
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "-v",
+        "test_strategy",
+        "test_email_workflows"
+      ],
+      "cwd": "digital_marketing/research/task4",
+      "name": "marketing_task4",
+      "returncode": 0,
+      "stderr_log": "evidence/ultimate_final_review/logs/marketing_task4.stderr.log",
+      "stdout_log": "evidence/ultimate_final_review/logs/marketing_task4.stdout.log",
+      "test_count": 28
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "-v",
+        "test_task2_recovery_report",
+        "test_generate_task3_report",
+        "test_generate_task4_report"
+      ],
+      "cwd": "digital_marketing/tools",
+      "name": "marketing_report_presentation",
+      "returncode": 0,
+      "stderr_log": "evidence/ultimate_final_review/logs/marketing_report_presentation.stderr.log",
+      "stdout_log": "evidence/ultimate_final_review/logs/marketing_report_presentation.stdout.log",
+      "test_count": 6
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "tools/build_final_pdf_candidates.py"
+      ],
+      "cwd": ".",
+      "name": "candidate_build_and_validation",
+      "returncode": 0,
+      "stderr_log": "evidence/ultimate_final_review/logs/candidate_build_and_validation.stderr.log",
+      "stdout_log": "evidence/ultimate_final_review/logs/candidate_build_and_validation.stdout.log",
+      "test_count": null
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "tools/ultimate_red_team_checks.py"
+      ],
+      "cwd": ".",
+      "name": "ultimate_adversarial_checks",
+      "returncode": 0,
+      "stderr_log": "evidence/ultimate_final_review/logs/ultimate_adversarial_checks.stderr.log",
+      "stdout_log": "evidence/ultimate_final_review/logs/ultimate_adversarial_checks.stdout.log",
+      "test_count": null
+    }
+  ],
+  "schema": "progree-ultimate-test-results-v1"
+}

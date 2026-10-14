@@ -1,0 +1,2383 @@
+{
+  "audit_branch": "submission/ultimate-final-audit",
+  "baseline_commit": "e421f1b3286eb8ffcc913d33f5185957a87dfb27",
+  "baseline_comparison": {
+    "all_protected_artifacts_unchanged": true,
+    "baseline_tracked_files_changed": [
+      "digital_marketing/research/task3/build_campaign.py",
+      "digital_marketing/research/task3/test_campaign.py",
+      "internship/task3.py",
+      "tests/test_task3.py"
+    ],
+    "baseline_tracked_files_missing": [],
+    "intentional_source_changes": {
+      "digital_marketing/research/task3/build_campaign.py": "UFR-002 duplicate-action validation",
+      "digital_marketing/research/task3/test_campaign.py": "UFR-002 regression",
+      "internship/task3.py": "UFR-001 path-component validation",
+      "tests/test_task3.py": "UFR-001 regression"
+    },
+    "protected_artifacts_unchanged": {
+      "marketing_assignment_brief": true,
+      "marketing_combined": true,
+      "marketing_task2_source": true,
+      "marketing_task3_source": true,
+      "marketing_task4_appendix_source": true,
+      "marketing_task4_source": true,
+      "python_assignment_brief": true,
+      "python_report": true,
+      "submission_notice": true
+    },
+    "unexpected_baseline_changes": []
+  },
+  "branch_contains_baseline": true,
+  "candidate_build_validation": {
+    "marketing_uri_annotation_count": 11,
+    "protected_source_hashes_unchanged": true
+  },
+  "candidate_source_integrity": {
+    "marketing": {
+      "all_source_pages_unchanged": true,
+      "checks": [
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 1,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 2,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 3,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 4,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 5,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 6,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 7,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 8,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 9,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 10,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 11,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 12,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 13,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 14,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 15,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 16,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 17,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 18,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 19,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 20,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 21,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 22,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 23,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 24,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 25,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 26,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 27,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 28,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 29,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 30,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 31,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 32,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 33,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 34,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 35,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 36,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 37,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 38,
+          "rotation_equal": true,
+          "text_equal": true
+        }
+      ],
+      "page_count_equal": true
+    },
+    "python": {
+      "all_source_pages_unchanged": true,
+      "checks": [
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 1,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 2,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 3,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 4,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 5,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 6,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 7,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 8,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 9,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 10,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 11,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 12,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 13,
+          "rotation_equal": true,
+          "text_equal": true
+        },
+        {
+          "content_stream_equal": true,
+          "dimensions_equal": true,
+          "page": 14,
+          "rotation_equal": true,
+          "text_equal": true
+        }
+      ],
+      "page_count_equal": true
+    }
+  },
+  "combined_marketing_source_integrity": {
+    "all_36_source_pages_preserved": true,
+    "checks": [
+      {
+        "combined_page": 3,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task2_source",
+        "source_page": 1,
+        "text_equal": true
+      },
+      {
+        "combined_page": 4,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task2_source",
+        "source_page": 2,
+        "text_equal": true
+      },
+      {
+        "combined_page": 5,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task2_source",
+        "source_page": 3,
+        "text_equal": true
+      },
+      {
+        "combined_page": 6,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task2_source",
+        "source_page": 4,
+        "text_equal": true
+      },
+      {
+        "combined_page": 7,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 1,
+        "text_equal": true
+      },
+      {
+        "combined_page": 8,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 2,
+        "text_equal": true
+      },
+      {
+        "combined_page": 9,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 3,
+        "text_equal": true
+      },
+      {
+        "combined_page": 10,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 4,
+        "text_equal": true
+      },
+      {
+        "combined_page": 11,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 5,
+        "text_equal": true
+      },
+      {
+        "combined_page": 12,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 6,
+        "text_equal": true
+      },
+      {
+        "combined_page": 13,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 7,
+        "text_equal": true
+      },
+      {
+        "combined_page": 14,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 8,
+        "text_equal": true
+      },
+      {
+        "combined_page": 15,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 9,
+        "text_equal": true
+      },
+      {
+        "combined_page": 16,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 10,
+        "text_equal": true
+      },
+      {
+        "combined_page": 17,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 11,
+        "text_equal": true
+      },
+      {
+        "combined_page": 18,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 12,
+        "text_equal": true
+      },
+      {
+        "combined_page": 19,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 13,
+        "text_equal": true
+      },
+      {
+        "combined_page": 20,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 14,
+        "text_equal": true
+      },
+      {
+        "combined_page": 21,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 15,
+        "text_equal": true
+      },
+      {
+        "combined_page": 22,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 16,
+        "text_equal": true
+      },
+      {
+        "combined_page": 23,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 17,
+        "text_equal": true
+      },
+      {
+        "combined_page": 24,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 18,
+        "text_equal": true
+      },
+      {
+        "combined_page": 25,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 19,
+        "text_equal": true
+      },
+      {
+        "combined_page": 26,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task3_source",
+        "source_page": 20,
+        "text_equal": true
+      },
+      {
+        "combined_page": 27,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_source",
+        "source_page": 1,
+        "text_equal": true
+      },
+      {
+        "combined_page": 28,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_source",
+        "source_page": 2,
+        "text_equal": true
+      },
+      {
+        "combined_page": 29,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_source",
+        "source_page": 3,
+        "text_equal": true
+      },
+      {
+        "combined_page": 30,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_source",
+        "source_page": 4,
+        "text_equal": true
+      },
+      {
+        "combined_page": 31,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_source",
+        "source_page": 5,
+        "text_equal": true
+      },
+      {
+        "combined_page": 32,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_source",
+        "source_page": 6,
+        "text_equal": true
+      },
+      {
+        "combined_page": 33,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_appendix_source",
+        "source_page": 1,
+        "text_equal": true
+      },
+      {
+        "combined_page": 34,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_appendix_source",
+        "source_page": 2,
+        "text_equal": true
+      },
+      {
+        "combined_page": 35,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_appendix_source",
+        "source_page": 3,
+        "text_equal": true
+      },
+      {
+        "combined_page": 36,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_appendix_source",
+        "source_page": 4,
+        "text_equal": true
+      },
+      {
+        "combined_page": 37,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_appendix_source",
+        "source_page": 5,
+        "text_equal": true
+      },
+      {
+        "combined_page": 38,
+        "content_stream_equal": true,
+        "dimensions_equal": true,
+        "source": "marketing_task4_appendix_source",
+        "source_page": 6,
+        "text_equal": true
+      }
+    ]
+  },
+  "head_before_audit_commit": "e421f1b3286eb8ffcc913d33f5185957a87dfb27",
+  "pdfs": {
+    "marketing_approved": {
+      "bytes": 140895,
+      "encrypted": false,
+      "fonts_by_page": {
+        "1": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "10": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "11": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "12": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "13": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "14": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "15": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "16": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "17": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "18": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "19": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "2": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "20": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "21": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "22": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "23": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "24": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "25": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "26": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "27": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "28": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "29": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "3": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ],
+        "30": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "31": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "32": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "33": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "34": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "35": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "36": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "37": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "38": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "4": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ],
+        "5": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ],
+        "6": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ],
+        "7": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "8": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "9": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ]
+      },
+      "has_page_labels": true,
+      "metadata": {
+        "/Author": "Anonymous internship project",
+        "/Creator": "Progree final-submission preparation",
+        "/Keywords": "Digital Marketing, Task 2, Task 3, Task 4, review copy",
+        "/Producer": "pypdf",
+        "/Subject": "Consolidated review copy; Task 2 remains evidence-limited and pending rubric acceptance",
+        "/Title": "Progree Digital Marketing & Branding \u2014 Tasks 2\u20134 Review Copy"
+      },
+      "outline": [
+        {
+          "page": 1,
+          "title": "Cover and contents"
+        },
+        {
+          "page": 3,
+          "title": "Task 2 \u2014 Evidence-Limited Public-Source Competitor Audit"
+        },
+        {
+          "page": 7,
+          "title": "Task 3 \u2014 RefillLoop 30-Day Campaign"
+        },
+        {
+          "page": 27,
+          "title": "Task 4 \u2014 Ocean Bottle SEO & Acquisition Strategy"
+        },
+        {
+          "page": 33,
+          "title": "Task 4 Supporting Appendix \u2014 Email Workflows"
+        },
+        {
+          "page": 1,
+          "title": "Cover"
+        },
+        {
+          "page": 2,
+          "title": "Contents"
+        },
+        {
+          "page": 3,
+          "title": "Task 2 \u2014 Evidence-Limited Public-Source Competitor Audit"
+        },
+        {
+          "page": 7,
+          "title": "Task 3 \u2014 RefillLoop 30-Day Campaign"
+        },
+        {
+          "page": 27,
+          "title": "Task 4 \u2014 Ocean Bottle SEO & Acquisition Strategy"
+        },
+        {
+          "page": 33,
+          "title": "Task 4 Supporting Appendix \u2014 Email Workflows"
+        }
+      ],
+      "page_count": 38,
+      "page_dimensions": [
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ]
+      ],
+      "pages_with_no_extractable_text": [],
+      "path": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_COMBINED_REVIEW.pdf",
+      "sha256": "24a211ea4cdd68f83b02ce216aa43b15bc6a65a5952776cbe8c57bccda9f0059",
+      "uri_links": []
+    },
+    "marketing_final_candidate": {
+      "bytes": 140592,
+      "encrypted": false,
+      "fonts_by_page": {
+        "1": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "10": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "11": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "12": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "13": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "14": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "15": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "16": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "17": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "18": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "19": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "2": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "20": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "21": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "22": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "23": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "24": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "25": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "26": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "27": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "28": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "29": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "3": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ],
+        "30": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "31": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "32": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "33": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "34": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "35": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "36": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "37": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "38": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "4": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ],
+        "5": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ],
+        "6": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ],
+        "7": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "8": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "9": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ]
+      },
+      "has_page_labels": true,
+      "metadata": {
+        "/Author": "Anonymous internship project",
+        "/CreationDate": "NullObject",
+        "/Creator": "Progree ultimate final-audit navigation enhancement",
+        "/Keywords": "Digital Marketing, Task 2, Task 3, Task 4, review copy",
+        "/ModDate": "NullObject",
+        "/Producer": "pypdf",
+        "/Subject": "Navigation-enhanced final candidate; Task 2 remains evidence-limited and pending rubric acceptance",
+        "/Title": "Progree Digital Marketing & Branding \u2014 Tasks 2\u20134 Final Candidate",
+        "/Trapped": "NullObject"
+      },
+      "outline": [
+        {
+          "page": 1,
+          "title": "Cover"
+        },
+        {
+          "page": 2,
+          "title": "Contents"
+        },
+        {
+          "page": 3,
+          "title": "Task 2 \u2014 Evidence-limited public-source audit"
+        },
+        {
+          "page": 7,
+          "title": "Task 3 \u2014 RefillLoop proposed 30-day campaign"
+        },
+        {
+          "page": 27,
+          "title": "Task 4 \u2014 Ocean Bottle proposed SEO strategy"
+        },
+        {
+          "page": 33,
+          "title": "Task 4 supporting appendix \u2014 Proposed email workflows"
+        }
+      ],
+      "page_count": 38,
+      "page_dimensions": [
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ]
+      ],
+      "pages_with_no_extractable_text": [],
+      "path": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "sha256": "571f801e92fd496b27dc8bcd1fb40066d22068f35b783ba2e151f36b7335bb5a",
+      "uri_links": [
+        {
+          "page": 6,
+          "uri": "https://www.stanley1913.com/"
+        },
+        {
+          "page": 6,
+          "uri": "https://www.hydroflask.com/"
+        },
+        {
+          "page": 6,
+          "uri": "https://owalalife.com/"
+        },
+        {
+          "page": 27,
+          "uri": "https://oceanbottle.co/"
+        },
+        {
+          "page": 27,
+          "uri": "https://oceanbottle.co/pages/faqs"
+        },
+        {
+          "page": 29,
+          "uri": "https://oceanbottle.co/products/original-bottle"
+        },
+        {
+          "page": 29,
+          "uri": "https://oceanbottle.co/pages/ocean-impact"
+        },
+        {
+          "page": 29,
+          "uri": "https://oceanbottle.co/pages/faqs"
+        },
+        {
+          "page": 29,
+          "uri": "https://oceanbottle.co/blogs/news"
+        },
+        {
+          "page": 32,
+          "uri": "https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/"
+        },
+        {
+          "page": 32,
+          "uri": "https://www.linkedin.com/company/the-ocean-bottle/"
+        }
+      ]
+    },
+    "marketing_task2_source": {
+      "bytes": 51092,
+      "encrypted": false,
+      "fonts_by_page": {
+        "1": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ],
+        "2": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ],
+        "3": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ],
+        "4": [
+          "/AAAAAA+BitstreamVeraSans-Bold",
+          "/AAAAAA+BitstreamVeraSans-Roman",
+          "/Helvetica"
+        ]
+      },
+      "has_page_labels": false,
+      "metadata": {
+        "/Author": "Internship project",
+        "/CreationDate": "D:20261014114423+00'00'",
+        "/Creator": "(unspecified)",
+        "/Keywords": "",
+        "/ModDate": "D:20261014114423+00'00'",
+        "/Producer": "ReportLab PDF Library - (opensource)",
+        "/Subject": "(unspecified)",
+        "/Title": "Hydration Competitor Audit \u2014 Limited Secondary-Evidence Draft",
+        "/Trapped": "/False"
+      },
+      "outline": [],
+      "page_count": 4,
+      "page_dimensions": [
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ]
+      ],
+      "pages_with_no_extractable_text": [],
+      "path": "digital_marketing/deliverables/DM_Task2_Competitor_Audit_SECONDARY_DRAFT.pdf",
+      "sha256": "7d997791e61c901c1ac7c901c16d4bcc4a70c3e4255f092c166a6afb889d49a3",
+      "uri_links": []
+    },
+    "marketing_task3_source": {
+      "bytes": 54265,
+      "encrypted": false,
+      "fonts_by_page": {
+        "1": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "10": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "11": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "12": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "13": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "14": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "15": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "16": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "17": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "18": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "19": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "2": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "20": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "3": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "4": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "5": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "6": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "7": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "8": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "9": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ]
+      },
+      "has_page_labels": false,
+      "metadata": {
+        "/Author": "Internship project",
+        "/CreationDate": "D:20261013111641+00'00'",
+        "/Creator": "(unspecified)",
+        "/Keywords": "",
+        "/ModDate": "D:20261013111641+00'00'",
+        "/Producer": "ReportLab PDF Library - (opensource)",
+        "/Subject": "(unspecified)",
+        "/Title": "RefillLoop 30-Day Campaign Roadmap",
+        "/Trapped": "/False"
+      },
+      "outline": [],
+      "page_count": 20,
+      "page_dimensions": [
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ]
+      ],
+      "pages_with_no_extractable_text": [],
+      "path": "digital_marketing/deliverables/DM_Task3_30_Day_Campaign.pdf",
+      "sha256": "ecf3eef10ad417b71c31e5ab2bd986d933f4470195afb11f7283131a515159b8",
+      "uri_links": []
+    },
+    "marketing_task4_appendix_source": {
+      "bytes": 13180,
+      "encrypted": false,
+      "fonts_by_page": {
+        "1": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "2": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "3": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "4": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "5": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ],
+        "6": [
+          "/Helvetica",
+          "/Helvetica-Bold"
+        ]
+      },
+      "has_page_labels": false,
+      "metadata": {
+        "/Author": "Internship project",
+        "/CreationDate": "D:20261013203016+00'00'",
+        "/Creator": "(unspecified)",
+        "/Keywords": "",
+        "/ModDate": "D:20261013203016+00'00'",
+        "/Producer": "ReportLab PDF Library - (opensource)",
+        "/Subject": "(unspecified)",
+        "/Title": "Task 4 Supporting Email Workflow Appendix",
+        "/Trapped": "/False"
+      },
+      "outline": [],
+      "page_count": 6,
+      "page_dimensions": [
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ]
+      ],
+      "pages_with_no_extractable_text": [],
+      "path": "digital_marketing/deliverables/DM_Task4_Email_Workflow_Appendix.pdf",
+      "sha256": "56be92ee96117ccc4dac08dcc512efd0eca2ebbc36ca8ad2092e4099f47becf5",
+      "uri_links": []
+    },
+    "marketing_task4_source": {
+      "bytes": 19192,
+      "encrypted": false,
+      "fonts_by_page": {
+        "1": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "2": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "3": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "4": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "5": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ],
+        "6": [
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique"
+        ]
+      },
+      "has_page_labels": false,
+      "metadata": {
+        "/Author": "Internship project",
+        "/CreationDate": "D:20261013203016+00'00'",
+        "/Creator": "(unspecified)",
+        "/Keywords": "",
+        "/ModDate": "D:20261013203016+00'00'",
+        "/Producer": "ReportLab PDF Library - (opensource)",
+        "/Subject": "(unspecified)",
+        "/Title": "Ocean Bottle SEO and Acquisition Strategy",
+        "/Trapped": "/False"
+      },
+      "outline": [],
+      "page_count": 6,
+      "page_dimensions": [
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ],
+        [
+          841.8898,
+          595.2756
+        ]
+      ],
+      "pages_with_no_extractable_text": [],
+      "path": "digital_marketing/deliverables/DM_Task4_SEO_Acquisition_Strategy.pdf",
+      "sha256": "c61cc2d5268f8b7691e433a427bda44dcda83171fd399e414e8d04b2129d1ce9",
+      "uri_links": []
+    },
+    "python_approved": {
+      "bytes": 28500,
+      "encrypted": false,
+      "fonts_by_page": {
+        "1": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "10": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "11": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "12": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "13": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "14": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "2": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "3": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "4": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "5": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "6": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "7": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "8": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "9": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ]
+      },
+      "has_page_labels": false,
+      "metadata": {
+        "/Author": "",
+        "/CreationDate": "D:20261013064313+00'00'",
+        "/Creator": "(unspecified)",
+        "/Keywords": "",
+        "/ModDate": "D:20261013064313+00'00'",
+        "/Producer": "ReportLab PDF Library - (opensource)",
+        "/Subject": "(unspecified)",
+        "/Title": "Progree Python Tasks 2, 3 and 4",
+        "/Trapped": "/False"
+      },
+      "outline": [],
+      "page_count": 14,
+      "page_dimensions": [
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ]
+      ],
+      "pages_with_no_extractable_text": [],
+      "path": "deliverables/Progree_Python_Tasks_2_3_4.pdf",
+      "sha256": "e967cec21cf744823ff25fc1dab9ba2a2486fa1b7e23f6ceb945fecfd2801db0",
+      "uri_links": []
+    },
+    "python_final_candidate": {
+      "bytes": 29886,
+      "encrypted": false,
+      "fonts_by_page": {
+        "1": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "10": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "11": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "12": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "13": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "14": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "2": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "3": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "4": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "5": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "6": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "7": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "8": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ],
+        "9": [
+          "/Courier",
+          "/Helvetica",
+          "/Helvetica-Bold",
+          "/Helvetica-Oblique",
+          "/Symbol"
+        ]
+      },
+      "has_page_labels": true,
+      "metadata": {
+        "/Author": "Anonymous internship project",
+        "/CreationDate": "D:20261013064313+00'00'",
+        "/Creator": "Progree ultimate final-audit navigation enhancement",
+        "/Keywords": "NullObject",
+        "/ModDate": "D:20261013064313+00'00'",
+        "/Producer": "pypdf",
+        "/Subject": "Navigation-enhanced final candidate; approved report content preserved",
+        "/Title": "Progree Python Tasks 2, 3 and 4 \u2014 Final Candidate",
+        "/Trapped": "/False"
+      },
+      "outline": [
+        {
+          "page": 1,
+          "title": "Cover"
+        },
+        {
+          "page": 2,
+          "title": "Executive summary"
+        },
+        {
+          "page": 3,
+          "title": "Task 2 \u2014 Fibonacci sequence and timing"
+        },
+        {
+          "page": 6,
+          "title": "Task 3 \u2014 Safe file organisation and extraction"
+        },
+        {
+          "page": 9,
+          "title": "Task 4 \u2014 Rule-based support chatbot"
+        },
+        {
+          "page": 12,
+          "title": "Cross-task QA"
+        },
+        {
+          "page": 13,
+          "title": "Conclusion"
+        },
+        {
+          "page": 14,
+          "title": "Appendix"
+        }
+      ],
+      "page_count": 14,
+      "page_dimensions": [
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ],
+        [
+          595.2756,
+          841.8898
+        ]
+      ],
+      "pages_with_no_extractable_text": [],
+      "path": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "sha256": "8910c0aafccb8a575affc9794291b5c9910a23cfebdda3fa6b873c485bece284",
+      "uri_links": []
+    }
+  },
+  "privacy_scan": {
+    "result": "pass",
+    "unknown_contact_or_secret_count": 0
+  },
+  "render_review": {
+    "approved_pages_rendered_and_individually_reviewed": 52,
+    "candidate_pages_freshly_rendered": 52,
+    "pixel_equal_candidate_page_pairs": 52,
+    "result": "pass"
+  },
+  "schema": "progree-ultimate-final-review-manifest-v1",
+  "submission_selection": {
+    "marketing": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+    "python": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+    "technical_status": "ready; external eligibility remains unconfirmed"
+  },
+  "test_summary": {
+    "all_passed": true,
+    "unittest_test_count": 129,
+    "validator_check_count": 2
+  }
+}

@@ -1,0 +1,622 @@
+{
+  "marketing": {
+    "all_content_streams_equal": true,
+    "all_page_dimensions_equal": true,
+    "all_text_equal": true,
+    "bytes": 140592,
+    "candidate": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+    "link_annotation_details": [
+      {
+        "page": 6,
+        "rectangle": [
+          118.8,
+          330.09,
+          272.17,
+          340.09
+        ],
+        "uri": "https://www.stanley1913.com/",
+        "visible_text": "https://www.stanley1913.com/"
+      },
+      {
+        "page": 6,
+        "rectangle": [
+          281.9,
+          330.09,
+          425.65,
+          340.09
+        ],
+        "uri": "https://www.hydroflask.com/",
+        "visible_text": "https://www.hydroflask.com/"
+      },
+      {
+        "page": 6,
+        "rectangle": [
+          435.38,
+          330.09,
+          543.71,
+          340.09
+        ],
+        "uri": "https://owalalife.com/",
+        "visible_text": "https://owalalife.com/"
+      },
+      {
+        "page": 27,
+        "rectangle": [
+          51.52,
+          249.93,
+          129.79,
+          260.92
+        ],
+        "uri": "https://oceanbottle.co/",
+        "visible_text": "https://oceanbottle.co/"
+      },
+      {
+        "page": 27,
+        "rectangle": [
+          51.52,
+          314.93,
+          168.93,
+          325.92
+        ],
+        "uri": "https://oceanbottle.co/pages/faqs",
+        "visible_text": "https://oceanbottle.co/pages/faqs"
+      },
+      {
+        "page": 29,
+        "rectangle": [
+          122.45,
+          84.48,
+          341.36,
+          98.25
+        ],
+        "uri": "https://oceanbottle.co/products/original-bottle",
+        "visible_text": "https://oceanbottle.co/products/original-bottle"
+      },
+      {
+        "page": 29,
+        "rectangle": [
+          163.59,
+          193.15,
+          366.41,
+          206.92
+        ],
+        "uri": "https://oceanbottle.co/pages/ocean-impact",
+        "visible_text": "https://oceanbottle.co/pages/ocean-impact"
+      },
+      {
+        "page": 29,
+        "rectangle": [
+          153.56,
+          301.82,
+          312.48,
+          315.59
+        ],
+        "uri": "https://oceanbottle.co/pages/faqs",
+        "visible_text": "https://oceanbottle.co/pages/faqs"
+      },
+      {
+        "page": 29,
+        "rectangle": [
+          210.25,
+          400.99,
+          371.39,
+          414.76
+        ],
+        "uri": "https://oceanbottle.co/blogs/news",
+        "visible_text": "https://oceanbottle.co/blogs/news"
+      },
+      {
+        "page": 32,
+        "rectangle": [
+          48.52,
+          278.06,
+          312.39,
+          289.47
+        ],
+        "uri": "https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/",
+        "visible_text": "https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/"
+      },
+      {
+        "page": 32,
+        "rectangle": [
+          330.84,
+          278.06,
+          522.74,
+          289.47
+        ],
+        "uri": "https://www.linkedin.com/company/the-ocean-bottle/",
+        "visible_text": "https://www.linkedin.com/company/the-ocean-bottle/"
+      }
+    ],
+    "outlines": [
+      {
+        "page": 1,
+        "title": "Cover"
+      },
+      {
+        "page": 2,
+        "title": "Contents"
+      },
+      {
+        "page": 3,
+        "title": "Task 2 \u2014 Evidence-limited public-source audit"
+      },
+      {
+        "page": 7,
+        "title": "Task 3 \u2014 RefillLoop proposed 30-day campaign"
+      },
+      {
+        "page": 27,
+        "title": "Task 4 \u2014 Ocean Bottle proposed SEO strategy"
+      },
+      {
+        "page": 33,
+        "title": "Task 4 supporting appendix \u2014 Proposed email workflows"
+      }
+    ],
+    "page_checks": [
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 1,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 2,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 3,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 4,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 5,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 6,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 7,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 8,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 9,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 10,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 11,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 12,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 13,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 14,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 15,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 16,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 17,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 18,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 19,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 20,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 21,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 22,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 23,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 24,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 25,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 26,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 27,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 28,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 29,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 30,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 31,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 32,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 33,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 34,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 35,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 36,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 37,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 38,
+        "rotation_equal": true,
+        "text_equal": true
+      }
+    ],
+    "page_count": 38,
+    "sha256": "571f801e92fd496b27dc8bcd1fb40066d22068f35b783ba2e151f36b7335bb5a",
+    "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_COMBINED_REVIEW.pdf",
+    "uri_links": [
+      {
+        "page": 6,
+        "uri": "https://www.stanley1913.com/"
+      },
+      {
+        "page": 6,
+        "uri": "https://www.hydroflask.com/"
+      },
+      {
+        "page": 6,
+        "uri": "https://owalalife.com/"
+      },
+      {
+        "page": 27,
+        "uri": "https://oceanbottle.co/"
+      },
+      {
+        "page": 27,
+        "uri": "https://oceanbottle.co/pages/faqs"
+      },
+      {
+        "page": 29,
+        "uri": "https://oceanbottle.co/products/original-bottle"
+      },
+      {
+        "page": 29,
+        "uri": "https://oceanbottle.co/pages/ocean-impact"
+      },
+      {
+        "page": 29,
+        "uri": "https://oceanbottle.co/pages/faqs"
+      },
+      {
+        "page": 29,
+        "uri": "https://oceanbottle.co/blogs/news"
+      },
+      {
+        "page": 32,
+        "uri": "https://www.bcorporation.net/en-us/find-a-b-corp/company/ocean-bottle/"
+      },
+      {
+        "page": 32,
+        "uri": "https://www.linkedin.com/company/the-ocean-bottle/"
+      }
+    ]
+  },
+  "protected_source_hashes_unchanged": true,
+  "python": {
+    "all_content_streams_equal": true,
+    "all_page_dimensions_equal": true,
+    "all_text_equal": true,
+    "bytes": 29886,
+    "candidate": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+    "outlines": [
+      {
+        "page": 1,
+        "title": "Cover"
+      },
+      {
+        "page": 2,
+        "title": "Executive summary"
+      },
+      {
+        "page": 3,
+        "title": "Task 2 \u2014 Fibonacci sequence and timing"
+      },
+      {
+        "page": 6,
+        "title": "Task 3 \u2014 Safe file organisation and extraction"
+      },
+      {
+        "page": 9,
+        "title": "Task 4 \u2014 Rule-based support chatbot"
+      },
+      {
+        "page": 12,
+        "title": "Cross-task QA"
+      },
+      {
+        "page": 13,
+        "title": "Conclusion"
+      },
+      {
+        "page": 14,
+        "title": "Appendix"
+      }
+    ],
+    "page_checks": [
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 1,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 2,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 3,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 4,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 5,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 6,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 7,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 8,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 9,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 10,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 11,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 12,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 13,
+        "rotation_equal": true,
+        "text_equal": true
+      },
+      {
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "page": 14,
+        "rotation_equal": true,
+        "text_equal": true
+      }
+    ],
+    "page_count": 14,
+    "sha256": "8910c0aafccb8a575affc9794291b5c9910a23cfebdda3fa6b873c485bece284",
+    "source": "deliverables/Progree_Python_Tasks_2_3_4.pdf",
+    "uri_links": []
+  },
+  "schema": "progree-final-candidate-build-v1"
+}
