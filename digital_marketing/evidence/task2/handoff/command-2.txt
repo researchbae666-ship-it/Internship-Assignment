@@ -1,0 +1,8 @@
+test_dark_header_has_white_bold_paragraphs (__main__.RecoveryReportTests.test_dark_header_has_white_bold_paragraphs) ... ok
+test_four_page_draft_retains_claims_and_missing_metrics (__main__.RecoveryReportTests.test_four_page_draft_retains_claims_and_missing_metrics) ... ok
+test_invalid_source_claim_prevents_pdf_output (__main__.RecoveryReportTests.test_invalid_source_claim_prevents_pdf_output) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.113s
+
+OK

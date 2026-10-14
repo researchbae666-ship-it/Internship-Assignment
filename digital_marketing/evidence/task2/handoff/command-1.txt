@@ -1,0 +1,20 @@
+test_collection_before_publication_rejected (test_recovery.MetricTests.test_collection_before_publication_rejected) ... ok
+test_duplicates_and_missing_provenance_rejected (test_recovery.MetricTests.test_duplicates_and_missing_provenance_rejected) ... ok
+test_instagram_and_linkedin_numerators_remain_distinct (test_recovery.MetricTests.test_instagram_and_linkedin_numerators_remain_distinct) ... ok
+test_missing_or_invalid_interaction_not_zero (test_recovery.MetricTests.test_missing_or_invalid_interaction_not_zero) ... ok
+test_missing_rounded_zero_and_invalid_denominators (test_recovery.MetricTests.test_missing_rounded_zero_and_invalid_denominators) ... ok
+test_missing_sample_is_unavailable_not_zero (test_recovery.MetricTests.test_missing_sample_is_unavailable_not_zero) ... ok
+test_partial_sample_is_minimum_not_full_frequency (test_recovery.MetricTests.test_partial_sample_is_minimum_not_full_frequency) ... ok
+test_publication_bounds_and_timezone (test_recovery.MetricTests.test_publication_bounds_and_timezone) ... ok
+test_verified_complete_inventory_can_be_true_zero (test_recovery.MetricTests.test_verified_complete_inventory_can_be_true_zero) ... ok
+test_youtube_never_uses_follower_proxy (test_recovery.MetricTests.test_youtube_never_uses_follower_proxy) ... ok
+test_html_extract_omits_script_tokens_and_tracks_social_urls (test_recovery.RetainedEvidenceTests.test_html_extract_omits_script_tokens_and_tracks_social_urls) ... ok
+test_real_metrics_remain_unavailable_for_all_nine_accounts (test_recovery.RetainedEvidenceTests.test_real_metrics_remain_unavailable_for_all_nine_accounts) ... ok
+test_real_sources_support_every_quote_and_verified_link (test_recovery.RetainedEvidenceTests.test_real_sources_support_every_quote_and_verified_link) ... ok
+test_source_records_have_dates_and_statuses_without_fake_http_zero (test_recovery.RetainedEvidenceTests.test_source_records_have_dates_and_statuses_without_fake_http_zero) ... ok
+test_unsupported_claim_and_false_completion_fail (test_recovery.RetainedEvidenceTests.test_unsupported_claim_and_false_completion_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.027s
+
+OK

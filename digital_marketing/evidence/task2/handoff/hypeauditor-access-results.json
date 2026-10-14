@@ -1,0 +1,38 @@
+[
+  {
+    "brand": "stanley",
+    "requested_url": "https://hypeauditor.com/instagram/stanley1913_brand/",
+    "final_url": "https://hypeauditor.com/instagram/stanley1913_brand/",
+    "collected_utc": "2026-10-14T10:41:09.101000+00:00",
+    "curl_http_code": "000",
+    "http_status": null,
+    "exit_code": 56,
+    "error": "curl: (56) CONNECT tunnel failed, response 403",
+    "sha256": null,
+    "bytes": 0
+  },
+  {
+    "brand": "hydro",
+    "requested_url": "https://hypeauditor.com/instagram/hydroflask/",
+    "final_url": "https://hypeauditor.com/instagram/hydroflask/",
+    "collected_utc": "2026-10-14T10:41:09.101617+00:00",
+    "curl_http_code": "000",
+    "http_status": null,
+    "exit_code": 56,
+    "error": "curl: (56) CONNECT tunnel failed, response 403",
+    "sha256": null,
+    "bytes": 0
+  },
+  {
+    "brand": "owala",
+    "requested_url": "https://hypeauditor.com/instagram/owala/",
+    "final_url": "https://hypeauditor.com/instagram/owala/",
+    "collected_utc": "2026-10-14T10:41:09.102127+00:00",
+    "curl_http_code": "000",
+    "http_status": null,
+    "exit_code": 56,
+    "error": "curl: (56) CONNECT tunnel failed, response 403",
+    "sha256": null,
+    "bytes": 0
+  }
+]
