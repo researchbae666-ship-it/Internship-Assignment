@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://hypeauditor.com/instagram/stanley1913_brand/",
+    "collected_utc": "2026-10-14T11:43:15.806734+00:00",
+    "curl_exit_code": 56,
+    "origin_http_status": null,
+    "error": "curl: (56) CONNECT tunnel failed, response 403",
+    "body_sha256": null,
+    "classification": "Codex ordinary access attempt; no reviewer content substituted"
+  },
+  {
+    "url": "https://hypeauditor.com/instagram/hydroflask/",
+    "collected_utc": "2026-10-14T11:43:15.821821+00:00",
+    "curl_exit_code": 56,
+    "origin_http_status": null,
+    "error": "curl: (56) CONNECT tunnel failed, response 403",
+    "body_sha256": null,
+    "classification": "Codex ordinary access attempt; no reviewer content substituted"
+  },
+  {
+    "url": "https://hypeauditor.com/instagram/owala/",
+    "collected_utc": "2026-10-14T11:43:15.836394+00:00",
+    "curl_exit_code": 56,
+    "origin_http_status": null,
+    "error": "curl: (56) CONNECT tunnel failed, response 403",
+    "body_sha256": null,
+    "classification": "Codex ordinary access attempt; no reviewer content substituted"
+  }
+]

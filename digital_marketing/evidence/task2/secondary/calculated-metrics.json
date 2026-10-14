@@ -1,0 +1,44 @@
+[
+  {
+    "brand": "Stanley 1913",
+    "handle": "stanley1913_brand",
+    "url": "https://hypeauditor.com/instagram/stanley1913_brand/",
+    "start_total": 2459,
+    "end_total": 2474,
+    "vendor_estimated_october_engagement_percent": 1.19,
+    "verified_period_post_count": null,
+    "exact_28_day_posts_per_week": null,
+    "independently_calculated_period_engagement_percent": null,
+    "net_change": 15,
+    "nominal_net_change_per_week_proxy": 4.038461538461538,
+    "proxy_unit": "net cumulative-count change per nominal week; NOT verified publication frequency"
+  },
+  {
+    "brand": "Hydro Flask",
+    "handle": "hydroflask",
+    "url": "https://hypeauditor.com/instagram/hydroflask/",
+    "start_total": 3834,
+    "end_total": 3849,
+    "vendor_estimated_october_engagement_percent": 2.38,
+    "verified_period_post_count": null,
+    "exact_28_day_posts_per_week": null,
+    "independently_calculated_period_engagement_percent": null,
+    "net_change": 15,
+    "nominal_net_change_per_week_proxy": 4.038461538461538,
+    "proxy_unit": "net cumulative-count change per nominal week; NOT verified publication frequency"
+  },
+  {
+    "brand": "Owala",
+    "handle": "owala",
+    "url": "https://hypeauditor.com/instagram/owala/",
+    "start_total": 1104,
+    "end_total": 1121,
+    "vendor_estimated_october_engagement_percent": 2.71,
+    "verified_period_post_count": null,
+    "exact_28_day_posts_per_week": null,
+    "independently_calculated_period_engagement_percent": null,
+    "net_change": 17,
+    "nominal_net_change_per_week_proxy": 4.576923076923077,
+    "proxy_unit": "net cumulative-count change per nominal week; NOT verified publication frequency"
+  }
+]

@@ -1,0 +1,207 @@
+{
+  "execution_source_revision": "f6bbcf84eb8b0c7f06bd0ed53e95fefef57bce64",
+  "generated_utc": "2026-10-14T11:44:24.346117+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "digital_marketing/research/task2/secondary",
+        "-v"
+      ],
+      "utc": "2026-10-14T11:44:20.729070+00:00",
+      "exit_code": 0,
+      "tests_run": 8,
+      "output": "digital_marketing/evidence/task2/secondary/command-0.txt"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "digital_marketing/research/task2/handoff",
+        "-v"
+      ],
+      "utc": "2026-10-14T11:44:21.055199+00:00",
+      "exit_code": 0,
+      "tests_run": 6,
+      "output": "digital_marketing/evidence/task2/secondary/command-1.txt"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "digital_marketing/research/task3",
+        "-v"
+      ],
+      "utc": "2026-10-14T11:44:21.136054+00:00",
+      "exit_code": 0,
+      "tests_run": 10,
+      "output": "digital_marketing/evidence/task2/secondary/command-2.txt"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "digital_marketing/research/task4",
+        "-v"
+      ],
+      "utc": "2026-10-14T11:44:21.254597+00:00",
+      "exit_code": 0,
+      "tests_run": 28,
+      "output": "digital_marketing/evidence/task2/secondary/command-3.txt"
+    },
+    {
+      "command": [
+        "python",
+        "digital_marketing/tools/test_generate_task3_report.py"
+      ],
+      "utc": "2026-10-14T11:44:21.584217+00:00",
+      "exit_code": 0,
+      "tests_run": 1,
+      "output": "digital_marketing/evidence/task2/secondary/command-4.txt"
+    },
+    {
+      "command": [
+        "python",
+        "digital_marketing/tools/test_generate_task4_report.py"
+      ],
+      "utc": "2026-10-14T11:44:21.867822+00:00",
+      "exit_code": 0,
+      "tests_run": 2,
+      "output": "digital_marketing/evidence/task2/secondary/command-5.txt"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "digital_marketing/research/task2/recovery",
+        "-v"
+      ],
+      "utc": "2026-10-14T11:44:21.951882+00:00",
+      "exit_code": 0,
+      "tests_run": 15,
+      "output": "digital_marketing/evidence/task2/secondary/command-6.txt"
+    },
+    {
+      "command": [
+        "python",
+        "digital_marketing/tools/test_task2_recovery_report.py"
+      ],
+      "utc": "2026-10-14T11:44:22.184510+00:00",
+      "exit_code": 0,
+      "tests_run": 3,
+      "output": "digital_marketing/evidence/task2/secondary/command-7.txt"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "utc": "2026-10-14T11:44:23.446109+00:00",
+      "exit_code": 0,
+      "tests_run": 54,
+      "output": "digital_marketing/evidence/task2/secondary/command-8.txt"
+    },
+    {
+      "command": [
+        "python",
+        "digital_marketing/tools/generate_task2_secondary_report.py"
+      ],
+      "utc": "2026-10-14T11:44:23.599998+00:00",
+      "exit_code": 0,
+      "tests_run": null,
+      "output": "digital_marketing/evidence/task2/secondary/command-9.txt"
+    },
+    {
+      "command": [
+        "pdfinfo",
+        "digital_marketing/deliverables/DM_Task2_Competitor_Audit_SECONDARY_DRAFT.pdf"
+      ],
+      "utc": "2026-10-14T11:44:23.615585+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "pdftotext",
+        "digital_marketing/deliverables/DM_Task2_Competitor_Audit_SECONDARY_DRAFT.pdf",
+        "digital_marketing/evidence/task2/secondary/pdf-text.txt"
+      ],
+      "utc": "2026-10-14T11:44:23.631711+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "pdftoppm",
+        "-png",
+        "-r",
+        "110",
+        "digital_marketing/deliverables/DM_Task2_Competitor_Audit_SECONDARY_DRAFT.pdf",
+        "artifacts/digital_marketing/task2_secondary/page"
+      ],
+      "utc": "2026-10-14T11:44:24.343861+00:00",
+      "exit_code": 0
+    }
+  ],
+  "protected_files_checked": 164,
+  "protected_files_result": "byte-for-byte unchanged",
+  "status": "incomplete measured audit; qualitative plus limited vendor snapshot comparison",
+  "handoff": {
+    "review_date_utc": "2026-10-14",
+    "provenance": "independent reviewer supplied by user; not retrieved by Codex",
+    "path": "digital_marketing/research/task2/secondary/VERIFIED_SOURCE_NOTE_2026-10-14.md",
+    "sha256": "dae18011f2f96414f7bf36f54e84d3143e1c6e2b7cd63c0e00769ea18248b691"
+  },
+  "pdf": {
+    "path": "digital_marketing/deliverables/DM_Task2_Competitor_Audit_SECONDARY_DRAFT.pdf",
+    "bytes": 51092,
+    "pages": 4,
+    "sha256": "7d997791e61c901c1ac7c901c16d4bcc4a70c3e4255f092c166a6afb889d49a3"
+  },
+  "visual_qa": "All four final pages individually inspected: readable, no clipping, overlap, corrupt glyphs or blank pages; see QA.md",
+  "digests": {
+    "digital_marketing/evidence/task2/secondary/access-results.json": "2a37a1247e916034ccec4b9567038401a74e9e41b507d33de0be26a65a211a39",
+    "digital_marketing/evidence/task2/secondary/calculated-metrics.json": "889d0ec1d2610afea4e4cbe8162b96d3a0037c7d04e8a7dcaf823819d9bdec39",
+    "digital_marketing/evidence/task2/secondary/command-0.txt": "d8431a98e74c5998d34a9e7051673603f0b3d1454ba94424b946e41ab051b3e7",
+    "digital_marketing/evidence/task2/secondary/command-1.txt": "8259895898e5e6259a048d613aafc98774d8e2a5272e986caba02aa6169784b4",
+    "digital_marketing/evidence/task2/secondary/command-2.txt": "a7ec8c48e98511844a8c413098813f2d440e50f29dddea8ad6ef60cb3706104a",
+    "digital_marketing/evidence/task2/secondary/command-3.txt": "e10c24b116c345881825902728c1477101b61c81fded987de99a950beab64abb",
+    "digital_marketing/evidence/task2/secondary/command-4.txt": "9e3dc861b4e5e60ee6472e101c10c8ed136f7339cd8c5c83b073b1e500a9c3f9",
+    "digital_marketing/evidence/task2/secondary/command-5.txt": "81d93765aea7eb0cf0c767a2634c5f97adfa1c10fa56bc4724e9169bfab9df7d",
+    "digital_marketing/evidence/task2/secondary/command-6.txt": "cc9431159d0723bc118988cfe3099c45a81108a5095708f42b95559c7237f231",
+    "digital_marketing/evidence/task2/secondary/command-7.txt": "b3e6f03e36e03576f5888c725da251b6e24b7087e5746ad2228ea4ad7833cdd0",
+    "digital_marketing/evidence/task2/secondary/command-8.txt": "4fe006ffca1ea2c7ce783c7fccfb6ab9f96ef90a3b8a21c1630d8d95cc860958",
+    "digital_marketing/evidence/task2/secondary/command-9.txt": "6c88e7995ca160752d7820316185692f4dc347c1501653dca1d25a0c836e8db9",
+    "digital_marketing/evidence/task2/secondary/pdf-text.txt": "ce56bc1c9e6779f5637d52e115dddbcd62e8bef2bad1098282b90a77c426f6dc",
+    "digital_marketing/evidence/task2/secondary/pdfinfo.txt": "0f001a335398f19218c852890680ffa6e09c86fa6be4bd42ae755d8a2dbd2402",
+    "digital_marketing/evidence/task2/secondary/QA.md": "4f38fb5cf376587d836d897afb366f2004645566a0609f802556058c5353d440",
+    "digital_marketing/research/task2/secondary/VERIFIED_SOURCE_NOTE_2026-10-14.md": "dae18011f2f96414f7bf36f54e84d3143e1c6e2b7cd63c0e00769ea18248b691",
+    "digital_marketing/research/task2/secondary/README.md": "40ae1b91ff8abceb66fe30dda307e9b3d7bb5eb8b1ff482d9cfb2f3faaf595f2",
+    "digital_marketing/research/task2/secondary/secondary_metrics.py": "cbf3024d9920b2ea9f70e0e8c6188b08c06381a6b9ce1c674667fc87624ac821",
+    "digital_marketing/research/task2/secondary/observations.json": "591a370f03f55ad28a4bf4bddd1063f745feb68fb868a54aa2b1192ff51bd1e6",
+    "digital_marketing/research/task2/secondary/test_secondary.py": "f32206a2d9aec7f5d6cdd02219f7065f8d930b9f8e046614b05839cd27a00111"
+  },
+  "tests_total": 127,
+  "tests_failed": 0
+}

@@ -1,0 +1,6 @@
+test_header_cells_use_explicit_white_bold_paragraph_style (__main__.TablePresentationTests.test_header_cells_use_explicit_white_bold_paragraph_style) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK

@@ -1,0 +1,11 @@
+test_decreasing_cumulative_total_not_rejected_as_impossible (test_handoff.HandoffTests.test_decreasing_cumulative_total_not_rejected_as_impossible) ... ok
+test_historical_arithmetic_is_not_publication_count (test_handoff.HandoffTests.test_historical_arithmetic_is_not_publication_count) ... ok
+test_invalid_handoff_prevents_report (test_handoff.HandoffTests.test_invalid_handoff_prevents_report) ... ok
+test_missing_and_invalid_values_fail (test_handoff.HandoffTests.test_missing_and_invalid_values_fail) ... ok
+test_pdf_has_four_pages_and_honest_missing_data (test_handoff.HandoffTests.test_pdf_has_four_pages_and_honest_missing_data) ... ok
+test_provenance_and_showcase_identity_preserved (test_handoff.HandoffTests.test_provenance_and_showcase_identity_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.146s
+
+OK

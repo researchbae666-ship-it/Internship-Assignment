@@ -1,0 +1,15 @@
+test_appropriate_platform_frequency_and_formats (test_campaign.CampaignTests.test_appropriate_platform_frequency_and_formats) ... ok
+test_budget_and_data_validation (test_campaign.CampaignTests.test_budget_and_data_validation) ... ok
+test_calendar_has_every_day_and_required_platform (test_campaign.CampaignTests.test_calendar_has_every_day_and_required_platform) ... ok
+test_every_action_has_complete_nonempty_fields (test_campaign.CampaignTests.test_every_action_has_complete_nonempty_fields) ... ok
+test_every_action_has_discovery_strategy_and_distinct_copy (test_campaign.CampaignTests.test_every_action_has_discovery_strategy_and_distinct_copy) ... ok
+test_four_ab_tests_are_actionable (test_campaign.CampaignTests.test_four_ab_tests_are_actionable) ... ok
+test_funnel_scenarios_reconcile (test_campaign.CampaignTests.test_funnel_scenarios_reconcile) ... ok
+test_no_action_claims_achieved_results (test_campaign.CampaignTests.test_no_action_claims_achieved_results) ... ok
+test_pacing_maps_every_paid_action_and_reconciles (test_campaign.CampaignTests.test_pacing_maps_every_paid_action_and_reconciles) ... ok
+test_targeting_specs_are_present_and_action_refs_are_consistent (test_campaign.CampaignTests.test_targeting_specs_are_present_and_action_refs_are_consistent) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.004s
+
+OK
