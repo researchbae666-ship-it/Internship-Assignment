@@ -1,0 +1,64 @@
+{
+  "schema": "progree-submission-blocker-verification-v1",
+  "collection_date": "2026-10-15",
+  "boundaries": {
+    "read_only": true,
+    "no_sign_in": true,
+    "no_identity_fields": true,
+    "no_file_upload": true,
+    "no_form_submission": true,
+    "no_access_control_bypass": true
+  },
+  "official_form": {
+    "url": "https://forms.gle/pAocy69ctQJvfbUj6",
+    "attempts": [
+      {
+        "mode": "sandboxed read-only HTTP GET",
+        "http_code": 0,
+        "bytes_received": 0,
+        "error": "curl: (56) CONNECT tunnel failed, response 403"
+      },
+      {
+        "mode": "approved read-only HTTP GET",
+        "http_code": 0,
+        "bytes_received": 0,
+        "error": "curl: (56) CONNECT tunnel failed, response 403"
+      }
+    ],
+    "conclusion": "No HTTP response or form content was received. This environment cannot establish response acceptance, sign-in requirements, fields, track selection, upload rules, submission limits, declarations, or cutoff time/timezone. No inference is made about the form's actual availability."
+  },
+  "task2_targeted_final_recovery": {
+    "purpose": "Locate dated official public Instagram posts for Stanley 1913, Hydro Flask, or Owala in the required 2026-09-15 through 2026-10-12 UTC observation window.",
+    "search_query": "site:instagram.com/stanley1913 OR site:instagram.com/hydroflask OR site:instagram.com/owalalife after:2026-09-14 before:2026-10-13",
+    "attempts": [
+      {
+        "mode": "sandboxed public search-index request",
+        "http_code": 0,
+        "bytes_received": 0,
+        "error": "curl: (56) CONNECT tunnel failed, response 403"
+      },
+      {
+        "mode": "approved public search-index request",
+        "http_code": 0,
+        "bytes_received": 0,
+        "error": "curl: (56) CONNECT tunnel failed, response 403"
+      }
+    ],
+    "result": "No source page, post URL, publication date, account verification, or public interaction was received. No research observation, calculation, source PDF, combined PDF, or final-candidate PDF was changed.",
+    "remaining_requirement": "A demonstrably sufficient dated official post inventory with publication dates, content evidence, visible interactions, and appropriate same-platform denominators, or explicit organizer acceptance of the disclosed limited methodology."
+  },
+  "official_notice_confirmed_by_local_record": {
+    "source": "Text Message 2.md",
+    "deadline_date": "2026-10-18",
+    "minimum_task_count": "at least 3 of 4",
+    "instruction": "Combine all tasks into ONE PDF and submit exclusively through the provided Google Form.",
+    "not_stated": [
+      "exact cutoff hour or timezone",
+      "whether one response supports both tracks",
+      "whether one PDF is required per track or across both tracks",
+      "form fields and required declarations",
+      "sign-in requirement",
+      "file type, size, and upload-count limits"
+    ]
+  }
+}

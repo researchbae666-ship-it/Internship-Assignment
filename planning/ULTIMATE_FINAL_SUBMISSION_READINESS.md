@@ -11,6 +11,12 @@ The audited branch starts at reviewed commit `e421f1b3286eb8ffcc913d33f5185957a8
 
 Overall submission package: **TECHNICALLY READY**. External certificate eligibility: **UNCONFIRMED**. Owner authorization: **NOT YET GRANTED**.
 
+## Submission-blocker verification — 15 October 2026
+
+The official Form could not be read from this execution environment. One sandboxed and one approved read-only request each returned `CONNECT tunnel failed, response 403`, with zero response bytes. No sign-in, field entry, upload, declaration, or submission occurred. The result does not establish that the Form is closed; it leaves response acceptance, sign-in, fields, upload limits, track selection, multi-response policy, PDF arrangement, and cutoff time/timezone **unverified**.
+
+One bounded public-search recovery attempt for dated Stanley 1913, Hydro Flask, and Owala Instagram evidence also returned the same transport failure with no content. It produced no new source observation. Marketing Task 2 therefore remains an evidence-limited public-source audit and must not be upgraded or rebuilt. The evidence record is `evidence/ultimate_final_review/submission_blocker_verification_2026-10-15.json`; the exact owner checklist and an unsent clarification draft are in `planning/FINAL_OWNER_ACTIONS.md`.
+
 ## Selected files
 
 | PDF | Pages | Bytes | SHA-256 |
