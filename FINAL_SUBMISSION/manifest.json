@@ -1,0 +1,845 @@
+{
+  "schema": "progree-complete-portfolio-v1",
+  "status": "verified",
+  "source_commit": "15407308d9f1295415afddd7643394d6f8665e06",
+  "generated_by": "tools/build_complete_internship_portfolio.py",
+  "output": {
+    "path": "FINAL_SUBMISSION/01_Progree_Complete_Internship_Portfolio.pdf",
+    "pages": 60,
+    "bytes": 195494,
+    "sha256": "b5903f037578f6e22a9792cf4fc8862a90db18b508935e7b15df3d11bfa3b071"
+  },
+  "source_candidates": [
+    {
+      "path": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "pages": 38,
+      "bytes": 140592,
+      "sha256": "571f801e92fd496b27dc8bcd1fb40066d22068f35b783ba2e151f36b7335bb5a",
+      "portfolio_pages": [
+        6,
+        43
+      ]
+    },
+    {
+      "path": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "pages": 14,
+      "bytes": 29886,
+      "sha256": "8910c0aafccb8a575affc9794291b5c9910a23cfebdda3fa6b873c485bece284",
+      "portfolio_pages": [
+        45,
+        58
+      ]
+    }
+  ],
+  "page_map": [
+    {
+      "section": "Cover",
+      "pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "section": "Executive summary",
+      "pages": [
+        2,
+        2
+      ]
+    },
+    {
+      "section": "Contents",
+      "pages": [
+        3,
+        3
+      ]
+    },
+    {
+      "section": "Results at a glance",
+      "pages": [
+        4,
+        4
+      ]
+    },
+    {
+      "section": "Digital Marketing introduction",
+      "pages": [
+        5,
+        5
+      ]
+    },
+    {
+      "section": "Approved Digital Marketing candidate",
+      "pages": [
+        6,
+        43
+      ],
+      "source_pages": [
+        1,
+        38
+      ]
+    },
+    {
+      "section": "Python introduction",
+      "pages": [
+        44,
+        44
+      ]
+    },
+    {
+      "section": "Approved Python candidate",
+      "pages": [
+        45,
+        58
+      ],
+      "source_pages": [
+        1,
+        14
+      ]
+    },
+    {
+      "section": "Selective verification and project evidence",
+      "pages": [
+        59,
+        59
+      ]
+    },
+    {
+      "section": "Conclusion and source / reproduction index",
+      "pages": [
+        60,
+        60
+      ]
+    }
+  ],
+  "verified_source_facts": {
+    "marketing_actions": 53,
+    "marketing_channels": {
+      "Instagram": 30,
+      "LinkedIn": 12,
+      "YouTube": 11
+    },
+    "marketing_paid_actions": 15,
+    "marketing_personas": 3,
+    "marketing_ab_tests": 4,
+    "marketing_budget_usd": 3000,
+    "marketing_budget_allocation": {
+      "Instagram": 1350,
+      "LinkedIn": 1050,
+      "YouTube": 600
+    },
+    "marketing_funnel": [
+      {
+        "name": "Low",
+        "interest_completions": 6.75
+      },
+      {
+        "name": "Base",
+        "interest_completions": 30
+      },
+      {
+        "name": "High",
+        "interest_completions": 100.8
+      },
+      {
+        "name": "Stretch",
+        "interest_completions": 300
+      }
+    ],
+    "task4_keywords": 12,
+    "task4_seo_pages": 4,
+    "task4_funnel_stages": 4,
+    "task4_flows": 4,
+    "task4_messages": 10,
+    "task4_budget": {
+      "currency": "GBP",
+      "total_gbp": 12000,
+      "media_gbp": 10000,
+      "allocation": {
+        "Google Search": 4500,
+        "Meta prospecting": 3000,
+        "YouTube": 1500,
+        "Consented retargeting reserve": 1000,
+        "Measurement and creative": 2000
+      },
+      "assumption": "Proposed 90-day planning budget; no spend is authorized or incurred."
+    },
+    "task4_scenarios": [
+      {
+        "name": "Low",
+        "customers": 75.0,
+        "media_cac_gbp": 133.33333333333334,
+        "all_in_cost_gbp": 160.0,
+        "roas": 0.3375
+      },
+      {
+        "name": "Base",
+        "customers": 160.0,
+        "media_cac_gbp": 62.5,
+        "all_in_cost_gbp": 75.0,
+        "roas": 0.88
+      },
+      {
+        "name": "High",
+        "customers": 320.0,
+        "media_cac_gbp": 31.25,
+        "all_in_cost_gbp": 37.5,
+        "roas": 2.08
+      }
+    ]
+  },
+  "administrative_qualification": "This review candidate satisfies the owner-requested one-file package. The form's single-domain selection does not confirm two-track certificate eligibility, and Marketing Task 2 remains evidence-limited pending organizer acceptance.",
+  "source_preservation": {
+    "imported_pages": 52,
+    "all_text_equal": true,
+    "all_content_streams_equal": true,
+    "all_media_boxes_equal": true,
+    "all_rotations_equal": true,
+    "page_checks": [
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 1,
+        "portfolio_page": 6,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 2,
+        "portfolio_page": 7,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 3,
+        "portfolio_page": 8,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 4,
+        "portfolio_page": 9,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 5,
+        "portfolio_page": 10,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 6,
+        "portfolio_page": 11,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 7,
+        "portfolio_page": 12,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 8,
+        "portfolio_page": 13,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 9,
+        "portfolio_page": 14,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 10,
+        "portfolio_page": 15,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 11,
+        "portfolio_page": 16,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 12,
+        "portfolio_page": 17,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 13,
+        "portfolio_page": 18,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 14,
+        "portfolio_page": 19,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 15,
+        "portfolio_page": 20,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 16,
+        "portfolio_page": 21,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 17,
+        "portfolio_page": 22,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 18,
+        "portfolio_page": 23,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 19,
+        "portfolio_page": 24,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 20,
+        "portfolio_page": 25,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 21,
+        "portfolio_page": 26,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 22,
+        "portfolio_page": 27,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 23,
+        "portfolio_page": 28,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 24,
+        "portfolio_page": 29,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 25,
+        "portfolio_page": 30,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 26,
+        "portfolio_page": 31,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 27,
+        "portfolio_page": 32,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 28,
+        "portfolio_page": 33,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 29,
+        "portfolio_page": 34,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 30,
+        "portfolio_page": 35,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 31,
+        "portfolio_page": 36,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 32,
+        "portfolio_page": 37,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 33,
+        "portfolio_page": 38,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 34,
+        "portfolio_page": 39,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 35,
+        "portfolio_page": 40,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 36,
+        "portfolio_page": 41,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 37,
+        "portfolio_page": 42,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 38,
+        "portfolio_page": 43,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 1,
+        "portfolio_page": 45,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 2,
+        "portfolio_page": 46,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 3,
+        "portfolio_page": 47,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 4,
+        "portfolio_page": 48,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 5,
+        "portfolio_page": 49,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 6,
+        "portfolio_page": 50,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 7,
+        "portfolio_page": 51,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 8,
+        "portfolio_page": 52,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 9,
+        "portfolio_page": 53,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 10,
+        "portfolio_page": 54,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 11,
+        "portfolio_page": 55,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 12,
+        "portfolio_page": 56,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 13,
+        "portfolio_page": 57,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      },
+      {
+        "source": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+        "source_page": 14,
+        "portfolio_page": 58,
+        "text_equal": true,
+        "content_stream_equal": true,
+        "media_box_equal": true,
+        "rotation_equal": true
+      }
+    ]
+  },
+  "navigation": {
+    "bookmarks": [
+      {
+        "title": "Cover",
+        "page": 1
+      },
+      {
+        "title": "Executive summary",
+        "page": 2
+      },
+      {
+        "title": "Contents",
+        "page": 3
+      },
+      {
+        "title": "Results at a glance",
+        "page": 4
+      },
+      {
+        "title": "Digital Marketing & Branding",
+        "page": 5
+      },
+      {
+        "title": "Track introduction",
+        "page": 5
+      },
+      {
+        "title": "Approved report",
+        "page": 6
+      },
+      {
+        "title": "Task 2 \u2014 evidence-limited public-source audit",
+        "page": 8
+      },
+      {
+        "title": "Task 3 \u2014 RefillLoop proposed 30-day campaign",
+        "page": 12
+      },
+      {
+        "title": "Task 4 \u2014 Ocean Bottle proposed SEO strategy",
+        "page": 32
+      },
+      {
+        "title": "Task 4 supporting appendix \u2014 proposed email workflows",
+        "page": 38
+      },
+      {
+        "title": "Python Programming",
+        "page": 44
+      },
+      {
+        "title": "Track introduction",
+        "page": 44
+      },
+      {
+        "title": "Approved report",
+        "page": 45
+      },
+      {
+        "title": "Task 2 \u2014 Fibonacci and timing",
+        "page": 47
+      },
+      {
+        "title": "Task 3 \u2014 safe file automation",
+        "page": 50
+      },
+      {
+        "title": "Task 4 \u2014 multi-intent rule-based chatbot",
+        "page": 53
+      },
+      {
+        "title": "Selective verification and project evidence",
+        "page": 59
+      },
+      {
+        "title": "Conclusion and source / reproduction index",
+        "page": 60
+      }
+    ],
+    "page_labels": {
+      "first": "Portfolio 1",
+      "last": "Portfolio 60",
+      "count": 60
+    }
+  },
+  "hyperlinks": {
+    "uri_annotation_count": 21,
+    "marketing_source_uri_count": 11,
+    "source_index_uri_count": 10,
+    "source_index_urls": [
+      "https://github.com/researchbae666-ship-it/Internship-Assignment/blob/main/internship/task2.py",
+      "https://github.com/researchbae666-ship-it/Internship-Assignment/blob/main/internship/task3.py",
+      "https://github.com/researchbae666-ship-it/Internship-Assignment/blob/main/internship/task4.py",
+      "https://github.com/researchbae666-ship-it/Internship-Assignment/tree/main/tests",
+      "https://github.com/researchbae666-ship-it/Internship-Assignment/tree/main/digital_marketing/research/task2",
+      "https://github.com/researchbae666-ship-it/Internship-Assignment/blob/main/digital_marketing/research/task3/build_campaign.py",
+      "https://github.com/researchbae666-ship-it/Internship-Assignment/blob/main/digital_marketing/research/task4/build_strategy.py",
+      "https://github.com/researchbae666-ship-it/Internship-Assignment/blob/main/digital_marketing/research/task4/email_workflows.py",
+      "https://github.com/researchbae666-ship-it/Internship-Assignment/blob/main/evidence/ultimate_final_review/QA.md",
+      "https://github.com/researchbae666-ship-it/Internship-Assignment/blob/main/evidence/ultimate_final_review/manifest.json"
+    ]
+  },
+  "rendering": {
+    "dpi": 180,
+    "rendered_pages": 60,
+    "non_blank_pages": 60,
+    "imported_source_pages_raster_equal": 52,
+    "contact_sheets": [
+      "/tmp/progree-complete-portfolio-render/contact-sheet-01.png",
+      "/tmp/progree-complete-portfolio-render/contact-sheet-02.png",
+      "/tmp/progree-complete-portfolio-render/contact-sheet-03.png",
+      "/tmp/progree-complete-portfolio-render/contact-sheet-04.png",
+      "/tmp/progree-complete-portfolio-render/contact-sheet-05.png"
+    ],
+    "render_directory": "/tmp/progree-complete-portfolio-render"
+  },
+  "metadata": {
+    "/Producer": "pypdf",
+    "/Title": "Progree Internship \u2014 Complete Project Portfolio",
+    "/Author": "Anonymous internship project",
+    "/Subject": "Digital Marketing and Python Tasks 2\u20134 portfolio; Marketing Task 2 remains evidence-limited and pending acceptance",
+    "/Creator": "Progree portfolio assembly"
+  },
+  "privacy": {
+    "metadata_author": "Anonymous internship project",
+    "email_like_metadata_values": 0,
+    "body_email_domains": [],
+    "plus_prefixed_phone_patterns": 0,
+    "status": "pass"
+  },
+  "manual_visual_review": {
+    "status": "complete",
+    "scope": "All 60 pages rendered at 180 DPI; imported source pages are also raster-compared against both approved candidates."
+  },
+  "regressions": {
+    "status": "complete",
+    "unit_test_count": 129,
+    "commands": [
+      {
+        "command": "python -m unittest discover -s tests -v",
+        "outcome": "55 tests passed"
+      },
+      {
+        "command": "(cd digital_marketing/research/task2/handoff && python -m unittest -v test_handoff)",
+        "outcome": "6 tests passed"
+      },
+      {
+        "command": "(cd digital_marketing/research/task2/recovery && python -m unittest -v test_recovery)",
+        "outcome": "15 tests passed"
+      },
+      {
+        "command": "(cd digital_marketing/research/task2/secondary && python -m unittest -v test_secondary)",
+        "outcome": "8 tests passed"
+      },
+      {
+        "command": "(cd digital_marketing/research/task3 && python -m unittest -v test_campaign)",
+        "outcome": "11 tests passed"
+      },
+      {
+        "command": "(cd digital_marketing/research/task4 && python -m unittest -v test_strategy test_email_workflows)",
+        "outcome": "28 tests passed"
+      },
+      {
+        "command": "(cd digital_marketing/tools && python -m unittest -v test_task2_recovery_report test_generate_task3_report test_generate_task4_report)",
+        "outcome": "6 tests passed"
+      },
+      {
+        "command": "python tools/ultimate_red_team_checks.py",
+        "outcome": "passed; protected hashes unchanged"
+      }
+    ]
+  },
+  "upload_rule": {
+    "visible_limit_bytes": 10485760,
+    "under_limit": true,
+    "rule_source": "owner-supplied form screenshot/text detail; live form access remains unverified"
+  }
+}
