@@ -1,5 +1,5 @@
 {
-  "additional_untracked_files_scanned": 23,
+  "additional_untracked_files_scanned": 2,
   "findings": [
     {
       "category": "identity_reference",
@@ -194,6 +194,12 @@
       "path": "evidence/ultimate_final_review/SUBMISSION_CHECKLIST.md"
     },
     {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "evidence/ultimate_final_review/form_validation.json"
+    },
+    {
       "category": "email",
       "classification": "allowed synthetic test fixture",
       "match_count": 2,
@@ -228,6 +234,18 @@
       "classification": "policy/reference wording; no value recorded",
       "match_count": 2,
       "path": "planning/DUAL_TRACK_SUBMISSION_STRATEGY.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "planning/FINAL_FORM_SUBMISSION_PREVIEW.md"
+    },
+    {
+      "category": "identity_reference",
+      "classification": "policy/reference wording; no value recorded",
+      "match_count": 2,
+      "path": "planning/FINAL_OWNER_ACTIONS.md"
     },
     {
       "category": "identity_reference",
@@ -359,6 +377,6 @@
   "result": "pass",
   "schema": "progree-ultimate-privacy-scan-v1",
   "suspicious_filenames": [],
-  "tracked_file_count": 250,
+  "tracked_file_count": 293,
   "unknown_email_or_phone_or_secret_count": 0
 }

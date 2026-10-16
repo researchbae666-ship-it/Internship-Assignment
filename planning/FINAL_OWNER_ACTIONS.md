@@ -2,6 +2,12 @@
 
 Last checked: 15 October 2026. This is an administrative decision record; it does not authorize or perform submission.
 
+## Form-rehearsal update — 16 October 2026
+
+The owner has supplied screenshots/text confirming required fields for certificate name, email, WhatsApp number, registration/student ID, one single-choice domain selection, and one upload of at most 10 MB. The upload wording explicitly mentions a file, PDF, or zipped folder. No interactive browser or owner-authorized Google session is available here, so these details are recorded as owner-supplied, not newly observed live-form behavior. The actual title, response-acceptance status, sign-in, multiple-response policy, editing policy, declarations, and cutoff time/timezone remain unverified.
+
+The two PDFs pass a local rehearsal using those rules. The full non-sensitive preview is `planning/FINAL_FORM_SUBMISSION_PREVIEW.md`, with machine-readable results in `evidence/ultimate_final_review/form_validation.json`. The owner-provided identity values are deliberately not written to either file.
+
 ## Confirmed complete
 
 - Python Programming Tasks 2–4 and Digital Marketing & Branding Tasks 2–4 are retained on `main` with their research, source code, test records, original PDFs, and final-audit evidence.

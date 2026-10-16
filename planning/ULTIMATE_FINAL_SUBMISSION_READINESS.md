@@ -17,6 +17,8 @@ The official Form could not be read from this execution environment. One sandbox
 
 One bounded public-search recovery attempt for dated Stanley 1913, Hydro Flask, and Owala Instagram evidence also returned the same transport failure with no content. It produced no new source observation. Marketing Task 2 therefore remains an evidence-limited public-source audit and must not be upgraded or rebuilt. The evidence record is `evidence/ultimate_final_review/submission_blocker_verification_2026-10-15.json`; the exact owner checklist and an unsent clarification draft are in `planning/FINAL_OWNER_ACTIONS.md`.
 
+On 16 October, owner-supplied Form screenshots/text established the visible required personal fields, single-choice domain selector, one-upload/10 MB constraint, and wording that explicitly allows a PDF. A local two-track rehearsal validates the selected PDFs against those stated upload requirements; it does not establish live upload acceptance or permission for two separate responses. See `planning/FINAL_FORM_SUBMISSION_PREVIEW.md` and `evidence/ultimate_final_review/form_validation.json`.
+
 ## Selected files
 
 | PDF | Pages | Bytes | SHA-256 |

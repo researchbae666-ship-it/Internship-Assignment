@@ -1,0 +1,89 @@
+{
+  "schema": "progree-form-rehearsal-v1",
+  "collection_date": "2026-10-16",
+  "source_of_form_details": "Owner-supplied screenshots and text; screenshots were not attached to this workspace and are not stored in the repository.",
+  "live_form": {
+    "url": "https://forms.gle/pAocy69ctQJvfbUj6",
+    "interactive_browser_available": false,
+    "live_access_result": "not tested in an interactive browser",
+    "previous_read_only_transport_result": "No response body: CONNECT tunnel failed, response 403. This does not establish the form's actual status.",
+    "no_sign_in": true,
+    "no_field_entry": true,
+    "no_file_transfer": true,
+    "no_upload": true,
+    "no_submission": true
+  },
+  "owner_supplied_form_requirements": {
+    "required_fields": [
+      "Name — as it should appear on the certificate",
+      "Email ID",
+      "WhatsApp Number",
+      "Registration No / Student ID",
+      "In which Domain you performed?"
+    ],
+    "domain_control": "single-choice radio buttons including Python Programming and Digital Marketing & Branding",
+    "upload_instruction": "Submit all the tasks in one file or PDF or zip the folder and upload it.",
+    "upload_count": 1,
+    "maximum_upload_bytes": 10485760,
+    "explicitly_mentioned_upload_types": ["file", "PDF", "zip"]
+  },
+  "local_pdf_validation": {
+    "python": {
+      "path": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "page_count": 14,
+      "bytes": 29886,
+      "sha256": "8910c0aafccb8a575affc9794291b5c9910a23cfebdda3fa6b873c485bece284",
+      "opens_with_pdf_reader": true,
+      "extension": ".pdf",
+      "below_10_mb_limit": true,
+      "technical_status": "pass"
+    },
+    "marketing": {
+      "path": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "page_count": 38,
+      "bytes": 140592,
+      "sha256": "571f801e92fd496b27dc8bcd1fb40066d22068f35b783ba2e151f36b7335bb5a",
+      "opens_with_pdf_reader": true,
+      "extension": ".pdf",
+      "below_10_mb_limit": true,
+      "technical_status": "pass"
+    }
+  },
+  "private_field_rehearsal": {
+    "personal_field_values": "Owner supplied; intentionally excluded from repository files, logs, screenshots, and this JSON.",
+    "format_review": "Private local review only: supplied certificate name, email, international WhatsApp number, and registration ID have values ready for entry. Ownership, certificate spelling, and form-specific formatting remain owner confirmation items.",
+    "python_draft": {
+      "domain": "Python Programming",
+      "attachment": "deliverables/Progree_Python_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "required_field_completeness": "locally complete with owner-supplied values",
+      "live_entry_or_upload": "not attempted"
+    },
+    "marketing_draft": {
+      "domain": "Digital Marketing & Branding",
+      "attachment": "digital_marketing/deliverables/Progree_Digital_Marketing_Tasks_2_3_4_FINAL_CANDIDATE.pdf",
+      "required_field_completeness": "locally complete with owner-supplied values",
+      "live_entry_or_upload": "not attempted"
+    }
+  },
+  "dry_run_conditions": [
+    {"condition": "correct domain selection", "python": "PASS (local rehearsal)", "marketing": "PASS (local rehearsal)"},
+    {"condition": "correct supplied personal-information fields", "python": "OWNER CONFIRMATION REQUIRED", "marketing": "OWNER CONFIRMATION REQUIRED"},
+    {"condition": "correct PDF assignment", "python": "PASS", "marketing": "PASS"},
+    {"condition": "PDF opens, page count, hash, extension, and size", "python": "PASS", "marketing": "PASS"},
+    {"condition": "one-file / 10 MB rule", "python": "PASS against owner-supplied form detail", "marketing": "PASS against owner-supplied form detail"},
+    {"condition": "actual upload acceptance", "python": "NOT TESTABLE — upload would transfer the PDF to Google", "marketing": "NOT TESTABLE — upload would transfer the PDF to Google"},
+    {"condition": "two separate live responses allowed", "python": "NOT TESTABLE", "marketing": "NOT TESTABLE"},
+    {"condition": "response editing, declarations, sign-in, acceptance state, and cutoff time/timezone", "python": "NOT TESTABLE", "marketing": "NOT TESTABLE"}
+  ],
+  "two_track_arrangement": {
+    "confirmed": false,
+    "known": "A single-choice domain field means one response cannot select both domains at once.",
+    "not_known": "Whether the form allows two responses for two domains, or provides another organizer-approved route.",
+    "safe_conclusion": "Do not submit either response until the owner verifies the form behavior or receives organizer confirmation. Do not combine the PDFs without explicit form wording."
+  },
+  "marketing_task2": {
+    "technical_document_status": "evidence-limited source audit preserved in the selected Marketing PDF",
+    "eligibility_status": "organizer acceptance unconfirmed",
+    "not_claimed": ["verified observation-window posting cadence", "complete per-post inventory", "independently calculated engagement rate", "organizer approval"]
+  }
+}
