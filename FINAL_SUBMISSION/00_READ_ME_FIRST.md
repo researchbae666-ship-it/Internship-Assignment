@@ -1,25 +1,18 @@
 # Progree complete internship portfolio
 
-## Primary upload candidate
+## Owner-reviewed PDF candidates
 
-`01_Progree_Complete_Internship_Portfolio.pdf` is the single owner-review PDF. It places Digital Marketing & Branding first and Python Programming second, and includes Tasks 2, 3 and 4 for both tracks.
+- `01_Progree_Complete_Internship_Portfolio.pdf` — historical anonymous 60-page baseline, retained unchanged.
+- `01_Progree_Complete_Internship_Portfolio_PERSONALIZED.pdf` — owner-authorized personalized candidate: **60 pages**, **195,256 bytes**, SHA-256 `799bfc9ff0f2e07a65660f8762a6fe09497c03243c1d1e48ba975358b2bc21da`.
 
-- Pages: **60**
-- Bytes: **195,494**
-- SHA-256: `b5903f037578f6e22a9792cf4fc8862a90db18b508935e7b15df3d11bfa3b071`
-- Upload-size check: below the visible 10 MB limit supplied by the owner.
-- Reproduce: `python tools/build_complete_internship_portfolio.py --replace` then `python tools/verify_complete_internship_portfolio.py`.
+Both order Digital Marketing & Branding first and Python Programming second, with the complete approved Marketing and Python reports preserved as PDF pages. The personalized candidate adds identity information only to its cover and author metadata.
 
-## Included order
+## Upload preparation
 
-1. New portfolio cover, executive summary, contents, results and Digital Marketing introduction
-2. Complete 38-page approved Digital Marketing final candidate
-3. Python introduction
-4. Complete 14-page approved Python final candidate
-5. Verification evidence and source/reproduction index
+The personalized candidate is below the owner-supplied visible 10 MB file limit. It is a review candidate, not an executed submission. The form's single domain choice does not establish that one response earns two certificates.
 
-## Important owner qualification
+## Reproduce
 
-Marketing Task 2 remains a transparent evidence-limited public-source audit. It does not establish verified posting cadence for the requested observation window or organizer acceptance. The owner-supplied form details describe one upload and a single domain choice; this one-file portfolio does not prove that one response earns two track certificates. No form was submitted.
+Use `python tools/build_personalized_internship_portfolio.py --help` and `python tools/verify_personalized_internship_portfolio.py --help`. Supply the owner-authorized fields privately; the support documentation deliberately does not repeat them.
 
-`manifest.json` and `QA/FINAL_VERIFICATION.md` provide machine-readable traceability and final verification.
+Marketing Task 2 remains an evidence-limited public-source audit pending organizer acceptance. No form, email, campaign or LinkedIn activity has occurred.
