@@ -20,13 +20,13 @@ The owner expressly authorized the supplied full name/certificate name, email, W
 | Metadata and authorized details | PASS — exact authorized values validated; no unrecognized email-like value or plus-prefixed phone pattern |
 | Rendered-page review | PASS — all 60 pages were rendered at 180 DPI; the eight authored pages were reviewed at full resolution and imported pages were checked against source renders. |
 | Relevant regression checks | PASS — 129 tests passed across the listed suites; adversarial checks passed. |
-| Upload size | PASS — 195,256 bytes, below 10 MB |
+| Upload size | PASS — 195,244 bytes, below 10 MB |
 
 ## File identity
 
 - File: `FINAL_SUBMISSION/01_Progree_Complete_Internship_Portfolio_PERSONALIZED.pdf`
-- SHA-256: `799bfc9ff0f2e07a65660f8762a6fe09497c03243c1d1e48ba975358b2bc21da`
-- Bytes: 195,256
+- SHA-256: `032823278f24c7ea3ba78b58db574cea08cca3672be366145c32e509fc99bc19`
+- Bytes: 195,244
 - Baseline and source candidates retain their expected hashes.
 
 ## Rendering evidence

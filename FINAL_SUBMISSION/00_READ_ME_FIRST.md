@@ -3,9 +3,9 @@
 ## Owner-reviewed PDF candidates
 
 - `01_Progree_Complete_Internship_Portfolio.pdf` — historical anonymous 60-page baseline, retained unchanged.
-- `01_Progree_Complete_Internship_Portfolio_PERSONALIZED.pdf` — owner-authorized personalized candidate: **60 pages**, **195,256 bytes**, SHA-256 `799bfc9ff0f2e07a65660f8762a6fe09497c03243c1d1e48ba975358b2bc21da`.
+- `01_Progree_Complete_Internship_Portfolio_PERSONALIZED.pdf` — owner-authorized personalized candidate: **60 pages**, **195,244 bytes**, SHA-256 `032823278f24c7ea3ba78b58db574cea08cca3672be366145c32e509fc99bc19`.
 
-Both order Digital Marketing & Branding first and Python Programming second, with the complete approved Marketing and Python reports preserved as PDF pages. The personalized candidate adds identity information only to its cover and author metadata.
+Both order Digital Marketing & Branding first and Python Programming second, with the complete verified Marketing and Python reports preserved as PDF pages. The personalized candidate adds identity information only to its cover and author metadata.
 
 ## Upload preparation
 

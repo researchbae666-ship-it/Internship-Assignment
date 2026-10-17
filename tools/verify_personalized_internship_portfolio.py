@@ -27,6 +27,7 @@ ROOT = base.ROOT
 FINAL = ROOT / "FINAL_SUBMISSION"
 BASELINE = FINAL / "01_Progree_Complete_Internship_Portfolio.pdf"
 PORTFOLIO = FINAL / "01_Progree_Complete_Internship_Portfolio_PERSONALIZED.pdf"
+README = FINAL / "00_READ_ME_FIRST.md"
 MANIFEST = FINAL / "manifest.json"
 QA = FINAL / "QA" / "FINAL_VERIFICATION.md"
 MARKETING = base.MARKETING
@@ -209,7 +210,7 @@ def main() -> int:
         raise RuntimeError("personalized candidate is encrypted or has wrong page count")
     new_page_text = {
         1: "CANDIDATE INFORMATION",
-        2: "six submitted Task 2–4 deliverables",
+        2: "six prepared Task 2–4 deliverables",
         3: "Complete Marketing report",
         4: "A. Implemented software",
         5: "Evidence-limited public-source audit",
@@ -226,7 +227,7 @@ def main() -> int:
             raise RuntimeError(f"authorized {label} is absent from the PDF")
     if all_text.count(owner.email) != 1 or all_text.count(owner.whatsapp) != 1 or all_text.count(owner.registration) != 1:
         raise RuntimeError("authorized candidate contact details are duplicated unexpectedly")
-    forbidden = ("Six fully completed and approved tasks", "certificate eligibility is confirmed", "achieved campaign performance", "verified 28-day posting cadence")
+    forbidden = ("Six fully completed and approved tasks", "six submitted Task 2–4 deliverables", "certificate eligibility is confirmed", "achieved campaign performance", "verified 28-day posting cadence")
     authored_text = "\n".join((reader.pages[index].extract_text() or "") for index in (0, 1, 2, 3, 4, 43, 58, 59))
     if any(term.lower() in authored_text.lower() for term in forbidden):
         raise RuntimeError("unsupported completion claim appears in authored pages")
@@ -245,11 +246,26 @@ def main() -> int:
     expected_metadata = {
         "/Title": "Progree Internship — Complete Project Portfolio — Personalized Candidate",
         "/Author": owner.certificate_name,
+        "/Subject": "Personalized Digital Marketing and Python Tasks 2–4 portfolio; Marketing Task 2 remains evidence-limited and pending acceptance",
         "/Creator": "Progree personalized portfolio assembly",
         "/Producer": "pypdf",
     }
+    if set(metadata) != set(expected_metadata):
+        raise RuntimeError(f"unexpected PDF metadata keys: {sorted(set(metadata) - set(expected_metadata))}")
     if any(metadata.get(key) != value for key, value in expected_metadata.items()):
         raise RuntimeError("metadata mismatch")
+    metadata_text = "\n".join(f"{key}: {value}" for key, value in metadata.items())
+    if owner.email.casefold() in metadata_text.casefold() or owner.registration.casefold() in metadata_text.casefold():
+        raise RuntimeError("candidate email or registration ID appears in PDF metadata")
+    if re.sub(r"\D", "", owner.whatsapp) in re.sub(r"\D", "", metadata_text):
+        raise RuntimeError("candidate WhatsApp number appears in PDF metadata")
+    if any(key != "/Author" and owner.certificate_name.casefold() in value.casefold() for key, value in metadata.items()):
+        raise RuntimeError("candidate name appears outside the authorized /Author metadata field")
+    support_documents = (README, MANIFEST, QA)
+    for document in support_documents:
+        document_text = document.read_text(encoding="utf-8")
+        if any(value.casefold() in document_text.casefold() for value in (owner.name, owner.email, owner.whatsapp, owner.registration)):
+            raise RuntimeError(f"authorized personal detail leaked into support document: {document.relative_to(ROOT)}")
     email_domains = sorted(set(re.findall(r"\b[A-Za-z0-9._%+-]+@([A-Za-z0-9.-]+\.[A-Za-z]{2,})\b", all_text)))
     owner_domain = owner.email.rsplit("@", 1)[1]
     if set(email_domains) - {"example.test", owner_domain}:

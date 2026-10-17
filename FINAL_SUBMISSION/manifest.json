@@ -844,11 +844,11 @@
   },
   "personalized_candidate": {
     "status": "verified",
-    "source_commit": "357f3e3c0a2f51030e54339463f539bda1b3cd74",
+    "source_commit": "3afb3ca785f679aa191128e18eef5052d17df4ff",
     "path": "FINAL_SUBMISSION/01_Progree_Complete_Internship_Portfolio_PERSONALIZED.pdf",
     "pages": 60,
-    "bytes": 195256,
-    "sha256": "799bfc9ff0f2e07a65660f8762a6fe09497c03243c1d1e48ba975358b2bc21da",
+    "bytes": 195244,
+    "sha256": "032823278f24c7ea3ba78b58db574cea08cca3672be366145c32e509fc99bc19",
     "baseline_portfolio": {
       "path": "FINAL_SUBMISSION/01_Progree_Complete_Internship_Portfolio.pdf",
       "pages": 60,

@@ -107,7 +107,7 @@ def cover(canvas: Canvas, owner: argparse.Namespace) -> None:
     canvas.drawString(left, height - 117 * mm, "Python Programming")
     canvas.setFillColor(colors.HexColor("#B9DDDE"))
     canvas.setFont("Helvetica-Bold", 8.4)
-    canvas.drawString(left, height - 134 * mm, "SIX SUBMITTED TASK DELIVERABLES ACROSS TWO INTERNSHIP TRACKS")
+    canvas.drawString(left, height - 134 * mm, "SIX PREPARED TASK DELIVERABLES ACROSS TWO INTERNSHIP TRACKS")
     canvas.setFillColor(colors.white)
     canvas.setFont("Helvetica", 8.9)
     canvas.drawString(left, height - 145 * mm, "Includes one evidence-limited competitor audit; organizer acceptance remains pending.")
@@ -147,11 +147,11 @@ def cover(canvas: Canvas, owner: argparse.Namespace) -> None:
 
 def executive(canvas: Canvas, styles: dict[str, Any]) -> None:
     y = base.header(canvas, "Portfolio overview", "Executive summary", 2)
-    y = base.para(canvas, "This personalized candidate presents <b>six submitted Task 2–4 deliverables across two internship tracks</b>. It places Digital Marketing &amp; Branding first, then Python Programming, while preserving each approved task report as original PDF pages.", base.LEFT, y, base.RIGHT - base.LEFT, styles["body"]) - 4 * mm
+    y = base.para(canvas, "This personalized candidate presents <b>six prepared Task 2–4 deliverables across two internship tracks</b>. It places Digital Marketing &amp; Branding first, then Python Programming, while preserving each source task report as original PDF pages.", base.LEFT, y, base.RIGHT - base.LEFT, styles["body"]) - 4 * mm
     y = base.para(canvas, "The portfolio differentiates implemented and tested software from proposed campaign/SEO work, modeled financial scenarios, and the evidence-limited competitor audit. It does not represent Task 1 as complete, any campaign as launched, any modeled outcome as achieved, or certificate eligibility as confirmed.", base.LEFT, y, base.RIGHT - base.LEFT, styles["body"]) - 7 * mm
     width = (base.RIGHT - base.LEFT - 7 * mm) / 2
     base.metric_card(canvas, base.LEFT, y, width, 29 * mm, "2", "internship domains", base.TEAL)
-    base.metric_card(canvas, base.LEFT + width + 7 * mm, y, width, 29 * mm, "6", "submitted Task 2–4\ndeliverables", base.GOLD)
+    base.metric_card(canvas, base.LEFT + width + 7 * mm, y, width, 29 * mm, "6", "prepared Task 2–4\ndeliverables", base.GOLD)
     y -= 36 * mm
     rows = [
         ["Portfolio evidence", "What is included", "Status and boundary"],
@@ -171,10 +171,10 @@ def contents(canvas: Canvas, styles: dict[str, Any]) -> None:
         ["Cover and executive summary", "1–2", "Candidate information and evidence boundaries"],
         ["Master contents and results", "3–4", "Full-document navigation and verified scope"],
         ["Digital Marketing introduction", "5", "Status, claim boundaries and report guide"],
-        ["Complete Marketing report", "6–43", "Imported 38-page approved report"],
+        ["Complete Marketing report", "6–43", "Imported 38-page verified report"],
         ["Marketing Task 2 / 3 / 4 / email appendix", "8 / 12 / 32 / 38", "Starts within the full portfolio"],
         ["Python Programming introduction", "44", "Implementation scope and self-contained evidence guide"],
-        ["Complete Python report", "45–58", "Imported 14-page approved report"],
+        ["Complete Python report", "45–58", "Imported 14-page verified report"],
         ["Python Task 2 / 3 / 4", "47 / 50 / 53", "Starts within the full portfolio"],
         ["Evidence and reproduction index", "59", "Preservation, testing and QA evidence"],
         ["Final owner summary and source index", "60", "Canonical sources and administrative conditions"],
@@ -200,7 +200,7 @@ def results(canvas: Canvas, styles: dict[str, Any], facts: dict[str, Any]) -> No
 
 def marketing_intro(canvas: Canvas, styles: dict[str, Any], facts: dict[str, Any]) -> None:
     y = base.header(canvas, "Track one", "Digital Marketing & Branding", 5)
-    y = base.para(canvas, "The next <b>38 pages are the complete approved Marketing final candidate, imported unchanged</b>. Its internal cover and contents are retained intentionally as the report's original navigation; this portfolio's master contents and outline give the full-document page locations.", base.LEFT, y, base.RIGHT - base.LEFT, styles["body"]) - 5 * mm
+    y = base.para(canvas, "The next <b>38 pages are the complete verified Marketing final candidate, imported unchanged</b>. Its internal cover and contents are retained intentionally as the report's original navigation; this portfolio's master contents and outline give the full-document page locations.", base.LEFT, y, base.RIGHT - base.LEFT, styles["body"]) - 5 * mm
     rows = [
         ["Task", "Included evidence", "Accurate interpretation"],
         ["Task 2", "Stanley 1913, Hydro Flask and Owala positioning, official account references, creative observations, historical third-party snapshots and vendor estimates.", "Evidence-limited public-source audit: no verified 15 Sep–12 Oct posting cadence, complete post inventory, post-level engagement or organizer acceptance."],
@@ -216,7 +216,7 @@ def marketing_intro(canvas: Canvas, styles: dict[str, Any], facts: dict[str, Any
 
 def python_intro(canvas: Canvas, styles: dict[str, Any]) -> None:
     y = base.header(canvas, "Track two", "Python Programming", 44)
-    y = base.para(canvas, "The next <b>14 pages are the complete approved Python final candidate, imported unchanged</b>. It is deliberately self-contained: it includes representative implementation excerpts, executed sample outputs, commands, algorithm explanations, safety boundaries, test results and source-file references.", base.LEFT, y, base.RIGHT - base.LEFT, styles["body"]) - 5 * mm
+    y = base.para(canvas, "The next <b>14 pages are the complete verified Python final candidate, imported unchanged</b>. It is deliberately self-contained: it includes representative implementation excerpts, executed sample outputs, commands, algorithm explanations, safety boundaries, test results and source-file references.", base.LEFT, y, base.RIGHT - base.LEFT, styles["body"]) - 5 * mm
     rows = [
         ["Task", "Implemented capability", "Evidence retained in the report"],
         ["Task 2", "Fibonacci sequence generation with validation and timeit measurement.", "Input constraints, structured output, benchmark configuration, CLI examples and computational limitations."],
@@ -226,19 +226,19 @@ def python_intro(canvas: Canvas, styles: dict[str, Any]) -> None:
     y = base.draw_table(canvas, rows, [23 * mm, 73 * mm, 68 * mm], base.LEFT, y, styles) - 7 * mm
     canvas.setFillColor(base.PALE)
     canvas.roundRect(base.LEFT, y - 39 * mm, base.RIGHT - base.LEFT, 39 * mm, 3 * mm, fill=1, stroke=0)
-    base.para(canvas, "<b>Supplementary appendix decision:</b> no additional Python appendix is added because the approved report already provides the necessary readable excerpts, real execution evidence, reproduction commands and source references. Duplicating full code here would reduce readability without adding evaluation evidence.", base.LEFT + 5 * mm, y - 7 * mm, base.RIGHT - base.LEFT - 10 * mm, styles["body"])
+    base.para(canvas, "<b>Supplementary appendix decision:</b> no additional Python appendix is added because the source report already provides the necessary readable excerpts, real execution evidence, reproduction commands and source references. Duplicating full code here would reduce readability without adding evaluation evidence.", base.LEFT + 5 * mm, y - 7 * mm, base.RIGHT - base.LEFT - 10 * mm, styles["body"])
     base.para(canvas, "Complete runnable sources remain in <font name='Courier'>internship/task2.py</font>, <font name='Courier'>internship/task3.py</font> and <font name='Courier'>internship/task4.py</font>; tests are in <font name='Courier'>tests/</font>. The imported report starts on Portfolio page 45; Tasks 2, 3 and 4 start on pages 47, 50 and 53.", base.LEFT + 5 * mm, y - 27 * mm, base.RIGHT - base.LEFT - 10 * mm, styles["body"])
     canvas.showPage()
 
 
 def evidence(canvas: Canvas, styles: dict[str, Any]) -> None:
     y = base.header(canvas, "Selective evidence", "Verification and reproduction evidence", 59)
-    y = base.para(canvas, "The personalized candidate changes only its eight portfolio-authored pages. Its 52 imported report pages are preserved as PDF page objects and compared against their approved sources for text, content streams, dimensions, rotation and 180 DPI rendering.", base.LEFT, y, base.RIGHT - base.LEFT, styles["body"]) - 5 * mm
+    y = base.para(canvas, "The personalized candidate changes only its eight portfolio-authored pages. Its 52 imported report pages are preserved as PDF page objects and compared against their source PDFs for text, content streams, dimensions, rotation and 180 DPI rendering.", base.LEFT, y, base.RIGHT - base.LEFT, styles["body"]) - 5 * mm
     rows = [
         ["Evidence", "Location", "Validation"],
-        ["Historical portfolio baseline", "FINAL_SUBMISSION/01_Progree_Complete_Internship_Portfolio.pdf", "Retained unchanged at its approved 60 pages and SHA-256 before personalization."],
-        ["Marketing candidate", "Portfolio pages 6–43", "38 source pages compared against the approved Marketing candidate; appendix included."],
-        ["Python candidate", "Portfolio pages 45–58", "14 source pages compared against the approved Python candidate; all three tasks included."],
+        ["Historical portfolio baseline", "FINAL_SUBMISSION/01_Progree_Complete_Internship_Portfolio.pdf", "Retained unchanged at its verified 60 pages and SHA-256 before personalization."],
+        ["Marketing candidate", "Portfolio pages 6–43", "38 source pages compared against the verified Marketing candidate; appendix included."],
+        ["Python candidate", "Portfolio pages 45–58", "14 source pages compared against the verified Python candidate; all three tasks included."],
         ["Models and tests", "digital_marketing/research/, internship/, tests/", "Counts are recalculated from Task 3/4 model data; final audit records 129 cross-track tests, including 55 Python tests."],
         ["Portfolio QA", "FINAL_SUBMISSION/QA/FINAL_VERIFICATION.md", "Current personalized PDF checks, rendering evidence, metadata review and owner-authorized detail verification."],
     ]
@@ -251,7 +251,7 @@ def evidence(canvas: Canvas, styles: dict[str, Any]) -> None:
 
 def conclusion(canvas: Canvas, styles: dict[str, Any]) -> None:
     y = base.header(canvas, "Close and reproduce", "Final owner summary and source index", 60)
-    y = base.para(canvas, "This personalized candidate contains the complete Digital Marketing report first and the complete Python report second. Candidate identity details appear only on the cover and in document metadata; all task-report pages retain their approved content and original internal page numbering.", base.LEFT, y, base.RIGHT - base.LEFT, styles["body"]) - 5 * mm
+    y = base.para(canvas, "This personalized candidate contains the complete Digital Marketing report first and the complete Python report second. Candidate identity details appear only on the cover and in document metadata; all task-report pages retain their source content and original internal page numbering.", base.LEFT, y, base.RIGHT - base.LEFT, styles["body"]) - 5 * mm
     canvas.setFillColor(base.PALE)
     canvas.roundRect(base.LEFT, y - 20 * mm, base.RIGHT - base.LEFT, 20 * mm, 3 * mm, fill=1, stroke=0)
     base.para(canvas, "<b>Reproduce:</b> run <font name='Courier'>python tools/build_personalized_internship_portfolio.py --help</font> for the owner-authorized parameters, then run <font name='Courier'>python tools/verify_personalized_internship_portfolio.py --help</font> using the same values. Personal values are intentionally not written into the build instructions.", base.LEFT + 5 * mm, y - 5 * mm, base.RIGHT - base.LEFT - 10 * mm, styles["small"])
@@ -385,7 +385,7 @@ def write_support_docs(owner: argparse.Namespace) -> None:
         "## Owner-reviewed PDF candidates\n\n"
         "- `01_Progree_Complete_Internship_Portfolio.pdf` — historical anonymous 60-page baseline, retained unchanged.\n"
         f"- `01_Progree_Complete_Internship_Portfolio_PERSONALIZED.pdf` — owner-authorized personalized candidate: **{info['pages']} pages**, **{info['bytes']:,} bytes**, SHA-256 `{info['sha256']}`.\n\n"
-        "Both order Digital Marketing & Branding first and Python Programming second, with the complete approved Marketing and Python reports preserved as PDF pages. The personalized candidate adds identity information only to its cover and author metadata.\n\n"
+        "Both order Digital Marketing & Branding first and Python Programming second, with the complete verified Marketing and Python reports preserved as PDF pages. The personalized candidate adds identity information only to its cover and author metadata.\n\n"
         "## Upload preparation\n\n"
         "The personalized candidate is below the owner-supplied visible 10 MB file limit. It is a review candidate, not an executed submission. The form's single domain choice does not establish that one response earns two certificates.\n\n"
         "## Reproduce\n\n"
